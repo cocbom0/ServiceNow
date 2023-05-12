@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:9368001d1b5d0d50a4236313604bcb26</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 06:36:33</sys_created_on>
+        <sys_id>184010a31b526150c2e1433be54bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>machine_type</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_184010a31b526150c2e1433be54bcb6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 06:36:33</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - VariablesSet End Customer Information and Machine Information">8ebfc0631b526150c2e1433be54bcb12</ui_policy>
+        <variable>machine_type</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_184010a31b526150c2e1433be54bcb6c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:9368001d1b5d0d50a4236313604bcb26</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-25 06:36:33</sys_created_on><sys_id>184010a31b526150c2e1433be54bcb6c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>machine_type</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_184010a31b526150c2e1433be54bcb6c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-25 06:36:33</sys_updated_on><table/><ui_policy display_value="Hide Fields for Target Records - VariablesSet End Customer Information and Machine Information">8ebfc0631b526150c2e1433be54bcb12</ui_policy><variable>machine_type</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1326369068</payload_hash>
+        <record_name>machine_type</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 06:36:33</sys_created_on>
+        <sys_id>a2405c631b526150c2e1433be54bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187b720cf650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 06:36:33</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>a6405c6373526150a32f5cd88ecb19f8</update_guid>
+        <update_guid_history>a6405c6373526150a32f5cd88ecb19f8:1326369068</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8233a6731b9625505bdeed71f54bcbe6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.stratan@snc</sys_created_by>
+        <sys_created_on>2023-04-26 11:56:59</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>3f41ee4dcaf54a30ba5a5082cd5b24c4</sys_id>
+        <sys_metadata>184010a31b526150c2e1433be54bcb6c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>machine_type</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_184010a31b526150c2e1433be54bcb6c</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_184010a31b526150c2e1433be54bcb6c">a2405c631b526150c2e1433be54bcbf9</sys_update_version>
+        <sys_updated_by>pavel.stratan@snc</sys_updated_by>
+        <sys_updated_on>2023-04-26 11:56:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

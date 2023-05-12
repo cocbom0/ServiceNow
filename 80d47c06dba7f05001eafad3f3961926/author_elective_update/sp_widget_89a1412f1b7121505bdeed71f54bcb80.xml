@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.textbox_space {&#13;
+  margin-top: 10px;&#13;
+  margin-bottom: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Widget to be able to add users in watch list for CSM Cases</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>lh_csm_ticket_watchlist_user_no_view</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>LH-CSM-Ticket-Watchlist-User-No-View</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.sys_id = (input && input.sys_id) || options.sys_id || $sp.getParameter("sys_id");
+	data.table = (input && input.table) || options.table || $sp.getParameter("table");
+	data.watchers = [];
+	
+	var separator = ",";
+	
+	data.watchers = getEmailList(data.table, data.sys_id, separator);
+	
+	if (input) {
+		var grTask = new GlideRecord(data.table);
+		grTask.query("sys_id", data.sys_id);
+		grTask.query();
+		
+		if (grTask.next()) {
+			var wList;
+			var wEmail;
+			var value_to_push;
+			
+			wList = grTask.getValue("watch_list")?grTask.getValue("watch_list").split(separator):[];
+			wEmail = input.watch_list;
+			
+			if(emailIsValid(wEmail.toUpperCase())) {
+				var grUser = new GlideRecord('sys_user');
+				grUser.addQuery("email", wEmail);
+				grUser.query();
+
+				if (grUser.next()) {
+					// It's a user
+					value_to_push = grUser.getValue("sys_id");
+				} else {
+					//It's not a user either...so just add the address to the list...except instance email address
+					value_to_push = wEmail;
+				}
+
+				if(wList.indexOf(value_to_push) < 0) {
+					wList.push(value_to_push);
+				}
+
+				grTask.setValue("watch_list", wList.join(separator));
+				grTask.update();
+
+				data.watch_list = "";
+			}
+		}
+	}
+})();
+
+function getEmailList(table, sysId, separator) {
+	var list = [];
+	var watchers = [];
+	var i = 0;
+	var gr = new GlideRecord(table);
+	
+	if(gr.get(sysId)) {
+		watchers = gr.getValue("watch_list")?gr.getValue("watch_list").split(separator):[];
+		for(i; i < watchers.length; i++) {
+			list.push(getEmail(watchers[i]));
+		}
+	}
+	
+	return list;
+}
+
+function getEmail(sysId) {
+	var email = sysId;
+	var gr = new GlideRecord("sys_user");
+	
+	if (gr.get(sysId)) {
+		email = gr.getValue("email");
+	}
+	
+	return email;
+}
+
+function emailIsValid(email) {
+	var valid = false;
+	
+	var pattern = "^[\\w-\\.]+@((" + getDomain(0) + "|" + getDomain(1) + ")+\\.)+[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+
+    if (regex.exec(email) !== null) {
+        valid = true;
+    }
+		
+	return valid;
+}
+
+function getDomain(side) {
+	var domain = "";
+	var grCase, grUser;
+	var column;
+	
+	switch(side) {
+		case 0:
+			column = "internal_user";
+			break;
+		case 1:
+			column = "contact";
+			break;
+		default:
+			break;
+	}
+	
+	grCase = new GlideRecord($sp.getParameter("table"));
+	if(grCase.get($sp.getParameter("sys_id"))) {
+		grUser = new GlideRecord("sys_user");
+		if(grUser.get(grCase.getValue(column))) {
+			domain = getDomainFromEmail(grUser.getValue("email"));
+		}
+	}
+	
+	return domain.toUpperCase();
+}
+
+function getDomainFromEmail(email) {
+	var domain = "";
+	
+	var pattern = "@([\\w\\.-]+)+\\.[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+	var result = regex.exec(email);
+
+    if (result !== null) {
+		domain = result[1];
+    }
+
+	return domain;
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 13:41:57</sys_created_on>
+        <sys_id>89a1412f1b7121505bdeed71f54bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-CSM-Ticket-Watchlist-User-No-View</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_89a1412f1b7121505bdeed71f54bcb80</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 13:41:57</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="panel-title"><fa ng-if="::options.glyph.length" name="" class="m-r-sm" />Add to Watchlist</h4>
+  </div>
+  <div class="panel-body">
+    <form ng-submit="server.update()">
+      ${Enter an email address to follow}
+      <div class="textbox_space">
+        <input ng-model="data.watch_list" id="watch_list" class="form-control" type="email" maxlength="50" />
+      </div>
+      <div style="margin-top:15px; float: right;">
+        <button type="submit" class="btn btn-primary post-btn ng-scope">Add</button>
+      </div>
+      <div style="margin-right:250px;" ng-if="data.response" class="alert alert-success">{{::data.response}}</div>
+      <ul>
+        <li ng-repeat='watcher in c.data.watchers'>{{watcher}}</li>
+      </ul>
+    </form>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_widget_89a1412f1b7121505bdeed71f54bcb80</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.textbox_space {&amp;#13;
+  margin-top: 10px;&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Widget to be able to add users in watch list for CSM Cases&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;lh_csm_ticket_watchlist_user_no_view&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;LH-CSM-Ticket-Watchlist-User-No-View&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.sys_id = (input &amp;&amp; input.sys_id) || options.sys_id || $sp.getParameter("sys_id");
+	data.table = (input &amp;&amp; input.table) || options.table || $sp.getParameter("table");
+	data.watchers = [];
+	
+	var separator = ",";
+	
+	data.watchers = getEmailList(data.table, data.sys_id, separator);
+	
+	if (input) {
+		var grTask = new GlideRecord(data.table);
+		grTask.query("sys_id", data.sys_id);
+		grTask.query();
+		
+		if (grTask.next()) {
+			var wList;
+			var wEmail;
+			var value_to_push;
+			
+			wList = grTask.getValue("watch_list")?grTask.getValue("watch_list").split(separator):[];
+			wEmail = input.watch_list;
+			
+			if(emailIsValid(wEmail.toUpperCase())) {
+				var grUser = new GlideRecord('sys_user');
+				grUser.addQuery("email", wEmail);
+				grUser.query();
+
+				if (grUser.next()) {
+					// It's a user
+					value_to_push = grUser.getValue("sys_id");
+				} else {
+					//It's not a user either...so just add the address to the list...except instance email address
+					value_to_push = wEmail;
+				}
+
+				if(wList.indexOf(value_to_push) &lt; 0) {
+					wList.push(value_to_push);
+				}
+
+				grTask.setValue("watch_list", wList.join(separator));
+				grTask.update();
+
+				data.watch_list = "";
+			}
+		}
+	}
+})();
+
+function getEmailList(table, sysId, separator) {
+	var list = [];
+	var watchers = [];
+	var i = 0;
+	var gr = new GlideRecord(table);
+	
+	if(gr.get(sysId)) {
+		watchers = gr.getValue("watch_list")?gr.getValue("watch_list").split(separator):[];
+		for(i; i &lt; watchers.length; i++) {
+			list.push(getEmail(watchers[i]));
+		}
+	}
+	
+	return list;
+}
+
+function getEmail(sysId) {
+	var email = sysId;
+	var gr = new GlideRecord("sys_user");
+	
+	if (gr.get(sysId)) {
+		email = gr.getValue("email");
+	}
+	
+	return email;
+}
+
+function emailIsValid(email) {
+	var valid = false;
+	
+	var pattern = "^[\\w-\\.]+@((" + getDomain(0) + "|" + getDomain(1) + ")+\\.)+[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+
+    if (regex.exec(email) !== null) {
+        valid = true;
+    }
+		
+	return valid;
+}
+
+function getDomain(side) {
+	var domain = "";
+	var grCase, grUser;
+	var column;
+	
+	switch(side) {
+		case 0:
+			column = "internal_user";
+			break;
+		case 1:
+			column = "contact";
+			break;
+		default:
+			break;
+	}
+	
+	grCase = new GlideRecord($sp.getParameter("table"));
+	if(grCase.get($sp.getParameter("sys_id"))) {
+		grUser = new GlideRecord("sys_user");
+		if(grUser.get(grCase.getValue(column))) {
+			domain = getDomainFromEmail(grUser.getValue("email"));
+		}
+	}
+	
+	return domain.toUpperCase();
+}
+
+function getDomainFromEmail(email) {
+	var domain = "";
+	
+	var pattern = "@([\\w\\.-]+)+\\.[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+	var result = regex.exec(email);
+
+    if (result !== null) {
+		domain = result[1];
+    }
+
+	return domain;
+}]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-31 13:41:57&lt;/sys_created_on&gt;&lt;sys_id&gt;89a1412f1b7121505bdeed71f54bcb80&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;LH-CSM-Ticket-Watchlist-User-No-View&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_89a1412f1b7121505bdeed71f54bcb80&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-31 13:41:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-primary"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;h4 class="panel-title"&gt;&lt;fa ng-if="::options.glyph.length" name="" class="m-r-sm" /&gt;Add to Watchlist&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;form ng-submit="server.update()"&gt;
+      ${Enter an email address to follow}
+      &lt;div class="textbox_space"&gt;
+        &lt;input ng-model="data.watch_list" id="watch_list" class="form-control" type="email" maxlength="50" /&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top:15px; float: right;"&gt;
+        &lt;button type="submit" class="btn btn-primary post-btn ng-scope"&gt;Add&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-right:250px;" ng-if="data.response" class="alert alert-success"&gt;{{::data.response}}&lt;/div&gt;
+      &lt;ul&gt;
+        &lt;li ng-repeat='watcher in c.data.watchers'&gt;{{watcher}}&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1369115898</payload_hash>
+        <record_name>LH-CSM-Ticket-Watchlist-User-No-View</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 13:41:57</sys_created_on>
+        <sys_id>96e105231bb121505bdeed71f54bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18737e74b8e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 13:41:57</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>dae105239ab12150e784012651b98f11</update_guid>
+        <update_guid_history>dae105239ab12150e784012651b98f11:-1369115898</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">138111d21b566d10c2e1433be54bcb9b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 14:09:17</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0712d3f4a00c42fa92584950682a2fa9</sys_id>
+        <sys_metadata>89a1412f1b7121505bdeed71f54bcb80</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-CSM-Ticket-Watchlist-User-No-View</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_widget_89a1412f1b7121505bdeed71f54bcb80</sys_update_name>
+        <sys_update_version display_value="sp_widget_89a1412f1b7121505bdeed71f54bcb80">96e105231bb121505bdeed71f54bcb12</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 14:09:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

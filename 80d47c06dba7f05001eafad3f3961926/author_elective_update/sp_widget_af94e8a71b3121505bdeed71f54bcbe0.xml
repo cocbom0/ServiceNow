@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function(){
+  /* widget controller */
+  var c = this;
+		c.template = "kb_article_list_template";
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.transclude:last-child {&#13;
+  padding-bottom: 10px;&#13;
+}&#13;
+&#13;
+.list-group {&#13;
+ 	margin-bottom: 0px; &#13;
+}&#13;
+&#13;
+.list-group-item {&#13;
+    padding: 0;&#13;
+    border: none;&#13;
+    margin-bottom: 10px;&#13;
+    border-radius: 0px;&#13;
+}&#13;
+&#13;
+.list-group-item:last-child {&#13;
+	margin-bottom: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color</field_list>
+        <has_preview>false</has_preview>
+        <id>lh_csm_kb_latest_articles_old</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>LH-CSM-KB-Latest-Articles Old</name>
+        <option_schema>[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]&#13;
+</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.articles = [];
+	options.title = options.title || gs.getMessage("Latest Published Articles");
+	options.aria_label_title = options.title || gs.getMessage('Most Viewed Articles');
+	options.display_field = options.display_field || "short_description"; 
+	options.secondary_fields = options.secondary_fields ? options.secondary_fields.split(",") : getKnowledgeFieldsfromProperties();
+	options.show_secondary_fields_label = options.show_secondary_fields_label ? options.show_secondary_fields_label == 'true' : false;
+	options.max_records = options.max_records || gs.getProperty('glide.knowman.content_block_limit')|| '5';
+	options.always_show = options.always_show ? options.always_show == 'true' : true;
+	options.reverse = true;
+	
+	var z;
+	var fields = [];
+	var knowledge_bases;
+	var sys_id = $sp.getParameter('sys_id');
+	var kb_id = $sp.getParameter('kb_id');
+	var gr = new GlideRecord("kb_knowledge");
+	
+	var days = options.no_of_days || 30;
+//	var gdt = new GlideDateTime();
+	var gdt = new GlideDate();
+	$sp.log(gdt.getDisplayValue());
+	gdt.addDaysLocalTime(days*-1);
+	var author_name='';
+	
+	var foundArticle = false;
+	if (sys_id) { // sys_id specified, try to find an article by sys_id or number
+		gr.addQuery("sys_id", sys_id).addOrCondition("number", sys_id);
+		gr.query();
+		if (gr.next() && gr.canRead()) {
+			// When sys_id matches a kb_record, get KB of the article
+			knowledge_bases = String(gr.getValue('kb_knowledge_base'));
+			foundArticle = true;
+		}
+	}
+	
+	if (!foundArticle) { /* For all other pages this code will get executed. Used on knowledge home page.*/
+		/*If KB is selected display most viewed articles only from that KB*/
+		if (kb_id != null)
+			knowledge_bases = String(kb_id);
+		else {
+			 /*Get all knowledge bases associated with Portal*/
+			knowledge_bases = String($sp.getKnowledgeBases());
+		}
+	}
+	
+	if (GlideStringUtil.notNil(knowledge_bases))
+		z = $sp.getAllKBRecords(knowledge_bases);
+	else //If there are no accessible KBs for logged in user
+		return;
+	
+	//z.addQuery("sys_view_count", ">", "0");
+	//z.addQuery('sys_created_on','>=',gdt.getDisplayValue()); // get data from last 30 days
+	z.addQuery('published','>=',gdt.getDisplayValue()); // get data from last 30 days
+	z.addQuery('latest',true);
+	z.addQuery('active',true);
+	if (options.kb_category)
+		z.addQuery("kb_category", options.kb_category);
+	z.orderByDesc('published');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+		
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id,number,author,sys_view_count,published,show_rating');
+//		data.articles.push(a);
+		
+		getKnowledgeFieldsfromProperties();
+		
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+				a.display_number=kbMod.display_number;
+			}else{
+				fields.push('number');
+				a.number=kbMod.number;
+			}
+		}
+		
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+		fields.push('rating');
+		a.rating=kbMod.rating;
+		
+		a.author_name=z.author.getDisplayValue();
+		a.version="v" + z.version.getDisplayValue();
+		a.rating = z.show_rating;
+		
+		
+		
+		data.articles.push(a);
+		
+	}
+	
+	function getKnowledgeFieldsfromProperties(){
+
+		//Generate secondary fields based on legacy properties
+		var fields = [];
+
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+			}else{
+				fields.push('number');
+			}
+		}
+		if(gs.getProperty('glide.knowman.search.show_author','false') == 'true')
+			fields.push('author');
+		if(gs.getProperty('glide.knowman.search.show_view_count','false') == 'true')
+			fields.push('sys_view_count');		
+		if(gs.getProperty('glide.knowman.search.show_last_modified','false') == 'true')
+			fields.push('sys_updated_on');
+		if(gs.getProperty('glide.knowman.search.show_published','false') == 'true')
+			fields.push('published');
+		if(gs.getProperty('glide.knowman.show_unpublished','false') == 'true')
+			fields.push('workflow_state');
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+			fields.push('rating');
+
+		return fields;
+	}
+	
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 11:35:21</sys_created_on>
+        <sys_id>af94e8a71b3121505bdeed71f54bcbe0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>LH-CSM-KB-Latest-Articles Old</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_af94e8a71b3121505bdeed71f54bcbe0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:30:08</sys_updated_on>
+        <template><![CDATA[ <sp-panel ng-if="data.articles.length > 0" >
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="a in data.articles">
+      <a href="?id=kb_article_view&sys_id={{::a.sys_id}}">{{::a.short_description}}</a>
+      <div>
+        <span ng-if="a.sys_view_count == 1" class="views pad-right">
+         <h style="font-size=-5; color: #CCCCCC">
+         {{::a.number}}  {{::a.version}}  · {{::a.author_name}} · ${{{::a.sys_view_count}} Views} · <sn-day-ago date="a.published"/h>
+        </span>
+        <span ng-if="a.sys_view_count > 1" class="views pad-right">
+         <h style="font-size=-5; color: #CCCCCC">
+         {{::a.number}}  {{::a.version}}  · {{::a.author_name}} · ${{{::a.sys_view_count}} Views} · <sn-day-ago date="a.published"/h>
+        </span>
+        <span ng-if="false" class="published pad-right">
+          <span ng-if="a.sys_view_count > 0" class="pad-right">&#8226;</span> <glyph sn-char="calendar" class="pad-right" />
+          <sn-day-ago date="a.published"/>
+        </span>
+      </div>
+    </li>
+  </ul>
+</sp-panel>
+]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_widget_af94e8a71b3121505bdeed71f54bcbe0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function(){
+  /* widget controller */
+  var c = this;
+		c.template = "kb_article_list_template";
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.transclude:last-child {&amp;#13;
+  padding-bottom: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.list-group {&amp;#13;
+ 	margin-bottom: 0px; &amp;#13;
+}&amp;#13;
+&amp;#13;
+.list-group-item {&amp;#13;
+    padding: 0;&amp;#13;
+    border: none;&amp;#13;
+    margin-bottom: 10px;&amp;#13;
+    border-radius: 0px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.list-group-item:last-child {&amp;#13;
+	margin-bottom: 10px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,color&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;lh_csm_kb_latest_articles_old&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;LH-CSM-KB-Latest-Articles Old&lt;/name&gt;&lt;option_schema&gt;[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.articles = [];
+	options.title = options.title || gs.getMessage("Latest Published Articles");
+	options.aria_label_title = options.title || gs.getMessage('Most Viewed Articles');
+	options.display_field = options.display_field || "short_description"; 
+	options.secondary_fields = options.secondary_fields ? options.secondary_fields.split(",") : getKnowledgeFieldsfromProperties();
+	options.show_secondary_fields_label = options.show_secondary_fields_label ? options.show_secondary_fields_label == 'true' : false;
+	options.max_records = options.max_records || gs.getProperty('glide.knowman.content_block_limit')|| '5';
+	options.always_show = options.always_show ? options.always_show == 'true' : true;
+	options.reverse = true;
+	
+	var z;
+	var fields = [];
+	var knowledge_bases;
+	var sys_id = $sp.getParameter('sys_id');
+	var kb_id = $sp.getParameter('kb_id');
+	var gr = new GlideRecord("kb_knowledge");
+	
+	var days = options.no_of_days || 30;
+//	var gdt = new GlideDateTime();
+	var gdt = new GlideDate();
+	$sp.log(gdt.getDisplayValue());
+	gdt.addDaysLocalTime(days*-1);
+	var author_name='';
+	
+	var foundArticle = false;
+	if (sys_id) { // sys_id specified, try to find an article by sys_id or number
+		gr.addQuery("sys_id", sys_id).addOrCondition("number", sys_id);
+		gr.query();
+		if (gr.next() &amp;&amp; gr.canRead()) {
+			// When sys_id matches a kb_record, get KB of the article
+			knowledge_bases = String(gr.getValue('kb_knowledge_base'));
+			foundArticle = true;
+		}
+	}
+	
+	if (!foundArticle) { /* For all other pages this code will get executed. Used on knowledge home page.*/
+		/*If KB is selected display most viewed articles only from that KB*/
+		if (kb_id != null)
+			knowledge_bases = String(kb_id);
+		else {
+			 /*Get all knowledge bases associated with Portal*/
+			knowledge_bases = String($sp.getKnowledgeBases());
+		}
+	}
+	
+	if (GlideStringUtil.notNil(knowledge_bases))
+		z = $sp.getAllKBRecords(knowledge_bases);
+	else //If there are no accessible KBs for logged in user
+		return;
+	
+	//z.addQuery("sys_view_count", "&gt;", "0");
+	//z.addQuery('sys_created_on','&gt;=',gdt.getDisplayValue()); // get data from last 30 days
+	z.addQuery('published','&gt;=',gdt.getDisplayValue()); // get data from last 30 days
+	z.addQuery('latest',true);
+	z.addQuery('active',true);
+	if (options.kb_category)
+		z.addQuery("kb_category", options.kb_category);
+	z.orderByDesc('published');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+		
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id,number,author,sys_view_count,published,show_rating');
+//		data.articles.push(a);
+		
+		getKnowledgeFieldsfromProperties();
+		
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+				a.display_number=kbMod.display_number;
+			}else{
+				fields.push('number');
+				a.number=kbMod.number;
+			}
+		}
+		
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+		fields.push('rating');
+		a.rating=kbMod.rating;
+		
+		a.author_name=z.author.getDisplayValue();
+		a.version="v" + z.version.getDisplayValue();
+		a.rating = z.show_rating;
+		
+		
+		
+		data.articles.push(a);
+		
+	}
+	
+	function getKnowledgeFieldsfromProperties(){
+
+		//Generate secondary fields based on legacy properties
+		var fields = [];
+
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+			}else{
+				fields.push('number');
+			}
+		}
+		if(gs.getProperty('glide.knowman.search.show_author','false') == 'true')
+			fields.push('author');
+		if(gs.getProperty('glide.knowman.search.show_view_count','false') == 'true')
+			fields.push('sys_view_count');		
+		if(gs.getProperty('glide.knowman.search.show_last_modified','false') == 'true')
+			fields.push('sys_updated_on');
+		if(gs.getProperty('glide.knowman.search.show_published','false') == 'true')
+			fields.push('published');
+		if(gs.getProperty('glide.knowman.show_unpublished','false') == 'true')
+			fields.push('workflow_state');
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+			fields.push('rating');
+
+		return fields;
+	}
+	
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-31 11:35:21&lt;/sys_created_on&gt;&lt;sys_id&gt;af94e8a71b3121505bdeed71f54bcbe0&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;LH-CSM-KB-Latest-Articles Old&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_af94e8a71b3121505bdeed71f54bcbe0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-31 15:30:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[ &lt;sp-panel ng-if="data.articles.length &gt; 0" &gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item" ng-repeat="a in data.articles"&gt;
+      &lt;a href="?id=kb_article_view&amp;sys_id={{::a.sys_id}}"&gt;{{::a.short_description}}&lt;/a&gt;
+      &lt;div&gt;
+        &lt;span ng-if="a.sys_view_count == 1" class="views pad-right"&gt;
+         &lt;h style="font-size=-5; color: #CCCCCC"&gt;
+         {{::a.number}}  {{::a.version}}  · {{::a.author_name}} · ${{{::a.sys_view_count}} Views} · &lt;sn-day-ago date="a.published"/h&gt;
+        &lt;/span&gt;
+        &lt;span ng-if="a.sys_view_count &gt; 1" class="views pad-right"&gt;
+         &lt;h style="font-size=-5; color: #CCCCCC"&gt;
+         {{::a.number}}  {{::a.version}}  · {{::a.author_name}} · ${{{::a.sys_view_count}} Views} · &lt;sn-day-ago date="a.published"/h&gt;
+        &lt;/span&gt;
+        &lt;span ng-if="false" class="published pad-right"&gt;
+          &lt;span ng-if="a.sys_view_count &gt; 0" class="pad-right"&gt;&amp;#8226;&lt;/span&gt; &lt;glyph sn-char="calendar" class="pad-right" /&gt;
+          &lt;sn-day-ago date="a.published"/&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/sp-panel&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1229489673</payload_hash>
+        <record_name>LH-CSM-KB-Latest-Articles Old</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:30:08</sys_created_on>
+        <sys_id>87aa51a71bf121505bdeed71f54bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187384a57880000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:30:08</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>0faa9de332f121504c1ecadbf0a1a00f</update_guid>
+        <update_guid_history>0faa9de332f121504c1ecadbf0a1a00f:1229489673,a6aa15675ef12150c78db89337023a4a:-528805263,fbe4a0e75c3121508df8796fce428fea:1371340753</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">389e20a41b0ae1505bdeed71f54bcb47</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 14:51:24</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>306afdb519ec4f9e8b261091a8c1da79</sys_id>
+        <sys_metadata>af94e8a71b3121505bdeed71f54bcbe0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-CSM-KB-Latest-Articles Old</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_widget_af94e8a71b3121505bdeed71f54bcbe0</sys_update_name>
+        <sys_update_version display_value="sp_widget_af94e8a71b3121505bdeed71f54bcbe0">87aa51a71bf121505bdeed71f54bcbb9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 14:51:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

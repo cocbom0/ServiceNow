@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">e39555631bf121505bdeed71f54bcbde</sp_column>
+        <sp_widget display_value="LH Knowledge Bases Browse">d14dc4861b562d10c2e1433be54bcbde</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-01 14:29:13</sys_created_on>
+        <sys_id>3806f8a587a62d107cb6eced3fbb352e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_3806f8a587a62d107cb6eced3fbb352e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 14:29:13</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=3806f8a587a62d107cb6eced3fbb352e"/>
+</record_update>

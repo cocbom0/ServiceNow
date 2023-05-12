@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="OLD Technical Services">3a6c66681b0c01905b1b411acd4bcb88</cat_item>
+        <cat_variable>IO:f8fe794d1bc0c1905b1b411acd4bcb5f</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Operating Hours - onChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	var stOperatingHours = g_form.getValue('st_operating_hours');
+
+	if (stOperatingHours > newValue){
+		var answer = confirm("The value you provided for operating hours is less than the currently stored value, this will not be updated to the engine record.");
+	}
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2022-02-01 11:30:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>131b4a57dbdd851001eafad3f3961999</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Operating Hours - onChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_script_client_131b4a57dbdd851001eafad3f3961999</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2022-02-01 12:44:50</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_script_client_131b4a57dbdd851001eafad3f3961999</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="OLD Technical Services"&gt;3a6c66681b0c01905b1b411acd4bcb88&lt;/cat_item&gt;&lt;cat_variable&gt;IO:f8fe794d1bc0c1905b1b411acd4bcb5f&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Operating Hours - onChange&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	var stOperatingHours = g_form.getValue('st_operating_hours');
+
+	if (stOperatingHours &gt; newValue){
+		var answer = confirm("The value you provided for operating hours is less than the currently stored value, this will not be updated to the engine record.");
+	}
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kristian.teodorov@doitwise.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-01 11:30:08&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;131b4a57dbdd851001eafad3f3961999&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Operating Hours - onChange&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_131b4a57dbdd851001eafad3f3961999&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kristian.teodorov@doitwise.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-01 12:44:50&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1668540831</payload_hash>
+        <record_name>Operating Hours - onChange</record_name>
+        <reverted_from/>
+        <source>7e76d5321b212110c2e1433be54bcbf2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 21:00:41</sys_created_on>
+        <sys_id>1ba76de41bcae1505bdeed71f54bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ec3990a80000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:41:02</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>d7a76de4a9cae150cca113fab8ab5754</update_guid>
+        <update_guid_history>d7a76de4a9cae150cca113fab8ab5754:-1668540831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">dfa765281bcae1505bdeed71f54bcb99</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 19:00:52</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>838731893e5b49689789c179efde4864</sys_id>
+        <sys_metadata>131b4a57dbdd851001eafad3f3961999</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Operating Hours - onChange</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_script_client_131b4a57dbdd851001eafad3f3961999</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_131b4a57dbdd851001eafad3f3961999">1ba76de41bcae1505bdeed71f54bcb54</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 19:00:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

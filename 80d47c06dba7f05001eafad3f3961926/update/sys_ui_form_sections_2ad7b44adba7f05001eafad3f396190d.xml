@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="2ad7b44adba7f05001eafad3f396190d" sys_domain="global" table="x_liisa_support_ca_services" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 08:23:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2d7b44adba7f05001eafad3f3961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_support_ca_services" name="x_liisa_support_ca_services" sys_domain="global" view="Default view">2ad7b44adba7f05001eafad3f396190d</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="Default view">26d7b44adba7f05001eafad3f3961917</sys_ui_section>
+            <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-11-02 08:23:33</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 08:23:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ed7b44adba7f05001eafad3f3961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_support_ca_services" name="x_liisa_support_ca_services" sys_domain="global" view="Default view">2ad7b44adba7f05001eafad3f396190d</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_liisa_support_ca_services" sys_domain="global" view="Default view">2ed7b44adba7f05001eafad3f396190f</sys_ui_section>
+            <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-11-02 08:23:33</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_liisa_support_ca_services</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 08:23:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ad7b44adba7f05001eafad3f396190d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_liisa_support_ca_services</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_ui_form_sections_2ad7b44adba7f05001eafad3f396190d</sys_update_name>
+            <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-11-02 08:23:33</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

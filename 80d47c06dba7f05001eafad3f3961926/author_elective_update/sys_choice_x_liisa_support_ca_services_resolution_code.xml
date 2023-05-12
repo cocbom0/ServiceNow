@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="resolution_code" table="x_liisa_support_ca_services" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>resolution_code</element>
+            <name>x_liisa_support_ca_services</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>resolution_code</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_choice_x_liisa_support_ca_services_resolution_code</sys_update_name>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-11-02 14:02:59</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gelöst- Lösungsansätze wurden zur Verfügung gestellt</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:17:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:18:03</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solved - Deliverables provided to the requester</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:11:57</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Résolu - des solutions ont été mises à disposition</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:17:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:17:54</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gelöst - behoben durch schließen eines ähnlischen Falls</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:18:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:18:33</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solved - Fixed by closing a related case</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:12:04</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Résolu - résolu en fermant un cas similaire</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:18:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:24:35</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gelöst - behoben durch den Antragsteller</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:19:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:19:15</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solved - Fixed by the requester</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:12:11</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Résolu - résolu par le demandeur</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:19:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:19:40</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nicht erledigt - das Thema ist nicht mehr aktuell</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:20:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:20:03</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inconclusive – The issue is not applicable anymore</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:12:20</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non résolu - le sujet n'est plus d'actualité</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:20:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:20:21</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nicht erledigt - das Thema ist aktuell nicht lösbar</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:20:43</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inconclusive – Not solvable at the moment</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:12:42</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non résolu - le sujet ne peut actuellement pas être résolu</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:20:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-20 10:05:22</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nicht erledigt- das Thema ist ausserhalb des Verantwortungsbereichs</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:21:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:21:25</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inconclusive – Out of scope</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:12:26</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non résolu - le sujet est en dehors du domaine de responsabilité</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:21:43</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Abgebrochen</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:22:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:22:19</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canceled</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 14:02:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:12:33</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annulé</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-11-15 12:22:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-11-15 12:22:34</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Service Documentation">6c22f9031bc88d905b1b411acd4bcb5e</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:39:28</sys_created_on>
+        <sys_id>d3c8ef48876ae5107cb6eced3fbb35ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Documentation.SNC External</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_d3c8ef48876ae5107cb6eced3fbb35ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:39:28</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_d3c8ef48876ae5107cb6eced3fbb35ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Service Documentation">6c22f9031bc88d905b1b411acd4bcb5e</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-27 11:39:28</sys_created_on><sys_id>d3c8ef48876ae5107cb6eced3fbb35ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Documentation.SNC External</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_d3c8ef48876ae5107cb6eced3fbb35ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-27 11:39:28</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-289371201</payload_hash>
+        <record_name>Service Documentation.SNC External</record_name>
+        <reverted_from/>
+        <source>7781c602871221107cb6eced3fbb3511</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-04-20 23:00:34</sys_created_on>
+        <sys_id>ea7654e4dbbea150ca0952f8f4961978</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>187a0e5e6500000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>aa7654e4acbea150b0b78b774f721078</update_guid>
+        <update_guid_history>aa7654e4acbea150b0b78b774f721078:-289371201</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Documentation.SNC External">627654e4dbbea150ca0952f8f496197b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-10 19:53:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>c1d22cb8ab574022acad7d5fa508b441</sys_id>
+        <sys_metadata>d3c8ef48876ae5107cb6eced3fbb35ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Documentation.SNC External</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_d3c8ef48876ae5107cb6eced3fbb35ad</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_d3c8ef48876ae5107cb6eced3fbb35ad">ea7654e4dbbea150ca0952f8f4961978</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-10 19:53:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

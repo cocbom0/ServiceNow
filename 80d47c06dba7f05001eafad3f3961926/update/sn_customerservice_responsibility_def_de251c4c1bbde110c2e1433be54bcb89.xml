@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_customerservice_responsibility_def">
+    <sn_customerservice_responsibility_def action="INSERT_OR_UPDATE">
+        <name>Electronic &amp; Diagnostic</name>
+        <sys_class_name>sn_customerservice_responsibility_def</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 13:27:47</sys_created_on>
+        <sys_id>de251c4c1bbde110c2e1433be54bcb89</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Electronic &amp; Diagnostic</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sn_customerservice_responsibility_def_de251c4c1bbde110c2e1433be54bcb89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-20 13:27:50</sys_updated_on>
+        <type>customer_contact</type>
+        <u_icon>98351c4c1bbde110c2e1433be54bcb90</u_icon>
+        <u_order>160</u_order>
+        <unique>false</unique>
+    </sn_customerservice_responsibility_def>
+</record_update>

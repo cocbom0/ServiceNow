@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Service Engineering">0d2deaa0477a4d10b0ce8b42e36d43c3</catalog_item>
+        <catalog_variable>IO:da55e565473a0550b0ce8b42e36d4365</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-28 08:35:02</sys_created_on>
+        <sys_id>d7db58c31b4f0d10191cd8f99a4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fuel_price</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_d7db58c31b4f0d10191cd8f99a4bcbc7</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-28 08:35:02</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Items to be Consider VariableSet">233b54831b4f0d10191cd8f99a4bcbf0</ui_policy>
+        <variable>fuel_price</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

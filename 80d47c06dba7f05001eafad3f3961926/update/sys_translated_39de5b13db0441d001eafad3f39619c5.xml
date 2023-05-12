@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>question_text</element>
+        <id/>
+        <label>Erforderliches Ausbildungsniveau</label>
+        <language>de</language>
+        <name>question</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:16:56</sys_created_on>
+        <sys_id>39de5b13db0441d001eafad3f39619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Erforderliches Ausbildungsniveau</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_translated_39de5b13db0441d001eafad3f39619c5</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:16:56</sys_updated_on>
+        <value>Training Level Required</value>
+    </sys_translated>
+</record_update>

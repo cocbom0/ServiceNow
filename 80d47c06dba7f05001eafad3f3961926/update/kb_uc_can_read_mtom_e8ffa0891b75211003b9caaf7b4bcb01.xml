@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_can_read_mtom">
+    <kb_uc_can_read_mtom action="INSERT_OR_UPDATE">
+        <kb_knowledge_base display_value="Liebherr LWT - Knowledge">828de0c51b75211003b9caaf7b4bcbc0</kb_knowledge_base>
+        <sys_class_name>kb_uc_can_read_mtom</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-03-23 17:58:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8ffa0891b75211003b9caaf7b4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Liebherr LWT - Knowledge.LWT - Liebherr-Werk Telfs GmbH Access KB</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>kb_uc_can_read_mtom_e8ffa0891b75211003b9caaf7b4bcb01</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:58:39</sys_updated_on>
+        <user_criteria display_value="LWT - Liebherr-Werk Telfs GmbH Access KB">d87f24091b75211003b9caaf7b4bcb6b</user_criteria>
+    </kb_uc_can_read_mtom>
+</record_update>

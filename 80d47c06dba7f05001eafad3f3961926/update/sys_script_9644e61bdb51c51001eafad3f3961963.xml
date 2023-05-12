@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_liisa_support_ca_services</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_liisa_support_ca_services">stateCHANGESFROM1^stateCHANGESTO10^service_offering=c5e173511b4445905b1b411acd4bcb37^EQ<item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="1"/>
+            <item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="10"/>
+            <item display_table="service_offering" display_value="Technical Services - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="c5e173511b4445905b1b411acd4bcb37"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Works</p>]]></message>
+        <name>DIW - Update Engine Operating Hours</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if(!current.variables.serial_number.nil() && !current.variables.operating_hours.nil()){
+
+	var installBase = current.variables.serial_number;
+	var engineHours = current.variables.operating_hours;
+	var commissioning_date = current.variables.commissioning_date;
+	
+	var installBaseGr = new GlideRecord('sn_install_base_item');
+	installBaseGr.get(installBase);
+
+	var installBaseSerialNumber = installBaseGr.number;
+	var engineGr = new GlideRecord('alm_hardware');
+	engineGR.addQuery('serial_number=' + installBaseSerialNumber);
+
+	if (engineGr) {
+		engineGr.u_operating_hours = engineHours;
+		engineGr.u_commissioning_date = commissioning_date;
+		engineGr.update();
+	}	
+	
+}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2022-02-01 13:20:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9644e61bdb51c51001eafad3f3961963</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>DIW - Update Engine Operating Hours</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_9644e61bdb51c51001eafad3f3961963</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-16 14:16:51</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9644e61bdb51c51001eafad3f3961963"/>
+</record_update>

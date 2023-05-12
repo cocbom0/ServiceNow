@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="OLD Technical Services">3a6c66681b0c01905b1b411acd4bcb88</cat_item>
+        <cat_variable>IO:a76e6dcb1b888d905b1b411acd4bcb5f</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Serial Number - onChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue === '') 
+		return;
+
+	var cur_account = g_form.getValue('account');
+	var cur_soldproduct = g_form.getValue('product_model');
+	var cur_installbaseitem = g_form.getValue('serial_number');
+
+	var gaSc = new GlideAjax('Support_case');
+	gaSc.addParam('sysparm_name', 'getOperatingHours');
+	gaSc.addParam('sysparm_installbase', cur_installbaseitem);
+	gaSc.getXML(showMessage);
+
+	function showMessage(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('st_operating_hours', answer);
+		g_form.setReadOnly('st_operating_hours',true);
+	}
+
+	//	g_form.addInfoMessage('acc ' + cur_account + 'Prod '+cur_soldproduct + 'sn '+cur_installbaseitem);
+
+	var ga = new GlideAjax('sn_contributor.ContributorUserPortalAJAX');
+	ga.addParam('sysparm_name', 'getInstallBaseFieldsForAccount');
+	ga.addParam('sysparm_account', cur_account);
+	ga.addParam('sysparm_installbaseitem', cur_installbaseitem);
+	ga.getXML(function(serverResponse) {
+		var fields = serverResponse.responseXML.getElementsByTagName('fields');
+		setFieldValues('product_model', fields, cur_soldproduct, 'sold_arr');
+	});
+	//g_form.addInfoMessage(fields);
+
+}
+
+function setFieldValues(field, result, current, array) {
+	for (var i = 0; i < result.length; i++) {
+		var arr = result[i].getAttribute(array);
+		if (arr.length > 0 && arr.split(',').length == 1) {
+			g_form.setValue(field, arr);
+		}
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-21 14:03:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>344b5a71dbe88d5001eafad3f3961909</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Serial Number - onChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_script_client_344b5a71dbe88d5001eafad3f3961909</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2022-02-01 11:28:46</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_script_client_344b5a71dbe88d5001eafad3f3961909</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="OLD Technical Services"&gt;3a6c66681b0c01905b1b411acd4bcb88&lt;/cat_item&gt;&lt;cat_variable&gt;IO:a76e6dcb1b888d905b1b411acd4bcb5f&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Serial Number - onChange&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue === '') 
+		return;
+
+	var cur_account = g_form.getValue('account');
+	var cur_soldproduct = g_form.getValue('product_model');
+	var cur_installbaseitem = g_form.getValue('serial_number');
+
+	var gaSc = new GlideAjax('Support_case');
+	gaSc.addParam('sysparm_name', 'getOperatingHours');
+	gaSc.addParam('sysparm_installbase', cur_installbaseitem);
+	gaSc.getXML(showMessage);
+
+	function showMessage(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('st_operating_hours', answer);
+		g_form.setReadOnly('st_operating_hours',true);
+	}
+
+	//	g_form.addInfoMessage('acc ' + cur_account + 'Prod '+cur_soldproduct + 'sn '+cur_installbaseitem);
+
+	var ga = new GlideAjax('sn_contributor.ContributorUserPortalAJAX');
+	ga.addParam('sysparm_name', 'getInstallBaseFieldsForAccount');
+	ga.addParam('sysparm_account', cur_account);
+	ga.addParam('sysparm_installbaseitem', cur_installbaseitem);
+	ga.getXML(function(serverResponse) {
+		var fields = serverResponse.responseXML.getElementsByTagName('fields');
+		setFieldValues('product_model', fields, cur_soldproduct, 'sold_arr');
+	});
+	//g_form.addInfoMessage(fields);
+
+}
+
+function setFieldValues(field, result, current, array) {
+	for (var i = 0; i &lt; result.length; i++) {
+		var arr = result[i].getAttribute(array);
+		if (arr.length &gt; 0 &amp;&amp; arr.split(',').length == 1) {
+			g_form.setValue(field, arr);
+		}
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kristian.teodorov@doitwise.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-21 14:03:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;344b5a71dbe88d5001eafad3f3961909&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Serial Number - onChange&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_344b5a71dbe88d5001eafad3f3961909&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kristian.teodorov@doitwise.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-01 11:28:46&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1506342962</payload_hash>
+        <record_name>Serial Number - onChange</record_name>
+        <reverted_from/>
+        <source>7e76d5321b212110c2e1433be54bcbf2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 21:00:41</sys_created_on>
+        <sys_id>5ba765281bcae1505bdeed71f54bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ec3990a80000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:41:02</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>1ba7652864cae1502b2934655197519e</update_guid>
+        <update_guid_history>1ba7652864cae1502b2934655197519e:1506342962</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">93a765281bcae1505bdeed71f54bcba1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 19:00:53</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>52b6b21c8752477495f790e9ddb42890</sys_id>
+        <sys_metadata>344b5a71dbe88d5001eafad3f3961909</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Serial Number - onChange</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_script_client_344b5a71dbe88d5001eafad3f3961909</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_344b5a71dbe88d5001eafad3f3961909">5ba765281bcae1505bdeed71f54bcb9e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 19:00:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

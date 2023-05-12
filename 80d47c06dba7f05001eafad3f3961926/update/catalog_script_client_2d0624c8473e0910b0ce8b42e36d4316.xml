@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Warranty and Claim Management">0946aa338705c5105f2064273cbb352f</cat_item>
+        <cat_variable>IO:a76e6dcb1b888d905b1b411acd4bcb5f</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Serial Number - onChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue === '') 
+		return;
+
+	var cur_account = g_form.getValue('account');
+	var cur_soldproduct = g_form.getValue('product_model');
+	var cur_installbaseitem = g_form.getValue('serial_number');
+
+	var gaSc = new GlideAjax('Support_case');
+	gaSc.addParam('sysparm_name', 'getOperatingHours');
+	gaSc.addParam('sysparm_installbase', cur_installbaseitem);
+	gaSc.getXML(showMessage);
+
+	function showMessage(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('st_operating_hours', answer);
+		g_form.setReadOnly('st_operating_hours',true);
+	}
+
+	//g_form.addInfoMessage('acc ' + cur_account + 'Prod '+cur_soldproduct + 'sn '+cur_installbaseitem);
+
+	g_form.setValue('u_serial_number',g_form.getValue('serial_number'),g_form.getDisplayValue('serial_number'));
+	
+	var ga = new GlideAjax('sn_contributor.ContributorUserPortalAJAX');
+	ga.addParam('sysparm_name', 'getInstallBaseFieldsForAccount');
+	ga.addParam('sysparm_account', cur_account);
+	ga.addParam('sysparm_installbaseitem', cur_installbaseitem);
+	ga.getXML(function(serverResponse) {
+		var fields = serverResponse.responseXML.getElementsByTagName('fields');
+		setFieldValues('product_model', fields, cur_soldproduct, 'sold_arr');
+	});
+	//g_form.addInfoMessage(fields);
+
+}
+
+function setFieldValues(field, result, current, array) {
+	for (var i = 0; i < result.length; i++) {
+		var arr = result[i].getAttribute(array);
+		if (arr.length > 0 && arr.split(',').length == 1) {
+			g_form.setValue(field, arr);
+		}
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-06 15:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d0624c8473e0910b0ce8b42e36d4316</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Serial Number - onChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_script_client_2d0624c8473e0910b0ce8b42e36d4316</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-10 12:29:51</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element">
+    <sys_embedded_tour_element action="INSERT_OR_UPDATE">
+        <cell_edit/>
+        <cell_types/>
+        <col/>
+        <cxs_results/>
+        <element_type>link</element_type>
+        <field/>
+        <field_action/>
+        <field_header/>
+        <filters/>
+        <form_buttons>additional_actions</form_buttons>
+        <form_element>field</form_element>
+        <form_section/>
+        <frameset>nav_filter</frameset>
+        <js_path/>
+        <list_element>ui_action</list_element>
+        <list_header/>
+        <manual_css>[href="?id=csm_sc_category&amp;sys_id=1b8611d5c3921200b0449f2974d3ae12&amp;catalog_id=-1"]</manual_css>
+        <name>xpath</name>
+        <record_id/>
+        <related_field/>
+        <related_links/>
+        <related_list_element>ui_action</related_list_element>
+        <related_lists/>
+        <related_table/>
+        <row/>
+        <seismic_selector/>
+        <sys_class_name>sys_embedded_tour_element</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 06:52:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb26fe331b829510c28d76e09b4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>xpath</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_element_eb26fe331b829510c28d76e09b4bcb5b</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 06:52:59</sys_updated_on>
+        <table/>
+        <type>manual_css</type>
+        <ui_action/>
+    </sys_embedded_tour_element>
+</record_update>

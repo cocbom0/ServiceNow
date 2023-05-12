@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $location, $http, spUtil, $timeout) {
+    var c = this;
+    var $ = go.GraphObject.make;
+
+    c.department = {
+        displayValue: $scope.data.name,
+        value: $scope.data.start,
+        name: 'name'
+    };
+
+    // base user changed, reload page
+    $scope.$on("field.change", function(evt, parms) {
+        if (parms.field.name != 'name')
+            return;
+
+        var s = $location.search();
+        s.q = parms.newValue;
+        $location.search(s);
+    });
+
+    $timeout(function() {
+        c.diagram = $(go.Diagram, 'org_matrix', {
+            mouseWheelBehavior: go.ToolManager.WheelZoom,
+            layout: $(go.TreeLayout, evalGoCode(c.options.tree_layout)) // use a TreeLayout to position all of the nodes
+        });
+
+        makeTemplate(c.diagram);
+
+        // create the Model with data for the tree, and assign to the Diagram
+        c.diagram.model = $(go.TreeModel, {
+            nodeParentKeyProperty: "parent", // this property refers to the parent node data
+            nodeDataArray: $scope.data.nodes
+        });
+
+    });
+
+    c.zoomIn = function() {
+        c.diagram.commandHandler.increaseZoom()
+    }
+
+    c.zoomOut = function() {
+        c.diagram.commandHandler.decreaseZoom()
+    }
+
+    // When a Node is double clicked, open the user record for the person in a new window
+    function nodeClick(event, node) {
+        window.open(spUtil.format($scope.options.url, {
+            sys_id_p: node.data.key,
+            sys_id_q: "",
+            page: c.options.page
+        }));
+    }
+
+    function makeTemplate(diagram) {
+        diagram.nodeTemplate = $(go.Node, "Auto", angular.extend({
+                //click: nodeClick
+            }, evalGoCode(c.options.node_layout)),
+            $(go.Shape, "Rectangle", new go.Binding("fill", "color")), // the outer shape for the node, surrounding the Table
+            $(go.Panel, "Horizontal", $(go.Picture, evalGoCode(c.options.picture_layout), new go.Binding("source", "photo")), panel()));
+        diagram.linkTemplate = $(go.Link, go.Link.Orthogonal, {
+            selectable: false
+        }, $(go.Shape, evalGoCode(c.options.line))); // the default black link shape
+    }
+
+    function evalGoCode(item) {
+
+        for (var x in item) {
+            var re = /{([^}]+)?}/g,
+                match;
+            while (match = new RegExp(re).exec(item[x])) {
+                item[x] = eval(match[1])
+            }
+        }
+
+        return item;
+    }
+
+    function panel() {
+        var opts = [
+            go.Panel, "Table", evalGoCode(c.options.table_layout),
+            $(go.RowColumnDefinition, evalGoCode(c.options.row_layout))
+        ];
+        var item;
+        for (var fieldName in c.options.card_fields) {
+            item = c.options.card_fields[fieldName];
+            evalGoCode(item);
+            opts.push($(go.TextBlock, item, new go.Binding("text", fieldName)))
+        }
+
+        return $.apply(null, opts);
+    }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.org-chart {&#13;
+	height: 550px;&#13;
+  margin: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>lh_csm_responsability_matrix</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>LH CSM - Responsability Matrix</name>
+        <option_schema>[{"hint":"Card Fields Config","name":"card_fields","section":"Data","label":"Card Fields","type":"string"},{"hint":"User Background color","name":"user_background_color","section":"Presentation","label":"User Background Color","type":"string"},{"hint":"Node Background Color","name":"node_background_color","section":"Presentation","label":"Node Background Color","type":"string"},{"hint":"URL to open on click","name":"url","section":"Behavior","label":"URL","type":"string"},{"name":"table_layout","section":"Presentation","label":"Table Layout","type":"string"},{"name":"row_layout","section":"Presentation","label":"Row Layout","type":"string"},{"name":"line","section":"Presentation","label":"Line","type":"string"},{"name":"tree_layout","section":"Presentation","label":"Tree Layout","type":"string"},{"name":"picture_layout","section":"Presentation","label":"Picture Layout","type":"string"},{"name":"table_layout","section":"Presentation","label":"Table Layout","type":"string"},{"name":"page","section":"Behavior","label":"Page","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var company = $sp.getParameter('q');
+
+    // Default Values
+    options.table_layout = options.table_layout || {
+        margin: 4,
+        maxSize: '{new go.Size(180, NaN)}'
+    };
+    options.row_layout = options.row_layout || {
+        column: 0,
+        stretch: '{go.GraphObject.Horizontal}',
+        alignment: '{go.Spot.Left}'
+    };
+    options.node_layout = options.node_layout || {
+        cursor: "pointer",
+        isShadowed: true
+    };
+    options.user_background_color = options.user_background_color || 'grey';
+    options.node_background_color = options.node_background_color || 'azure';
+    options.url = options.url || '?id={page}&p={sys_id_p}&q={sys_id_q}';
+    options.line = options.line || {
+        stroke: '#222'
+    };
+    options.page = options.page || 'csm_responsability_matrix';
+    options.card_fields = options.card_fields || {
+        title: {
+            row: 0,
+            column: 0,
+            columnSpan: 2,
+            font: 'bold 9pt sans-serif',
+            alignment: '{go.Spot.Top}',
+            maxSize: '{new go.Size(160, NaN)}'
+        },
+        contact_title: {
+            row: 1,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        contact: {
+            row: 2,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        email: {
+            row: 3,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        phone: {
+            row: 4,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        }
+    };
+    options.tree_layout = options.tree_layout || {
+        treeStyle: '{go.TreeLayout.StyleLastParents}',
+        angle: 90,
+        layerSpacing: 80,
+        alternateAngle: 0,
+        alternateAlignment: '{go.TreeLayout.AlignmentStart}',
+        alternateNodeIndent: 20,
+        alternateNodeIndentPastParent: 1,
+        alternateNodeSpacing: 20,
+        alternateLayerSpacing: 40,
+        alternateLayerSpacingParentOverlap: 1,
+        alternatePortSpot: '{new go.Spot(0, 0.999, 20, 0)}',
+        alternateChildPortSpot: '{go.Spot.Left}'
+    };
+
+    options.picture_layout = options.picture_layout || {
+        name: 'Picture',
+        desiredSize: '{new go.Size(55, 65)}',
+        margin: '{new go.Margin(2, 2, 2, 6)}',
+        imageStretch: '{go.GraphObject.UniformToFill}'
+    };
+
+    initiateMatrix(company);
+
+    /**
+     * Initialize the matrix and launch the matrix contruction process for the company given in parameter
+     *
+     * @param {number} companySysId The company sys_id for which the matrix must be created
+     */
+    function initiateMatrix(companySysId) {
+        var firstRecord;
+
+        firstRecord = {
+            "title": getCompanyData(companySysId).name,
+            "parent": "",
+            "key": -1,
+            "photo": null,
+            "sys_id_contact": null,
+            "sys_id_user": null,
+            "sys_id": null,
+            "contact": null,
+            "contact_title": null,
+            "phone": null,
+            "email": null,
+            "color": '#F0F0F0'
+        };
+
+        data.nodes = [];
+        data.nodes.push(firstRecord);
+
+        constructMatrix(companySysId);
+    }
+
+    /**
+     * Construct the matrix for the company given in parameter
+     *
+     * @param {number} account The company sys_id for which the matrix must be constructed
+     */
+    function constructMatrix(account) {
+        // Variables definition & initialization
+        var responsibilities = [];
+        var responsibility = {};
+        var members = [];
+        var index;
+        var typeValue = ["customer_contact", "sys_user"];
+        var gr = new GlideRecord("sn_customerservice_responsibility_def");
+
+        // Filter the glide record query in order to include only the type customer_contact and sys_user
+        gr.addQuery("type", "IN", typeValue);
+        gr.orderBy("u_order");
+        gr.orderBy("type");
+
+        // Launch the query
+        gr.query();
+
+        // Loop on every records
+        while (gr.next()) {
+            // Search the index of the current responsibility definition record in the responsibility definition array
+            index = getResponsibilityIndexInArray(responsibilities, gr.getValue("name"));
+
+            // Check if the current responsibility definition is present in the responsibility definition array
+            if (index < 0) {
+                // Retrieve every account team member linked to the current responsibility definition and store it inside an array
+                members = getTeamMembers(account, gr.getValue("sys_id"), responsibilities.length, gr.getValue("type"));
+                // Check if account team member are retrieved
+                if (members) {
+                    // Store them in the final array (data.nodes)
+                    addArrayDataToDataNodes(members);
+                    // Create a responsibility definition record
+                    responsibility = {
+                        "title": gr.getValue("name"),
+                        "parent": -1,
+                        "key": responsibilities.length,
+                        "photo": gr.getValue("u_icon") ? gr.getValue("u_icon") + ".iix" : null,
+                        "sys_id_contact": null,
+                        "sys_id_user": null,
+                        "sys_id": responsibilities.length,
+                        "contact": null,
+                        "contact_title": null,
+                        "phone": null,
+                        "email": null,
+                        "color": '#F0F0F0'
+                    };
+                    // Modify the responsibility definition sys_id_*** field depending on the type
+                    responsibilitySysIdManagement(responsibility, gr.getValue("type"), gr.getValue("sys_id"));
+                    // Put the responsibility definition record created in the array containing all of the responsibilities definition
+                    responsibilities.push(responsibility);
+                }
+            } else {
+                // Retrieve every account team member linked to the current responsibility definition and store it inside an array
+                members = getTeamMembers(account, gr.getValue("sys_id"), index, gr.getValue("type"));
+                // Check if account team member are retrieved
+                if (members) {
+                    // Store them in the final array (data.nodes)
+                    addArrayDataToDataNodes(members);
+                }
+                // Modify the responsibility definition sys_id_*** field depending on the type
+                responsibilitySysIdManagement(responsibilities[index], gr.getValue("type"), gr.getValue("sys_id"));
+            }
+        }
+
+        // Store every responsibilities definition in the final array (data.nodes)
+        addArrayDataToDataNodes(responsibilities);
+    }
+
+    /**
+     * Store every record of the array in paramter to the final matrix
+     *
+     * @param {Array<Object>} array The array with data to put in the final matrix
+     */
+    function addArrayDataToDataNodes(array) {
+        var i;
+
+        for (i = 0; i < array.length; i++) {
+            data.nodes.push(array[i]);
+        }
+    }
+
+    /**
+     * Search the responsibility given in parameter in the array given in parameter and return the array index where it is stored
+     *
+     * @param {Array<Object>} responsibilities The array with all of the responsibility definitions
+     * @param {string} responsibilityName The name of the responsibility searched
+     *
+     * @return {number} index The array index where the responbility given in parameter is stored
+     */
+    function getResponsibilityIndexInArray(responsibilities, responsibilityName) {
+        var index = -1;
+        var i = -1;
+
+        while (index < 0 && i < responsibilities.length) {
+            i++;
+            if (responsibilities[i].title == responsibilityName) {
+                index = i;
+            }
+        }
+
+        return index;
+    }
+
+    /**
+     * Modify the right responsibility object field by with the sys_id in parameter depending on the type given in parameter
+     *
+     * @param {Object} responsibility The responsibility object to modify
+     * @param {enumeration} typeValue The enumeration value of the type 
+     * @param {number} sysId The sys_id value to give to the responsibility
+     */
+    function responsibilitySysIdManagement(responsibility, typeValue, sysId) {
+        switch (typeValue) {
+            case "customer_contact":
+                responsibility.sys_id_contact = sysId;
+                break;
+            case "sys_user":
+                responsibility.sys_id_user = sysId;
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * Search and return all of the team members linked to the company and the responsibility definition given in parameter
+     *
+     * @param {number} account The company sys_id
+     * @param {number} responsibility The responsibility definition sys_id linked
+     * @param {number} parent The responsibility definition sys_id (value generated by the script and not the table value)
+     * @param {string} type The contact type which defines the table and the fields to take
+     *
+     * @return {Array<Object>} members The array with all of the account team members linked to the responsibility
+     */
+    function getTeamMembers(account, responsibility, parent, type) {
+        var members = [];
+        var member = {};
+        var user = {};
+        var table = "";
+        var company = "";
+        var contact = "";
+        var color = "";
+        var title = "";
+        var gr;
+
+        switch (type) {
+            case "customer_contact":
+//                table = "sn_customerservice_contact_relationship";
+//                company = "company";
+ //               contact = "contact";
+				table = "sn_customerservice_team_member";
+                company = "account";
+                contact = "user";
+                color = "#FFFFFF";
+                break;
+            case "sys_user":
+                table = "sn_customerservice_team_member";
+                company = "account";
+                contact = "user";
+                color = "#FFE366";
+                break;
+            default:
+                break;
+        }
+
+        gr = new GlideRecord(table);
+
+        gr.addQuery(company, account);
+        gr.addQuery("responsibility", responsibility);
+
+        gr.query();
+
+        while (gr.next()) {
+            user = getUserData(gr.getValue(contact));
+            title = getCompanyData(user.company).name;
+            member = {
+                "title": title,
+                "parent": parent,
+                "key": gr.getValue("sys_id"),
+                "photo": null,
+                "sys_id_contact": null,
+                "sys_id_user": null,
+                "sys_id": gr.getValue("sys_id"),
+                "contact": user.contact,
+                "contact_title": user.title,
+                "phone": user.phone,
+                "email": user.email,
+                "color": color
+            };
+            members.push(member);
+        }
+
+        return members;
+    }
+
+    /**
+     * Search and return the user data based on the sys_id given
+     *
+     * @param {number} sysId The user sys_id
+     *
+     * @return {Object} user The user data
+     */
+    function getUserData(sysId) {
+        var user = {};
+        var gr = new GlideRecord("sys_user");
+
+        if (gr.get(sysId)) {
+            user = {
+                "contact": gr.getValue("u_display_name"),
+                "title": gr.getValue("title"),
+                "phone": gr.getValue("phone"),
+                "email": gr.getValue("email"),
+                "company": gr.getValue("company")
+            };
+        }
+
+        return user;
+    }
+
+    /**
+     * Search and return the company data based on the sys_id given
+     *
+     * @param {number} sysId The company sys_id
+     *
+     * @return {Object} company The company data
+     */
+    function getCompanyData(sysId) {
+        var company = {};
+        var gr = new GlideRecord("customer_account");
+
+        if (gr.get(sysId)) {
+            company = {
+                "name": gr.getValue("name")
+            };
+        } else {
+            gr = new GlideRecord("core_company");
+
+            if (gr.get(sysId)) {
+                company = {
+                    "name": gr.getValue("name")
+                };
+            }
+        }
+
+        return company;
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 11:36:30</sys_created_on>
+        <sys_id>6205aca71b3121505bdeed71f54bcb5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>LH CSM - Responsability Matrix</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_6205aca71b3121505bdeed71f54bcb5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 11:37:19</sys_updated_on>
+        <template><![CDATA[<div>
+    <sn-record-picker field="c.department" table="'customer_account'" display-field="'name'" value-field="'sys_id'" 
+                    display-fields="" search-fields="'name'" page-size="100" default-query="" >
+    </sn-record-picker>
+    <div id="org_matrix" class="org-chart"></div>
+    <button name="zoomin" ng-click="c.zoomIn()" class="btn btn-primary" aria-label="${Zoom in}" data-toggle="tooltip" title="${Zoom in}"><span><i class="fa fa-search-plus"></i></span></button>
+    <button name="zoomout" ng-click="c.zoomOut()" class="btn btn-primary" aria-label="${Zoom out}" data-toggle="tooltip" title="${Zoom out}"><span><i class="fa fa-search-minus"></i></span></button>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9109e04f1b022110a3e4ebd4604bcbd5" label="Produktmodell" max_length="40" name="cmdb_model" type="collection">
+        <element choice="1" label="Product Category" max_length="40" name="x_liisa_support_ca_product_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Diesel Engine" sequence="5" value="Diesel Engine"/>
+                <element inactive_on_update="false" label="Gas Engine" sequence="10" value="Gas Engine"/>
+                <element inactive_on_update="false" label="Common Rail System" sequence="15" value="Common Rail System"/>
+                <element inactive_on_update="false" label="Hydraulic Pumps and Motors" sequence="20" value="Hydraulic Pumps and Motors"/>
+                <element inactive_on_update="false" label="Pumps" sequence="25" value="Pumps"/>
+                <element inactive_on_update="false" label="Motors" sequence="30" value="Motors"/>
+            </choice>
+        </element>
+        <element label="Product Classification" max_length="40" name="x_liisa_support_ca_product_classification" type="string"/>
+        <element choice="1" dependent="x_liisa_support_ca_product_category" dependent_on_field="x_liisa_support_ca_product_category" label="Product Familly" max_length="40" name="x_liisa_support_ca_product_familly" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Diesel Engine" inactive_on_update="false" label="D95" sequence="5" value="D95"/>
+                <element dependent_value="Motors" inactive_on_update="false" label="DMVA" sequence="5" value="DMVA"/>
+                <element dependent_value="Pumps" inactive_on_update="false" label="DPVG" sequence="5" value="DPVG"/>
+                <element dependent_value="Gas engine" inactive_on_update="false" label="G92" sequence="5" value="G92"/>
+                <element dependent_value="Common Rail system" inactive_on_update="false" label="Onroard" sequence="5" value="Onroad"/>
+                <element dependent_value="Diesel Engine" inactive_on_update="false" label="D96" sequence="10" value="D96"/>
+                <element dependent_value="Motors" inactive_on_update="false" label="DMVA double" sequence="10" value="DMVA double"/>
+                <element dependent_value="Pumps" inactive_on_update="false" label="DPVD" sequence="10" value="DPVD"/>
+                <element dependent_value="Gas engine" inactive_on_update="false" label="G93" sequence="10" value="G93"/>
+                <element dependent_value="Common Rail system" inactive_on_update="false" label="Offroad" sequence="10" value="Offroad"/>
+                <element dependent_value="Diesel Engine" inactive_on_update="false" label="D98" sequence="15" value="D98"/>
+                <element dependent_value="Motors" inactive_on_update="false" label="DMFA" sequence="15" value="DMFA"/>
+                <element dependent_value="Pumps" inactive_on_update="false" label="DPVP" sequence="15" value="DPVP"/>
+                <element dependent_value="Gas engine" inactive_on_update="false" label="G94" sequence="15" value="G94"/>
+                <element dependent_value="Common Rail system" inactive_on_update="false" label="Large Engines" sequence="15" value="Large Engines"/>
+                <element dependent_value="Diesel Engine" inactive_on_update="false" label="D99" sequence="20" value="D99"/>
+                <element dependent_value="Pumps" inactive_on_update="false" label="DPVO" sequence="20" value="DPVO"/>
+                <element dependent_value="Gas engine" inactive_on_update="false" label="G95" sequence="20" value="G95"/>
+                <element dependent_value="Motors" inactive_on_update="false" label="CMVE" sequence="25" value="CMVE"/>
+                <element dependent_value="Motors" inactive_on_update="false" label="FMV" sequence="25" value="FMV"/>
+                <element dependent_value="Gas engine" inactive_on_update="false" label="G96" sequence="25" value="G96"/>
+                <element dependent_value="Pumps" inactive_on_update="false" label="LH30VO" sequence="25" value="LH30VO"/>
+                <element dependent_value="Motors" inactive_on_update="false" label="FMF" sequence="30" value="FMF"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="x_liisa_support_ca_product_familly" dependent_on_field="x_liisa_support_ca_product_familly" label="Product Type" max_length="40" name="x_liisa_support_ca_product_type" type="choice" use_dependent_field="true">
+            <choice>
+                <element inactive_on_update="false" label="D934" sequence="5" value="D934"/>
+                <element inactive_on_update="false" label="D944" sequence="10" value="D944"/>
+                <element inactive_on_update="false" label="D964" sequence="15" value="D964"/>
+                <element inactive_on_update="false" label="D936" sequence="20" value="D936"/>
+                <element inactive_on_update="false" label="D946" sequence="25" value="D946"/>
+                <element inactive_on_update="false" label="D956" sequence="30" value="D956"/>
+                <element inactive_on_update="false" label="D966" sequence="35" value="D966"/>
+                <element inactive_on_update="false" label="D976" sequence="40" value="D976"/>
+                <element dependent_value="D95" inactive_on_update="false" label="D9508" sequence="45" value="D9508"/>
+                <element dependent_value="D95" inactive_on_update="false" label="D9512" sequence="50" value="D9512"/>
+                <element dependent_value="D96" inactive_on_update="false" label="D9612" sequence="55" value="D9612"/>
+                <element dependent_value="D96" inactive_on_update="false" label="D9616" sequence="60" value="D9616"/>
+                <element dependent_value="D96" inactive_on_update="false" label="D9620" sequence="65" value="D9620"/>
+                <element dependent_value="D98" inactive_on_update="false" label="D9812" sequence="70" value="D9812"/>
+                <element dependent_value="D98" inactive_on_update="false" label="D9816" sequence="75" value="D9816"/>
+                <element dependent_value="D98" inactive_on_update="false" label="D9820" sequence="80" value="D9820"/>
+                <element dependent_value="D99" inactive_on_update="false" label="D9912" sequence="85" value="D9912"/>
+                <element dependent_value="D99" inactive_on_update="false" label="D9916" sequence="90" value="D9916"/>
+                <element dependent_value="D99" inactive_on_update="false" label="D9920" sequence="95" value="D9920"/>
+                <element dependent_value="G92" inactive_on_update="false" label="G924" sequence="100" value="G924"/>
+                <element dependent_value="G92" inactive_on_update="false" label="G926" sequence="105" value="G926"/>
+                <element dependent_value="G93" inactive_on_update="false" label="G934" sequence="110" value="G934"/>
+                <element dependent_value="G94" inactive_on_update="false" label="G944" sequence="115" value="G944"/>
+                <element dependent_value="G94" inactive_on_update="false" label="G946" sequence="120" value="G946"/>
+                <element dependent_value="G95" inactive_on_update="false" label="G9508" sequence="125" value="G9508"/>
+                <element dependent_value="G95" inactive_on_update="false" label="G9512" sequence="130" value="G9512"/>
+                <element dependent_value="G96" inactive_on_update="false" label="G9620" sequence="135" value="G9620"/>
+            </choice>
+        </element>
+    </element>
+</database>

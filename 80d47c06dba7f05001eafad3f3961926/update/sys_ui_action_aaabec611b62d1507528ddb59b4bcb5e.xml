@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+	var ref = g_form.getDisplayValue('u_serial_number') || '';
+	if(ref == '') {
+		g_form.addInfoMessage('Please specify a serial number');
+	} else {
+		var array = ref.split("-");
+		var item_tmp = array[1];
+		var item = item_tmp.trim();	
+		var url = 'https://partscatalog.liebherr.com/index.php/m/catalogSelection/index/identNo/' + item + '/search/1';
+		top.window.open(url,'blank');
+	}
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>true</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>View Spare Parts Catalog (LIDOS)</name>
+        <onclick>openRecordInLIDOS()</onclick>
+        <order>100</order>
+        <script><![CDATA[function openRecordInLIDOS() {
+	
+	var ref = g_form.getDisplayBox('u_serial_number').value;
+	var array = ref.split("-");
+	var item_tmp = array[1];
+	var item = item_tmp.trim();
+	var url = 'https://partscatalog.liebherr.com/index.php/m/catalogSelection/index/identNo/' + item + '/search/1';
+	top.window.open(url,'blank');
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-14 17:36:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aaabec611b62d1507528ddb59b4bcb5e</sys_id>
+        <sys_mod_count>103</sys_mod_count>
+        <sys_name>View Spare Parts Catalog (LIDOS)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_ui_action_aaabec611b62d1507528ddb59b4bcb5e</sys_update_name>
+        <sys_updated_by>cocdoa0</sys_updated_by>
+        <sys_updated_on>2022-11-21 10:09:51</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

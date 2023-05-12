@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="lodash.js">5d897c991b92a910c2e1433be54bcb45</sp_dependency>
+        <sp_widget display_value="LH knowledge Tags Facet">4d7078411b9aa9105bdeed71f54bcb90</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-18 09:54:05</sys_created_on>
+        <sys_id>f75af4d91b92a910c2e1433be54bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lodash.js.LH knowledge Tags Facet</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_f75af4d91b92a910c2e1433be54bcbeb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-18 09:54:05</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>m2m_sp_widget_dependency_f75af4d91b92a910c2e1433be54bcbeb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="lodash.js">5d897c991b92a910c2e1433be54bcb45</sp_dependency><sp_widget display_value="LH knowledge Tags Facet">4d7078411b9aa9105bdeed71f54bcb90</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-18 09:54:05</sys_created_on><sys_id>f75af4d91b92a910c2e1433be54bcbeb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>lodash.js.LH knowledge Tags Facet</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>m2m_sp_widget_dependency_f75af4d91b92a910c2e1433be54bcbeb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-18 09:54:05</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>-341160131</payload_hash>
+        <record_name>lodash.js.LH knowledge Tags Facet</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-18 09:54:05</sys_created_on>
+        <sys_id>bf5af4d91b92a910c2e1433be54bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18793c924e10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-18 09:54:05</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>f35af4d91492a91020e1495b829d3ced</update_guid>
+        <update_guid_history>f35af4d91492a91020e1495b829d3ced:-341160131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f67a78d91b92a910c2e1433be54bcbd1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-18 09:54:34</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>d04e301143814674aae20ac6967111c4</sys_id>
+        <sys_metadata>f75af4d91b92a910c2e1433be54bcbeb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lodash.js.LH knowledge Tags Facet</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_f75af4d91b92a910c2e1433be54bcbeb</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_f75af4d91b92a910c2e1433be54bcbeb">bf5af4d91b92a910c2e1433be54bcbed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-18 09:54:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">24b6ce6fdb56115060ae63cad396192a</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[This area will allow you to navigate through all available documentation. It contains many different types of technical documents that provide information about the products, maintenance, etc.]]></content>
+        <guide display_value="Customer Service Combustion Engines Portal">0d8e58421bc99d50a4236313604bcb1c</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=csm_index"}</options>
+        <order>2</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-08 19:02:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6cb6ce6fdb56115060ae63cad396192d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_6cb6ce6fdb56115060ae63cad396192d</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:05:24</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">24b6ce6fdb56115060ae63cad396192a</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=6cb6ce6fdb56115060ae63cad396192d"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>6cb6ce6fdb56115060ae63cad396192d</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-08 19:05:24</sys_created_on>
+        <sys_id>b747c6efdb56115060ae63cad39619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:05:24</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;In diesem Bereich k&amp;ouml;nnen Sie durch die gesamte verf&amp;uuml;gbare Dokumentation navigieren. Enthalten sind verschiedene Arten von technischen Dokumenten, Informationen &amp;uuml;ber Produkte, Wartung usw.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>6cb6ce6fdb56115060ae63cad396192d</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-08 19:04:44</sys_created_on>
+        <sys_id>822782efdb56115060ae63cad3961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:04:44</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Cette section vous permettra de naviguer &amp;agrave; travers toute la documentation disponible. Elle contient diff&amp;eacute;rents types de documents techniques qui fournissent des informations sur les produits, la maintenance, etc.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>6cb6ce6fdb56115060ae63cad396192d</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-08 19:05:24</sys_created_on>
+        <sys_id>ff47c6efdb56115060ae63cad39619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:05:24</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>6cb6ce6fdb56115060ae63cad396192d</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-08 19:04:44</sys_created_on>
+        <sys_id>4e270eafdb56115060ae63cad3961998</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:04:44</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

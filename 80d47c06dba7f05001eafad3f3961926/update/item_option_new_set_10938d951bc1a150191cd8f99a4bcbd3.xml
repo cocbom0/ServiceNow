@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>andere_betroffene_produkte_f_r_diesen_fall</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>200</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-15 07:16:30</sys_created_on>
+        <sys_id>10938d951bc1a150191cd8f99a4bcbd3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Other products affected for this case</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>item_option_new_set_10938d951bc1a150191cd8f99a4bcbd3</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-15 15:54:47</sys_updated_on>
+        <title>Other products affected for this case</title>
+        <type>one_to_many</type>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>System Property to use user criterias instead of roles on Knowledge Article when this setting is set to False.&#13;
+&#13;
+Adding roles to article is a knowledge management v2 feature where we had a roles field in kb_knowledge where you would add roles for each and every article to define who have access to that article. However when knowledge management v3 was released it added support for user criterias.&#13;
+&#13;
+As the documentation - Managing access to knowledge bases and knowledge articles also suggests - "Try to use only user criteria, which were introduced in Knowledge Management v3, to control access to knowledge articles. Roles were used for this purpose in Knowledge Management v2."&#13;
+&#13;
+Now suppose If there are any articles created earlier in v2 which already have roles defined, these roles would be respected OOB along with user criterias. And now suppose you want to completely switch to user criterias and there are articles that have roles attached to them you can add glide.knowman.search.apply_role_based_security = false so that those roles don't have any effect and you can just use user criterias.(make sure to clear instance cache after adding the peoperty to false)&#13;
+But if you don't have any articles that have roles defined in them then It won't even matter and user criterias would apply as expected and glide.knowman.block_access_with_no_user_criteria will also work as expected as shown in flow chart.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_liisa_support_ca.glide.knowman.search.apply_role_based_security</name>
+        <read_roles/>
+        <suffix>glide.knowman.search.apply_role_based_security</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-03-13 18:21:31</sys_created_on>
+        <sys_id>d7051571db69a91060ae63cad39619aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_liisa_support_ca.glide.knowman.search.apply_role_based_security</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_properties_d7051571db69a91060ae63cad39619aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 09:19:51</sys_updated_on>
+        <type>boolean</type>
+        <value>false</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7051571db69a91060ae63cad39619aa"/>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:68164ede1b6a4d10a4236313604bcbe5</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-16 16:57:41</sys_created_on>
+        <sys_id>c41888381bd62910c2e1433be54bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fuel_type</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c41888381bd62910c2e1433be54bcb28</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-16 16:57:41</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Technical Support - Details for Product Category Diesel &amp; Gas Engine">238740381bd62910c2e1433be54bcb3d</ui_policy>
+        <variable>fuel_type</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_c41888381bd62910c2e1433be54bcb28</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:68164ede1b6a4d10a4236313604bcbe5</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-16 16:57:41</sys_created_on><sys_id>c41888381bd62910c2e1433be54bcb28</sys_id><sys_mod_count>0</sys_mod_count><sys_name>fuel_type</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_c41888381bd62910c2e1433be54bcb28</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-16 16:57:41</sys_updated_on><table/><ui_policy display_value="Display Technical Support - Details for Product Category Diesel &amp; Gas Engine">238740381bd62910c2e1433be54bcb3d</ui_policy><variable>fuel_type</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>385654180</payload_hash>
+        <record_name>fuel_type</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-16 16:57:41</sys_created_on>
+        <sys_id>ed28ccf41bd62910c2e1433be54bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1878b003f1c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-16 16:57:41</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>2528ccf4b4d62910a7c4c08e10153698</update_guid>
+        <update_guid_history>2528ccf4b4d62910a7c4c08e10153698:385654180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">84f0e7f41b56a9105bdeed71f54bcbd2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-17 08:44:52</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>c2b329781d4f4616a776edc51aa049b1</sys_id>
+        <sys_metadata>c41888381bd62910c2e1433be54bcb28</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fuel_type</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_c41888381bd62910c2e1433be54bcb28</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_c41888381bd62910c2e1433be54bcb28">ed28ccf41bd62910c2e1433be54bcb98</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 08:44:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

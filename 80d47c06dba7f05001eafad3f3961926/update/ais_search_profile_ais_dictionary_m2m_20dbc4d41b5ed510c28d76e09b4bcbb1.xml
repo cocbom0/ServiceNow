@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_liisa_support_ca_cot_bu_vm_default_synonym_dictionary">c91b00941b5ed510c28d76e09b4bcb0e</dictionary>
+        <dictionary_reference_qualifier>SYNONYM</dictionary_reference_qualifier>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="CSM Portal Default Search Profile">c9649371c3c22010a6f3f97c9840ddaf</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:45:42</sys_created_on>
+        <sys_id>20dbc4d41b5ed510c28d76e09b4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca_cot_bu_vm_default_synonym_dictionary.CSM Portal Default Search Profile</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_20dbc4d41b5ed510c28d76e09b4bcbb1</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:45:42</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.ArticlesNotifications</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ArticlesNotifications</name>
+        <script><![CDATA[var ArticlesNotifications = Class.create();
+ArticlesNotifications.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	initialize: function() {
+    },
+	
+	isPublic: function() {
+        return true;
+    },
+	
+	createNotificationServer: function(user, article, knowledgeBase, activityType) {
+		var result = false;
+				
+		if(user && article && knowledgeBase && activityType !== null) {
+			var activityTypeSysId = this._getActivityType(activityType);		
+			if(activityTypeSysId) {				
+				var grActivity = new GlideRecord("sn_actsub_activity");
+				grActivity.initialize();
+				
+				grActivity.active = true;
+				grActivity.activity_type_id = activityTypeSysId;
+				grActivity.actor_id = user;
+				grActivity.actor_name = "sys_user";
+				grActivity.additional_field1 = article;
+				grActivity.additional_field1_name = null;
+				grActivity.object_id = article;
+				grActivity.target_id = knowledgeBase;
+				grActivity.target_name = "kb_knowledge_base";
+				grActivity.verb = "posted";
+				
+				grActivity.insert();
+				
+				result = true;
+			}
+		}
+		
+		return result;
+	},
+	
+	createNotificationClient: function() {
+		var result = false;
+		var user = this.getParameter("user_id");
+		var article = this.getParameter("article_id");
+		var knowledgeBase = this.getParameter("knowledge_base_id");
+		var activityType = this.getParameter("activity_type");
+		
+		if(user && article && knowledgeBase && activityType) {
+			var activityTypeSysId = this._getActivityType(activityType);
+			if(activityTypeSysId) {
+				var grActivity = new GlideRecord("sn_actsub_activity");
+				grActivity.initialize();
+				
+				grActivity.active = true;
+				grActivity.activity_type_id = activityTypeSysId;
+				grActivity.actor_id = user;
+				grActivity.actor_name = "sys_user";
+				grActivity.additional_field1 = article;
+				grActivity.additional_field1_name = null;
+				grActivity.object_id = article;
+				grActivity.target_id = knowledgeBase;
+				grActivity.target_name = "kb_knowledge_base";
+				grActivity.verb = "posted";
+				
+				grActivity.insert();
+				
+				result = true;
+			}
+		}
+		
+		return result;
+	},
+	
+	_getActivityType: function(type) {
+		var activityType = "";
+		var grActivityType = new GlideRecord("sn_actsub_activity_type");
+		
+		switch(type) {
+			case 0: // Insert
+				grActivityType.addQuery("sys_name", "An Article is created");
+				break;
+			case 1: // Update
+				grActivityType.addQuery("sys_name", "An Article is revised");
+				break;
+			default:
+				break;
+		}
+		
+		grActivityType.query();
+		
+		if(grActivityType.next()) {
+			activityType = grActivityType.getValue("sys_id");
+		}
+		
+		return activityType;
+	},
+	
+    type: 'ArticlesNotifications'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2023-02-22 15:40:58</sys_created_on>
+        <sys_id>d12af2eb1b85a910191cd8f99a4bcb12</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>ArticlesNotifications</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_d12af2eb1b85a910191cd8f99a4bcb12</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2023-02-23 13:02:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

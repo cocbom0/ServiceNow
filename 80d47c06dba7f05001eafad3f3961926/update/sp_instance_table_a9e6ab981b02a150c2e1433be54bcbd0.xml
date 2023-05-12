@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>number,short_description,state,assigned_to,service_offering,u_request_support_for,u_request_type,sys_updated_on,sold_product,u_serial_number,contact,account,resolved_at,closed_at</field_list>
+        <filter table="x_liisa_support_ca_services">active=true^opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="opened_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">d82c8d2b1bb121505bdeed71f54bcb4f</sp_column>
+        <sp_page display_value="csm_ticket">65285631c3a1120058879f2974d3aeed</sp_page>
+        <sp_widget/>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 09:38:15</sys_created_on>
+        <sys_id>a9e6ab981b02a150c2e1433be54bcbd0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>My Open Cases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_table_a9e6ab981b02a150c2e1433be54bcbd0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 16:04:34</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <title>My Open Cases</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"all_button_label": {
+		"value": "",
+		"displayValue": ""
+	},
+	"serviceportal_page_for_all_records": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=a9e6ab981b02a150c2e1433be54bcbd0"/>
+</record_update>

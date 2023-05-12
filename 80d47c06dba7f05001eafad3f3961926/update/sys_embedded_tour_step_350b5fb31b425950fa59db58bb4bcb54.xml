@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>true</action>
+        <action_event>click</action_event>
+        <action_target/>
+        <action_target_ref/>
+        <active>true</active>
+        <content><![CDATA[<p>You are now on the form that will allow you to submit a request. This tour will provide you an overview of its layout and how to be able to send it.</p>]]></content>
+        <guide display_value="Request Form Overview">635513e247a9d954b0ce8b42e36d43a7</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name>Introduction</name>
+        <options/>
+        <order>0</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>intro</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:33:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>350b5fb31b425950fa59db58bb4bcb54</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Introduction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_350b5fb31b425950fa59db58bb4bcb54</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:48:07</sys_updated_on>
+        <target/>
+        <target_ref/>
+        <title><![CDATA[Request Form Overview]]></title>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window/>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=350b5fb31b425950fa59db58bb4bcb54"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>350b5fb31b425950fa59db58bb4bcb54</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:48:07</sys_created_on>
+        <sys_id>0d4e5b3b1b425950fa59db58bb4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:48:07</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Sie befinden sich nun auf dem Formular, mit dem Sie einen Antrag stellen k&amp;ouml;nnen. Dieser Rundgang gibt Ihnen einen &amp;Uuml;berblick &amp;uuml;ber den Aufbau des Formulars und wie dieser abzusenden ist.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>350b5fb31b425950fa59db58bb4bcb54</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:37:16</sys_created_on>
+        <sys_id>8acb57371b425950fa59db58bb4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:37:16</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Vous &amp;ecirc;tes maintenant sur le formulaire qui vous permettra de soumettre une demande. Cette visite vous donnera un aper&amp;ccedil;u de sa pr&amp;eacute;sentation et de la mani&amp;egrave;re de pouvoir l'envoyer.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>350b5fb31b425950fa59db58bb4bcb54</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:48:07</sys_created_on>
+        <sys_id>054e5b3b1b425950fa59db58bb4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:48:07</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>Übersicht über das Antragsformular</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>350b5fb31b425950fa59db58bb4bcb54</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:37:15</sys_created_on>
+        <sys_id>cecb57371b425950fa59db58bb4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:37:15</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>Présentation du formulaire de demande</value>
+    </sys_translated_text>
+</record_update>

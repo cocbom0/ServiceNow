@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:3aa7f61e1bee4d10a4236313604bcb82</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-19 16:44:54</sys_created_on>
+        <sys_id>9fe0ffd51b0e515098d810a38b4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>failure_date</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_9fe0ffd51b0e515098d810a38b4bcba1</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-19 16:44:54</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Restrict Date in Future for Failure Date">df3a76521b228d10a4236313604bcbad</ui_policy>
+        <variable>failure_date</variable>
+        <variable_set display_value="Technical Support - Information">6047b21e1bee4d10a4236313604bcb4b</variable_set>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

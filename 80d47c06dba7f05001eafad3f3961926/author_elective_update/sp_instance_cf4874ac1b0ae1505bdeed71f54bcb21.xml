@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">d02c8d2b1bb121505bdeed71f54bcb4b</sp_column>
+        <sp_widget display_value="Latest Articles">cdd96c9a0fe9db40e42306bce1050e8d</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 15:33:53</sys_created_on>
+        <sys_id>cf4874ac1b0ae1505bdeed71f54bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Last Published</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_cf4874ac1b0ae1505bdeed71f54bcb21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 15:36:32</sys_updated_on>
+        <title>Last Published</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"max_number": {
+		"value": null,
+		"displayValue": ""
+	},
+	"kb_category": {
+		"value": "04166707db75e150ad79d47cd396197f",
+		"displayValue": "Diesel Engine"
+	},
+	"no_of_days": {
+		"value": null,
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=cf4874ac1b0ae1505bdeed71f54bcb21"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_instance_cf4874ac1b0ae1505bdeed71f54bcb21</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;d02c8d2b1bb121505bdeed71f54bcb4b&lt;/sp_column&gt;&lt;sp_widget display_value="Latest Articles"&gt;cdd96c9a0fe9db40e42306bce1050e8d&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-03 15:33:53&lt;/sys_created_on&gt;&lt;sys_id&gt;cf4874ac1b0ae1505bdeed71f54bcb21&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Last Published&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_cf4874ac1b0ae1505bdeed71f54bcb21&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-03 15:36:32&lt;/sys_updated_on&gt;&lt;title&gt;Last Published&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"max_number": {
+		"value": null,
+		"displayValue": ""
+	},
+	"kb_category": {
+		"value": "04166707db75e150ad79d47cd396197f",
+		"displayValue": "Diesel Engine"
+	},
+	"no_of_days": {
+		"value": null,
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=cf4874ac1b0ae1505bdeed71f54bcb21"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-50607604</payload_hash>
+        <record_name>Last Published</record_name>
+        <reverted_from/>
+        <source>1e121b581bce6150c2e1433be54bcb3c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 15:36:32</sys_created_on>
+        <sys_id>c2e8b0ec1b0ae1505bdeed71f54bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18747c346c90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 15:36:32</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>cae8b0ecf40ae15034b45b6020196036</update_guid>
+        <update_guid_history>cae8b0ecf40ae15034b45b6020196036:-50607604,bad8b46c220ae1509e94a21b76166520:-167463109,9658b8ac270ae1502b19a023e9720b0d:-2133801686,574874ac8d0ae150fedbd80701e4d823:-1961450791</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">85a9bcec1b0ae1505bdeed71f54bcb3f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 15:39:44</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>2048c5077298478095b7cf830db44400</sys_id>
+        <sys_metadata>cf4874ac1b0ae1505bdeed71f54bcb21</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Last Published</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_instance_cf4874ac1b0ae1505bdeed71f54bcb21</sys_update_name>
+        <sys_update_version display_value="sp_instance_cf4874ac1b0ae1505bdeed71f54bcb21">c2e8b0ec1b0ae1505bdeed71f54bcb37</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 15:39:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

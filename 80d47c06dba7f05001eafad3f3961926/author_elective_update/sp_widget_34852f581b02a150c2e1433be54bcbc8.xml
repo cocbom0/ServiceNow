@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+		c.template = "kb_article_list_template";
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color</field_list>
+        <has_preview>false</has_preview>
+        <id>lh_csm_kb_latest_articles_old1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>LH-CSM-KB-Latest-Articles Old 1</name>
+        <option_schema>[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]&#13;
+</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	if(input)
+		return;
+	else {
+	options.aria_label_title = options.title || gs.getMessage('Most Viewed Articles');
+	options.title = options.title || gs.getMessage('Most Viewed');
+	options.display_field = options.display_field || "short_description"; 
+	options.secondary_fields = options.secondary_fields ? options.secondary_fields.split(",") : getKnowledgeFieldsfromProperties();
+	options.show_secondary_fields_label = options.show_secondary_fields_label ? options.show_secondary_fields_label == 'true' : false;
+	options.max_records = options.max_records || gs.getProperty('glide.knowman.content_block_limit')|| '5';
+	options.always_show = options.always_show ? options.always_show == 'true' : true;
+	options.reverse = true;
+
+
+	var kbService = new KBPortalService();
+	options.knowledge_base =  options.knowledge_base || String(kbService.getServicePortalKnowledgeBases($sp.getPortalRecord().url_suffix)) || "";
+	var result = [];
+
+	var kbData = kbService.getMostViewedArticles(options.max_records,options.display_field,options.secondary_fields,options.knowledge_base);
+	if(kbData)
+		result= kbData;
+
+	options.result = result;
+	data.template = $sp.getWidget("kb-list-widget-template", options);
+	}
+
+
+	function getKnowledgeFieldsfromProperties(){
+
+		//Generate secondary fields based on legacy properties
+		var fields = [];
+
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+			}else{
+				fields.push('number');
+			}
+		}
+		if(gs.getProperty('glide.knowman.search.show_author','false') == 'true')
+			fields.push('author');
+		if(gs.getProperty('glide.knowman.search.show_view_count','false') == 'true')
+			fields.push('sys_view_count');		
+		if(gs.getProperty('glide.knowman.search.show_last_modified','false') == 'true')
+			fields.push('sys_updated_on');
+		if(gs.getProperty('glide.knowman.search.show_published','false') == 'true')
+			fields.push('published');
+		if(gs.getProperty('glide.knowman.show_unpublished','false') == 'true')
+			fields.push('workflow_state');
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+			fields.push('rating');
+
+		return fields;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 09:34:15</sys_created_on>
+        <sys_id>34852f581b02a150c2e1433be54bcbc8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>LH-CSM-KB-Latest-Articles Old 1</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_34852f581b02a150c2e1433be54bcbc8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 14:46:55</sys_updated_on>
+        <template><![CDATA[<div class="kb_article-list">
+ <sp-widget widget="::c.data.template"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_widget_34852f581b02a150c2e1433be54bcbc8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+		c.template = "kb_article_list_template";
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,color&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;lh_csm_kb_latest_articles_old1&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;LH-CSM-KB-Latest-Articles Old 1&lt;/name&gt;&lt;option_schema&gt;[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	if(input)
+		return;
+	else {
+	options.aria_label_title = options.title || gs.getMessage('Most Viewed Articles');
+	options.title = options.title || gs.getMessage('Most Viewed');
+	options.display_field = options.display_field || "short_description"; 
+	options.secondary_fields = options.secondary_fields ? options.secondary_fields.split(",") : getKnowledgeFieldsfromProperties();
+	options.show_secondary_fields_label = options.show_secondary_fields_label ? options.show_secondary_fields_label == 'true' : false;
+	options.max_records = options.max_records || gs.getProperty('glide.knowman.content_block_limit')|| '5';
+	options.always_show = options.always_show ? options.always_show == 'true' : true;
+	options.reverse = true;
+
+
+	var kbService = new KBPortalService();
+	options.knowledge_base =  options.knowledge_base || String(kbService.getServicePortalKnowledgeBases($sp.getPortalRecord().url_suffix)) || "";
+	var result = [];
+
+	var kbData = kbService.getMostViewedArticles(options.max_records,options.display_field,options.secondary_fields,options.knowledge_base);
+	if(kbData)
+		result= kbData;
+
+	options.result = result;
+	data.template = $sp.getWidget("kb-list-widget-template", options);
+	}
+
+
+	function getKnowledgeFieldsfromProperties(){
+
+		//Generate secondary fields based on legacy properties
+		var fields = [];
+
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+			}else{
+				fields.push('number');
+			}
+		}
+		if(gs.getProperty('glide.knowman.search.show_author','false') == 'true')
+			fields.push('author');
+		if(gs.getProperty('glide.knowman.search.show_view_count','false') == 'true')
+			fields.push('sys_view_count');		
+		if(gs.getProperty('glide.knowman.search.show_last_modified','false') == 'true')
+			fields.push('sys_updated_on');
+		if(gs.getProperty('glide.knowman.search.show_published','false') == 'true')
+			fields.push('published');
+		if(gs.getProperty('glide.knowman.show_unpublished','false') == 'true')
+			fields.push('workflow_state');
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+			fields.push('rating');
+
+		return fields;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-03 09:34:15&lt;/sys_created_on&gt;&lt;sys_id&gt;34852f581b02a150c2e1433be54bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;LH-CSM-KB-Latest-Articles Old 1&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_34852f581b02a150c2e1433be54bcbc8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-03 14:46:55&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="kb_article-list"&gt;
+ &lt;sp-widget widget="::c.data.template"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1389663999</payload_hash>
+        <record_name>LH-CSM-KB-Latest-Articles Old 1</record_name>
+        <reverted_from/>
+        <source>1e121b581bce6150c2e1433be54bcb3c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 14:46:55</sys_created_on>
+        <sys_id>878dec241b0ae1505bdeed71f54bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1874795d7950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 14:46:55</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>8b8d2c24760ae1505d62b207a6d953c8</update_guid>
+        <update_guid_history>8b8d2c24760ae1505d62b207a6d953c8:1389663999,25b96c20260ae1500132113bd4ad28bd:-48132,6538ecec92c6e1501739beacf7fac679:118358605,8f9560602806a15052c40dedba176df0:-1011689165,9b252060a006a150cd0dd45ee0846f22:1171598013,d1cec4681382a150aad28c4cc8ed765b:-931373485,603ec828c382a150ae150e8451d34c29:1610516882,5bcc80282882a150dab31d1ed7246356:-931373485,18bcc028fc82a1508c8d6d024277f74b:183377024,c78c04e47f82a150a7bd69c6eadebdd9:-931373485,1f54c8ecad42a15077c1f3284132e4d6:183377024,e534ccec5942a150c886f01af83e42d0:-887151703,c52f63506742a1505cff15b3d0ebb783:183377024,180be75cad02a15006847023f0825189:-1872127408,03f52f58a802a150f18bd8b78807617b:1241154449</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7c9e20a41b0ae1505bdeed71f54bcb3e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 14:51:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>041366878f7845f98090ee7800f58821</sys_id>
+        <sys_metadata>34852f581b02a150c2e1433be54bcbc8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-CSM-KB-Latest-Articles Old 1</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_widget_34852f581b02a150c2e1433be54bcbc8</sys_update_name>
+        <sys_update_version display_value="sp_widget_34852f581b02a150c2e1433be54bcbc8">878dec241b0ae1505bdeed71f54bcbb3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 14:51:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

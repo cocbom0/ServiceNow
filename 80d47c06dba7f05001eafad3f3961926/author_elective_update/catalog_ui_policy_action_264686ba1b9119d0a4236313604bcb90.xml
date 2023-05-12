@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:9944e2da1b6e4d10a4236313604bcbe3</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-17 18:03:03</sys_created_on>
+        <sys_id>264686ba1b9119d0a4236313604bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>attachments_selfdiagnose_lidia</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_264686ba1b9119d0a4236313604bcb90</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-17 18:03:03</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - Variables for Mandatory Attachments">38f4023a1b9119d0a4236313604bcb75</ui_policy>
+        <variable>attachments_selfdiagnose_lidia</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>catalog_ui_policy_action_264686ba1b9119d0a4236313604bcb90</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:9944e2da1b6e4d10a4236313604bcbe3</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-17 18:03:03</sys_created_on>
+        <sys_id>264686ba1b9119d0a4236313604bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>attachments_selfdiagnose_lidia</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_264686ba1b9119d0a4236313604bcb90</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-17 18:03:03</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - Variables for Mandatory Attachments">38f4023a1b9119d0a4236313604bcb75</ui_policy>
+        <variable>attachments_selfdiagnose_lidia</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>]]></payload>
+        <payload_hash>-1087942101</payload_hash>
+        <record_name>attachments_selfdiagnose_lidia</record_name>
+        <reverted_from/>
+        <source>36286f44876ae5107cb6eced3fbb3583</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:37:31</sys_created_on>
+        <sys_id>665863c4876ae5107cb6eced3fbb3568</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187c28113490000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:37:31</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>265863c4aa6ae510f20bdb5669143168</update_guid>
+        <update_guid_history>265863c4aa6ae510f20bdb5669143168:-1087942101</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="attachments_selfdiagnose_lidia">5da62cfbdb6a2150ca0952f8f49619a0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:08:24</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>449f9c3cc6b84c999ec22eb60684d3b1</sys_id>
+        <sys_metadata>264686ba1b9119d0a4236313604bcb90</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>attachments_selfdiagnose_lidia</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_264686ba1b9119d0a4236313604bcb90</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_264686ba1b9119d0a4236313604bcb90">665863c4876ae5107cb6eced3fbb3568</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:08:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

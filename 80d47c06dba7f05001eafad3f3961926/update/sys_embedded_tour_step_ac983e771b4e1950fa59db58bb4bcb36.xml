@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">ec983e771b4e1950fa59db58bb4bcb33</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[<p>You will find here documents that provide general information regarding the organization and not specific to a product.</p>]]></content>
+        <guide display_value="Customer Service Combustion Engines Portal">0d8e58421bc99d50a4236313604bcb1c</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=csm_index"}</options>
+        <order>3</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:03:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac983e771b4e1950fa59db58bb4bcb36</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_ac983e771b4e1950fa59db58bb4bcb36</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:02:48</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">ec983e771b4e1950fa59db58bb4bcb33</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=ac983e771b4e1950fa59db58bb4bcb36"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ac983e771b4e1950fa59db58bb4bcb36</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:09:56</sys_created_on>
+        <sys_id>7b0a7e3b1b4e1950fa59db58bb4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:09:56</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Hier finden Sie Dokumente, welche allgemeine Informationen &amp;uuml;ber die Organisation enthalten und nicht spezifisch f&amp;uuml;r ein Produkt sind.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ac983e771b4e1950fa59db58bb4bcb36</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:07:46</sys_created_on>
+        <sys_id>109936f71b4e1950fa59db58bb4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:07:46</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Vous trouverez ici des documents qui fournissent des informations g&amp;eacute;n&amp;eacute;rales sur l'organisation et non sp&amp;eacute;cifiques &amp;agrave; un produit.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ac983e771b4e1950fa59db58bb4bcb36</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:09:55</sys_created_on>
+        <sys_id>7f0a363b1b4e1950fa59db58bb4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:09:55</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ac983e771b4e1950fa59db58bb4bcb36</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:07:46</sys_created_on>
+        <sys_id>dc9936f71b4e1950fa59db58bb4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:07:46</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

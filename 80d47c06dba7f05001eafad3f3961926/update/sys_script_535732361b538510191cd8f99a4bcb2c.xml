@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>kb_knowledge</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="kb_knowledge">descriptionLIKEGenerated from portal^EQ<item endquery="false" field="description" goto="false" newquery="false" operator="LIKE" or="false" value="Generated from portal"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>LH CSM Knowledge - set published state</name>
+        <order>2000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	// COT BU-VM : INC0099076 | new.start
+	var notification = new ArticlesNotifications();
+	var activityType = current.version ? 1 : 0;
+	notification.createNotificationServer(current.author, current.sys_id, current.kb_knowledge_base, activityType);
+	// COT BU-VM : INC0099076 | new.end
+
+	if(current.wiki) {
+		var id_display = current.display_number ? current.display_number : current.number + " v1.0";
+		setTag(current.wiki.split(","), id_display, current.sys_id);
+		current.wiki = "";
+	}
+})(current, previous);
+
+function setTag(tagList, id_display, table_key) {
+	var i = 0;
+	var gr;
+
+	for(i; i < tagList.length; i++) {
+		gr = new GlideRecord("label_entry");
+		gr.initialize();
+
+		gr.id_display = id_display;
+		gr.id_type = "Knowledge";
+		gr.label = tagList[i];
+		gr.notify_onchange = "false";
+		gr.read = "yes";
+		gr.table = "kb_knowledge";
+		gr.table_key = table_key;
+		gr.title = "Knowledge - " + id_display;
+		gr.url = "kb_knowledge.do?sys_id=" + table_key + "&sysparm_view=";
+
+		gr.insert();
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-05-10 11:32:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>535732361b538510191cd8f99a4bcb2c</sys_id>
+        <sys_mod_count>98</sys_mod_count>
+        <sys_name>LH CSM Knowledge - set published state</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_535732361b538510191cd8f99a4bcb2c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 11:36:18</sys_updated_on>
+        <template>workflow_state=published^description=^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=535732361b538510191cd8f99a4bcb2c"/>
+</record_update>

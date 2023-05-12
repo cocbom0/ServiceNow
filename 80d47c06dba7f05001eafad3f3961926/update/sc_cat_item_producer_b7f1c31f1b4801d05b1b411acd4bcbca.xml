@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Support">1b8611d5c3921200b0449f2974d3ae12</category>
+        <checked_out>false</checked_out>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Request a training (Informal Training, Train-the-Trainer, Refresher Training)</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>50226b511bcf05505b1b411acd4bcbed</icon>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta>Informal training, Train-the-trainer, Refresher Training, Training level, Learning, courses, Classes</meta>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Service Training</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>true</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>-600</order>
+        <ordered_item_link/>
+        <owner display_value="Michel Boberda">266e7818db126f008a079532ca9619fd</owner>
+        <picture>8f22ab511bcf05505b1b411acd4bcbf4</picture>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=b7f1c31f1b4801d05b1b411acd4bcbca&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles>snc_internal</roles>
+        <save_options/>
+        <save_script/>
+        <sc_catalogs>65bcd377c3011200b12d9f2974d3aea0</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[if(producer.u_html_description && producer.u_html_description != '')
+	current.comments = '[code]' + producer.u_html_description + '[/code]';
+
+]]></script>
+        <short_description>Request an Informal Training, Train-the-trainer or Refresher Training</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state>published</state>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 12:32:07</sys_created_on>
+        <sys_id>b7f1c31f1b4801d05b1b411acd4bcbca</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_name>Service Training</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sc_cat_item_producer_b7f1c31f1b4801d05b1b411acd4bcbca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-10 19:52:46</sys_updated_on>
+        <table_name>x_liisa_support_ca_services</table_name>
+        <taxonomy_topic/>
+        <template display_value="Service Training">f582435f1b4801d05b1b411acd4bcb06</template>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=b7f1c31f1b4801d05b1b411acd4bcbca"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>description</fieldname>
+        <language>de</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:29:30</sys_created_on>
+        <sys_id>46b12f17db0441d001eafad3f396192e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-20 17:17:44</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;&lt;strong&gt;Bitte w&amp;auml;hlen Sie die Schulung f&amp;uuml;r Produkt, Betrieb.&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Ebene 1:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;01-Basics, 21-Hotline CS&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Ebene 2:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;11-LMB Engines, 12-Injection system, 13-Basic D98 (Service level 1 &amp;amp; 2)&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Ebene 3:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;30-Inline engine Stage IIIB DPF, 31-Inline engine Stage IV, 35-V-engine D9512 A7, 36-Inline engine Stage V, 38-Inline engine Low power gen, 39-Gas Engine Motortech control&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Ebene 4:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;41-Diagnostic (expert), 43-Expert D98 Service level 3&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Schulungskatalog:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;a href="https://rise.articulate.com/share/FGwupFfvUPS2-jCDQhhep5e4nq92MCf8#/"&gt;https://rise.articulate.com/share/FGwupFfvUPS2-jCDQhhep5e4nq92MCf8#/&lt;/a&gt;&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>description</fieldname>
+        <language>fr</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:29:16</sys_created_on>
+        <sys_id>26a1eb17db0441d001eafad3f39619fd</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-27 11:45:54</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;&lt;strong&gt;Veuillez s&amp;eacute;lectionner la formation pour les produits, les op&amp;eacute;rations.&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Niveau 1:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;01-Basics, 21-Hotline CS&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Niveau 2:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;11-LMB Engines, 12-Injection system, 13-Basic D98 (Service level 1 &amp;amp; 2)&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Niveau 3&lt;/strong&gt;:&lt;/p&gt;&#13;
+&lt;p&gt;30-Inline engine Stage IIIB DPF, 31-Inline engine Stage IV, 35-V-engine D9512 A7, 36-Inline engine Stage V, 38-Inline engine Low power gen, 39-Gas Engine Motortech control&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Niveau 4:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;41-Diagnostic (expert), 43-Expert D98 Service level 3&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Catalogue des formations:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;a href="https://rise.articulate.com/share/FGwupFfvUPS2-jCDQhhep5e4nq92MCf8#/"&gt;https://rise.articulate.com/share/FGwupFfvUPS2-jCDQhhep5e4nq92MCf8#/&lt;/a&gt;&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>meta</fieldname>
+        <language>de</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:29:45</sys_created_on>
+        <sys_id>71c12b17db0441d001eafad3f396197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:29:45</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Informelle Ausbildung, Ausbildung des Ausbilders, Auffrischungsschulung, Ausbildungsniveau, Lernen, Kurse, Klassen</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>meta</fieldname>
+        <language>fr</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:29:52</sys_created_on>
+        <sys_id>d3c16317db0441d001eafad3f3961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:29:52</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Formation informelle, Formation des formateurs, Remise à niveau, Niveau de formation, Apprentissage, cours, Cours</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>name</fieldname>
+        <language>de</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:36:34</sys_created_on>
+        <sys_id>1e33eb97db0441d001eafad3f3961926</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-21 13:43:07</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Service Schulung</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>name</fieldname>
+        <language>fr</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:35:45</sys_created_on>
+        <sys_id>51032b97db0441d001eafad3f39619ab</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-27 11:45:53</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Formation</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>de</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:28:49</sys_created_on>
+        <sys_id>f381efd3db0441d001eafad3f396195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:28:49</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Fordern Sie eine Schulung an</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b7f1c31f1b4801d05b1b411acd4bcbca</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>fr</language>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:28:57</sys_created_on>
+        <sys_id>b991efd3db0441d001eafad3f3961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:28:57</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Demander une formation</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=b7f1c31f1b4801d05b1b411acd4bcbca"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price</field>
+        <id>b7f1c31f1b4801d05b1b411acd4bcbca</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 12:12:02</sys_created_on>
+        <sys_id>d042431f1b4801d05b1b411acd4bcb29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 18:29:46</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#cdcdcd</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>icon</file_name>
+        <hash>5e015a6155c4235af2e7dccd93eea487d0cdc6c17a388aaf688eb196a08145c7</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>4229</size_bytes>
+        <size_compressed>3778</size_compressed>
+        <state>available</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:31:48</sys_created_on>
+        <sys_id>50226b511bcf05505b1b411acd4bcbed</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-23 12:31:48</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>b7f1c31f1b4801d05b1b411acd4bcbca</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="50226b511bcf05505b1b411acd4bcbed">50226b511bcf05505b1b411acd4bcbed</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:31:48</sys_created_on>
+        <sys_id>90226b511bcf05505b1b411acd4bcbed</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>5024</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="50226b511bcf05505b1b411acd4bcbed">50226b511bcf05505b1b411acd4bcbed</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:31:48</sys_created_on>
+        <sys_id>14226b511bcf05505b1b411acd4bcbed</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#cdcdcd</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>picture</file_name>
+        <hash>5e015a6155c4235af2e7dccd93eea487d0cdc6c17a388aaf688eb196a08145c7</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>4229</size_bytes>
+        <size_compressed>3778</size_compressed>
+        <state>available</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:32:00</sys_created_on>
+        <sys_id>8f22ab511bcf05505b1b411acd4bcbf4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-23 12:32:00</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>b7f1c31f1b4801d05b1b411acd4bcbca</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="8f22ab511bcf05505b1b411acd4bcbf4">8f22ab511bcf05505b1b411acd4bcbf4</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:32:00</sys_created_on>
+        <sys_id>cf22ab511bcf05505b1b411acd4bcbf4</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>5024</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="8f22ab511bcf05505b1b411acd4bcbf4">8f22ab511bcf05505b1b411acd4bcbf4</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:32:00</sys_created_on>
+        <sys_id>4322ab511bcf05505b1b411acd4bcbf5</sys_id>
+    </sys_attachment_doc>
+</record_update>

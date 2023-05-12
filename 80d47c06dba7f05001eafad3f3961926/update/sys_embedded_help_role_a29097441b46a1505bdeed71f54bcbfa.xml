@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role/>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-02 13:22:20</sys_created_on>
+        <sys_id>a29097441b46a1505bdeed71f54bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d99093441b46a1505bdeed71f54bcb35</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_help_role_a29097441b46a1505bdeed71f54bcbfa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-02 13:22:20</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

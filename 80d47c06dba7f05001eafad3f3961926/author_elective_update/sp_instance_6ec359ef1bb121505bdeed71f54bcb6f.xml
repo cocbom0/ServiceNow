@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6ac359ef1bb121505bdeed71f54bcb6d</sp_column>
+        <sp_widget display_value="Knowledge Bases Browse">abe00f1bdb50320099f93691f0b8f57b</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:00:03</sys_created_on>
+        <sys_id>6ec359ef1bb121505bdeed71f54bcb6f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Explore our Knowledge Bases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_6ec359ef1bb121505bdeed71f54bcb6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 14:30:06</sys_updated_on>
+        <title>Explore our Knowledge Bases</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"order_by": {
+		"value": "title",
+		"displayValue": "title"
+	},
+	"order_reverse": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=6ec359ef1bb121505bdeed71f54bcb6f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>sp_instance_6ec359ef1bb121505bdeed71f54bcb6f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;6ac359ef1bb121505bdeed71f54bcb6d&lt;/sp_column&gt;&lt;sp_widget display_value="Knowledge Bases Browse"&gt;abe00f1bdb50320099f93691f0b8f57b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-31 15:00:03&lt;/sys_created_on&gt;&lt;sys_id&gt;6ec359ef1bb121505bdeed71f54bcb6f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Explore our Knowledge Bases&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_6ec359ef1bb121505bdeed71f54bcb6f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-05-01 14:30:06&lt;/sys_updated_on&gt;&lt;title&gt;Explore our Knowledge Bases&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"order_by": {
+		"value": "title",
+		"displayValue": "title"
+	},
+	"order_reverse": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6ec359ef1bb121505bdeed71f54bcb6f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-667600398</payload_hash>
+        <record_name>Explore our Knowledge Bases</record_name>
+        <reverted_from/>
+        <source>46e538a587a62d107cb6eced3fbb35c6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-01 14:30:06</sys_created_on>
+        <sys_id>7d3670e587a62d107cb6eced3fbb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d7b884c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 14:30:06</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>f13670e553a62d10e1266cadd05501c0</update_guid>
+        <update_guid_history>f13670e553a62d10e1266cadd05501c0:-667600398,b5d8e788546ae510cba29fb509390c37:-362203133</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Explore our Knowledge Bases">ba36bca587a62d107cb6eced3fbb35c3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-01 14:30:11</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>d46b11a1213246c09039200e13b98410</sys_id>
+        <sys_metadata>6ec359ef1bb121505bdeed71f54bcb6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Explore our Knowledge Bases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_instance_6ec359ef1bb121505bdeed71f54bcb6f</sys_update_name>
+        <sys_update_version display_value="sp_instance_6ec359ef1bb121505bdeed71f54bcb6f">7d3670e587a62d107cb6eced3fbb35c0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 14:30:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

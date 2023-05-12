@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>number,short_description,state,assigned_to,service_offering,u_request_support_for,u_request_type,sys_updated_on,sold_product,u_serial_number,contact,account,resolved_at,closed_at</field_list>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>50</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">149e5f931b0a2510c2e1433be54bcbfb</sp_column>
+        <sp_page display_value="csm_ticket">65285631c3a1120058879f2974d3aeed</sp_page>
+        <sp_widget display_value="LH Data Table from Instance Definition">2c9201281b4ae1505bdeed71f54bcbfb</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 16:56:26</sys_created_on>
+        <sys_id>00816b571b0a2510c2e1433be54bcbcf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>All Cases in your Organization</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_table_00816b571b0a2510c2e1433be54bcbcf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 17:01:15</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <title>All Cases in your Organization</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"all_button_label": {
+		"value": "All Cases",
+		"displayValue": "All Cases"
+	},
+	"serviceportal_page_for_all_records": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=00816b571b0a2510c2e1433be54bcbcf"/>
+</record_update>

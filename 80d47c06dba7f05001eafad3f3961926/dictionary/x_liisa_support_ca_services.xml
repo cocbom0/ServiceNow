@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="b36c08881b7de110c2e1433be54bcbbc" extends="sn_customerservice_case" label="Ticket" max_length="40" name="x_liisa_support_ca_services" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Cause / Issue" max_length="65536" name="u_cause_issue" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Complaint" max_length="65536" name="u_complaint" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Corrective action" max_length="65536" name="u_corrective_action" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="65536" name="u_html_description" type="html"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="service_offering" dependent_on_field="service_offering" label="Request support for" max_length="40" name="u_request_support_for" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Accès" language="fr" sequence="100" value="access"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Access" sequence="100" value="access"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Zugriff" language="de" sequence="100" value="access"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Issue with system" sequence="200" value="issue_with_system"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Problem mit dem System" language="de" sequence="200" value="issue_with_system"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Problème avec le système" language="fr" sequence="200" value="issue_with_system"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Improvement proposal" sequence="300" value="improvement_proposal"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Proposition d'amélioration" language="fr" sequence="300" value="improvement_proposal"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Verbesserungsvorschlag" language="de" sequence="300" value="improvement_proposal"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Andere" language="de" sequence="400" value="other"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Autre" language="fr" sequence="400" value="other"/>
+                <element dependent_value="CVM Support" inactive_on_update="false" label="Other" sequence="400" value="other"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Critical incident notification" sequence="1000" value="incident_notification"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Meldung bei schwerwiegendem vorfall" language="de" sequence="1000" value="incident_notification"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Notification des incidents critiques" language="fr" sequence="1000" value="incident_notification"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Assistance technique sur site" language="fr" sequence="1010" value="onsite_technical_support"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="On site technical support" sequence="1010" value="onsite_technical_support"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Technische unterstützung vor ort" language="de" sequence="1010" value="onsite_technical_support"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Assistance technique à distance" language="fr" sequence="1020" value="remote_technical_support"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Remote technical support" sequence="1020" value="remote_technical_support"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Technische unterstützung helpdesk" language="de" sequence="1020" value="remote_technical_support"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Service Information (SI) / Bulletin" language="de" sequence="1030" value="service_information"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Service Information (SI) / Bulletin" language="fr" sequence="1030" value="service_information"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Service Information (SI) / Bulletin" sequence="1030" value="service_information"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Commentaires techniques / questions" language="fr" sequence="1040" value="technical_feedback"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Technical feedbacks / questions" sequence="1040" value="technical_feedback"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Technische rückmeldungen / fragen" language="de" sequence="1040" value="technical_feedback"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Autres sujets relatifs au support technique" language="fr" sequence="1050" value="other_technical"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Other technical services topics" sequence="1050" value="other_technical"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb37" inactive_on_update="false" label="Weitere themen zu technischer service" language="de" sequence="1050" value="other_technical"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Claim financial documents" sequence="2000" value="claim_financial_document"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Finanzielle dokumente anfordern" language="de" sequence="2000" value="claim_financial_document"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Réclamer des documents financiers" language="fr" sequence="2000" value="claim_financial_document"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Claim content decisions" sequence="2010" value="claim_decision"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Décisions relatives au contenu des réclamations" language="fr" sequence="2010" value="claim_decision"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Entscheidungen über den anspruchsinhalt" language="de" sequence="2010" value="claim_decision"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Antrag auf untersuchung" language="de" sequence="2020" value="request_investigation"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Demande d'enquête" language="fr" sequence="2020" value="request_investigation"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Request for investigation" sequence="2020" value="request_investigation"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive="true" inactive_on_update="true" label="Beschädigung teile rückgabe teile status" language="de" sequence="2030" value="damage_parts_return"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Claim status definition" sequence="2030" value="claim_status_definition"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive="true" inactive_on_update="true" label="Damage parts return part status" sequence="2030" value="damage_parts_return"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Reklamationsstatus" language="de" sequence="2030" value="claim_status_definition"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Statut de la réclamation" language="fr" sequence="2030" value="claim_status_definition"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive="true" inactive_on_update="true" label="Statut des pièces retournées endomagées" language="fr" sequence="2030" value="damage_parts_return"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive="true" inactive_on_update="true" label="Antrag auf analyse von kundenantragsdaten" language="de" sequence="2040" value="request_claim_analysis"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive="true" inactive_on_update="true" label="Demande d'analyse des données relatives aux réclamations des clients" language="fr" sequence="2040" value="request_claim_analysis"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive="true" inactive_on_update="true" label="Request for customer claim data analysis" sequence="2040" value="request_claim_analysis"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Autres sujets relatifs à la garantie et à la gestion des réclamations" language="fr" sequence="2050" value="other_warranty"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Other warranty and claim management topics" sequence="2050" value="other_warranty"/>
+                <element dependent_value="05e173511b4445905b1b411acd4bcb3c" inactive_on_update="false" label="Weitere themen zu garantie und schadenmanagement" language="de" sequence="2050" value="other_warranty"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Formation informelle" language="fr" sequence="3000" value="informal_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Informal training" sequence="3000" value="informal_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Informelle schulung" language="de" sequence="3000" value="informal_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Formation officielle (formation de formateurs)" language="fr" sequence="3010" value="official_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Official training (Train-The-Trainer)" sequence="3010" value="official_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Train the trainer schulung" language="de" sequence="3010" value="official_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Auffrischungsschulung" language="de" sequence="3020" value="refresher_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Formation de rappel" language="fr" sequence="3020" value="refresher_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Refresher training" sequence="3020" value="refresher_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Formation standard" language="fr" sequence="3030" value="standard_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Standard training" sequence="3030" value="standard_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Standard-ausbildung" language="de" sequence="3030" value="standard_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Certification training" sequence="3040" value="certification_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Formation à la certification" language="fr" sequence="3040" value="certification_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Zertifizierung ausbildung" language="de" sequence="3040" value="certification_training"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Autre demande de formation" language="fr" sequence="3050" value="other_training_requests"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Other training requests" sequence="3050" value="other_training_requests"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb58" inactive_on_update="false" label="Sonstige schulungswünsche" language="de" sequence="3050" value="other_training_requests"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Assembly instruction" sequence="4000" value="assembly_instruction"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Instruction d'assemblage" language="fr" sequence="4000" value="assembly_instruction"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Montageanleitung" language="de" sequence="4000" value="assembly_instruction"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Betriebsanleitung" language="de" sequence="4010" value="operator_manual"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Manuel opérateur" language="fr" sequence="4010" value="operator_manual"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Operator's manual" sequence="4010" value="operator_manual"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Instruction de réparation" language="fr" sequence="4020" value="repair_instruction"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Repair instruction" sequence="4020" value="repair_instruction"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Reparaturanleitung" language="de" sequence="4020" value="repair_instruction"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Guide d'installation" language="fr" sequence="4030" value="installation_guideline"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Installation guideline" sequence="4030" value="installation_guideline"/>
+                <element dependent_value="85e173511b4445905b1b411acd4bcb59" inactive_on_update="false" label="Installation guideline" language="de" sequence="4030" value="installation_guideline"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="Coût du cycle de vie" language="fr" sequence="5000" value="lifecycle_cost"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="Lebenszykluskosten" language="de" sequence="5000" value="lifecycle_cost"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="Lifecycle cost" sequence="5000" value="lifecycle_cost"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="Maintenance schedules" sequence="5010" value="maintenance_schedules"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="Programmes d'entretien" language="fr" sequence="5010" value="maintenance_schedules"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="Wartungspläne" language="de" sequence="5010" value="maintenance_schedules"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="REMAN" language="fr" sequence="5020" value="reman"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="REMAN" sequence="5020" value="reman"/>
+                <element dependent_value="fc22483f1bc34150191cd8f99a4bcb55" inactive_on_update="false" label="REMAN" language="de" sequence="5020" value="reman"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Ersatzteil-preise / Lieferzeit" language="de" sequence="6000" value="spare_part_pricing"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Prix des pièces de rechange / Délai de livraison" language="fr" sequence="6000" value="spare_part_pricing"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Spare part pricing / Leadtime" sequence="6000" value="spare_part_pricing"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Ersatzteil technik" language="de" sequence="6010" value="spare_part_technical"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Informations techniques sur les pièces de rechange" language="fr" sequence="6010" value="spare_part_technical"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Spare part technical (product information)" sequence="6010" value="spare_part_technical"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Catalogue des pièces de rechange" language="fr" sequence="6020" value="spare_part_catalog"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Ersatzteilkatalog" language="de" sequence="6020" value="spare_part_catalog"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Spare part catalog" sequence="6020" value="spare_part_catalog"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Essais terrain et demande de projet" language="fr" sequence="6030" value="field_test_project_request"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Feldtest und projektanfrage" language="de" sequence="6030" value="field_test_project_request"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Field test &amp; project request" sequence="6030" value="field_test_project_request"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Autres sujets relatifs au pièces de rechange" language="fr" sequence="6040" value="spare_part_other"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Other spare parts topics" sequence="6040" value="spare_part_other"/>
+                <element dependent_value="45e173511b4445905b1b411acd4bcb3d" inactive_on_update="false" label="Weitere themen zu ersatzteil" language="de" sequence="6040" value="spare_part_other"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Commercial management" sequence="7000" value="commercial_management"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Gestion commerciale" language="fr" sequence="7000" value="commercial_management"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Kommerzielles management" language="de" sequence="7000" value="commercial_management"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Développement du réseau" language="fr" sequence="7010" value="network_development"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Entwicklung des netzes" language="de" sequence="7010" value="network_development"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Network development" sequence="7010" value="network_development"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Andere anfragen ?" language="de" sequence="7020" value="other_requests"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Autres demandes ?" language="fr" sequence="7020" value="other_requests"/>
+                <element dependent_value="c5e173511b4445905b1b411acd4bcb5a" inactive_on_update="false" label="Other requests ?" sequence="7020" value="other_requests"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_request_support_for" dependent_on_field="u_request_support_for" label="Request type" max_length="40" name="u_request_type" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Amélioration de la base de connaissance" language="fr" sequence="100" value="improvement_on_knowledge_base"/>
+                <element dependent_value="other" inactive_on_update="false" label="Andere art von antrag" language="de" sequence="100" value="other_request"/>
+                <element dependent_value="other" inactive_on_update="false" label="Autre type de demande" language="fr" sequence="100" value="other_request"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Improvement on knowledge base" sequence="100" value="improvement_on_knowledge_base"/>
+                <element dependent_value="access" inactive_on_update="false" label="Neuer Antrag auf Zugriffsrecht" language="de" sequence="100" value="new_access_right_request"/>
+                <element dependent_value="access" inactive_on_update="false" label="New access right request" sequence="100" value="new_access_right_request"/>
+                <element dependent_value="access" inactive_on_update="false" label="Nouvelle demande de droit d'accès" language="fr" sequence="100" value="new_access_right_request"/>
+                <element dependent_value="other" inactive_on_update="false" label="Other type of request" sequence="100" value="other_request"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="SN indisponible" language="fr" sequence="100" value="sn_not_available"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="SN nicht verfügbar" language="de" sequence="100" value="sn_not_available"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="SN not available" sequence="100" value="sn_not_available"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Verbesserung der Knowledge Base" language="de" sequence="100" value="improvement_on_knowledge_base"/>
+                <element dependent_value="access" inactive_on_update="false" label="Account reset" sequence="200" value="account_reset"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Amélioration des types de demandes" language="fr" sequence="200" value="improvement_on_requests_type"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Improvement on requests type" sequence="200" value="improvement_on_requests_type"/>
+                <element dependent_value="access" inactive_on_update="false" label="Konto zurücksetzen" language="de" sequence="200" value="account_reset"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Problem mit der Übersetzung" language="de" sequence="200" value="translation_issue"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Problème de traduction" language="fr" sequence="200" value="translation_issue"/>
+                <element dependent_value="access" inactive_on_update="false" label="Réinitialisation du compte" language="fr" sequence="200" value="account_reset"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Translation issue" sequence="200" value="translation_issue"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Verbesserung der Request" language="de" sequence="200" value="improvement_on_requests_type"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Amélioration sur le portail" language="fr" sequence="300" value="improvement_on_portal"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Bug / comportement inattendu de l'interface" language="fr" sequence="300" value="bug_unexpected_interface_behaviour"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Bug / unexpected interface behaviour" sequence="300" value="bug_unexpected_interface_behaviour"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Fehler / unerwartetes Systemverhalten" language="de" sequence="300" value="bug_unexpected_interface_behaviour"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Improvement on portal" sequence="300" value="improvement_on_portal"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Verbesserung der Portal" language="de" sequence="300" value="improvement_on_portal"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Allgemeine Funktion" language="de" sequence="400" value="general_feature"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Difficulté / support requis" language="fr" sequence="400" value="difficulty_help_required"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Difficulty / help required" sequence="400" value="difficulty_help_required"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="Fonctionnalité générale" language="fr" sequence="400" value="general_feature"/>
+                <element dependent_value="improvement_proposal" inactive_on_update="false" label="General feature" sequence="400" value="general_feature"/>
+                <element dependent_value="issue_with_system" inactive_on_update="false" label="Schwierigkeit / benötigte Hilfe" language="de" sequence="400" value="difficulty_help_required"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Problème de qualité du produit (panne complète)" language="fr" sequence="1000" value="catastrophic_product_failure"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Probleme mit der produktqualität (kompletter produktschaden)" language="de" sequence="1000" value="catastrophic_product_failure"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Product quality issue (complete breakdown)" sequence="1000" value="catastrophic_product_failure"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Arrêt de production" language="fr" sequence="1010" value="production_stop"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Production stop" sequence="1010" value="production_stop"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Stillstand der produktion" language="de" sequence="1010" value="production_stop"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Gefahr personenschaden (unfall, brand oder personenschaden)" language="de" sequence="1020" value="safety_related_issue"/>
+                <element dependent_value="incident_notification" inactive_on_update="false" label="Question de sécurité (accident, incendie ou dommages corporels)" language="fr" sequence="1020" value="safety_related_issue"/>
+                <element dependent_value="incident_notification" hint="Accident, fire or personal injury" inactive_on_update="false" label="Safety related issue (accident, fire or personal injury)" sequence="1020" value="safety_related_issue"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Austausch des Motortypenschilds" language="de" sequence="1030" value="engine_plate"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Échange de plaques moteur" language="fr" sequence="1030" value="engine_plate"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Engine type plate exchange" sequence="1030" value="engine_plate"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Court terme (1-5 Jours)" language="fr" sequence="1040" value="short_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Kurzfristig (1-5 Tage)" language="de" sequence="1040" value="short_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Short term (1-5 Days)" sequence="1040" value="short_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Medium term (&lt;30 Days)" sequence="1050" value="medium_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Mittelfristig (&lt;30 Tage)" language="de" sequence="1050" value="medium_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Moyen terme (&lt;30 Jours)" language="fr" sequence="1050" value="medium_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Langfristig (&gt; 30 Tage)" language="de" sequence="1060" value="long_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Long term (&gt; 30 Days)" sequence="1060" value="long_term"/>
+                <element dependent_value="onsite_technical_support" inactive_on_update="false" label="Long terme (&gt; 30 Jours)" language="fr" sequence="1060" value="long_term"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Support technique" language="fr" sequence="1070" value="technical_support"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Technical support" sequence="1070" value="technical_support"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Technischer unterstützung" language="de" sequence="1070" value="technical_support"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Diagnosetool (LiDIA/Sculi)" language="de" sequence="1080" value="diagnostic_tool"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Diagnostic tool (LiDIA/Sculi)" sequence="1080" value="diagnostic_tool"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Outil de diagnostic (LiDIA/Sculi)" language="fr" sequence="1080" value="diagnostic_tool"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="DPF Unlocker" language="fr" sequence="1090" value="dpfunlocker"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="DPF Unlocker" sequence="1090" value="dpfunlocker"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="DPF Unlocker" language="de" sequence="1090" value="dpfunlocker"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Electronic / Software / Diagnostic" sequence="1100" value="electro_soft_diagnose"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Électronique / Logiciel / Diagnostic" language="fr" sequence="1100" value="electro_soft_diagnose"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Elektronik / Software / Diagnostik" language="de" sequence="1100" value="electro_soft_diagnose"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="After treatment system (EATS)" sequence="1120" value="after_treatment_system"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Nachbehandlungssystem (EATS)" language="de" sequence="1120" value="after_treatment_system"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Système de post-traitement (EATS)" language="fr" sequence="1120" value="after_treatment_system"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Troubleshoot Advisor" sequence="1130" value="troubleshoot_advisor"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Troubleshoot Advisor" language="de" sequence="1130" value="troubleshoot_advisor"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Troubleshoot Advisor" language="fr" sequence="1130" value="troubleshoot_advisor"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Issue with Power Change" sequence="1131" value="power_change_issue"/>
+                <element dependent_value="remote_technical_suppor" inactive_on_update="false" label="Problem mit dem Power Change" language="de" sequence="1131" value="power_change_issue"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Problème lors du Power Change" language="fr" sequence="1131" value="power_change_issue"/>
+                <element dependent_value="remote_technical_support" inactive_on_update="false" label="Engine Reflash" sequence="1132" value="engine_reflash"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="Allgemeine fragen" language="de" sequence="1140" value="si_general_questions"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="General questions" sequence="1140" value="si_general_questions"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="Questions générales" language="fr" sequence="1140" value="si_general_questions"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="Base de données SI" language="fr" sequence="1150" value="si_database"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="SI database" sequence="1150" value="si_database"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="SI-Datenbank" language="de" sequence="1150" value="si_database"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="Demande SI" language="fr" sequence="1160" value="si_request"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="SI request" sequence="1160" value="si_request"/>
+                <element dependent_value="service_information" inactive_on_update="false" label="SI-Antrag" language="de" sequence="1160" value="si_request"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Feldausgabe" language="de" sequence="1170" value="field_issue"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Field issue" sequence="1170" value="field_issue"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Problèmes sur le terrain" language="fr" sequence="1170" value="field_issue"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="0 hour issue" sequence="1175" value="0km_issue"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="0h Fehler" language="de" sequence="1175" value="0km_issue"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Problème 0 heure" language="fr" sequence="1175" value="0km_issue"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Andere rückmeldungen / fragen" language="de" sequence="1180" value="other_feedback"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Autres commentaires / questions" language="fr" sequence="1180" value="other_feedback"/>
+                <element dependent_value="technical_feedback" inactive_on_update="false" label="Other feedbacks / questions" sequence="1180" value="other_feedback"/>
+                <element dependent_value="other_technical" inactive_on_update="false" label="Andere art von antrag" language="de" sequence="1190" value="other_technical_request"/>
+                <element dependent_value="other_technical" inactive_on_update="false" label="Autre type de demande" language="fr" sequence="1190" value="other_technical_request"/>
+                <element dependent_value="other_technical" inactive_on_update="false" label="Other type of request" sequence="1190" value="other_technical_request"/>
+                <element dependent_value="claim_financial_document" inactive_on_update="false" label="Antrag auf eine Gutschrift" language="de" sequence="2000" value="request_credit_note"/>
+                <element dependent_value="claim_financial_document" inactive_on_update="false" label="Demande de note de crédit" language="fr" sequence="2000" value="request_credit_note"/>
+                <element dependent_value="claim_financial_document" inactive_on_update="false" label="Request for credit note" sequence="2000" value="request_credit_note"/>
+                <element dependent_value="claim_financial_document" inactive_on_update="false" label="Antrag auf eine Korrektur einer Gutschrift" language="de" sequence="2010" value="Request _credit_note_corrections"/>
+                <element dependent_value="claim_financial_document" inactive_on_update="false" label="Demande de correction d'une note de crédit" language="fr" sequence="2010" value="Request _credit_note_corrections"/>
+                <element dependent_value="claim_financial_document" inactive_on_update="false" label="Request for credit note corrections" sequence="2010" value="Request _credit_note_corrections"/>
+                <element dependent_value="claim_decision" inactive_on_update="false" label="Antrag auf überprüfung einer entscheidung" language="de" sequence="2020" value="request_decision_review"/>
+                <element dependent_value="claim_decision" inactive_on_update="false" label="Demande de révision de décision" language="fr" sequence="2020" value="request_decision_review"/>
+                <element dependent_value="claim_decision" inactive_on_update="false" label="Request for decision review" sequence="2020" value="request_decision_review"/>
+                <element dependent_value="request_investigation" inactive_on_update="false" label="Antrag auf einen 8D-bericht" language="de" sequence="2030" value="request_8D_report"/>
+                <element dependent_value="request_investigation" inactive_on_update="false" label="Demande de rapport 8D" language="fr" sequence="2030" value="request_8D_report"/>
+                <element dependent_value="request_investigation" inactive_on_update="false" label="Request for 8D report" sequence="2030" value="request_8D_report"/>
+                <element dependent_value="request_investigation" inactive_on_update="false" label="Demander le rapport d'enquête (copie)" language="fr" sequence="2040" value="request_investigation"/>
+                <element dependent_value="request_investigation" inactive_on_update="false" label="Request investigation report (copy)" sequence="2040" value="request_investigation"/>
+                <element dependent_value="request_investigation" inactive_on_update="false" label="Untersuchungsbericht anfordern (kopie)" language="de" sequence="2040" value="request_investigation"/>
+                <element dependent_value="damage_parts_return" inactive="true" inactive_on_update="true" label="Abfrage des lieferstatus von retourenteilen" language="de" sequence="2050" value="request_return_parts_delivery_status"/>
+                <element dependent_value="claim_status_definition" inactive_on_update="false" label="Anfrage zum Reklamationsstatus" language="de" sequence="2050" value="request_claim_status"/>
+                <element dependent_value="claim_status_definition" inactive_on_update="false" label="Demande de statut de la réclamation" language="fr" sequence="2050" value="request_claim_status"/>
+                <element dependent_value="damage_parts_return" inactive="true" inactive_on_update="true" label="Demande de statut de livraison de pièces de retour" language="fr" sequence="2050" value="request_return_parts_delivery_status"/>
+                <element dependent_value="claim_status_definition" inactive_on_update="false" label="Request for claims status" sequence="2050" value="request_claim_status"/>
+                <element dependent_value="damage_parts_return" inactive="true" inactive_on_update="true" label="Request return parts delivery status" sequence="2050" value="request_return_parts_delivery_status"/>
+                <element dependent_value="damage_parts_return" inactive="true" inactive_on_update="true" label="Antrag auf rückgabe von teilen status der frist" language="de" sequence="2060" value="request_return_parts_deadline_status"/>
+                <element dependent_value="damage_parts_return" inactive="true" inactive_on_update="true" label="Demande de retour de pièces statut de la date limite" language="fr" sequence="2060" value="request_return_parts_deadline_status"/>
+                <element dependent_value="damage_parts_return" inactive="true" inactive_on_update="true" label="Request return parts deadline status" sequence="2060" value="request_return_parts_deadline_status"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Antrag auf ansprüche vs. genehmigter anspruch" language="de" sequence="2070" value="request_claims_demand_approved"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Demande de réclamations  vs. réclamation approuvée" language="fr" sequence="2070" value="request_claims_demand_approved"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Request for claims demand vs. claim approved" sequence="2070" value="request_claims_demand_approved"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Antrag auf zusammenfassung der beschwerden (12 Monate)" language="de" sequence="2080" value="request_claim_summary"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Demande de rapport sur les réclamations (12 Mois)" language="fr" sequence="2080" value="request_claim_summary"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Request for claims summary (12 Months)" sequence="2080" value="request_claim_summary"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Anfrage für beschädigte teile übersicht" language="de" sequence="2090" value="request_damaged_parts_overview"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Demande de retour des pièces défectueuses" language="fr" sequence="2090" value="request_damaged_parts_overview"/>
+                <element dependent_value="request_claim_analysis" inactive_on_update="false" label="Request for damaged parts overview" sequence="2090" value="request_damaged_parts_overview"/>
+                <element dependent_value="other_warranty" inactive_on_update="false" label="Andere art von antrag" language="de" sequence="2100" value="other_warranty_request"/>
+                <element dependent_value="other_warranty" inactive_on_update="false" label="Autre type de demande" language="fr" sequence="2100" value="other_warranty_request"/>
+                <element dependent_value="other_warranty" inactive_on_update="false" label="Other type of request" sequence="2100" value="other_warranty_request"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 1: ILT - Instructor Led Training (Theo.+Pract.)" sequence="3000" value="option1_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 1: ILT - Instructor Led Training (Theo.+Pract.)" language="de" sequence="3000" value="option1_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 1: ILT - Instructor Led Training (Theo.+Pract.)" language="fr" sequence="3000" value="option1_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 2 : VT - Formation virtuelle (théorie)" language="fr" sequence="3010" value="option2_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 2: VT - Virtual Training (Theory)" sequence="3010" value="option2_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 2: VT - Virtuelle Schulung (Theorie)" language="de" sequence="3010" value="option2_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 3 : PT - Formation pratique (Practical Training)" language="fr" sequence="3020" value="option3_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 3: PT - Practical Training (Practical)" sequence="3020" value="option3_official"/>
+                <element dependent_value="official_training" inactive_on_update="false" label="Option 3: PT - Praktische Ausbildung (Praktikum)" language="de" sequence="3020" value="option3_official"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 1: ILT - Instructor Led Training (Theo.+Pract.)" language="de" sequence="3030" value="option1_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 1: ILT - Instructor Led Training (Theo.+Pract.)" language="fr" sequence="3030" value="option1_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 1: ILT - Instructor Led Training (Theo.+Pract.)" sequence="3030" value="option1_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 2 : VT - Formation virtuelle (théorie)" language="fr" sequence="3040" value="option2_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 2: VT - Virtual Training (Theory)" sequence="3040" value="option2_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 2: VT - Virtuelle Schulung (Theorie)" language="de" sequence="3040" value="option2_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 3 : PT - Formation pratique (Practical Training)" language="fr" sequence="3050" value="option3_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 3: PT - Practical Training (Practical)" sequence="3050" value="option3_refresher"/>
+                <element dependent_value="refresher_training" inactive_on_update="false" label="Option 3: PT - Praktische Ausbildung (Praktikum)" language="de" sequence="3050" value="option3_refresher"/>
+                <element dependent_value="certification_training" inactive_on_update="false" label="Formations de type &quot;TrainTheTrainer&quot;" language="fr" sequence="3060" value="trainthetrainer_training"/>
+                <element dependent_value="certification_training" inactive_on_update="false" label="Trainings vom Typ &quot;TrainTheTrainer&quot;." language="de" sequence="3060" value="trainthetrainer_training"/>
+                <element dependent_value="certification_training" inactive_on_update="false" label="TrainTheTrainer trainings" sequence="3060" value="trainthetrainer_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="See online training catalog Rise / TELL" sequence="3070" value="online_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="Siehe Rise / TELL Online-Lernkatalog" language="de" sequence="3070" value="online_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="Voir le catalogue de formation en ligne Rise / TELL" language="fr" sequence="3070" value="online_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="See ILT training offer" sequence="3080" value="ilt_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="Siehe ILT-Schulungsangebot" language="de" sequence="3080" value="ilt_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="Voir l'offre de formation ILT" language="fr" sequence="3080" value="ilt_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="See VT training offer" sequence="3090" value="vt_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="Siehe VT-Schulungsangebot" language="de" sequence="3090" value="vt_training"/>
+                <element dependent_value="standard_training" inactive_on_update="false" label="Voir offre de formation VT" language="fr" sequence="3090" value="vt_training"/>
+                <element dependent_value="other_training_requests" inactive_on_update="false" label="Demande spécifique" language="fr" sequence="3100" value="specific_request"/>
+                <element dependent_value="other_training_requests" inactive_on_update="false" label="Specific request" sequence="3100" value="specific_request"/>
+                <element dependent_value="other_training_requests" inactive_on_update="false" label="Spezifische anfrage" language="de" sequence="3100" value="specific_request"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Neue berechnung" language="de" sequence="5000" value="calculation"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="New calculcation" sequence="5000" value="calculation"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Nouveau calcul" language="fr" sequence="5000" value="calculation"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Berechnung aktualisieren" language="de" sequence="5010" value="calculation_review"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Mettre à jour le calcul" language="fr" sequence="5010" value="calculation_review"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Update calculation" sequence="5010" value="calculation_review"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Analyse" language="de" sequence="5020" value="calculation_analysis"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Analyse" language="fr" sequence="5020" value="calculation_analysis"/>
+                <element dependent_value="lifecycle_cost" inactive_on_update="false" label="Analysis" sequence="5020" value="calculation_analysis"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Neue" language="de" sequence="5030" value="maintenance_schedules_new"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="New" sequence="5030" value="maintenance_schedules_new"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Nouveau" language="fr" sequence="5030" value="maintenance_schedules_new"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Aktualisieren" language="de" sequence="5040" value="maintenance_schedules_review"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Mettre à jour" language="fr" sequence="5040" value="maintenance_schedules_review"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Update" sequence="5040" value="maintenance_schedules_review"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Allgemeine fragen" language="de" sequence="5050" value="maintenance_schedules_general_questions"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="General questions" sequence="5050" value="maintenance_schedules_general_questions"/>
+                <element dependent_value="maintenance_schedules" inactive_on_update="false" label="Questions générales" language="fr" sequence="5050" value="maintenance_schedules_general_questions"/>
+                <element dependent_value="reman" inactive_on_update="false" label="Allgemeine fragen" language="de" sequence="5060" value="reman_general_questions"/>
+                <element dependent_value="reman" inactive_on_update="false" label="General questions" sequence="5060" value="reman_general_questions"/>
+                <element dependent_value="reman" inactive_on_update="false" label="Questions générales" language="fr" sequence="5060" value="reman_general_questions"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Ersatzteil-prise &amp; Lieferzeit" language="de" sequence="6000" value="price_leadtime_information_request"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Price &amp; Leadtime information request" sequence="6000" value="price_leadtime_information_request"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Prix des pièces de rechanges et délai de livraison" language="fr" sequence="6000" value="price_leadtime_information_request"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Demande d'informations sur les prix" language="fr" sequence="6005" value="price_information_request"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Preisinformationen anfordern" language="de" sequence="6005" value="price_information_request"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Price information request" sequence="6005" value="price_information_request"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Preis reklamation" language="de" sequence="6010" value="pricing_claim"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Pricing claim" sequence="6010" value="pricing_claim"/>
+                <element dependent_value="spare_part_pricing" inactive_on_update="false" label="Réclamation prix" language="fr" sequence="6010" value="pricing_claim"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Demande pour liste de référence" language="fr" sequence="6020" value="request_for_master_data_list"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Request for master data list" sequence="6020" value="request_for_master_data_list"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Request master daten liste" language="de" sequence="6020" value="request_for_master_data_list"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Demande pour consultation de pièces de rechange" language="fr" sequence="6030" value="request_for_spare_part_consulting"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Request ersatzteilberatung" language="de" sequence="6030" value="request_for_spare_part_consulting"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Request for spare part consulting" sequence="6030" value="request_for_spare_part_consulting"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Demande pour identification de pièces de rechange" language="fr" sequence="6040" value="request_for_spare_part_identification"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Request ersatzteilidentifikation" language="de" sequence="6040" value="request_for_spare_part_identification"/>
+                <element dependent_value="spare_part_technical" inactive_on_update="false" label="Request for spare part identification" sequence="6040" value="request_for_spare_part_identification"/>
+                <element dependent_value="spare_part_catalog" inactive_on_update="false" label="Demande de correction" language="fr" sequence="6050" value="request_for_correction"/>
+                <element dependent_value="spare_part_catalog" inactive_on_update="false" label="Request for correction" sequence="6050" value="request_for_correction"/>
+                <element dependent_value="spare_part_catalog" inactive_on_update="false" label="Request korrektur" language="de" sequence="6050" value="request_for_correction"/>
+                <element dependent_value="spare_part_catalog" inactive_on_update="false" label="Demande de mise à jour" language="fr" sequence="6060" value="request_for_update"/>
+                <element dependent_value="spare_part_catalog" inactive_on_update="false" label="Request aktualisierung" language="de" sequence="6060" value="request_for_update"/>
+                <element dependent_value="spare_part_catalog" inactive_on_update="false" label="Request for update" sequence="6060" value="request_for_update"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Retrofit" sequence="6070" value="retrofit"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="retrofit" language="de" sequence="6070" value="retrofit"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Rétrofit" language="fr" sequence="6070" value="retrofit"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Neue identnummer" language="de" sequence="6080" value="new_ident"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="New ident" sequence="6080" value="new_ident"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Nouveau numéro de pièce" language="fr" sequence="6080" value="new_ident"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Nachschub" language="de" sequence="6090" value="replenishment"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Réapprovisionnement" language="fr" sequence="6090" value="replenishment"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Replenishment" sequence="6090" value="replenishment"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Bestandskonstitution" language="de" sequence="6100" value="stock_constitution"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Constitution de stock" language="fr" sequence="6100" value="stock_constitution"/>
+                <element dependent_value="field_test_project_request" inactive_on_update="false" label="Stock constitution" sequence="6100" value="stock_constitution"/>
+                <element dependent_value="spare_part_other" inactive_on_update="false" label="Andere art von antrag" language="de" sequence="6110" value="other_spare_part_request"/>
+                <element dependent_value="spare_part_other" inactive_on_update="false" label="Autre type de demande" language="fr" sequence="6110" value="other_spare_part_request"/>
+                <element dependent_value="spare_part_other" inactive_on_update="false" label="Other type of request" sequence="6110" value="other_spare_part_request"/>
+                <element dependent_value="commercial_management" inactive_on_update="false" label="Neuer vertrag" language="de" sequence="7000" value="new_contract"/>
+                <element dependent_value="commercial_management" inactive_on_update="false" label="New contract" sequence="7000" value="new_contract"/>
+                <element dependent_value="commercial_management" inactive_on_update="false" label="Nouveau contrat" language="fr" sequence="7000" value="new_contract"/>
+                <element dependent_value="commercial_management" inactive_on_update="false" label="Aktualisierung des bestehenden vertrags" language="de" sequence="7010" value="update_existing_contract"/>
+                <element dependent_value="commercial_management" inactive_on_update="false" label="Mise à jour du contrat existant" language="fr" sequence="7010" value="update_existing_contract"/>
+                <element dependent_value="commercial_management" inactive_on_update="false" label="Update on existing contract" sequence="7010" value="update_existing_contract"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Serial Number" max_length="32" name="u_serial_number" reference="sn_install_base_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="SLA blocking reason" max_length="40" name="u_sla_blocking_reason" type="string"/>
+        <element label="SLA waiting reason" max_length="40" name="u_sla_waiting_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Warranty claim reference number" max_length="40" name="u_warranty_claim_number" type="string"/>
+    </element>
+</database>

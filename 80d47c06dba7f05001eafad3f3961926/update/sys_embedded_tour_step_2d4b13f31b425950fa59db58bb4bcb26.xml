@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">ad4b13f31b425950fa59db58bb4bcb24</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[<p>There is always the possibility to attach any relevant file if needed. It will still be possible to share files after the submission of the request.</p>]]></content>
+        <guide display_value="Request Form Overview">635513e247a9d954b0ce8b42e36d43a7</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=sc_cat_item&amp;sys_id=6044a2da1b6e4d10a4236313604bcb74"}</options>
+        <order>3</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:35:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d4b13f31b425950fa59db58bb4bcb26</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_2d4b13f31b425950fa59db58bb4bcb26</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:48:34</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">ad4b13f31b425950fa59db58bb4bcb24</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d4b13f31b425950fa59db58bb4bcb26"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>2d4b13f31b425950fa59db58bb4bcb26</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:48:34</sys_created_on>
+        <sys_id>3b5e9b3b1b425950fa59db58bb4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:48:34</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Es besteht immer die M&amp;ouml;glichkeit, relevante Dateien an die Anfrage anzuh&amp;auml;ngen. Auch nach dem Absenden des Antrags k&amp;ouml;nnen Sie Dateien an uns &amp;uuml;bertragen.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>2d4b13f31b425950fa59db58bb4bcb26</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:37:31</sys_created_on>
+        <sys_id>71dbd7371b425950fa59db58bb4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:37:31</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Il est possible de joindre tout fichier pertinent si n&amp;eacute;cessaire. Notez que vous serez toujours en mesure de partager des fichiers apr&amp;egrave;s la soumission de la demande.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>2d4b13f31b425950fa59db58bb4bcb26</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:48:34</sys_created_on>
+        <sys_id>735e9b3b1b425950fa59db58bb4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:48:34</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>2d4b13f31b425950fa59db58bb4bcb26</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:37:31</sys_created_on>
+        <sys_id>31dbd7371b425950fa59db58bb4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:37:31</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

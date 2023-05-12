@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="1ad7f40adba7f05001eafad3f3961963" sys_domain="global" table="x_liisa_support_ca_services" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_type</element>
+            <position>1</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>account</element>
+            <position>2</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact</element>
+            <position>3</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>af2fefe31bd86150191cd8f99a4bcb65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>internal_user</element>
+            <position>4</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product</element>
+            <position>5</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_serial_number</element>
+            <position>6</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_service</element>
+            <position>7</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>af2fefe31bd86150191cd8f99a4bcb66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_offering</element>
+            <position>8</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>watch_list</element>
+            <position>9</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes_list</element>
+            <position>10</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>11</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>af2fefe31bd86150191cd8f99a4bcb67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>needs_attention</element>
+            <position>12</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_at</element>
+            <position>13</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>14</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>15</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>af2fefe31bd86150191cd8f99a4bcb68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_date</element>
+            <position>16</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>17</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>18</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>19</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>af2fefe31bd86150191cd8f99a4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_request_support_for</element>
+            <position>20</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_request_type</element>
+            <position>21</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_warranty_claim_number</element>
+            <position>22</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>23</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>af2fefe31bd86150191cd8f99a4bcb6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>24</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a32fefe31bd86150191cd8f99a4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_html_description</element>
+            <position>25</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>a72fefe31bd86150191cd8f99a4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cxs_table_search.xml</element>
+            <position>26</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ab2fefe31bd86150191cd8f99a4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>com_glideapp_questionset_default_question_editor.xml</element>
+            <position>27</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-01-16 12:44:48</sys_created_on>
+            <sys_id>ef2fefe31bd86150191cd8f99a4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Support Case Variable Formatter">f6b591611bcc45905b1b411acd4bcbda</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_support_ca_services" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">1ad7f40adba7f05001eafad3f3961963</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-01-16 12:44:48</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_liisa_support_ca_services</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-11-02 08:23:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1ad7f40adba7f05001eafad3f3961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_liisa_support_ca_services</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_ui_section_1ad7f40adba7f05001eafad3f3961963</sys_update_name>
+            <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-11-02 08:23:32</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">ba7b24471b822110a3e4ebd4604bcbbe</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

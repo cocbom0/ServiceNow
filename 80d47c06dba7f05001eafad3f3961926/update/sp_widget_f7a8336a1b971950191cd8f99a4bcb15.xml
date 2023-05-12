@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>api.controller=function() {&#13;
+  /* widget controller */&#13;
+  var c = this;&#13;
+};</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>lh_fields_listener</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) { 
+
+ }]]></link>
+        <name>LH-Fields Listener</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	try{
+		data.table = options.table;
+		data.sys_id = options.sys_id;
+		data.fields = options.fields;
+
+		if(data.table && data.sys_id){
+			var gr = new GlideRecord(data.table);
+			if(gr.get(data.sys_id)){
+				if(data.fields){
+					var splitFields = data.fields.split(",");
+					data.fieldData = [];
+					for(var i=0;i<splitFields.length;i++){
+						var name = gr.getElement(splitFields[i]).getLabel();
+						var dataobject = {
+							"label":name,
+							"value":getText(gr.getDisplayValue(splitFields[i]))
+						};
+				
+				if(gr.getDisplayValue(splitFields[i]) != ""){
+					data.fieldData.push(dataobject);
+				}
+					}
+				}
+			}
+		}
+	}catch(e){
+		console.log(e);
+	}
+})();
+
+function getText(text_with_html_tag) {
+    var result = null;
+	
+	if(text_with_html_tag) {
+		var pattern = "^(<\\w*>)?([\\w\\s-À-ÿ]*)(<\/\\w*>)?$";
+		var regex = new RegExp(pattern);
+		var results = regex.exec(text_with_html_tag);
+
+		if (results !== null) {
+			result = results[2];
+		}
+	}
+
+    return result;
+}
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-11-24 17:54:06</sys_created_on>
+        <sys_id>f7a8336a1b971950191cd8f99a4bcb15</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>LH-Fields Listener</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_f7a8336a1b971950191cd8f99a4bcb15</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2022-11-25 10:08:06</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-repeat="field in data.fieldData">
+    <strong>{{field.label}}</strong>
+    <p>
+      {{field.value}}
+    </p>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

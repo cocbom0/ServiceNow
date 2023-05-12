@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_script_include action="DELETE">
+<access>package_private</access>
+<active>false</active>
+<api_name>x_liisa_support_ca.GetUserCompanyAndKnowledgeBase</api_name>
+<caller_access/>
+<client_callable>true</client_callable>
+<description/>
+<name>GetUserCompanyAndKnowledgeBase</name>
+<script><![CDATA[var GetUserCompanyAndKnowledgeBase = Class.create();
+GetUserCompanyAndKnowledgeBase.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    isPublic: function() {
+        return true;
+    },
+	
+	getKnowledgeBaseWithStartCategory: function() {
+        var result = {};
+        var company = this._getCompany(this.getParameter("company"));
+		var start_category = this._getParentCategory(company.getValue("u_knowledgebase"), this.getParameter("sysparm_start_category"));
+
+        result = {
+            "knowledge_base": company.getValue("u_knowledgebase"),
+			"start_category": start_category.getValue("sys_id")
+        };
+
+        return JSON.stringify(result);
+    },
+
+    getDataInternal: function() {
+        var result = {};
+        var company = this._getCompany(this.getParameter("company"));
+
+        result = {
+            "knowledge_base": company.getValue("u_knowledgebase")
+        };
+
+        return JSON.stringify(result);
+    },
+
+    getData: function() {
+        var result = {};
+        var user = this._getUser(this.getParameter("sysparm_user_id"));
+        var company = this._getCompany(user.getValue("company"));
+		var start_category = this._getParentCategory(company.getValue("u_knowledgebase"), this.getParameter("sysparm_start_category"));
+
+        result = {
+            "company": user.getValue("company"),
+            "knowledge_base": company.getValue("u_knowledgebase"),
+			"start_category": start_category.getValue("sys_id")
+        };
+
+        return JSON.stringify(result);
+    },
+
+    _getUser: function(sysId) {
+        var result = "";
+        var user = new GlideRecord("sys_user");
+        var find = user.get("sys_id", sysId);
+        if (find) {
+            result = user;
+        }
+        return result;
+    },
+
+    _getCompany: function(sysId) {
+        var result = "";
+        var company = new GlideRecord("customer_account");
+        var find = company.get("sys_id", sysId);
+        if (find) {
+            result = company;
+        }
+
+        return result;
+    },
+
+    _getParentCategory: function(sysId, category) {
+        var result = "";
+        var parentCategory = new GlideRecord("kb_category");
+        parentCategory.addQuery("parent_id", sysId);
+        parentCategory.addQuery("value", category);
+        parentCategory.query();
+
+        while (parentCategory.next()) {
+            result = parentCategory;
+        }
+
+        return result;
+    },
+
+    type: 'GetUserCompanyAndKnowledgeBase'
+});]]></script>
+<sys_class_name>sys_script_include</sys_class_name>
+<sys_created_by>cockrl0</sys_created_by>
+<sys_created_on>2022-05-18 08:00:24</sys_created_on>
+<sys_id>e1de87191beb8150191cd8f99a4bcb6b</sys_id>
+<sys_mod_count>50</sys_mod_count>
+<sys_name>GetUserCompanyAndKnowledgeBase</sys_name>
+<sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+<sys_policy/>
+<sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+<sys_update_name>sys_script_include_e1de87191beb8150191cd8f99a4bcb6b</sys_update_name>
+<sys_updated_by>cockrl0</sys_updated_by>
+<sys_updated_on>2023-02-15 15:24:36</sys_updated_on>
+</sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sys_script_include_e1de87191beb8150191cd8f99a4bcb6b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;
+&lt;access&gt;package_private&lt;/access&gt;
+&lt;active&gt;false&lt;/active&gt;
+&lt;api_name&gt;x_liisa_support_ca.GetUserCompanyAndKnowledgeBase&lt;/api_name&gt;
+&lt;caller_access/&gt;
+&lt;client_callable&gt;true&lt;/client_callable&gt;
+&lt;description/&gt;
+&lt;name&gt;GetUserCompanyAndKnowledgeBase&lt;/name&gt;
+&lt;script&gt;&lt;![CDATA[var GetUserCompanyAndKnowledgeBase = Class.create();
+GetUserCompanyAndKnowledgeBase.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    isPublic: function() {
+        return true;
+    },
+	
+	getKnowledgeBaseWithStartCategory: function() {
+        var result = {};
+        var company = this._getCompany(this.getParameter("company"));
+		var start_category = this._getParentCategory(company.getValue("u_knowledgebase"), this.getParameter("sysparm_start_category"));
+
+        result = {
+            "knowledge_base": company.getValue("u_knowledgebase"),
+			"start_category": start_category.getValue("sys_id")
+        };
+
+        return JSON.stringify(result);
+    },
+
+    getDataInternal: function() {
+        var result = {};
+        var company = this._getCompany(this.getParameter("company"));
+
+        result = {
+            "knowledge_base": company.getValue("u_knowledgebase")
+        };
+
+        return JSON.stringify(result);
+    },
+
+    getData: function() {
+        var result = {};
+        var user = this._getUser(this.getParameter("sysparm_user_id"));
+        var company = this._getCompany(user.getValue("company"));
+		var start_category = this._getParentCategory(company.getValue("u_knowledgebase"), this.getParameter("sysparm_start_category"));
+
+        result = {
+            "company": user.getValue("company"),
+            "knowledge_base": company.getValue("u_knowledgebase"),
+			"start_category": start_category.getValue("sys_id")
+        };
+
+        return JSON.stringify(result);
+    },
+
+    _getUser: function(sysId) {
+        var result = "";
+        var user = new GlideRecord("sys_user");
+        var find = user.get("sys_id", sysId);
+        if (find) {
+            result = user;
+        }
+        return result;
+    },
+
+    _getCompany: function(sysId) {
+        var result = "";
+        var company = new GlideRecord("customer_account");
+        var find = company.get("sys_id", sysId);
+        if (find) {
+            result = company;
+        }
+
+        return result;
+    },
+
+    _getParentCategory: function(sysId, category) {
+        var result = "";
+        var parentCategory = new GlideRecord("kb_category");
+        parentCategory.addQuery("parent_id", sysId);
+        parentCategory.addQuery("value", category);
+        parentCategory.query();
+
+        while (parentCategory.next()) {
+            result = parentCategory;
+        }
+
+        return result;
+    },
+
+    type: 'GetUserCompanyAndKnowledgeBase'
+});]]&gt;&lt;/script&gt;
+&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;cockrl0&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2022-05-18 08:00:24&lt;/sys_created_on&gt;
+&lt;sys_id&gt;e1de87191beb8150191cd8f99a4bcb6b&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;50&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;GetUserCompanyAndKnowledgeBase&lt;/sys_name&gt;
+&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sys_script_include_e1de87191beb8150191cd8f99a4bcb6b&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;cockrl0&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2023-02-15 15:24:36&lt;/sys_updated_on&gt;
+&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>741110725</payload_hash>
+        <record_name>GetUserCompanyAndKnowledgeBase</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>fenner.giraldo@snc</sys_created_by>
+        <sys_created_on>2023-04-11 12:23:54</sys_created_on>
+        <sys_id>428955cb1b06e110c2e1433be54bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1877045c8ce0000001</sys_recorded_at>
+        <sys_updated_by>fenner.giraldo@snc</sys_updated_by>
+        <sys_updated_on>2023-04-11 12:23:54</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>0a8955cb3f06e1102b4b52994795cf26</update_guid>
+        <update_guid_history>0a8955cb3f06e1102b4b52994795cf26:741110725,17a891cbe006e11061edcb313e01f188:1709221112,93a891cb8106e110e534a73c814c8385:1845735279</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>fenner.giraldo@snc</sys_created_by>
+        <sys_created_on>2023-04-11 12:26:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>46afb5b1b5344cd89fd2a580c266a840</sys_id>
+        <sys_metadata>e1de87191beb8150191cd8f99a4bcb6b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserCompanyAndKnowledgeBase</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_script_include_e1de87191beb8150191cd8f99a4bcb6b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_e1de87191beb8150191cd8f99a4bcb6b">428955cb1b06e110c2e1433be54bcb27</sys_update_version>
+        <sys_updated_by>fenner.giraldo@snc</sys_updated_by>
+        <sys_updated_on>2023-04-11 12:26:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

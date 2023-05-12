@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
+    <user_criteria action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <company>6d588af4dbc0419001eafad3f396190e</company>
+        <department/>
+        <group/>
+        <location/>
+        <match_all>true</match_all>
+        <name>LFR - Liebherr-France SAS Access KB</name>
+        <role name="snc_external">940ba702933002009c8579b4f47ffbe2</role>
+        <script/>
+        <sys_class_name>user_criteria</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-03-23 17:56:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f24f68091b75211003b9caaf7b4bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LFR - Liebherr-France SAS Access KB</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>user_criteria_f24f68091b75211003b9caaf7b4bcbd0</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:56:15</sys_updated_on>
+        <user/>
+    </user_criteria>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>u_imp_tmpl_sn_install_base_m2m_installed_product</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>u_imp_tmpl_sn_install_base_m2m_installed_product</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-30 16:53:38</sys_created_on>
+        <sys_id>676c98091bde959098d810a38b4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_sn_install_base_m2m_installed_product</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_transform_map_676c98091bde959098d810a38b4bcbeb</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-30 16:53:38</sys_updated_on>
+        <target_table>sn_install_base_m2m_installed_product</target_table>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sys_transform_map_676c98091bde959098d810a38b4bcbeb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;u_imp_tmpl_sn_install_base_m2m_installed_product&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;u_imp_tmpl_sn_install_base_m2m_installed_product&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-30 16:53:38&lt;/sys_created_on&gt;&lt;sys_id&gt;676c98091bde959098d810a38b4bcbeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_imp_tmpl_sn_install_base_m2m_installed_product&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_676c98091bde959098d810a38b4bcbeb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-30 16:53:38&lt;/sys_updated_on&gt;&lt;target_table&gt;sn_install_base_m2m_installed_product&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>367962800</payload_hash>
+        <record_name>u_imp_tmpl_sn_install_base_m2m_installed_product</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-30 16:53:38</sys_created_on>
+        <sys_id>ef6c98091bde959098d810a38b4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1838f515f5e0000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-30 16:53:38</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>e76c980904de9590766edc5c3d2e91ec</update_guid>
+        <update_guid_history>e76c980904de9590766edc5c3d2e91ec:367962800</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-03 17:31:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>7cb513b9806b4228a23ffe75f12b8ca4</sys_id>
+        <sys_metadata>676c98091bde959098d810a38b4bcbeb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_sn_install_base_m2m_installed_product</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_transform_map_676c98091bde959098d810a38b4bcbeb</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_676c98091bde959098d810a38b4bcbeb">ef6c98091bde959098d810a38b4bcbec</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-03 17:31:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_content3_label" label="Content3 Label" language="en" table="cmdb_hardware_product_model">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_content3_label</element>
+            <help/>
+            <hint/>
+            <label>Content3 Label</label>
+            <language>en</language>
+            <name>cmdb_hardware_product_model</name>
+            <plural>Content3 Labels</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 09:43:32</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Content3 Label</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_documentation_cmdb_hardware_product_model_u_content3_label_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-06 09:43:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

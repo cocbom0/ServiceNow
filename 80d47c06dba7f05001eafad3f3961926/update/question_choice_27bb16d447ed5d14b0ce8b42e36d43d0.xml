@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Environmental condition : temperature range">d97bda9447ed5d14b0ce8b42e36d43e3</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-22 11:27:25</sys_created_on>
+        <sys_id>27bb16d447ed5d14b0ce8b42e36d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>-50°C to +20°C</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>question_choice_27bb16d447ed5d14b0ce8b42e36d43d0</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-22 11:27:25</sys_updated_on>
+        <text>-50°C to +20°C</text>
+        <value>choice3</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=27bb16d447ed5d14b0ce8b42e36d43d0"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>misc</field>
+        <id>27bb16d447ed5d14b0ce8b42e36d43d0</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-22 11:27:25</sys_created_on>
+        <sys_id>b0cb16d447ed5d14b0ce8b42e36d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-22 11:27:25</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_misc</field>
+        <id>27bb16d447ed5d14b0ce8b42e36d43d0</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-22 11:27:25</sys_created_on>
+        <sys_id>78cb16d447ed5d14b0ce8b42e36d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-22 11:27:25</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

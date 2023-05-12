@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:ec755e1a1bea4d10a4236313604bcb85</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:20:33</sys_created_on>
+        <sys_id>796924ffdb6a2150ca0952f8f49619c7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>remote_technical_support_dpf_unlocker</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_796924ffdb6a2150ca0952f8f49619c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:23:44</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - All Records">a6da9f0f1b122150c2e1433be54bcb1d</ui_policy>
+        <variable>remote_technical_support_dpf_unlocker</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>catalog_ui_policy_action_796924ffdb6a2150ca0952f8f49619c7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:ec755e1a1bea4d10a4236313604bcb85</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-08 13:20:33</sys_created_on><sys_id>796924ffdb6a2150ca0952f8f49619c7</sys_id><sys_mod_count>2</sys_mod_count><sys_name>remote_technical_support_dpf_unlocker</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_796924ffdb6a2150ca0952f8f49619c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-08 13:23:44</sys_updated_on><table/><ui_policy display_value="Hide Fields for Target Records - All Records">a6da9f0f1b122150c2e1433be54bcb1d</ui_policy><variable>remote_technical_support_dpf_unlocker</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1457013362</payload_hash>
+        <record_name>remote_technical_support_dpf_unlocker</record_name>
+        <reverted_from/>
+        <source>46e538a587a62d107cb6eced3fbb35c6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:23:44</sys_created_on>
+        <sys_id>f12ae433dbaa2150ca0952f8f4961996</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187fb8843bf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:23:44</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>392ae433a9aa2150c0b0461b4797b595</update_guid>
+        <update_guid_history>392ae433a9aa2150c0b0461b4797b595:-1457013362,811a643392aa21509d81e0daeda6ae05:-1520185633,1b6964ffef6a21502f1072e17d4da82b:-852712292</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="remote_technical_support_dpf_unlocker">f38a6073dbaa2150ca0952f8f4961910</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:25:30</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>00f683ceb97944928801a36045ae5789</sys_id>
+        <sys_metadata>796924ffdb6a2150ca0952f8f49619c7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>remote_technical_support_dpf_unlocker</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_796924ffdb6a2150ca0952f8f49619c7</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_796924ffdb6a2150ca0952f8f49619c7">f12ae433dbaa2150ca0952f8f4961996</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:25:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

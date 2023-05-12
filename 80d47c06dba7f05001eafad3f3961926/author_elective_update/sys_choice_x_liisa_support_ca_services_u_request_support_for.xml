@@ -1,0 +1,2185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_request_support_for" table="x_liisa_support_ca_services" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_request_support_for</element>
+            <name>x_liisa_support_ca_services</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-10-05 17:08:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_request_support_for</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_choice_x_liisa_support_ca_services_u_request_support_for</sys_update_name>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-05 17:08:42</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Zugriff</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 15:46:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:53:34</sys_updated_on>
+            <value>access</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Access</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-01-26 10:54:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:53:42</sys_updated_on>
+            <value>access</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Accès</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 15:44:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:53:50</sys_updated_on>
+            <value>access</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Problem mit dem System</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 15:47:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:47:40</sys_updated_on>
+            <value>issue_with_system</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Issue with system</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-01-26 10:54:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-01-26 10:54:52</sys_updated_on>
+            <value>issue_with_system</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Problème avec le système</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 15:47:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:47:17</sys_updated_on>
+            <value>issue_with_system</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Verbesserungsvorschlag</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 15:50:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:50:44</sys_updated_on>
+            <value>improvement_proposal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Improvement proposal</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-01-26 10:55:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-01-26 10:55:27</sys_updated_on>
+            <value>improvement_proposal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Proposition d'amélioration</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 15:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 15:48:46</sys_updated_on>
+            <value>improvement_proposal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Andere</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 16:01:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 16:01:01</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-01-26 10:55:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-01-26 10:55:55</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>CVM Support</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Autre</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-01 16:01:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-01 16:01:23</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Meldung bei schwerwiegendem vorfall</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:12</sys_updated_on>
+            <value>incident_notification</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Critical incident notification</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:21</sys_updated_on>
+            <value>incident_notification</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Notification des incidents critiques</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:36</sys_updated_on>
+            <value>incident_notification</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Technische unterstützung vor ort</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:05</sys_updated_on>
+            <value>onsite_technical_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On site technical support</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:29</sys_updated_on>
+            <value>onsite_technical_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assistance technique sur site</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:36</sys_updated_on>
+            <value>onsite_technical_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Technische unterstützung helpdesk</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:36</sys_updated_on>
+            <value>remote_technical_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Remote technical support</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:43</sys_updated_on>
+            <value>remote_technical_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assistance technique à distance</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:37</sys_updated_on>
+            <value>remote_technical_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service Information (SI) / Bulletin</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-03-10 14:04:16</sys_updated_on>
+            <value>service_information</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service Information (SI) / Bulletin</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-03-10 14:04:09</sys_updated_on>
+            <value>service_information</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service Information (SI) / Bulletin</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-03-10 14:04:22</sys_updated_on>
+            <value>service_information</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Technische rückmeldungen / fragen</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:34:55</sys_updated_on>
+            <value>technical_feedback</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Technical feedbacks / questions</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:01</sys_updated_on>
+            <value>technical_feedback</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Commentaires techniques / questions</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:06</sys_updated_on>
+            <value>technical_feedback</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weitere themen zu technischer service</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:14</sys_updated_on>
+            <value>other_technical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other technical services topics</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:23</sys_updated_on>
+            <value>other_technical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb37</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Autres sujets relatifs au support technique</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>1050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:37</sys_updated_on>
+            <value>other_technical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finanzielle dokumente anfordern</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:34</sys_updated_on>
+            <value>claim_financial_document</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim financial documents</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:29</sys_updated_on>
+            <value>claim_financial_document</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Réclamer des documents financiers</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:58</sys_updated_on>
+            <value>claim_financial_document</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entscheidungen über den anspruchsinhalt</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:46</sys_updated_on>
+            <value>claim_decision</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim content decisions</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:40</sys_updated_on>
+            <value>claim_decision</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Décisions relatives au contenu des réclamations</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:58</sys_updated_on>
+            <value>claim_decision</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Antrag auf untersuchung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:35:53</sys_updated_on>
+            <value>request_investigation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request for investigation</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:58</sys_updated_on>
+            <value>request_investigation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Demande d'enquête</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:58</sys_updated_on>
+            <value>request_investigation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reklamationsstatus</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-02-12 12:09:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:21:21</sys_updated_on>
+            <value>claim_status_definition</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Claim status definition</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-02-12 12:09:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:09:52</sys_updated_on>
+            <value>claim_status_definition</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Statut de la réclamation</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-02-12 12:09:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:21:15</sys_updated_on>
+            <value>claim_status_definition</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Beschädigung teile rückgabe teile status</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:08:12</sys_updated_on>
+            <value>damage_parts_return</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Damage parts return part status</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:08:12</sys_updated_on>
+            <value>damage_parts_return</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Statut des pièces retournées endomagées</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:08:12</sys_updated_on>
+            <value>damage_parts_return</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Antrag auf analyse von kundenantragsdaten</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:06:31</sys_updated_on>
+            <value>request_claim_analysis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Request for customer claim data analysis</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:06:31</sys_updated_on>
+            <value>request_claim_analysis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Demande d'analyse des données relatives aux réclamations des clients</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:06:31</sys_updated_on>
+            <value>request_claim_analysis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weitere themen zu garantie und schadenmanagement</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:00</sys_updated_on>
+            <value>other_warranty</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other warranty and claim management topics</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:36:46</sys_updated_on>
+            <value>other_warranty</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>05e173511b4445905b1b411acd4bcb3c</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Autres sujets relatifs à la garantie et à la gestion des réclamations</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>2050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:39:58</sys_updated_on>
+            <value>other_warranty</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Informelle schulung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:06</sys_updated_on>
+            <value>informal_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Informal training</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:11</sys_updated_on>
+            <value>informal_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Formation informelle</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:11</sys_updated_on>
+            <value>informal_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Train the trainer schulung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:11</sys_updated_on>
+            <value>official_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Official training (Train-The-Trainer)</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:19</sys_updated_on>
+            <value>official_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Formation officielle (formation de formateurs)</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:11</sys_updated_on>
+            <value>official_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Auffrischungsschulung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:12</sys_updated_on>
+            <value>refresher_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Refresher training</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:26</sys_updated_on>
+            <value>refresher_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Formation de rappel</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:12</sys_updated_on>
+            <value>refresher_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Standard-ausbildung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:34</sys_updated_on>
+            <value>standard_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Standard training</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:31</sys_updated_on>
+            <value>standard_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Formation standard</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:12</sys_updated_on>
+            <value>standard_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Zertifizierung ausbildung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:39</sys_updated_on>
+            <value>certification_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Certification training</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:44</sys_updated_on>
+            <value>certification_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Formation à la certification</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:12</sys_updated_on>
+            <value>certification_training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sonstige schulungswünsche</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:48</sys_updated_on>
+            <value>other_training_requests</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other training requests</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:12</sys_updated_on>
+            <value>other_training_requests</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb58</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Autre demande de formation</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>3050</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:12</sys_updated_on>
+            <value>other_training_requests</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Montageanleitung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>assembly_instruction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assembly instruction</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>assembly_instruction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Instruction d'assemblage</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>assembly_instruction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Betriebsanleitung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>operator_manual</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Operator's manual</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>operator_manual</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manuel opérateur</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:37:54</sys_updated_on>
+            <value>operator_manual</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reparaturanleitung</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:32</sys_updated_on>
+            <value>repair_instruction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Repair instruction</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:32</sys_updated_on>
+            <value>repair_instruction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Instruction de réparation</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>repair_instruction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Installation guideline</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:32</sys_updated_on>
+            <value>installation_guideline</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Installation guideline</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:31</sys_updated_on>
+            <value>installation_guideline</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>85e173511b4445905b1b411acd4bcb59</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Guide d'installation</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>4030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:32</sys_updated_on>
+            <value>installation_guideline</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lebenszykluskosten</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>lifecycle_cost</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lifecycle cost</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:02</sys_updated_on>
+            <value>lifecycle_cost</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coût du cycle de vie</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>lifecycle_cost</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wartungspläne</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>maintenance_schedules</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Maintenance schedules</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:08</sys_updated_on>
+            <value>maintenance_schedules</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Programmes d'entretien</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>maintenance_schedules</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>REMAN</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>reman</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>REMAN</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>reman</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>fc22483f1bc34150191cd8f99a4bcb55</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>REMAN</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>5020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:40:44</sys_updated_on>
+            <value>reman</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ersatzteil-preise / Lieferzeit</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:55:36</sys_updated_on>
+            <value>spare_part_pricing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spare part pricing / Leadtime</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:55:02</sys_updated_on>
+            <value>spare_part_pricing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prix des pièces de rechange / Délai de livraison</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 12:55:15</sys_updated_on>
+            <value>spare_part_pricing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ersatzteil technik</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:37</sys_updated_on>
+            <value>spare_part_technical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spare part technical (product information)</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:32</sys_updated_on>
+            <value>spare_part_technical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Informations techniques sur les pièces de rechange</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:03</sys_updated_on>
+            <value>spare_part_technical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ersatzteilkatalog</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:03</sys_updated_on>
+            <value>spare_part_catalog</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spare part catalog</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:43</sys_updated_on>
+            <value>spare_part_catalog</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Catalogue des pièces de rechange</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:03</sys_updated_on>
+            <value>spare_part_catalog</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Feldtest und projektanfrage</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:48</sys_updated_on>
+            <value>field_test_project_request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Field test &amp; project request</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:38:56</sys_updated_on>
+            <value>field_test_project_request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Essais terrain et demande de projet</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6030</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:03</sys_updated_on>
+            <value>field_test_project_request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weitere themen zu ersatzteil</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:39:08</sys_updated_on>
+            <value>spare_part_other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other spare parts topics</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-02-12 13:02:59</sys_updated_on>
+            <value>spare_part_other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>45e173511b4445905b1b411acd4bcb3d</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Autres sujets relatifs au pièces de rechange</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>6040</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:03</sys_updated_on>
+            <value>spare_part_other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kommerzielles management</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:39:15</sys_updated_on>
+            <value>commercial_management</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Commercial management</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:25</sys_updated_on>
+            <value>commercial_management</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gestion commerciale</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7000</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:25</sys_updated_on>
+            <value>commercial_management</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entwicklung des netzes</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:39:22</sys_updated_on>
+            <value>network_development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Network development</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:25</sys_updated_on>
+            <value>network_development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Développement du réseau</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7010</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:25</sys_updated_on>
+            <value>network_development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Andere anfragen ?</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-10-06 18:39:25</sys_updated_on>
+            <value>other_requests</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other requests ?</label>
+            <language>en</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:26</sys_updated_on>
+            <value>other_requests</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>c5e173511b4445905b1b411acd4bcb5a</dependent_value>
+            <element>u_request_support_for</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Autres demandes ?</label>
+            <language>fr</language>
+            <name>x_liisa_support_ca_services</name>
+            <sequence>7020</sequence>
+            <synonyms/>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-03 11:21:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-10 10:41:26</sys_updated_on>
+            <value>other_requests</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Customer Service role for Defense Application Agents, it is the one who performs the work on the case.</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_liisa_support_ca.cot_buvm_agent_defense</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>cot_buvm_agent_defense</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 17:03:30</sys_created_on>
+        <sys_id>4abf566b1b1a6150c2e1433be54bcb10</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_liisa_support_ca.cot_buvm_agent_defense</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_user_role_4abf566b1b1a6150c2e1433be54bcb10</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 17:05:49</sys_updated_on>
+    </sys_user_role>
+</record_update>

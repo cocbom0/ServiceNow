@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>case_user_view</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 12:53:35</sys_created_on>
+        <sys_id>a65d80c01bbde110c2e1433be54bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>case_user_view</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_ui_view_a65d80c01bbde110c2e1433be54bcbd0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-20 12:53:35</sys_updated_on>
+        <title>case_user_view</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

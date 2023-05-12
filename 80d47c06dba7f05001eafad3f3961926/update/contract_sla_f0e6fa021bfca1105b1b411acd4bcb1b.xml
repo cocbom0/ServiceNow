@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla">
+    <contract_sla action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <adv_condition_type>none</adv_condition_type>
+        <cancel_condition table="x_liisa_support_ca_services">variables.8ea8b5361b660110a4236313604bcb27ISNOTEMPTY^EQ<item endquery="false" field="variables.8ea8b5361b660110a4236313604bcb27" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </cancel_condition>
+        <collection>x_liisa_support_ca_services</collection>
+        <condition_class/>
+        <duration>1970-01-02 21:00:00</duration>
+        <duration_type/>
+        <enable_logging>false</enable_logging>
+        <flow/>
+        <name>COT BU-VM CaseRes. 5 WD with Support</name>
+        <pause_condition table="x_liisa_support_ca_services">state=18^EQ<item display_value="Awaiting Info" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="18"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </pause_condition>
+        <relative_duration_works_on>Task record</relative_duration_works_on>
+        <reset_action>cancel</reset_action>
+        <reset_condition/>
+        <resume_condition/>
+        <retroactive>true</retroactive>
+        <retroactive_pause>true</retroactive_pause>
+        <schedule display_value="8-5 weekdays excluding holidays">090eecae0a0a0b260077e1dfa71da828</schedule>
+        <schedule_source>sla_definition</schedule_source>
+        <schedule_source_field/>
+        <set_start_to>assigned_on</set_start_to>
+        <start_condition table="x_liisa_support_ca_services">state=10^service_offering=c5e173511b4445905b1b411acd4bcb37^u_request_support_for=incident_notification^ORu_request_support_for=onsite_technical_support^u_sla_waiting_reasonISNOTEMPTY^NQstate=10^service_offering=c5e173511b4445905b1b411acd4bcb37^u_request_support_for=remote_technical_support^u_request_type=diagnostic_tool^ORu_request_type=dpfunlocker^ORu_request_type=mechanical_support^ORu_request_type=power_change_issue^u_sla_waiting_reasonISNOTEMPTY^EQ<item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+            <item display_table="service_offering" display_value="Technical Services - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="c5e173511b4445905b1b411acd4bcb37"/>
+            <item display_value="Critical incident notification" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="incident_notification"/>
+            <item display_value="On site technical support" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="true" value="onsite_technical_support"/>
+            <item endquery="false" field="u_sla_waiting_reason" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item display_value="Open" endquery="false" field="state" goto="false" newquery="true" operator="=" or="false" value="10"/>
+            <item display_table="service_offering" display_value="Technical Services - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="c5e173511b4445905b1b411acd4bcb37"/>
+            <item display_value="Remote technical support" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="remote_technical_support"/>
+            <item display_value="Diagnostic tool (LiDIA/Sculi)" endquery="false" field="u_request_type" goto="false" newquery="false" operator="=" or="false" value="diagnostic_tool"/>
+            <item display_value="DPF Unlocker" endquery="false" field="u_request_type" goto="false" newquery="false" operator="=" or="true" value="dpfunlocker"/>
+            <item display_value="mechanical_support" endquery="false" field="u_request_type" goto="false" newquery="false" operator="=" or="true" value="mechanical_support"/>
+            <item display_value="Issue with Power Change" endquery="false" field="u_request_type" goto="false" newquery="false" operator="=" or="true" value="power_change_issue"/>
+            <item endquery="false" field="u_sla_waiting_reason" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </start_condition>
+        <stop_condition table="x_liisa_support_ca_services">state=6^ORstate=3^ORstate=7^EQ<item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="6"/>
+            <item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="3"/>
+            <item display_value="Cancelled" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="7"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </stop_condition>
+        <sys_class_name>contract_sla</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-05 13:24:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0e6fa021bfca1105b1b411acd4bcb1b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>COT BU-VM CaseRes. 5 WD with Support</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>contract_sla_f0e6fa021bfca1105b1b411acd4bcb1b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 07:15:29</sys_updated_on>
+        <target>resolution</target>
+        <timezone/>
+        <timezone_source>task.caller_id.time_zone</timezone_source>
+        <type>OLA</type>
+        <vendor/>
+        <when_to_cancel>on_condition</when_to_cancel>
+        <when_to_resume>on_condition</when_to_resume>
+        <workflow display_value="Default SLA workflow">4b6570360a0a0b3000bbacab877713f2</workflow>
+    </contract_sla>
+</record_update>

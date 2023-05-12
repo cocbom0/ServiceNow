@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
+    <item_option_new action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attributes/>
+        <cat_item display_value="Service Training">b7f1c31f1b4801d05b1b411acd4bcbca</cat_item>
+        <category/>
+        <choice_direction>down</choice_direction>
+        <choice_field/>
+        <choice_table/>
+        <create_roles/>
+        <default_html_value/>
+        <default_value/>
+        <delete_roles/>
+        <delivery_plan/>
+        <description/>
+        <display_title>false</display_title>
+        <do_not_select_first>false</do_not_select_first>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <dynamic_value_dot_walk_path/>
+        <dynamic_value_field/>
+        <enable_also_request_for>false</enable_also_request_for>
+        <example_text/>
+        <field/>
+        <global>false</global>
+        <help_tag>More information</help_tag>
+        <help_text/>
+        <hidden>false</hidden>
+        <include_none>false</include_none>
+        <instructions><![CDATA[<p style="margin-right: 0cm; margin-left: 0cm; font-size: 12pt; font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: 8.0pt; font-family: Arial, sans-serif;">Formal training is the official &#34;Train the Trainer&#34; - course performed by the LIEBHERR Training Academy in Bulle, Switzerland</span></p>
+<p><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Target group :         Instructors of customer training academy and upon mutual technicians of customer </span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;"><br /></span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Content :                 see training concept</span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;"><br /></span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Nr. of participants : max. 8 per session</span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;"><br /></span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Date :                     Normally approx. 3 months before start of production of the products</span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;"><br /></span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Target :                   Performance of the training courses and customer to acknowledge the training to be success of the training and take-over the responsibility for the service training of the customer to train it&#39;s worldwide service network.</span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;"><br /></span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Training costs :       tbd</span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;"><br /></span><span style="font-size: 8.0pt; line-height: 107%; font-family: Arial, sans-serif;">Duration :                ~3-5 days -&gt; tbd</span></p>]]></instructions>
+        <layout>normal</layout>
+        <list_table/>
+        <lookup_label/>
+        <lookup_price/>
+        <lookup_table/>
+        <lookup_unique>false</lookup_unique>
+        <lookup_value/>
+        <macro/>
+        <macroponent/>
+        <mandatory>false</mandatory>
+        <map_to_field>false</map_to_field>
+        <mask_use_confirmation>false</mask_use_confirmation>
+        <mask_use_encryption>false</mask_use_encryption>
+        <name>formal_trainthetrainer_training</name>
+        <order>65</order>
+        <post_insert_script/>
+        <price_if_checked>0</price_if_checked>
+        <pricing_implications>false</pricing_implications>
+        <published_ref/>
+        <question_text>Formal/TrainTheTrainer Training:</question_text>
+        <read_only>false</read_only>
+        <read_roles/>
+        <read_script/>
+        <rec_lookup_price/>
+        <rec_price_if_checked>0</rec_price_if_checked>
+        <record/>
+        <record_producer_table>x_liisa_support_ca_services</record_producer_table>
+        <reference/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <rich_text/>
+        <roles_to_use_also_request_for/>
+        <save_script/>
+        <scale_max>5</scale_max>
+        <scale_min>0</scale_min>
+        <show_help>true</show_help>
+        <show_help_on_load>true</show_help_on_load>
+        <sp_widget/>
+        <summary_macro/>
+        <sys_class_name>item_option_new</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-05 18:48:13</sys_created_on>
+        <sys_id>60baa6191b934d905b1b411acd4bcbcc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Formal/TrainTheTrainer Training:</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>item_option_new_60baa6191b934d905b1b411acd4bcbcc</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-20 08:49:26</sys_updated_on>
+        <table/>
+        <tooltip/>
+        <type>17</type>
+        <ui_page/>
+        <unique>false</unique>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <validate_regex/>
+        <variable_name/>
+        <variable_set/>
+        <variable_width/>
+        <visibility>1</visibility>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <visible_summary>true</visible_summary>
+        <write_roles/>
+    </item_option_new>
+    <sys_translated_text action="delete_multiple" query="documentkey=60baa6191b934d905b1b411acd4bcbcc"/>
+    <fx_price action="delete_multiple" query="id=60baa6191b934d905b1b411acd4bcbcc"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price_if_checked</field>
+        <id>60baa6191b934d905b1b411acd4bcbcc</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-05 18:48:13</sys_created_on>
+        <sys_id>0b5bae991b934d905b1b411acd4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-05 18:48:13</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_price_if_checked</field>
+        <id>60baa6191b934d905b1b411acd4bcbcc</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-05 18:48:13</sys_created_on>
+        <sys_id>0b5bae991b934d905b1b411acd4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-05 18:48:13</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

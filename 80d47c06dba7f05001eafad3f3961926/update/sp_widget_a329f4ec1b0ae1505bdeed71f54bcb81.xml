@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(){
+  /* widget controller */
+  var c = this;
+		c.template = "kb_article_list_template";
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.transclude:last-child {&#13;
+  padding-bottom: 10px;&#13;
+}&#13;
+&#13;
+.list-group {&#13;
+ 	margin-bottom: 0px; &#13;
+}&#13;
+&#13;
+.list-group-item {&#13;
+    padding: 0;&#13;
+    border: none;&#13;
+    margin-bottom: 10px;&#13;
+    border-radius: 0px;&#13;
+}&#13;
+&#13;
+.list-group-item:last-child {&#13;
+	margin-bottom: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color</field_list>
+        <has_preview>true</has_preview>
+        <id>lh_csm_kb_latest_articles</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>LH-CSM-KB-Latest-Articles</name>
+        <option_schema>[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}},{"hint":"Decide the no of days for article created to appear in latest article list","name":"no_of_days","section":"other","default_value":"30","label":"No. of days","type":"integer"}]</option_schema>
+        <public>true</public>
+        <roles>snc_external,snc_internal</roles>
+        <script><![CDATA[(function() {
+	data.articles = [];
+	var days = options.no_of_days || 30;
+	var gdt = new GlideDateTime();
+	$sp.log(gdt.getDisplayValue());
+	gdt.addDaysLocalTime(days*-1);
+	
+	options.title = options.title || gs.getMessage("Last Published Articles");
+//	var z = $sp.getKBRecord();
+
+	var z = new GlideRecord('kb_knowledge');
+
+//	z.addQuery('sys_created_on','>=',gdt.getDisplayValue()); // get data from last 30 days
+
+	z.addQuery('published','>=',gdt.getDisplayValue()); // get data from last 30 days
+	z.addQuery('latest',true);
+	z.addQuery('active',true);
+	z.orderByDesc('published');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	$sp.log("row count is "+z.getRowCount());
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id');
+
+		a.number=z.number.getDisplayValue();
+		a.author_name=z.author.getDisplayValue();
+		a.version="v" + z.version.getDisplayValue();
+		a.published = z.published.getDisplayValue();
+
+		data.articles.push(a);
+	}
+})()
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 15:37:44</sys_created_on>
+        <sys_id>a329f4ec1b0ae1505bdeed71f54bcb81</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>LH-CSM-KB-Latest-Articles</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_a329f4ec1b0ae1505bdeed71f54bcb81</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 09:09:54</sys_updated_on>
+        <template><![CDATA[ <sp-panel ng-if="data.articles.length > 0" >
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="a in data.articles">
+      <a href="?id=kb_article_view&sys_id={{::a.sys_id}}">{{::a.short_description}}</a>
+      <div>
+        <span ng-if="a.sys_view_count == 1" class="views pad-right">
+         <h style="font-size=-5; color: #CCCCCC">
+         {{::a.number}}  {{::a.version}}  · {{::a.author_name}} · ${{{::a.sys_view_count}} Views} · <sn-day-ago date="a.published"/h>
+        </span>
+        <span ng-if="a.sys_view_count > 1" class="views pad-right">
+         <h style="font-size=-5; color: #CCCCCC">
+         {{::a.number}}  {{::a.version}}  · {{::a.author_name}} · ${{{::a.sys_view_count}} Views} · <sn-day-ago date="a.published"/h>
+        </span>
+        <span ng-if="false" class="published pad-right">
+          <span ng-if="a.sys_view_count > 0" class="pad-right">&#8226;</span> <glyph sn-char="calendar" class="pad-right" />
+          <sn-day-ago date="a.published"/>
+        </span>
+      </div>
+    </li>
+  </ul>
+</sp-panel>
+]]></template>
+    </sp_widget>
+</record_update>

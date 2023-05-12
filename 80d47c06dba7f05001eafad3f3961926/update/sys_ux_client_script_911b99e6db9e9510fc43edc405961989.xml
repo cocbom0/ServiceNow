@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="CSM Landing Page">701b99e6db9e9510fc43edc405961955</macroponent>
+        <name>New client transform script 4</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Hello",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Hey there",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.imports
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var name = api.context.session.user.firstName;
+    // use translate helper to translate the texts
+    var userGreetings = (name && name.length > 0) ? helpers.translateSync("Hello") + ", " + name + "!" : helpers.translateSync("Hey there") + "!";
+    return userGreetings;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-05 13:18:15</sys_created_on>
+        <sys_id>911b99e6db9e9510fc43edc405961989</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>New client transform script 4</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_ux_client_script_911b99e6db9e9510fc43edc405961989</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-05 13:35:13</sys_updated_on>
+        <target/>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

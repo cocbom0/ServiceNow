@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+  /* cockrl0 new.start */
+	c.server.update();
+	$rootScope.$on('updateKB', function(event, data) {
+		if(data) {
+			c.data.zoomKB = true;
+			c.data.KnowledgeBase = data;
+			c.server.update();
+		} else {
+			c.data.zoomKB = false;
+			c.data.KnowledgeBase = null;
+			c.server.update();
+		}
+	});
+  /* cockrl0 new.end */
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.iconlink a label,h2 {&#13;
+  display: block;&#13;
+  font-size: 2.5rem;&#13;
+  font-weight: 300;&#13;
+  line-height: 1.1;&#13;
+  padding: 0;&#13;
+  margin: 0 0 10px 0;&#13;
+}&#13;
+&#13;
+/* TOP ICON ---------- */&#13;
+&#13;
+a.top_icon {&#13;
+  display: block;&#13;
+  padding: 20px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+a.top_icon .fa {&#13;
+  display: block;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+/* CIRCLE ICON ---------- */&#13;
+&#13;
+a.circle_icon {&#13;
+  display: block;&#13;
+  padding: 20px 0px 20px 70px;&#13;
+  position: relative;&#13;
+}&#13;
+&#13;
+a.circle_icon .fa {&#13;
+  position:absolute;&#13;
+  left: 0px;&#13;
+  top: 10px;&#13;
+}&#13;
+&#13;
+/* COLOR BOX ---------- */&#13;
+&#13;
+a.color_box {&#13;
+  display: block;&#13;
+  position: relative;&#13;
+  padding: 20px 20px 20px 82px;&#13;
+  border-radius: 4px;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+a.color_box .fa {&#13;
+  position:absolute;&#13;
+  left: 20px;&#13;
+  top: 20px;&#13;
+  width:42px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.icon-link-background-primary {&#13;
+  background-color: $brand-primary;&#13;
+}&#13;
+&#13;
+.icon-link-background-info {&#13;
+  background-color: $brand-info;&#13;
+}&#13;
+&#13;
+.icon-link-background-success {&#13;
+  background-color: $brand-success;&#13;
+}&#13;
+&#13;
+.icon-link-background-warning {&#13;
+  background-color: $brand-warning;&#13;
+}&#13;
+&#13;
+.icon-link-background-danger {&#13;
+  background-color: $brand-danger;&#13;
+}&#13;
+&#13;
+.icon-link-background-default {&#13;
+  background-color: $brand-primary;&#13;
+}&#13;
+&#13;
+.text-primary {&#13;
+  color: $brand-primary;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-primary, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-info {&#13;
+  color: $brand-info;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-info, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-success {&#13;
+  color: $brand-success;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-success, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-warning {&#13;
+  color: $brand-warning;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-warning, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-danger {&#13;
+  color: $brand-danger;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-danger, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-default {&#13;
+  color: $brand-primary;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-primary, 20%);&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>type,url,sc_category,sc_cat_item,kb_topic,kb_article,kb_category,sp_page,title,short_description,color,class_name,glyph</field_list>
+        <has_preview>false</has_preview>
+        <id>lh_csm_kb_category_shortcut</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>LH-CSM-KB-Category-Shortcut</name>
+        <option_schema>[{"name":"link_template","section":"Presentation","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"},{"label":"Image Icon","value":"Image Icon"}]},{"displayValue":"Images","name":"image","section":"other","label":"Image","type":"reference","value":"db_image","ed":{"reference":"db_image"}},{"name":"target","section":"other","label":"target","type":"choice","choices":[{"label":"_new","value":"_new"}]},{"name":"kb_1st_category_level","section":"other","label":"1st KB Category Level","type":"string"},{"name":"kb_2nd_category_level","section":"other","label":"2nd KB Category Level","type":"string"},{"name":"kb_3th_category_level","section":"other","label":"3th KB Category Level","type":"string"},{"name":"kb_4th_category_level","section":"other","label":"4th KB Category Level","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function(){
+	var gr = $sp.getInstanceRecord();
+	data.href = $sp.getMenuHREF(gr);
+	/* data.displaylink = 1; cockrl0 old */
+	data.displaylink = false; /* cockrl0 new */
+	
+	//LH Specific: If link is organizational information" then dynamically build the URL.
+	//if(data.href == "/csm?id=csm_kb_search&kb_knowledge_base=##kb##&spa=1&language=en&kb_category=##kbcat##")
+	if(data.href.includes("##"))
+		{
+			// Get the current user record
+			var currentuser = gs.getUser();
+
+			// Get the current company record
+			var company = new GlideRecord('core_company');
+			company.addQuery("sys_id", currentuser.getCompanyID());
+			company.query();
+			company.next(); //get the first record
+//			console.log("companyName:"+company.getDisplayValue('name'));
+	
+			// Get the current account record (CSM) equal to the user company
+			var account = new GlideRecord('customer_account');
+			account.addQuery("name",company.getDisplayValue('name'));
+			account.query();
+			account.next();
+//			console.log("accountName:"+account.getDisplayValue('name'));
+//			console.log("kb:"+account.getDisplayValue('u_customer_knowledge_base'));
+//			console.log("kbid:"+account.getValue('u_customer_knowledge_base'));
+
+			/* cockrl0 new.start */
+			var knowledgeTitle;
+			var knowledgeId;
+			if (input.zoomKB) {
+				knowledgeTitle = input.KnowledgeBase.title;
+				knowledgeId = input.KnowledgeBase.sys_id;
+			} else {
+				knowledgeTitle = account.getDisplayValue('u_customer_knowledge_base');
+				knowledgeId = account.getValue('u_customer_knowledge_base');
+			}
+			/* cockrl0 new.end */
+
+			// Get the 1st Level Category ID
+			var kb_category_1st = new GlideRecord('kb_category');
+			/* kb_category_1st.addQuery("parent_id",account.getValue('u_customer_knowledge_base')); cockrl0 old */
+			kb_category_1st.addQuery("parent_id",knowledgeId); /* cockrl0 new */
+			kb_category_1st.addQuery("value",options.kb_1st_category_level);	
+			kb_category_1st.query();
+			kb_category_1st.next();
+//			console.log("kb_category:"+kb_category_1st.getDisplayValue('value'));
+//			console.log("kb_categoryid:"+kb_category_1st.getValue('sys_id'));
+					
+			// Get the 2nd Level Category ID
+			var kb_category_2nd = new GlideRecord('kb_category');
+			kb_category_2nd.addQuery("parent_id",kb_category_1st.sys_id);
+			kb_category_2nd.addQuery("value",options.kb_2nd_category_level);			
+			kb_category_2nd.query();
+			kb_category_2nd.next();
+			
+			// Get the 3th Level Category ID
+			var kb_category_3th = new GlideRecord('kb_category');
+			kb_category_3th.addQuery("parent_id",kb_category_2nd.sys_id);
+			kb_category_3th.addQuery("value",options.kb_3th_category_level);
+			kb_category_3th.query();
+			kb_category_3th.next();
+//			console.log("kb_category:"+kb_category.getDisplayValue('value'));
+//			console.log("kb_categoryid:"+kb_category.getValue('sys_id'));
+
+			// Get the 4th Level Category ID
+			var kb_category_4th = new GlideRecord('kb_category');
+			kb_category_4th.addQuery("parent_id",kb_category_2nd.sys_id);
+			kb_category_4th.addQuery("value",options.kb_4th_category_level);
+			kb_category_4th.query();
+			kb_category_4th.next();
+//			console.log("kb_category:"+kb_category.getDisplayValue('value'));
+//			console.log("kb_categoryid:"+kb_category.getValue('sys_id'));
+			var kb_category;
+			if (options.kb_4th_category_level != "") {
+				kb_category = kb_category_4th.getValue('sys_id');
+			}
+			else {
+				kb_category = kb_category_3th.getValue('sys_id');
+			}
+
+			//Construct the URL  if params not null
+			/* if(account.getDisplayValue('u_customer_knowledge_base') != "" && kb_category !=""){ cockrl0 old */
+			if(knowledgeTitle && kb_category) { /* cockrl0 new */
+				data.href = data.href
+					/* .replace("##kb##",account.getValue('u_customer_knowledge_base')) cockrl0 old */
+					.replace("##kb##",knowledgeId) /* cockrl0 new */
+					.replace("##kbcat##",kb_category);
+				data.displaylink = true; /* cockrl0 new */
+			}
+			/* cockrl0 old.start
+			else {
+				data.displaylink = 0; // hide icon if param null
+			}
+			cockrl0 old.end */
+	}
+	
+	data.target = options.target || "";
+	var img = new GlideRecord('db_image');
+	img.addQuery('sys_id', options.image);
+	img.query();
+	if (img.next()){
+		data.image = img.getValue('name');
+	}
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 12:13:50</sys_created_on>
+        <sys_id>ec3da0af1b3121505bdeed71f54bcb29</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>LH-CSM-KB-Category-Shortcut</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_ec3da0af1b3121505bdeed71f54bcb29</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 14:26:41</sys_updated_on>
+        <template><![CDATA[<!-- <div class="iconlink" ng-if="::data.displaylink==1" > cockrl0 old -->
+<div class="iconlink" ng-if="c.data.displaylink" > <!-- cockrl0 new -->
+  <!--// Top Icon -->
+  <a ng-if="::(options.link_template == 'Top Icon' || !options.link_template)" ng-href="{{::data.href}}" class="top_icon {{::options.class_name}}" target="{{::data.target}}">
+    <div class="m-b fa fa-{{::options.glyph}} fa-4x {{::options.class_name}} text-{{::options.color}}"></div>
+    <h2>{{::options.title}}</h2>
+    <span class="text-muted">{{::options.short_description}}</span>
+  </a>
+
+  <!--// Circle Icon -->
+  <a ng-if="::(options.link_template == 'Circle Icon')" ng-href="{{::data.href}}" class="circle_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}">
+    <span class="fa fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-{{::options.glyph}} fa-stack-1x fa-inverse"></i>
+    </span>
+    <h2>{{::options.title}}</h2>
+    <span class="text-muted">{{::options.short_description}}</span>
+  </a>
+
+  <!--// Color Box -->
+  <a ng-if="::(options.link_template == 'Color Box')" ng-href="{{::data.href}}" class="color_box {{::options.class_name}} icon-link-background-{{::options.color}} text-white" target="{{::data.target}}">
+    <div class="fa fa-{{::options.glyph}} fa-3x {{::options.class_name}}"></div>
+    
+    <h2>{{::options.title}}</h2>
+    <span>{{::options.short_description}}</span>
+  </a>
+
+  <!--// Image Icon -->
+  <a ng-if="::(options.link_template == 'Image Icon')" ng-href="{{::data.href}}" class="image_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}">
+    <table style="width:100%" cellpadding="10">
+      <tr> <br> </tr>
+      <tr>
+        <td ><div><img   src="{{data.image}}" alt="" align="left" style="margin-right: 10px; margin-left: 5px; margin-top:5px; display: block;" /></div>
+        </td>
+        <td>
+          <h2>{{::options.title}}</h2>
+          <span class="text-muted">  {{::options.short_description}}</span>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </a>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>

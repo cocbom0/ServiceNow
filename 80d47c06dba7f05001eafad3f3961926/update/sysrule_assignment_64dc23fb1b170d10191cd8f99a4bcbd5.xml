@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
+    <sysrule_assignment action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_liisa_support_ca_services">service_offering=c5e173511b4445905b1b411acd4bcb37^u_request_support_for=incident_notification^u_request_type=catastrophic_product_failure^ORu_request_type=production_stop^account.u_application=powergen_diesel^NQservice_offering=c5e173511b4445905b1b411acd4bcb37^u_request_support_for=remote_technical_support^account.u_application=powergen_diesel^u_request_typeNOT INengine_reflash,power_change_issue^NQservice_offering=c5e173511b4445905b1b411acd4bcb37^u_request_support_for=technical_feedback^ORu_request_support_for=other_technical^account.u_application=powergen_diesel^EQ<item display_table="service_offering" display_value="Technical Services - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="c5e173511b4445905b1b411acd4bcb37"/>
+            <item display_value="Critical incident notification" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="incident_notification"/>
+            <item display_value="Product quality issue (complete breakdown)" endquery="false" field="u_request_type" goto="false" newquery="false" operator="=" or="false" value="catastrophic_product_failure"/>
+            <item display_value="Production stop" endquery="false" field="u_request_type" goto="false" newquery="false" operator="=" or="true" value="production_stop"/>
+            <item display_value="PowerGen Diesel" endquery="false" field="account.u_application" goto="false" newquery="false" operator="=" or="false" value="powergen_diesel"/>
+            <item display_table="service_offering" display_value="Technical Services - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="true" operator="=" or="false" value="c5e173511b4445905b1b411acd4bcb37"/>
+            <item display_value="Remote technical support" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="remote_technical_support"/>
+            <item display_value="PowerGen Diesel" endquery="false" field="account.u_application" goto="false" newquery="false" operator="=" or="false" value="powergen_diesel"/>
+            <item display_value="engine_reflash,power_change_issue" endquery="false" field="u_request_type" goto="false" newquery="false" operator="NOT IN" or="false" value="engine_reflash,power_change_issue"/>
+            <item display_table="service_offering" display_value="Technical Services - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="true" operator="=" or="false" value="c5e173511b4445905b1b411acd4bcb37"/>
+            <item display_value="Technical feedbacks / questions" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="technical_feedback"/>
+            <item display_value="Other technical services topics" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="true" value="other_technical"/>
+            <item display_value="PowerGen Diesel" endquery="false" field="account.u_application" goto="false" newquery="false" operator="=" or="false" value="powergen_diesel"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group display_value="PowerGenDiesel-TechService-COT-BU-VM" name="PowerGenDiesel-TechService-COT-BU-VM">d7e0daa6db77f05001eafad3f39619a8</group>
+        <match_conditions>ALL</match_conditions>
+        <name>COT-BU-VM - TechService - PowerGen Diese</name>
+        <order>100</order>
+        <script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script>
+        <sys_class_name>sysrule_assignment</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-13 18:00:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64dc23fb1b170d10191cd8f99a4bcbd5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>COT-BU-VM - TechService - PowerGen Diesel</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sysrule_assignment_64dc23fb1b170d10191cd8f99a4bcbd5</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-03-18 09:20:14</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <user/>
+    </sysrule_assignment>
+</record_update>

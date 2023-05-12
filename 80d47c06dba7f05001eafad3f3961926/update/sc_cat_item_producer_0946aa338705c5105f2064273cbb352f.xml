@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Support">1b8611d5c3921200b0449f2974d3ae12</category>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Warranty and Claim Management request (Engine Return, Credit Note, etc.)</p>
+<p> </p>
+<p>You can submit here requests regarding warranty claims already submitted to LiWM.</p>
+<p>Link to LiWM : <a title="LIWM - Liebherr Warranty Manager" href="https://www.liwm.liebherr.com/Forms/CustomerClaim.aspx?mode&#61;new" target="_blank" rel="noopener noreferrer nofollow">LIWM - Liebherr Warranty Manager</a></p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>5eb127511bcf05505b1b411acd4bcb77</icon>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Warranty and Claim Management</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>-700</order>
+        <ordered_item_link/>
+        <owner display_value="Michel Boberda">266e7818db126f008a079532ca9619fd</owner>
+        <picture>95c16f111bcf05505b1b411acd4bcb06</picture>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=0946aa338705c5105f2064273cbb352f&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles>snc_internal</roles>
+        <save_options/>
+        <save_script/>
+        <sc_catalogs>65bcd377c3011200b12d9f2974d3aea0</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[if(producer.u_html_description && producer.u_html_description != '')
+	current.comments = '[code]' + producer.u_html_description + '[/code]';
+
+//code to create a new record into the affected_install_base table 
+if (!gs.nil(producer.u_serial_number)) {
+    var gr = new GlideRecord("sn_install_base_m2m_affected_install_base");
+    gr.initialize();
+    gr.setValue("csm_case", current.sys_id);
+    gr.install_base_item = producer.u_serial_number;
+    gr.insert();
+}
+]]></script>
+        <short_description>Warranty and Claim Management request (Engine Return, Credit Note, etc.)</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-01-21 16:34:49</sys_created_on>
+        <sys_id>0946aa338705c5105f2064273cbb352f</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Warranty and Claim Management</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sc_cat_item_producer_0946aa338705c5105f2064273cbb352f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-10 19:52:18</sys_updated_on>
+        <table_name>x_liisa_support_ca_services</table_name>
+        <taxonomy_topic/>
+        <template display_value="Warranty &amp; Claim Management">b12f45a41be65d107528ddb59b4bcb04</template>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=0946aa338705c5105f2064273cbb352f"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>0946aa338705c5105f2064273cbb352f</documentkey>
+        <fieldname>description</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-06-18 12:13:56</sys_created_on>
+        <sys_id>e8173bdb47045150b0ce8b42e36d4354</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-21 19:41:26</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;Anfrage zu Gew&amp;auml;hrleisungsantr&amp;auml;gen, Schadensmanagement, Gutschriften &amp;hellip;&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;Hier k&amp;ouml;nnen Sie Fragen zu Gew&amp;auml;hrleistunganspr&amp;uuml;chen einreichen, die zuvor in LiWM eingereicht.&lt;/p&gt;&#13;
+&lt;p&gt;LiWM link :&amp;nbsp;&lt;a title="LIWM - Liebherr Warranty Manager" href="https://www.liwm.liebherr.com/Forms/CustomerClaim.aspx?mode=new" target="_blank" rel="noopener noreferrer nofollow"&gt;LIWM - Liebherr Warranty Manager&lt;/a&gt;&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>0946aa338705c5105f2064273cbb352f</documentkey>
+        <fieldname>description</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-27 11:47:26</sys_created_on>
+        <sys_id>955e332e1b0b4d505b1b411acd4bcb9d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-18 12:11:14</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;Demande concernant la garantie et la gestion des r&amp;eacute;clamation (retour de produit, notes de cr&amp;eacute;dit,&amp;hellip;)&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;Vous pouvez ici soumettre des questions li&amp;eacute;s aux r&amp;eacute;clamations sous garantie soumis pr&amp;eacute;alablement dans LiWM.&lt;/p&gt;&#13;
+&lt;p&gt;Lien pour LiWM :&amp;nbsp;&lt;a title="LIWM - Gestionnaire de garantie Liebherr" href="https://www.liwm.liebherr.com/Forms/CustomerClaim.aspx?mode=new" target="_blank" rel="noopener noreferrer nofollow"&gt;LIWM - Gestionnaire de garantie Liebherr&lt;/a&gt;&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>0946aa338705c5105f2064273cbb352f</documentkey>
+        <fieldname>name</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-06-18 12:13:56</sys_created_on>
+        <sys_id>ac177b9b47045150b0ce8b42e36d4392</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-21 19:41:26</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Gewährleistungsmanagement</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>0946aa338705c5105f2064273cbb352f</documentkey>
+        <fieldname>name</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-27 11:47:26</sys_created_on>
+        <sys_id>d95ebbea1b0b4d505b1b411acd4bcb5d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-18 12:07:57</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Garantie et Gestion des réclamations</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>0946aa338705c5105f2064273cbb352f</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-06-18 12:13:56</sys_created_on>
+        <sys_id>24173bdb47045150b0ce8b42e36d4350</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-21 19:41:26</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Anfrage zu Gewährleisungsanträgen, Schadensmanagement, Gutschriften …</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>0946aa338705c5105f2064273cbb352f</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-27 11:47:26</sys_created_on>
+        <sys_id>195ebbea1b0b4d505b1b411acd4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-27 11:47:26</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Demande concernant la garantie et la gestion des réclamation (retour de produit, notes de crédit,…)</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=0946aa338705c5105f2064273cbb352f"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price</field>
+        <id>0946aa338705c5105f2064273cbb352f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-01-21 16:34:49</sys_created_on>
+        <sys_id>3e77e6b38705c5105f2064273cbb35fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2023-03-24 12:47:26</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#cecece</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>icon</file_name>
+        <hash>4dc26860c43b6dec38ad7d0db9543f42c2484e59c3f5523052291c0b16ed98b4</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>5088</size_bytes>
+        <size_compressed>4805</size_compressed>
+        <state>available</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:30:02</sys_created_on>
+        <sys_id>5eb127511bcf05505b1b411acd4bcb77</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-23 12:30:02</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>0946aa338705c5105f2064273cbb352f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="5eb127511bcf05505b1b411acd4bcb77">5eb127511bcf05505b1b411acd4bcb77</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:30:02</sys_created_on>
+        <sys_id>9eb127511bcf05505b1b411acd4bcb77</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>6396</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="5eb127511bcf05505b1b411acd4bcb77">5eb127511bcf05505b1b411acd4bcb77</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:30:02</sys_created_on>
+        <sys_id>12b127511bcf05505b1b411acd4bcb78</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#cecece</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>picture</file_name>
+        <hash>4dc26860c43b6dec38ad7d0db9543f42c2484e59c3f5523052291c0b16ed98b4</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>5088</size_bytes>
+        <size_compressed>4805</size_compressed>
+        <state>available</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:30:14</sys_created_on>
+        <sys_id>95c16f111bcf05505b1b411acd4bcb06</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-23 12:30:14</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>0946aa338705c5105f2064273cbb352f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="95c16f111bcf05505b1b411acd4bcb06">95c16f111bcf05505b1b411acd4bcb06</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:30:14</sys_created_on>
+        <sys_id>d5c16f111bcf05505b1b411acd4bcb06</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>6396</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="95c16f111bcf05505b1b411acd4bcb06">95c16f111bcf05505b1b411acd4bcb06</sys_attachment>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 12:30:14</sys_created_on>
+        <sys_id>59c16f111bcf05505b1b411acd4bcb06</sys_id>
+    </sys_attachment_doc>
+</record_update>

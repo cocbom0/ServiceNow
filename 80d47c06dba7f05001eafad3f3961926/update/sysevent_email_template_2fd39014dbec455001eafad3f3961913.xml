@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_liisa_support_ca_services</collection>
+        <email_layout display_value="">db4f29da1b966d10c2e1433be54bcb2a</email_layout>
+        <message/>
+        <message_html><![CDATA[<p>${mail_script:support_case_assigned_to}</p>
+<p>${mail_script:display_record_details}</p>
+<p>${mail_script:support_case_link_backend}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>support.case.assigned.to</name>
+        <sms_alternate/>
+        <subject>Support Case ${number} assigned to you</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-16 12:20:39</sys_created_on>
+        <sys_id>2fd39014dbec455001eafad3f3961913</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>support.case.assigned.to</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sysevent_email_template_2fd39014dbec455001eafad3f3961913</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 13:04:21</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
+    <sys_dictionary_override action="DELETE">
+        <attributes>readonly_clickthrough=true,ref_contributions=aw_recommendation</attributes>
+        <attributes_override>true</attributes_override>
+        <base_table>task</base_table>
+        <calculation/>
+        <calculation_override>false</calculation_override>
+        <default_value/>
+        <default_value_override>false</default_value_override>
+        <dependent>assignment_group</dependent>
+        <dependent_override>false</dependent_override>
+        <display_override>false</display_override>
+        <element>assigned_to</element>
+        <mandatory>false</mandatory>
+        <mandatory_override>false</mandatory_override>
+        <name>x_liisa_support_ca_services</name>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual>javascript:new x_liisa_support_ca.SupportCaseNestedGroupsAssignment().returnParentGroupUsers()</reference_qual>
+        <reference_qual_override>true</reference_qual_override>
+        <sys_class_name>sys_dictionary_override</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-11-03 13:50:33</sys_created_on>
+        <sys_id>924c0f5adbeb745001eafad3f39619f8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>assigned_to</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_dictionary_override_924c0f5adbeb745001eafad3f39619f8</sys_update_name>
+        <sys_updated_by>ado</sys_updated_by>
+        <sys_updated_on>2023-04-11 15:04:04</sys_updated_on>
+    </sys_dictionary_override>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sys_dictionary_override_924c0f5adbeb745001eafad3f39619f8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes>readonly_clickthrough=true,ref_contributions=aw_recommendation</attributes><attributes_override>true</attributes_override><base_table>task</base_table><calculation/><calculation_override>false</calculation_override><default_value/><default_value_override>false</default_value_override><dependent>assignment_group</dependent><dependent_override>false</dependent_override><display_override>false</display_override><element>assigned_to</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_liisa_support_ca_services</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual>javascript:new x_liisa_support_ca.SupportCaseNestedGroupsAssignment().returnParentGroupUsers()</reference_qual><reference_qual_override>true</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>kristian.teodorov@doitwise.com</sys_created_by><sys_created_on>2021-11-03 13:50:33</sys_created_on><sys_id>924c0f5adbeb745001eafad3f39619f8</sys_id><sys_mod_count>11</sys_mod_count><sys_name>assigned_to</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sys_dictionary_override_924c0f5adbeb745001eafad3f39619f8</sys_update_name><sys_updated_by>ado</sys_updated_by><sys_updated_on>2023-04-11 15:04:04</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+        <payload_hash>-535510099</payload_hash>
+        <record_name>assigned_to</record_name>
+        <reverted_from/>
+        <source>ac1865c71b46e110c2e1433be54bcb44</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ado</sys_created_by>
+        <sys_created_on>2023-04-11 15:04:04</sys_created_on>
+        <sys_id>1c3e79cb1b86e110c2e1433be54bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18770d86d7f0000001</sys_recorded_at>
+        <sys_updated_by>ado</sys_updated_by>
+        <sys_updated_on>2023-04-11 15:04:04</sys_updated_on>
+        <type>Dictionary Entry Override</type>
+        <update_guid>143e79cb4f86e110c3d8e06f90a9df74</update_guid>
+        <update_guid_history>143e79cb4f86e110c3d8e06f90a9df74:-535510099,742e75cb3286e11099a824cde736266e:-316546916,4f447dc3a086e1100e3ab07cecb25935:1516455879,9710f1cf0e46e11038f92a3af8128a29:1468292225,6459218b9246e110064995db564e4cb9:1516455879,d068690bc846e110e23b54bc6bae62dc:-1497926797,9468690bd046e110966116024d2997d9:1516455879</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ado</sys_created_by>
+        <sys_created_on>2023-04-11 15:04:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary_override">sys_dictionary_override</sys_db_object>
+        <sys_id>0e8b892cc92b4cb480e700ddb14da104</sys_id>
+        <sys_metadata>924c0f5adbeb745001eafad3f39619f8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assigned_to</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent display_value="">407c08881b7de110c2e1433be54bcbc1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_dictionary_override_924c0f5adbeb745001eafad3f39619f8</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_override_924c0f5adbeb745001eafad3f39619f8">1c3e79cb1b86e110c2e1433be54bcb74</sys_update_version>
+        <sys_updated_by>ado</sys_updated_by>
+        <sys_updated_on>2023-04-11 15:04:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

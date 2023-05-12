@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list/>
+        <filter table="x_liisa_support_ca_services">active=true^opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="opened_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">d82c8d2b1bb121505bdeed71f54bcb4f</sp_column>
+        <sp_page display_value="csm_index">eb84cfd7cb13020000f8d856634c9c4b</sp_page>
+        <sp_widget display_value="LH Data Table from Instance Definition">5697dd631bf121505bdeed71f54bcbc6</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:18:50</sys_created_on>
+        <sys_id>611859e31bf121505bdeed71f54bcb31</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Open Cases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_table_611859e31bf121505bdeed71f54bcb31</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:19:46</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <title>My Open Cases</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"all_button_label": {
+		"value": "",
+		"displayValue": ""
+	},
+	"serviceportal_page_for_all_records": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=611859e31bf121505bdeed71f54bcb31"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_instance_table_611859e31bf121505bdeed71f54bcb31</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field/&gt;&lt;field_list/&gt;&lt;filter table="x_liisa_support_ca_services"&gt;active=true^opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="false" field="opened_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/&gt;&lt;/filter&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="3"&gt;d82c8d2b1bb121505bdeed71f54bcb4f&lt;/sp_column&gt;&lt;sp_page display_value="csm_index"&gt;eb84cfd7cb13020000f8d856634c9c4b&lt;/sp_page&gt;&lt;sp_widget display_value="LH Data Table from Instance Definition"&gt;5697dd631bf121505bdeed71f54bcbc6&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-31 15:18:50&lt;/sys_created_on&gt;&lt;sys_id&gt;611859e31bf121505bdeed71f54bcb31&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;My Open Cases&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_611859e31bf121505bdeed71f54bcb31&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-31 15:19:46&lt;/sys_updated_on&gt;&lt;table&gt;x_liisa_support_ca_services&lt;/table&gt;&lt;title&gt;My Open Cases&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"all_button_label": {
+		"value": "",
+		"displayValue": ""
+	},
+	"serviceportal_page_for_all_records": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=611859e31bf121505bdeed71f54bcb31"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>298239572</payload_hash>
+        <record_name>My Open Cases</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:19:47</sys_created_on>
+        <sys_id>1b485de31bf121505bdeed71f54bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1873840db730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:19:47</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>13485de3eef1215027bc02d8aca79cef</update_guid>
+        <update_guid_history>13485de3eef1215027bc02d8aca79cef:298239572,283899e3e9f12150748c29463a30ce63:2100235518,6d1859e3cef1215030854068bc72bd32:354359151</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">133bd9a71bf121505bdeed71f54bcb12</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:32:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>27de56ee5a004171887c16f9fa308c59</sys_id>
+        <sys_metadata>611859e31bf121505bdeed71f54bcb31</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Open Cases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_instance_table_611859e31bf121505bdeed71f54bcb31</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_611859e31bf121505bdeed71f54bcb31">1b485de31bf121505bdeed71f54bcbef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:32:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

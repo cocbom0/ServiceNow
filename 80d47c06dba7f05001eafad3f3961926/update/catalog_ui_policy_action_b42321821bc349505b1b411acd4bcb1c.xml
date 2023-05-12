@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:a188c01d1b5d0d50a4236313604bcbfa</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-25 11:12:31</sys_created_on>
+        <sys_id>b42321821bc349505b1b411acd4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>machine_identification_code</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b42321821bc349505b1b411acd4bcb1c</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-25 11:12:31</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Remote Technical Support Details Variables for Safety Related issue / Production Stop / Technical Support Request Type">af8932521b228d10a4236313604bcb6e</ui_policy>
+        <variable>machine_identification_code</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

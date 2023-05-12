@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.Liebherr_ContributorUserPortalAJAX</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Helper functions for contributor user record producer</description>
+        <name>Liebherr_ContributorUserPortalAJAX</name>
+        <script><![CDATA[var Liebherr_ContributorUserPortalAJAX = Class.create();
+Liebherr_ContributorUserPortalAJAX.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	isPublic: function() {
+		return true;
+	},
+	
+	getUserOrgs: function() {
+		var serviceOrgs = new global.ServiceOrganizationUtil().getUserServiceOrgIds(gs.getUserID());
+		var result = this.newItem('serviceOrgs');
+		result.setAttribute('arr', serviceOrgs);
+	},
+	
+	getSoldProductArr: function(install_base_item, account) {
+		var arr = [];
+		if (gs.nil(account) && gs.nil(install_base_item)) 
+			return arr;
+		
+		if (gs.nil(install_base_item)) {
+			var gr = new GlideRecord('sn_install_base_sold_product');
+			gr.addQuery('account', account);
+			gr.query();
+			while (gr.next()) {
+				if (gr.canRead())
+					arr.push(gr.getUniqueValue());
+			}
+			
+		} else {
+			var installProductGr = new GlideRecord("sn_install_base_m2m_installed_product");
+			installProductGr.addQuery('install_base_item', install_base_item);
+			installProductGr.query();
+			while (installProductGr.next()) {
+				if (installProductGr.canRead())
+					arr.push(installProductGr.getValue('sold_product'));
+			}
+		}
+		
+		return arr;
+	},
+	
+	getInstallItemArr: function(sold_product, account) {
+		var arr = [];
+		if (gs.nil(sold_product) && gs.nil(account))
+			return arr;
+		
+		if (gs.nil(sold_product)) {
+			var gr = new GlideRecord('sn_install_base_item');
+			gr.addQuery('account', account);
+			gr.query();
+			while (gr.next()) {
+				if (gr.canRead())
+					arr.push(gr.getUniqueValue());
+			}
+		} else {
+			var installProductGr = new GlideRecord('sn_install_base_m2m_installed_product');
+			installProductGr.addQuery('sold_product', sold_product);
+			installProductGr.query();
+			while (installProductGr.next()) {
+				if (installProductGr.canRead())
+					arr.push(installProductGr.getValue('install_base_item'));
+			}
+		}
+
+		return arr;
+	},
+	
+	getContactsForAccount: function() {
+		var account = this.getParameter('sysparm_account');
+		var contactArr = new global.CSManagementUtils().getCaseContactsSysIDs(account);
+		
+		var result = this.newItem('fields');
+		result.setAttribute('contact_arr', contactArr);
+	},
+	
+	getInstallBaseFieldsForAccount: function() {
+		var account = this.getParameter('sysparm_account');
+		var install_base_item = this.getParameter('sysparm_installbaseitem');
+		var sold_product = this.getParameter('sysparm_soldproduct');
+		
+		var soldProductArr = this.getSoldProductArr(install_base_item, account);
+		var installBaseItemArr = this.getInstallItemArr(sold_product, account);
+		
+		var result = this.newItem('fields');
+		result.setAttribute('sold_arr', soldProductArr);
+		result.setAttribute('install_arr', installBaseItemArr);
+	},
+	
+	getCaseAccountForContactArr: function (contact) {
+		var arr = [];
+		var gr =  new GlideRecord('customer_contact');
+		gr.addQuery('sys_id', contact);
+		gr.query();
+		while(gr.next()) {
+			if(gr.canRead())
+				arr.push(gr.getValue('account'));
+		}
+		return arr;
+	},
+	
+	getAccountsForContact: function() {
+		var contact = this.getParameter('sysparm_contact');
+		var accountArr = this.getCaseAccountForContactArr(contact);
+		var result = this.newItem('result');
+		result.setAttribute('arr', accountArr);
+	},
+	
+	getAccountForSoldProduct: function() {
+		var sold_product = this.getParameter('sysparm_soldproduct');
+		var gr = new GlideRecord('sn_install_base_sold_product');
+		gr.get(sold_product);
+		var account = gr.canRead() ? gr.getValue('account') : '';
+		var result = this.newItem('result');
+		result.setAttribute('account', account);
+	},
+	
+	getAccountForInstallBaseItem: function() {
+		var install = this.getParameter('sysparm_installbaseitem');
+		var gr = new GlideRecord('sn_install_base_item');
+		gr.get(install);
+		var account = gr.canRead() ? gr.getValue('account') : '';
+		var result = this.newItem('result');
+		result.setAttribute('account', account);
+	},
+	
+	getInstallBaseFieldsForConsumer: function() {
+		var consumer = this.getParameter('sysparm_consumer');
+		var install_base_item = this.getParameter('sysparm_installbaseitem');
+		var sold_product = this.getParameter('sysparm_soldproduct');
+		
+		var soldProductArr = this.getConsumerSoldProductArr(install_base_item, consumer);
+		var installBaseItemArr = this.getConsumerInstallBaseArr(sold_product, consumer);
+		
+		var result = this.newItem('fields');
+		result.setAttribute('sold_arr', soldProductArr);
+		result.setAttribute('install_arr', installBaseItemArr);
+	},
+	
+	getConsumerSoldProductArr: function(install_base_item, consumer) {
+		var arr = [];
+		if (gs.nil(consumer) && gs.nil(install_base_item)) 
+			return arr;
+		
+		if (gs.nil(install_base_item)) {
+			var gr = new GlideRecord('sn_install_base_sold_product');
+			gr.addQuery('consumer', consumer);
+			gr.query();
+			while (gr.next()) {
+				if(gr.canRead())
+					arr.push(gr.getUniqueValue());
+			}
+		} else {
+			var installProductGr = new GlideRecord("sn_install_base_m2m_installed_product");
+            installProductGr.addQuery('install_base_item', install_base_item);
+			installProductGr.query();
+			while (installProductGr.next()) {
+				if(gr.canRead())
+					arr.push(installProductGr.getValue('sold_product'));
+			}
+		}
+		
+		return arr;
+	},
+	
+	getConsumerInstallBaseArr: function(sold_product, consumer) {
+		var arr = [];
+		if (gs.nil(sold_product) && gs.nil(consumer))
+			return arr;
+		
+		if (gs.nil(sold_product)) {
+			var gr = new GlideRecord('sn_install_base_item');
+			gr.addQuery('consumer', consumer);
+			gr.query();
+			while (gr.next()) {
+				if(gr.canRead())
+					arr.push(gr.getUniqueValue());
+			}
+		} else {
+			var installProductGr = new GlideRecord('sn_install_base_m2m_installed_product');
+			installProductGr.addQuery('sold_product', sold_product);
+			installProductGr.query();
+			while (installProductGr.next()) {
+				if(installProductGr.canRead())
+					arr.push(installProductGr.getValue('install_base_item'));
+			}
+		}
+
+		return arr;
+	},
+	
+	getConsumerForSoldProduct: function() {
+		var sold_product = this.getParameter('sysparm_soldproduct');
+		var gr = new GlideRecord('sn_install_base_sold_product');
+		gr.get(sold_product);
+		var consumer;
+		if (gr.canRead())
+			consumer = gr.getValue('consumer');
+		
+		var result = this.newItem('result');
+		result.setAttribute('consumer', consumer);
+	},
+	
+	getConsumerForInstallBase: function() {
+		var install = this.getParameter('sysparm_installbaseitem');
+		var gr = new GlideRecord('sn_install_base_item');
+		gr.get(install);
+		var consumer;
+		if (gr.canRead())
+			consumer = gr.getValue('consumer');
+		
+		var result = this.newItem('result');
+		result.setAttribute('consumer', consumer);
+	},
+	
+    type: 'Liebherr_ContributorUserPortalAJAX'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-06-12 11:53:30</sys_created_on>
+        <sys_id>16c8bced47889510b0ce8b42e36d4329</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Liebherr_ContributorUserPortalAJAX</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_16c8bced47889510b0ce8b42e36d4329</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-12 12:01:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

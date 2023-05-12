@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="">58ef9122dbde9510fc43edc40596191e</applicability>
+        <order>0</order>
+        <screen display_value="">4f1b59b0dbe2d55060ae63cad396196a</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-13 10:05:41</sys_created_on>
+        <sys_id>62bb7981db269150fc43edc4059619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_62bb7981db269150fc43edc4059619d9</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-13 10:05:41</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+</record_update>

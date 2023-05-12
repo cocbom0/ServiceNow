@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>file-text</glyph>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">d02c8d2b1bb121505bdeed71f54bcb4b</sp_column>
+        <sp_widget display_value="Knowledge MostUseful Articles">4111d56cdb68320099f93691f0b8f52f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 14:26:36</sys_created_on>
+        <sys_id>9c2c8d2b1bb121505bdeed71f54bcb51</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Most Useful Articles</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_9c2c8d2b1bb121505bdeed71f54bcb51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:13:39</sys_updated_on>
+        <title>Most Useful Articles</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=9c2c8d2b1bb121505bdeed71f54bcb51"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_instance_9c2c8d2b1bb121505bdeed71f54bcb51</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph>file-text</glyph><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="2">d02c8d2b1bb121505bdeed71f54bcb4b</sp_column><sp_widget display_value="Knowledge MostUseful Articles">4111d56cdb68320099f93691f0b8f52f</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-31 14:26:36</sys_created_on><sys_id>9c2c8d2b1bb121505bdeed71f54bcb51</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Most Useful Articles</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sp_instance_9c2c8d2b1bb121505bdeed71f54bcb51</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-31 15:13:39</sys_updated_on><title>Most Useful Articles</title><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=9c2c8d2b1bb121505bdeed71f54bcb51"/></record_update>]]></payload>
+        <payload_hash>-1863232170</payload_hash>
+        <record_name>Most Useful Articles</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:13:39</sys_created_on>
+        <sys_id>ede659a31bf121505bdeed71f54bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187383b3d120000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:13:39</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>e5e659a343f1215075bf135318609067</update_guid>
+        <update_guid_history>e5e659a343f1215075bf135318609067:-1863232170,fbd659a3bdf12150bc002e04cacb2030:-158601323,8bc651a371f12150a8c8fe61504045c8:-1863232170,902c8d2bbdb121502e81ce261c450253:-166706654</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4e27d9631bf121505bdeed71f54bcb99</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 15:14:46</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>78675f9735aa46fe9a5307c8b76fcaa4</sys_id>
+        <sys_metadata>9c2c8d2b1bb121505bdeed71f54bcb51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Most Useful Articles</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_instance_9c2c8d2b1bb121505bdeed71f54bcb51</sys_update_name>
+        <sys_update_version display_value="sp_instance_9c2c8d2b1bb121505bdeed71f54bcb51">ede659a31bf121505bdeed71f54bcb67</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 15:14:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

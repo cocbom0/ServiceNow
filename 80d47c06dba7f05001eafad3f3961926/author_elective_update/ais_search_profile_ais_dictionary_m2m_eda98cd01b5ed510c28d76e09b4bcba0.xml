@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="DELETE">
+        <dictionary display_value="x_liisa_support_ca_2019730319_new">0cc808901b5ed510c28d76e09b4bcb4e</dictionary>
+        <dictionary_reference_qualifier>SYNONYM</dictionary_reference_qualifier>
+        <marked_for_deletion>true</marked_for_deletion>
+        <profile display_value="CSM Portal Default Search Profile">c9649371c3c22010a6f3f97c9840ddaf</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:36:18</sys_created_on>
+        <sys_id>eda98cd01b5ed510c28d76e09b4bcba0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_liisa_support_ca_2019730319_new.CSM Portal Default Search Profile</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_eda98cd01b5ed510c28d76e09b4bcba0</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:45:02</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>ais_search_profile_ais_dictionary_m2m_eda98cd01b5ed510c28d76e09b4bcba0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m"><ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE"><dictionary display_value="x_liisa_support_ca_2019730319_new">0cc808901b5ed510c28d76e09b4bcb4e</dictionary><dictionary_reference_qualifier>SYNONYM</dictionary_reference_qualifier><marked_for_deletion>true</marked_for_deletion><profile display_value="CSM Portal Default Search Profile">c9649371c3c22010a6f3f97c9840ddaf</profile><sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-09-28 07:36:18</sys_created_on><sys_id>eda98cd01b5ed510c28d76e09b4bcba0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_liisa_support_ca_2019730319_new.CSM Portal Default Search Profile</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>ais_search_profile_ais_dictionary_m2m_eda98cd01b5ed510c28d76e09b4bcba0</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-09-28 07:45:02</sys_updated_on></ais_search_profile_ais_dictionary_m2m></record_update>]]></payload>
+        <payload_hash>1842312696</payload_hash>
+        <record_name>x_liisa_support_ca_2019730319_new.CSM Portal Default Search Profile</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:45:02</sys_created_on>
+        <sys_id>37abc8d41b5ed510c28d76e09b4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183830e657b0000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:45:02</sys_updated_on>
+        <type>AI Search Search Profile Dictionary Mapp</type>
+        <update_guid>b3ab88d45e5ed510a0d21020c8287352</update_guid>
+        <update_guid_history>b3ab88d45e5ed510a0d21020c8287352:1842312696,44b98cd0095ed510c71895256765379c:-976031605</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4bcb48d41b5ed510c28d76e09b4bcba2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:45:31</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_profile_ais_dictionary_m2m">ais_search_profile_ais_dictionary_m2m</sys_db_object>
+        <sys_id>15a92f68b4b445729be068e4da4f5771</sys_id>
+        <sys_metadata>eda98cd01b5ed510c28d76e09b4bcba0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca_2019730319_new.CSM Portal Default Search Profile</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_eda98cd01b5ed510c28d76e09b4bcba0</sys_update_name>
+        <sys_update_version display_value="ais_search_profile_ais_dictionary_m2m_eda98cd01b5ed510c28d76e09b4bcba0">37abc8d41b5ed510c28d76e09b4bcb0d</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:45:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

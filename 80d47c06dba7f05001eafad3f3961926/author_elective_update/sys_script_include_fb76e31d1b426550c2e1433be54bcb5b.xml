@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.Manage_Ref_Qualifier_Record_Producer</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Manage_Ref_Qualifier_Record_Producer</name>
+        <script><![CDATA[var Manage_Ref_Qualifier_Record_Producer = Class.create();
+Manage_Ref_Qualifier_Record_Producer.prototype = {
+    initialize: function() {
+    },
+	
+	isPublic: function() {
+		return true;
+	},
+	
+	getTechnicalService_requestSupportFor: function(sys_id_record_producer) {	
+		var ref = "name=x_liisa_support_ca_services^element=u_request_support_for^dependent_value=" + sys_id_record_producer + "^language="+ gs.getUser().getLanguage() + "^ORDERBYsequence";
+								
+		return ref;
+	},
+	
+	getTechnicalService_requestType: function(request_support_for, account) {		
+		var ref = "name=x_liisa_support_ca_services^element=u_request_type";
+		
+		var valueToExclude = [
+			"after_treatment_system"
+			,"electro_soft_diagnose"
+			,"si_request"
+			,"power_change_issue"
+			,"engine_reflash"
+			,"dpfunlocker"
+		];
+		
+		var grAccount = new GlideRecord("customer_account");
+		grAccount.get(account);
+		
+		if(grAccount) {
+			if(grAccount.getValue("u_internalcustomer") == 1) {
+				delete valueToExclude[valueToExclude.indexOf("si_request")];
+			}
+			if(grAccount.getValue("u_powerchange_usage") == 1) {
+				delete valueToExclude[valueToExclude.indexOf("power_change_issue")];
+				delete valueToExclude[valueToExclude.indexOf("engine_reflash")];
+			}
+			if(grAccount.getValue("u_dpfunlocker_usage") == 1) {
+				delete valueToExclude[valueToExclude.indexOf("dpfunlocker")];
+			}
+		}
+		
+		ref += "^valueNOT IN" + valueToExclude.filter(Boolean).join(",") + "^language="+ gs.getUser().getLanguage() + "^dependent_value=" + request_support_for + "^ORDERBYsequence";
+
+		return ref;
+	},
+
+	getOtherCustomerServiceRequests_requestSupportFor: function(sys_id_record_producer, account) {	
+		var ref = "name=x_liisa_support_ca_services^element=u_request_support_for^dependent_value=" + sys_id_record_producer;
+
+		var valueToExclude = [
+			"commercial_management"
+		];
+
+		var grAccount = new GlideRecord("customer_account");
+		grAccount.get(account);
+		
+		if(grAccount) {
+			if((grAccount.getValue("name") == "COC - Liebherr Components Colmar SAS") || (grAccount.getValue("name") == "LMB - Liebherr Machines Bulle SA")) {
+				delete valueToExclude[valueToExclude.indexOf("commercial_management")];
+			}
+		}
+
+		ref += "^valueNOT IN" + valueToExclude.filter(Boolean).join(",") + "^language="+ gs.getUser().getLanguage() + "^ORDERBYsequence";
+
+		return ref;
+	},
+
+    type: 'Manage_Ref_Qualifier_Record_Producer'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 12:10:36</sys_created_on>
+        <sys_id>fb76e31d1b426550c2e1433be54bcb5b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Manage_Ref_Qualifier_Record_Producer</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_fb76e31d1b426550c2e1433be54bcb5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 16:56:24</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sys_script_include_fb76e31d1b426550c2e1433be54bcb5b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_liisa_support_ca.Manage_Ref_Qualifier_Record_Producer&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Manage_Ref_Qualifier_Record_Producer&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Manage_Ref_Qualifier_Record_Producer = Class.create();
+Manage_Ref_Qualifier_Record_Producer.prototype = {
+    initialize: function() {
+    },
+	
+	isPublic: function() {
+		return true;
+	},
+	
+	getTechnicalService_requestSupportFor: function(sys_id_record_producer) {	
+		var ref = "name=x_liisa_support_ca_services^element=u_request_support_for^dependent_value=" + sys_id_record_producer + "^language="+ gs.getUser().getLanguage() + "^ORDERBYsequence";
+								
+		return ref;
+	},
+	
+	getTechnicalService_requestType: function(request_support_for, account) {		
+		var ref = "name=x_liisa_support_ca_services^element=u_request_type";
+		
+		var valueToExclude = [
+			"after_treatment_system"
+			,"electro_soft_diagnose"
+			,"si_request"
+			,"power_change_issue"
+			,"engine_reflash"
+			,"dpfunlocker"
+		];
+		
+		var grAccount = new GlideRecord("customer_account");
+		grAccount.get(account);
+		
+		if(grAccount) {
+			if(grAccount.getValue("u_internalcustomer") == 1) {
+				delete valueToExclude[valueToExclude.indexOf("si_request")];
+			}
+			if(grAccount.getValue("u_powerchange_usage") == 1) {
+				delete valueToExclude[valueToExclude.indexOf("power_change_issue")];
+				delete valueToExclude[valueToExclude.indexOf("engine_reflash")];
+			}
+			if(grAccount.getValue("u_dpfunlocker_usage") == 1) {
+				delete valueToExclude[valueToExclude.indexOf("dpfunlocker")];
+			}
+		}
+		
+		ref += "^valueNOT IN" + valueToExclude.filter(Boolean).join(",") + "^language="+ gs.getUser().getLanguage() + "^dependent_value=" + request_support_for + "^ORDERBYsequence";
+
+		return ref;
+	},
+
+	getOtherCustomerServiceRequests_requestSupportFor: function(sys_id_record_producer, account) {	
+		var ref = "name=x_liisa_support_ca_services^element=u_request_support_for^dependent_value=" + sys_id_record_producer;
+
+		var valueToExclude = [
+			"commercial_management"
+		];
+
+		var grAccount = new GlideRecord("customer_account");
+		grAccount.get(account);
+		
+		if(grAccount) {
+			if((grAccount.getValue("name") == "COC - Liebherr Components Colmar SAS") || (grAccount.getValue("name") == "LMB - Liebherr Machines Bulle SA")) {
+				delete valueToExclude[valueToExclude.indexOf("commercial_management")];
+			}
+		}
+
+		ref += "^valueNOT IN" + valueToExclude.filter(Boolean).join(",") + "^language="+ gs.getUser().getLanguage() + "^ORDERBYsequence";
+
+		return ref;
+	},
+
+    type: 'Manage_Ref_Qualifier_Record_Producer'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-06 12:10:36&lt;/sys_created_on&gt;&lt;sys_id&gt;fb76e31d1b426550c2e1433be54bcb5b&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Manage_Ref_Qualifier_Record_Producer&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_fb76e31d1b426550c2e1433be54bcb5b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-06 16:56:24&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2045984246</payload_hash>
+        <record_name>Manage_Ref_Qualifier_Record_Producer</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 16:56:24</sys_created_on>
+        <sys_id>05f76c291b8ea5505bdeed71f54bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187577f772d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 16:56:24</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>0df76c297e8ea5509ab51920cb372ee7</update_guid>
+        <update_guid_history>0df76c297e8ea5509ab51920cb372ee7:2045984246,4a8720297e8ea55069c4b8a0086953da:-1549282282,20b57fd558826550419967c9a35813af:1467288231,c296671d1b426550a7130b0f682594c7:490006645,6a86271d0e4265508dedd0e9a123c9b8:-886412250</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 15:03:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>07ba198fdc614c57895b54541508b5c9</sys_id>
+        <sys_metadata>fb76e31d1b426550c2e1433be54bcb5b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manage_Ref_Qualifier_Record_Producer</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_script_include_fb76e31d1b426550c2e1433be54bcb5b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_fb76e31d1b426550c2e1433be54bcb5b">05f76c291b8ea5505bdeed71f54bcbe8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 15:03:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

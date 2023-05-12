@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Warranty and Claim Management">0946aa338705c5105f2064273cbb352f</catalog_item>
+        <catalog_variable>IO:1c296ab38705c5105f2064273cbb3597</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-13 07:24:19</sys_created_on>
+        <sys_id>b8c69d05db229150fc43edc40596192e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>internal_user</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b8c69d05db229150fc43edc40596192e</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-12 12:34:30</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records">2ee9a7111b0345505b1b411acd4bcb54</ui_policy>
+        <variable>internal_user</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

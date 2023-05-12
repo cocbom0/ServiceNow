@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="e22169c31b06211078b0ea0ce54bcb96" extends="sys_metadata" label="Responsibility Definition" max_length="40" name="sn_customerservice_responsibility_def" type="collection">
+        <element attributes="pdf_cell_type=image" label="Icon" max_length="40" name="u_icon" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" label="Order" max_length="40" name="u_order" type="integer"/>
+    </element>
+</database>

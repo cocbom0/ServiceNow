@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.GetLastAttachmentSysIdByUser</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetLastAttachmentSysIdByUser</name>
+        <script><![CDATA[var GetLastAttachmentSysIdByUser = Class.create();
+GetLastAttachmentSysIdByUser.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	isPublic: function() {
+		return true;
+	},
+	
+	getAttachmentSysId: function() {
+		var result = {};
+		var attachment_record = "";
+		var sys_id = "";
+		var user = "";
+		
+		user = this.getParameter("user");
+
+		attachment_record = this._getLastAttachmentRecord(user);
+		sys_id = attachment_record.getValue("sys_id");
+		
+		result = {
+			"sys_id" : sys_id
+		};
+		
+		return JSON.stringify(result);
+	},
+	
+	_getLastAttachmentRecord: function(user) {
+		var result = "";
+				
+		var attachment_table = new GlideRecord("sys_attachment");
+		attachment_table.addQuery("sys_created_by", user);
+		attachment_table.orderByDesc("sys_created_on");
+		attachment_table.setLimit(1);
+		attachment_table.query();
+				
+		while(attachment_table.next()) {
+			result = attachment_table;
+		}
+		
+		return result;
+	},
+
+    type: 'GetLastAttachmentSysIdByUser'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-07-18 08:22:19</sys_created_on>
+        <sys_id>2011adcd1b309910191cd8f99a4bcb42</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>GetLastAttachmentSysIdByUser</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_2011adcd1b309910191cd8f99a4bcb42</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2022-07-19 06:57:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

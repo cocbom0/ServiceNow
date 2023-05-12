@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Need">505ae87bdbcc81d001eafad3f3961962</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-02 14:34:06</sys_created_on>
+        <sys_id>78aae87bdbcc81d001eafad3f39619fa</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Replenishment</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>question_choice_78aae87bdbcc81d001eafad3f39619fa</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-08 12:14:00</sys_updated_on>
+        <text>Replenishment</text>
+        <value>Replenishment</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=78aae87bdbcc81d001eafad3f39619fa"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>misc</field>
+        <id>78aae87bdbcc81d001eafad3f39619fa</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-02 14:26:39</sys_created_on>
+        <sys_id>caaa68bbdbcc81d001eafad3f3961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-02 14:26:39</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_misc</field>
+        <id>78aae87bdbcc81d001eafad3f39619fa</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-02 14:26:39</sys_created_on>
+        <sys_id>82aa68bbdbcc81d001eafad3f3961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-02 14:26:39</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

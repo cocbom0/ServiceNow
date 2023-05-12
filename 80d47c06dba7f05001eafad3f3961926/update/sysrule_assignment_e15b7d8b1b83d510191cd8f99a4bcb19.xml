@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
+    <sysrule_assignment action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_liisa_support_ca_services">service_offering=05e173511b4445905b1b411acd4bcb3c^u_request_support_for=claim_decision^account=ab97c2b4dbc0419001eafad3f3961911^ORaccount=a79782b4dbc0419001eafad3f39619e1^EQ<item display_table="service_offering" display_value="Warranty - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="05e173511b4445905b1b411acd4bcb3c"/>
+            <item display_value="Claim content decisions" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="claim_decision"/>
+            <item display_table="customer_account" display_value="2G Energietechnik GmbH" endquery="false" field="account" goto="false" newquery="false" operator="=" or="false" value="ab97c2b4dbc0419001eafad3f3961911"/>
+            <item display_table="customer_account" display_value="Krone" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="a79782b4dbc0419001eafad3f39619e1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group display_value="Warranty-COT-BU-VM" name="Warranty-COT-BU-VM">f3b14345db44c19001eafad3f3961926</group>
+        <match_conditions>ALL</match_conditions>
+        <name>COT-BU-VM - Warranty - Benjamin Wuethric</name>
+        <order>100</order>
+        <script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script>
+        <sys_class_name>sysrule_assignment</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-11-13 11:44:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e15b7d8b1b83d510191cd8f99a4bcb19</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>COT-BU-VM - Warranty - Benjamin Wuethrich</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sysrule_assignment_e15b7d8b1b83d510191cd8f99a4bcb19</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-11-13 11:44:53</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <user display_value="Benjamin Wuethrich">014a5ea51b071050af1e777c8b4bcb3c</user>
+    </sysrule_assignment>
+</record_update>

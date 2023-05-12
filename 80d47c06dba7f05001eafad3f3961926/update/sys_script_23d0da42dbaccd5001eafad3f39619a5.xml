@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_liisa_support_ca_services</collection>
+        <condition/>
+        <description>From STRY0017060</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>DIW-Support case Escalation level</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var rate = current.variables.failure_rate;
+    var cost = current.variables.failure_cost;
+    var safety = current.variables.safety_related_issue;
+
+    if (current.variables.d_identification.nil()) {
+        if (!rate.nil() && rate < 2) {
+            current.variables.escalation_level = '1';
+        }
+        if (rate >= 2 && rate < 3) {
+            current.variables.escalation_level = '2';
+        }
+        if ((rate >= 3 && rate < 5) || (cost > 50000 && cost <= 100000)) {
+            current.variables.escalation_level = '3';
+        }
+        if (rate >= 5 || cost > 100000 || safety == "Yes") {
+            current.variables.escalation_level = '4';
+        }
+    } else if (!current.variables.d_identification.nil()) {
+
+        var ed = current.variables.d_identification;
+        var currentRate = rate;
+        var currentCost = cost;
+        var currentSafety = safety;
+
+        var gdt = new GlideDateTime();
+        gdt.addMonthsLocalTime(-1);
+
+        //find old cases in the past 1 month with the same 8D identification as current case
+        var qa = new GlideRecord('question_answer');
+        qa.addQuery('question', '20e70a091b04c1905b1b411acd4bcb0c'); //move sys_id to property
+        qa.addQuery('sys_created_on', '>', gdt);
+        qa.addQuery('value', ed);
+        qa.query();
+
+        var oldCases = [];
+
+        while (qa.next()) {
+            var id = qa.table_sys_id.toString();
+            oldCases.push(id);
+        }
+
+        //get the values for rate, cost and safety from old cases
+        var rateArr = [];
+        var costArr = [];
+        var safetyArr = [];
+
+        for (var i = 0; i < oldCases.length; i++) {
+            var qa2 = new GlideRecord('question_answer');
+            qa2.addQuery('question', '065146811b04c1905b1b411acd4bcb4f');
+            qa2.addQuery('table_sys_id', oldCases[i]);
+            qa2.query();
+
+            while (qa2.next()) {
+                rateArr.push(qa2.value.toString());
+            }
+        }
+
+        for (var j = 0; j < oldCases.length; j++) {
+            var qa3 = new GlideRecord('question_answer');
+            qa3.addQuery('question', '63e1c2c11b04c1905b1b411acd4bcb2f');
+            qa3.addQuery('table_sys_id', oldCases[j]);
+            qa3.query();
+
+            while (qa3.next()) {
+                costArr.push(qa3.value.toString());
+            }
+        }
+
+        for (var k = 0; k < oldCases.length; k++) {
+            var qa4 = new GlideRecord('question_answer');
+            qa4.addQuery('question', '3ac04ecd1bc0c1905b1b411acd4bcbae');
+            qa4.addQuery('table_sys_id', oldCases[k]);
+            qa4.query();
+
+            while (qa4.next()) {
+                safetyArr.push(qa4.value.toString());
+            }
+        }
+
+        //add current rate, cost and saftey values to the arrays
+        rateArr.push(currentRate);
+        costArr.push(currentCost);
+        safetyArr.push(currentSafety);
+
+        //calculate total rate
+        var totalRate = 0;
+        for (var n = 0; n < rateArr.length; n++) {
+            totalRate += parseInt(rateArr[n]);
+        }
+
+        //calcualte total cost
+        var totalCost = 0;
+        for (var m = 0; m < costArr.length; m++) {
+            totalCost += parseInt(costArr[m]);
+        }
+
+        //calculate average rate
+        var avgRate = totalRate / rateArr.length;
+
+        //calculate safety (true or false)
+        var totalSafety = new global.ArrayUtil().contains(safetyArr, 'Yes');
+
+        //set esc level to current case
+        if (avgRate < 2) {
+            current.variables.escalation_level = '1';
+        }
+
+        if (avgRate >= 2 && avgRate < 3) {
+            current.variables.escalation_level = '2';
+        }
+        if ((avgRate >= 3 && avgRate < 5) || (totalCost > 50000 && totalCost <= 100000)) {
+            current.variables.escalation_level = '3';
+        }
+        if (avgRate >= 5 || totalCost > 100000 || totalSafety == true) {
+            current.variables.escalation_level = '4';
+        }
+
+
+        // set old cases esc. level if case is new or open 
+        for (var p = 0; p < oldCases.length; p++) {
+            var oldC = new GlideRecord('x_liisa_support_ca_services');
+            oldC.get(oldCases[p]);
+            if (oldC.state == '10' || oldC.state == '1') {
+                if (avgRate < 2) {
+                    oldC.variables.escalation_level = '1';
+                    oldC.setWorkflow(false);
+                    oldC.update();
+                }
+                if (avgRate >= 2 && avgRate < 3) {
+                    oldC.variables.escalation_level = '2';
+                    oldC.setWorkflow(false);
+                    oldC.update();
+                }
+                if ((avgRate >= 3 && avgRate < 5) || (totalCost > 50000 && totalCost < 100000)) {
+                    oldC.variables.escalation_level = '3';
+                    oldC.setWorkflow(false);
+                    oldC.update();
+                }
+                if (avgRate >= 5 || totalCost >= 100000 || totalSafety == true) {
+                    oldC.variables.escalation_level = '4';
+                    oldC.setWorkflow(false);
+                    oldC.update();
+                }
+            }
+        }
+    }
+
+    if (current.variables.escalation_level != previous.variables.escalation_level) {
+        current.work_notes = "Escalation level set to " + current.variables.escalation_level + "; was: " + previous.variables.escalation_level;
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>anis.bekdash@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-22 08:00:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23d0da42dbaccd5001eafad3f39619a5</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>DIW-Support case Escalation level</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_23d0da42dbaccd5001eafad3f39619a5</sys_update_name>
+        <sys_updated_by>anis.bekdash@doitwise.com</sys_updated_by>
+        <sys_updated_on>2022-01-17 08:21:10</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=23d0da42dbaccd5001eafad3f39619a5"/>
+</record_update>

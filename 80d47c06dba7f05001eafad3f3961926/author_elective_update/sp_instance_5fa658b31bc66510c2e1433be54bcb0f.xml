@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">d73411231bf121505bdeed71f54bcbcd</sp_column>
+        <sp_widget display_value="LH-Knowledge Language Facet">cdc209231bb121505bdeed71f54bcb90</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 15:27:14</sys_created_on>
+        <sys_id>5fa658b31bc66510c2e1433be54bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_5fa658b31bc66510c2e1433be54bcb0f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 15:27:14</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=5fa658b31bc66510c2e1433be54bcb0f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_instance_5fa658b31bc66510c2e1433be54bcb0f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">d73411231bf121505bdeed71f54bcbcd</sp_column><sp_widget display_value="LH-Knowledge Language Facet">cdc209231bb121505bdeed71f54bcb90</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-13 15:27:14</sys_created_on><sys_id>5fa658b31bc66510c2e1433be54bcb0f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sp_instance_5fa658b31bc66510c2e1433be54bcb0f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-13 15:27:14</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=5fa658b31bc66510c2e1433be54bcb0f"/></record_update>]]></payload>
+        <payload_hash>167114672</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 15:27:14</sys_created_on>
+        <sys_id>dba698b31bc66510c2e1433be54bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1877b3a5b4a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 15:27:14</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>d3a658b345c66510996471f2f513bc11</update_guid>
+        <update_guid_history>d3a658b345c66510996471f2f513bc11:167114672</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">64c6d8b31bc66510c2e1433be54bcbd9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 15:27:36</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>05744e3f7b3843948076df1472eb8c24</sys_id>
+        <sys_metadata>5fa658b31bc66510c2e1433be54bcb0f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_instance_5fa658b31bc66510c2e1433be54bcb0f</sys_update_name>
+        <sys_update_version display_value="sp_instance_5fa658b31bc66510c2e1433be54bcb0f">dba698b31bc66510c2e1433be54bcb61</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 15:27:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

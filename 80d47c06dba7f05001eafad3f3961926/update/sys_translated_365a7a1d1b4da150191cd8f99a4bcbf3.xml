@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>title</element>
+        <id/>
+        <label>Andere betroffene Produkte für diesen Fall </label>
+        <language>de</language>
+        <name>item_option_new_set</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-15 15:54:47</sys_created_on>
+        <sys_id>365a7a1d1b4da150191cd8f99a4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Andere betroffene Produkte für diesen Fall </sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_translated_365a7a1d1b4da150191cd8f99a4bcbf3</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-15 15:54:47</sys_updated_on>
+        <value>Other products affected for this case</value>
+    </sys_translated>
+</record_update>

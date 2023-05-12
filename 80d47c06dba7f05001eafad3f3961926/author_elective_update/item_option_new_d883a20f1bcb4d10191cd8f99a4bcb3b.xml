@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
+    <item_option_new action="DELETE">
+        <active>true</active>
+        <attributes/>
+        <cat_item display_value="Service Training">b7f1c31f1b4801d05b1b411acd4bcbca</cat_item>
+        <category/>
+        <choice_direction>down</choice_direction>
+        <choice_field/>
+        <choice_table/>
+        <create_roles/>
+        <default_html_value/>
+        <default_value/>
+        <delete_roles/>
+        <delivery_plan/>
+        <description/>
+        <display_title>false</display_title>
+        <do_not_select_first>false</do_not_select_first>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <dynamic_value_dot_walk_path/>
+        <dynamic_value_field/>
+        <enable_also_request_for>false</enable_also_request_for>
+        <example_text/>
+        <field/>
+        <global>false</global>
+        <help_tag>More information</help_tag>
+        <help_text/>
+        <hidden>false</hidden>
+        <include_none>true</include_none>
+        <instructions/>
+        <layout>normal</layout>
+        <list_table/>
+        <lookup_label>label</lookup_label>
+        <lookup_price/>
+        <lookup_table>sys_choice</lookup_table>
+        <lookup_unique>false</lookup_unique>
+        <lookup_value>value</lookup_value>
+        <macro/>
+        <macroponent/>
+        <mandatory>false</mandatory>
+        <map_to_field>false</map_to_field>
+        <mask_use_confirmation>false</mask_use_confirmation>
+        <mask_use_encryption>false</mask_use_encryption>
+        <name>request_support_for_internal</name>
+        <order>45</order>
+        <post_insert_script/>
+        <price_if_checked>0</price_if_checked>
+        <pricing_implications>false</pricing_implications>
+        <published_ref/>
+        <question_text>Request support for</question_text>
+        <read_only>false</read_only>
+        <read_roles/>
+        <read_script/>
+        <rec_lookup_price/>
+        <rec_price_if_checked>0</rec_price_if_checked>
+        <record/>
+        <record_producer_table>x_liisa_support_ca_services</record_producer_table>
+        <reference>sys_choice</reference>
+        <reference_qual>javascript:'ORDERBYsequence^name=x_liisa_support_ca_services^element=u_request_support_for^dependent_value=45e173511b4445905b1b411acd4bcb58^value!=informal_training^value!=official_training^value!=refresher_training^language='+ gs.getUser().getLanguage()</reference_qual>
+        <reference_qual_condition/>
+        <rich_text/>
+        <roles_to_use_also_request_for/>
+        <save_script/>
+        <scale_max>5</scale_max>
+        <scale_min>0</scale_min>
+        <show_help>false</show_help>
+        <show_help_on_load>false</show_help_on_load>
+        <sp_widget/>
+        <summary_macro/>
+        <sys_class_name>item_option_new</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-28 18:29:00</sys_created_on>
+        <sys_id>d883a20f1bcb4d10191cd8f99a4bcb3b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Request support for</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>item_option_new_d883a20f1bcb4d10191cd8f99a4bcb3b</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-20 08:52:57</sys_updated_on>
+        <table/>
+        <tooltip/>
+        <type>18</type>
+        <ui_page/>
+        <unique>false</unique>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <validate_regex/>
+        <variable_name/>
+        <variable_set/>
+        <variable_width/>
+        <visibility>1</visibility>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <visible_summary>false</visible_summary>
+        <write_roles/>
+    </item_option_new>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>item_option_new_d883a20f1bcb4d10191cd8f99a4bcb3b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="Service Training">b7f1c31f1b4801d05b1b411acd4bcbca</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><dynamic_value_dot_walk_path/><dynamic_value_field/><enable_also_request_for>false</enable_also_request_for><example_text/><field/><global>false</global><help_tag>More information</help_tag><help_text/><hidden>false</hidden><include_none>true</include_none><instructions/><layout>normal</layout><list_table/><lookup_label>label</lookup_label><lookup_price/><lookup_table>sys_choice</lookup_table><lookup_unique>false</lookup_unique><lookup_value>value</lookup_value><macro/><macroponent/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>request_support_for_internal</name><order>45</order><post_insert_script/><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><published_ref/><question_text>Request support for</question_text><read_only>false</read_only><read_roles/><read_script/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table>x_liisa_support_ca_services</record_producer_table><reference>sys_choice</reference><reference_qual>javascript:'ORDERBYsequence^name=x_liisa_support_ca_services^element=u_request_support_for^dependent_value=45e173511b4445905b1b411acd4bcb58^value!=informal_training^value!=official_training^value!=refresher_training^language='+ gs.getUser().getLanguage()</reference_qual><reference_qual_condition/><rich_text/><roles_to_use_also_request_for/><save_script/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><show_help_on_load>false</show_help_on_load><sp_widget/><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-04-28 18:29:00</sys_created_on><sys_id>d883a20f1bcb4d10191cd8f99a4bcb3b</sys_id><sys_mod_count>13</sys_mod_count><sys_name>Request support for</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>item_option_new_d883a20f1bcb4d10191cd8f99a4bcb3b</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-09-20 08:52:57</sys_updated_on><table/><tooltip/><type>18</type><ui_page/><unique>false</unique><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>advanced</use_reference_qualifier><validate_regex/><variable_name/><variable_set/><variable_width/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new></record_update>]]></payload>
+        <payload_hash>198686664</payload_hash>
+        <record_name>Request support for</record_name>
+        <reverted_from/>
+        <source>7e76d5321b212110c2e1433be54bcbf2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 21:00:41</sys_created_on>
+        <sys_id>13f8d97d1b8ee5505bdeed71f54bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ec3990a80000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:41:18</sys_updated_on>
+        <type>Variable</type>
+        <update_guid>dff8d97dba8ee550ce3e402cc5866d74</update_guid>
+        <update_guid_history>dff8d97dba8ee550ce3e402cc5866d74:198686664</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5bf895bd1b8ee5505bdeed71f54bcb15</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 15:09:07</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new">item_option_new</sys_db_object>
+        <sys_id>01dc7fc8294345908043d6e188e22100</sys_id>
+        <sys_metadata>d883a20f1bcb4d10191cd8f99a4bcb3b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request support for</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent display_value="Service Training">b7f1c31f1b4801d05b1b411acd4bcbca</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>item_option_new_d883a20f1bcb4d10191cd8f99a4bcb3b</sys_update_name>
+        <sys_update_version display_value="item_option_new_d883a20f1bcb4d10191cd8f99a4bcb3b">13f8d97d1b8ee5505bdeed71f54bcb75</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 15:09:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

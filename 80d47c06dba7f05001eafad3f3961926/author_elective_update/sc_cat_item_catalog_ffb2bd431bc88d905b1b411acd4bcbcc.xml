@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Service Documentation">6c22f9031bc88d905b1b411acd4bcb5e</sc_cat_item>
+        <sc_catalog display_value="Customer Service">65bcd377c3011200b12d9f2974d3aea0</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-11-30 11:46:11</sys_created_on>
+        <sys_id>ffb2bd431bc88d905b1b411acd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Service.Service Documentation</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_ffb2bd431bc88d905b1b411acd4bcbcc</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-11-30 11:46:11</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sc_cat_item_catalog_ffb2bd431bc88d905b1b411acd4bcbcc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Service Documentation">6c22f9031bc88d905b1b411acd4bcb5e</sc_cat_item><sc_catalog display_value="Customer Service">65bcd377c3011200b12d9f2974d3aea0</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>kristian.teodorov@doitwise.com</sys_created_by><sys_created_on>2021-11-30 11:46:11</sys_created_on><sys_id>ffb2bd431bc88d905b1b411acd4bcbcc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Customer Service.Service Documentation</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sc_cat_item_catalog_ffb2bd431bc88d905b1b411acd4bcbcc</sys_update_name><sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by><sys_updated_on>2021-11-30 11:46:11</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>77748214</payload_hash>
+        <record_name>Customer Service.Service Documentation</record_name>
+        <reverted_from/>
+        <source>fe1a8dfcdb2f4510497dccd4059619f4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cochuj2</sys_created_by>
+        <sys_created_on>2022-05-16 08:42:36</sys_created_on>
+        <sys_id>0f3ac930db6f4510497dccd405961978</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>180cc0896660000001</sys_recorded_at>
+        <sys_updated_by>cochuj2</sys_updated_by>
+        <sys_updated_on>2022-05-16 08:43:33</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>ffb2f58399c88d90c2006e8499d86284</update_guid>
+        <update_guid_history>ffb2f58399c88d90c2006e8499d86284:77748214</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7637c6801b0e9d90c28d76e09b4bcb5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cochuj2</sys_created_by>
+        <sys_created_on>2022-09-15 11:50:38</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>1f769910cc9b4000b8cd3f0fde5b5490</sys_id>
+        <sys_metadata>ffb2bd431bc88d905b1b411acd4bcbcc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Service.Service Documentation</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent display_value="Service Documentation">6c22f9031bc88d905b1b411acd4bcb5e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_ffb2bd431bc88d905b1b411acd4bcbcc</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_ffb2bd431bc88d905b1b411acd4bcbcc">0f3ac930db6f4510497dccd405961978</sys_update_version>
+        <sys_updated_by>cochuj2</sys_updated_by>
+        <sys_updated_on>2022-09-15 11:50:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

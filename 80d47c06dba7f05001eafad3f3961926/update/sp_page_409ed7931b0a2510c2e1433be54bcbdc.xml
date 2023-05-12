@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>.manage-filters-button{&#13;
+ display:none; &#13;
+}&#13;
+body.fixed-header section.page, body.fixed-footer section.page {&#13;
+	padding-top: 2.5rem;&#13;
+}&#13;
+</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>lh_csm_cases</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles>snc_internal,sn_esm_user</roles>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 16:43:36</sys_created_on>
+        <sys_id>409ed7931b0a2510c2e1433be54bcbdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>lh_csm_cases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_page_409ed7931b0a2510c2e1433be54bcbdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 16:43:55</sys_updated_on>
+        <title>Cases</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=409ed7931b0a2510c2e1433be54bcbdc"/>
+</record_update>

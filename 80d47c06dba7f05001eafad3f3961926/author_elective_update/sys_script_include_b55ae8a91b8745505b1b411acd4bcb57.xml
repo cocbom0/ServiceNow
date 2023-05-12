@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.Internal_account</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Internal_account</name>
+        <script><![CDATA[var Internal_account = Class.create();
+Internal_account.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getInternalAccount: function() {
+
+   //      gs.info("start");
+
+		var account = this.getParameter('sysparm_account');
+        var gr = new GlideRecord('customer_account');
+		gr.get(account);
+		
+	//	 gs.info("value :" +gr.u_internalcustomer );
+		
+		if(gr.u_internal_customer == true){
+			return true;
+		}else if(gr.u_internal_customer == false){
+			return false;
+		}
+
+    },
+    type: 'Internal_account'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 17:47:41</sys_created_on>
+        <sys_id>b55ae8a91b8745505b1b411acd4bcb57</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Internal_account</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_b55ae8a91b8745505b1b411acd4bcb57</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 15:23:52</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sys_script_include_b55ae8a91b8745505b1b411acd4bcb57</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_liisa_support_ca.Internal_account&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Internal_account&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Internal_account = Class.create();
+Internal_account.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getInternalAccount: function() {
+
+   //      gs.info("start");
+
+		var account = this.getParameter('sysparm_account');
+        var gr = new GlideRecord('customer_account');
+		gr.get(account);
+		
+	//	 gs.info("value :" +gr.u_internalcustomer );
+		
+		if(gr.u_internal_customer == true){
+			return true;
+		}else if(gr.u_internal_customer == false){
+			return false;
+		}
+
+    },
+    type: 'Internal_account'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-23 17:47:41&lt;/sys_created_on&gt;&lt;sys_id&gt;b55ae8a91b8745505b1b411acd4bcb57&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Internal_account&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b55ae8a91b8745505b1b411acd4bcb57&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-12 15:23:52&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>658836134</payload_hash>
+        <record_name>Internal_account</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 15:23:52</sys_created_on>
+        <sys_id>945c47931bc62510c2e1433be54bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1877610eaad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 15:23:52</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>9c5c47932ac62510e0bf93b56aa90ef4</update_guid>
+        <update_guid_history>9c5c47932ac62510e0bf93b56aa90ef4:658836134,405c4793c5c6251032df1589495db9f3:-1184527982</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 16:35:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1d2b739a1548451c95bdf74d5e3f1284</sys_id>
+        <sys_metadata>b55ae8a91b8745505b1b411acd4bcb57</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Internal_account</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_script_include_b55ae8a91b8745505b1b411acd4bcb57</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b55ae8a91b8745505b1b411acd4bcb57">945c47931bc62510c2e1433be54bcbf5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 16:35:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla">
+    <contract_sla action="DELETE">
+        <active>false</active>
+        <adv_condition_type>none</adv_condition_type>
+        <cancel_condition/>
+        <collection>x_liisa_support_ca_services</collection>
+        <condition_class/>
+        <duration>1970-01-04 08:00:00</duration>
+        <duration_type/>
+        <enable_logging>false</enable_logging>
+        <flow/>
+        <name>COT BU-VM Resolution 10 Working Days</name>
+        <pause_condition table="x_liisa_support_ca_services">stateIN18^EQ<item display_value="Awaiting Info" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="18"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </pause_condition>
+        <relative_duration_works_on>Task record</relative_duration_works_on>
+        <reset_action>cancel</reset_action>
+        <reset_condition/>
+        <resume_condition table="x_liisa_support_ca_services">state!=18^EQ<item display_value="Awaiting Info" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="18"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </resume_condition>
+        <retroactive>false</retroactive>
+        <retroactive_pause>true</retroactive_pause>
+        <schedule display_value="">9d8a3eb91b146490100fdb58bb4bcb82</schedule>
+        <schedule_source>sla_definition</schedule_source>
+        <schedule_source_field/>
+        <set_start_to/>
+        <start_condition table="x_liisa_support_ca_services">service_offering=45e173511b4445905b1b411acd4bcb58^u_request_support_for=standard_training^EQ<item display_table="service_offering" display_value="Training - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="45e173511b4445905b1b411acd4bcb58"/>
+            <item display_value="Standard training" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="standard_training"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </start_condition>
+        <stop_condition table="x_liisa_support_ca_services">state=6^ORstate=3^ORstate=7^EQ<item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="6"/>
+            <item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="3"/>
+            <item display_value="Cancelled" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="7"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </stop_condition>
+        <sys_class_name>contract_sla</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-23 16:27:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c139cfe1b025110c28d76e09b4bcb92</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>COT BU-VM Resolution 10 Working Days</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>contract_sla_5c139cfe1b025110c28d76e09b4bcb92</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-23 16:54:13</sys_updated_on>
+        <target>resolution</target>
+        <timezone/>
+        <timezone_source>task.caller_id.time_zone</timezone_source>
+        <type>OLA</type>
+        <vendor/>
+        <when_to_cancel>on_condition</when_to_cancel>
+        <when_to_resume>on_condition</when_to_resume>
+        <workflow display_value="Default SLA workflow">4b6570360a0a0b3000bbacab877713f2</workflow>
+    </contract_sla>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>contract_sla_5c139cfe1b025110c28d76e09b4bcb92</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla"><contract_sla action="INSERT_OR_UPDATE"><active>false</active><adv_condition_type>none</adv_condition_type><cancel_condition/><collection>x_liisa_support_ca_services</collection><condition_class/><duration>1970-01-04 08:00:00</duration><duration_type/><enable_logging>false</enable_logging><flow/><name>COT BU-VM Resolution 10 Working Days</name><pause_condition table="x_liisa_support_ca_services">stateIN18^EQ<item display_value="Awaiting Info" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="18"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></pause_condition><relative_duration_works_on>Task record</relative_duration_works_on><reset_action>cancel</reset_action><reset_condition/><resume_condition table="x_liisa_support_ca_services">state!=18^EQ<item display_value="Awaiting Info" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="18"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></resume_condition><retroactive>false</retroactive><retroactive_pause>true</retroactive_pause><schedule display_value="">9d8a3eb91b146490100fdb58bb4bcb82</schedule><schedule_source>sla_definition</schedule_source><schedule_source_field/><set_start_to/><start_condition table="x_liisa_support_ca_services">service_offering=45e173511b4445905b1b411acd4bcb58^u_request_support_for=standard_training^EQ<item display_table="service_offering" display_value="Training - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="45e173511b4445905b1b411acd4bcb58"/><item display_value="Standard training" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="standard_training"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></start_condition><stop_condition table="x_liisa_support_ca_services">state=6^ORstate=3^ORstate=7^EQ<item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="6"/><item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="3"/><item display_value="Cancelled" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="7"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></stop_condition><sys_class_name>contract_sla</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-09-23 16:27:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5c139cfe1b025110c28d76e09b4bcb92</sys_id><sys_mod_count>1</sys_mod_count><sys_name>COT BU-VM Resolution 10 Working Days</sys_name><sys_overrides/><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>contract_sla_5c139cfe1b025110c28d76e09b4bcb92</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-09-23 16:54:13</sys_updated_on><target>resolution</target><timezone/><timezone_source>task.caller_id.time_zone</timezone_source><type>OLA</type><vendor/><when_to_cancel>on_condition</when_to_cancel><when_to_resume>on_condition</when_to_resume><workflow display_value="Default SLA workflow">4b6570360a0a0b3000bbacab877713f2</workflow></contract_sla></record_update>]]></payload>
+        <payload_hash>756536778</payload_hash>
+        <record_name>COT BU-VM Resolution 10 Working Days</record_name>
+        <reverted_from/>
+        <source>80d47c06dba7f05001eafad3f3961926</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-23 16:27:33</sys_created_on>
+        <sys_id>f9f191cb1b8ee1105bdeed71f54bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1836b2cf9080000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:41:14</sys_updated_on>
+        <type>SLA Definition</type>
+        <update_guid>b9f191cb168ee11079fff78d40239f81</update_guid>
+        <update_guid_history>b9f191cb168ee11079fff78d40239f81:756536778</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">31f191cb1b8ee1105bdeed71f54bcb86</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 11:50:50</sys_created_on>
+        <sys_db_object display_value="" name="contract_sla">contract_sla</sys_db_object>
+        <sys_id>d0d7ad0fb85d428ab1b70c74e5f6b784</sys_id>
+        <sys_metadata>5c139cfe1b025110c28d76e09b4bcb92</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>COT BU-VM Resolution 10 Working Days</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>contract_sla_5c139cfe1b025110c28d76e09b4bcb92</sys_update_name>
+        <sys_update_version display_value="contract_sla_5c139cfe1b025110c28d76e09b4bcb92">f9f191cb1b8ee1105bdeed71f54bcb81</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 11:50:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

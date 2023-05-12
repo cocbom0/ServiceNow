@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>4</order>
+        <size>2</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">ba5ae35f1b0a2510c2e1433be54bcba2</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 17:35:07</sys_created_on>
+        <sys_id>365ae35f1b0a2510c2e1433be54bcbac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>4</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_column_365ae35f1b0a2510c2e1433be54bcbac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 17:35:33</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_column_365ae35f1b0a2510c2e1433be54bcbac</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>4</order><size>2</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ba5ae35f1b0a2510c2e1433be54bcba2</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-12 17:35:07</sys_created_on><sys_id>365ae35f1b0a2510c2e1433be54bcbac</sys_id><sys_mod_count>1</sys_mod_count><sys_name>4</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sp_column_365ae35f1b0a2510c2e1433be54bcbac</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-12 17:35:33</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>1039656364</payload_hash>
+        <record_name>4</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 17:35:33</sys_created_on>
+        <sys_id>cd7a675f1b0a2510c2e1433be54bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187768978e00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 17:35:33</sys_updated_on>
+        <type>Column</type>
+        <update_guid>c57a675ffe0a25106e9adb098b0ab37d</update_guid>
+        <update_guid_history>c57a675ffe0a25106e9adb098b0ab37d:1039656364,725ae35f000a25101b529c81c98fe8ad:-1131162066</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">317a675f1b0a2510c2e1433be54bcbad</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 17:35:36</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>42120ba016d34be4a47f36237df3be90</sys_id>
+        <sys_metadata>365ae35f1b0a2510c2e1433be54bcbac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_column_365ae35f1b0a2510c2e1433be54bcbac</sys_update_name>
+        <sys_update_version display_value="sp_column_365ae35f1b0a2510c2e1433be54bcbac">cd7a675f1b0a2510c2e1433be54bcb7d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 17:35:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

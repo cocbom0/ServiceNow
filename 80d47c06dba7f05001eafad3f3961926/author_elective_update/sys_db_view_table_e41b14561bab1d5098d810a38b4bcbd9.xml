@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>true</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-05 17:19:14</sys_created_on>
+        <sys_id>e41b14561bab1d5098d810a38b4bcbd9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>sn_install_base_item</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_db_view_table_e41b14561bab1d5098d810a38b4bcbd9</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-05 17:31:01</sys_updated_on>
+        <table>sn_install_base_item</table>
+        <variable_prefix>sibe</variable_prefix>
+        <view display_value="x_liisa_support_ca_lh_csm_missing_records">ecfa90561bab1d5098d810a38b4bcb2f</view>
+        <where_clause>sibm_number!=sibe_number</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sys_db_view_table_e41b14561bab1d5098d810a38b4bcbd9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-12-05 17:19:14</sys_created_on><sys_id>e41b14561bab1d5098d810a38b4bcbd9</sys_id><sys_mod_count>5</sys_mod_count><sys_name>sn_install_base_item</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sys_db_view_table_e41b14561bab1d5098d810a38b4bcbd9</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-12-05 17:31:01</sys_updated_on><table>sn_install_base_item</table><variable_prefix>sibe</variable_prefix><view display_value="x_liisa_support_ca_lh_csm_missing_records">ecfa90561bab1d5098d810a38b4bcb2f</view><where_clause>sibm_number!=sibe_number</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-1714149825</payload_hash>
+        <record_name>sn_install_base_item</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-05 17:31:01</sys_created_on>
+        <sys_id>b2ed9c1a1bab1d5098d810a38b4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184e357533a0000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-05 17:31:01</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>7aed9c1aa3ab1d50c5bf888e87cc26de</update_guid>
+        <update_guid_history>7aed9c1aa3ab1d50c5bf888e87cc26de:-1714149825,37cd1c1af5ab1d5086dc92b96a00123d:-1422183884,215dd8d6aeab1d5080ffcd4826439cfd:-1186735462,1cfc1cd6b7ab1d5015dc2e00e1d7c91b:1561603177,532c1c96e4ab1d50059d0962288f3f5f:-1186735462,c23bd45611ab1d5050f75206f9894765:-732598811</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-05 18:04:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>6afbb881fd774e8ab88ef04415d50824</sys_id>
+        <sys_metadata>e41b14561bab1d5098d810a38b4bcbd9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_install_base_item</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_e41b14561bab1d5098d810a38b4bcbd9</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_e41b14561bab1d5098d810a38b4bcbd9">b2ed9c1a1bab1d5098d810a38b4bcbdf</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-05 18:04:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

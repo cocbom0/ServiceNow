@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_liisa_support_ca_services" version="2" view="workspace">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c5e284addbe40d5001eafad3f396198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c9e284addbe40d5001eafad3f396198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>action_status</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>cde284addbe40d5001eafad3f396198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_area_location</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c1e284addbe40d5001eafad3f396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c5e284addbe40d5001eafad3f396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>account</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c9e284addbe40d5001eafad3f396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact_type</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>cde284addbe40d5001eafad3f396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c1e284addbe40d5001eafad3f3961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c5e284addbe40d5001eafad3f3961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c9e284addbe40d5001eafad3f3961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_progress</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>cde284addbe40d5001eafad3f3961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_liisa_support_ca_services" element="NULL" name="x_liisa_support_ca_services" parent="NULL" relationship="NULL" sys_domain="global" view="ba7b24471b822110a3e4ebd4604bcbbe">ea84845c1be8c9505b1b411acd4bcb71</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_id>c1e284addbe40d5001eafad3f3961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_liisa_support_ca_services</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+            <sys_created_on>2021-12-20 08:17:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea84845c1be8c9505b1b411acd4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_liisa_support_ca_services</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_ui_list_x_liisa_support_ca_services_workspace</sys_update_name>
+            <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+            <sys_updated_on>2021-12-20 08:17:58</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">ba7b24471b822110a3e4ebd4604bcbbe</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

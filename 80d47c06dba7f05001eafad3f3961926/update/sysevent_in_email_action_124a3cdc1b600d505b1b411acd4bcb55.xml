@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>new global.ConsumerEMailUtil().isConsumerExist(email.from)  &amp;&amp; current.consumer &amp;&amp; current.consumer.email.toLowerCase() == email.from.toLowerCase() &amp;&amp; current.state == 3</condition_script>
+        <description>This inbound email action is triggered when an email is sent to ServiceNow and:&#13;
+&#13;
+1. The email is a reply.&#13;
+2. The email being replied to was sent by ServiceNow due to an update or creation of a Support Case.&#13;
+4. The Case state is Closed.&#13;
+5. The email content should automatically generate a watermark for that case, if you delete it, this inbound action will not be triggered.&#13;
+      For example:&#13;
+          Do not delete the following message:&#13;
+          Ref:MSG0000020&#13;
+&#13;
+This inbound email action will send a notification email to the user stating that the Case is already closed. It calls the email notification "Case closed no email". &#13;
+&#13;
+The activity log of the closed Case will not be updated. </description>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>email to support case already closed</name>
+        <order>4</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+	
+	gs.eventQueue('x_liisa_support_ca.case_closed_email', current, '',gs.getUserName());
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-16 15:12:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>124a3cdc1b600d505b1b411acd4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>email to support case already closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sysevent_in_email_action_124a3cdc1b600d505b1b411acd4bcb55</sys_update_name>
+        <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-16 15:12:23</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

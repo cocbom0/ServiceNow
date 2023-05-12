@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Model Management" source="com.snc.model">d109e04f1b022110a3e4ebd4604bcbb5</dependency>
+        <min_version>1.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 09:29:59</sys_created_on>
+        <sys_id>86c18f591b0aa5505bdeed71f54bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 09:29:59</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

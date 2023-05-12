@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
+    <sysrule_assignment action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_liisa_support_ca_services">account=6d588af4dbc0419001eafad3f396190e^ORaccount=e5584af4dbc0419001eafad3f39619ac^ORaccount=e5e3e8ba877045d05f2064273cbb3554^ORaccount=6d588af4dbc0419001eafad3f3961926^ORaccount=29588af4dbc0419001eafad3f396192b^ORaccount=5282e8fd1bcf85505b1b411acd4bcb22^ORaccount=a1588af4dbc0419001eafad3f3961929^ORaccount=ab97c2b4dbc0419001eafad3f3961911^service_offering=05e173511b4445905b1b411acd4bcb3c^u_request_support_for=claim_financial_document^EQ<item display_table="customer_account" display_value="LFR - Liebherr-France SAS" endquery="false" field="account" goto="false" newquery="false" operator="=" or="false" value="6d588af4dbc0419001eafad3f396190e"/>
+            <item display_table="customer_account" display_value="LEC - Liebherr-Mining Equipment Colmar SAS" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="e5584af4dbc0419001eafad3f39619ac"/>
+            <item display_table="customer_account" display_value="COC - Liebherr Components Colmar SAS" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="e5e3e8ba877045d05f2064273cbb3554"/>
+            <item display_table="customer_account" display_value="LWT - Liebherr-Werk Telfs GmbH" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="6d588af4dbc0419001eafad3f3961926"/>
+            <item display_table="customer_account" display_value="LWN - Liebherr-Werk Nenzing GmbH" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="29588af4dbc0419001eafad3f396192b"/>
+            <item display_table="customer_account" display_value="LLI - Liebherr-Aerospace Lindenberg GmbH" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="5282e8fd1bcf85505b1b411acd4bcb22"/>
+            <item display_table="customer_account" display_value="MCR - Liebherr-MCCtec Rostock GmbH" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="a1588af4dbc0419001eafad3f3961929"/>
+            <item display_table="customer_account" display_value="2G Energietechnik GmbH" endquery="false" field="account" goto="false" newquery="false" operator="=" or="true" value="ab97c2b4dbc0419001eafad3f3961911"/>
+            <item display_table="service_offering" display_value="Warranty - COT - (BU-VM)" endquery="false" field="service_offering" goto="false" newquery="false" operator="=" or="false" value="05e173511b4445905b1b411acd4bcb3c"/>
+            <item display_value="Claim financial documents" endquery="false" field="u_request_support_for" goto="false" newquery="false" operator="=" or="false" value="claim_financial_document"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group display_value="Warranty-COT-BU-VM" name="Warranty-COT-BU-VM">f3b14345db44c19001eafad3f3961926</group>
+        <match_conditions>ALL</match_conditions>
+        <name>COT-BU-VM - Warranty - Dominique Bapst</name>
+        <order>100</order>
+        <script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script>
+        <sys_class_name>sysrule_assignment</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-11 16:46:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2688d531bdf09105b1b411acd4bcbbc</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>COT-BU-VM - Warranty - Dominique Bapst</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sysrule_assignment_a2688d531bdf09105b1b411acd4bcbbc</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-11-13 11:35:12</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <user display_value="Dominique Bapst">754a9ea51b071050af1e777c8b4bcbaa</user>
+    </sysrule_assignment>
+</record_update>

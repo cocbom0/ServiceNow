@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Configuration Management (CMDB)" source="com.snc.cmdb">ab09284f1b022110a3e4ebd4604bcb46</dependency>
+        <min_version>1.1</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 12:49:40</sys_created_on>
+        <sys_id>097c88881b7de110c2e1433be54bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-20 12:49:40</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Spare Parts">b3c4f1cd1b264510a4236313604bcb25</catalog_item>
+        <catalog_variable>IO:4d72231a1b27c550191cd8f99a4bcb12</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-28 14:11:51</sys_created_on>
+        <sys_id>94eab5de1b211d14a4236313604bcb83</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>u_html_description</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_94eab5de1b211d14a4236313604bcb83</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-13 15:03:44</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'detail' visible depending on 'internal_user', 'contact', 'account', 'request_support_for',  'request_type'">d98f05f81b630150191cd8f99a4bcbe6</ui_policy>
+        <variable>u_html_description</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

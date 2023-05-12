@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Other Customer Service Requests">97e2cf85db44c19001eafad3f39619d2</catalog_item>
+        <catalog_variable>IO:ecc43cfedb004d9001eafad3f39619a6</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 13:24:29</sys_created_on>
+        <sys_id>b8f3a8531b562150c2e1433be54bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>title</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b8f3a8531b562150c2e1433be54bcb2d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 13:24:29</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Fields : Title &amp; Description">66426cdf1b162150c2e1433be54bcb99</ui_policy>
+        <variable>title</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_b8f3a8531b562150c2e1433be54bcb2d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Other Customer Service Requests">97e2cf85db44c19001eafad3f39619d2</catalog_item><catalog_variable>IO:ecc43cfedb004d9001eafad3f39619a6</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-24 13:24:29</sys_created_on><sys_id>b8f3a8531b562150c2e1433be54bcb2d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>title</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_b8f3a8531b562150c2e1433be54bcb2d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-24 13:24:29</sys_updated_on><table/><ui_policy display_value="Display Fields : Title &amp; Description">66426cdf1b162150c2e1433be54bcb99</ui_policy><variable>title</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1150255295</payload_hash>
+        <record_name>title</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 13:24:29</sys_created_on>
+        <sys_id>d41464531b562150c2e1433be54bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187b36feb110000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 13:24:29</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>d8146453f8562150f2c549c7b66ab945</update_guid>
+        <update_guid_history>d8146453f8562150f2c549c7b66ab945:1150255295</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">db5720571b562150c2e1433be54bcb38</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 13:38:53</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>bae8ebc090634f9c93e1d72d91ecaa10</sys_id>
+        <sys_metadata>b8f3a8531b562150c2e1433be54bcb2d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>title</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_b8f3a8531b562150c2e1433be54bcb2d</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_b8f3a8531b562150c2e1433be54bcb2d">d41464531b562150c2e1433be54bcb46</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 13:38:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

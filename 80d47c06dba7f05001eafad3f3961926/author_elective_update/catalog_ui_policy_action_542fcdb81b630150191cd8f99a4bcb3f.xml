@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Spare Parts">b3c4f1cd1b264510a4236313604bcb25</catalog_item>
+        <catalog_variable>IO:ef8f5a5c1b5309905b1b411acd4bcb37</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-05-16 09:03:59</sys_created_on>
+        <sys_id>542fcdb81b630150191cd8f99a4bcb3f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>u_request_support_for</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_542fcdb81b630150191cd8f99a4bcb3f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-13 15:15:40</sys_updated_on>
+        <table/>
+        <ui_policy display_value="">582fcdb81b630150191cd8f99a4bcb3b</ui_policy>
+        <variable>u_request_support_for</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_542fcdb81b630150191cd8f99a4bcb3f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Spare Parts">b3c4f1cd1b264510a4236313604bcb25</catalog_item><catalog_variable>IO:ef8f5a5c1b5309905b1b411acd4bcb37</catalog_variable><cleared>true</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>cockrl0</sys_created_by><sys_created_on>2022-05-16 09:03:59</sys_created_on><sys_id>542fcdb81b630150191cd8f99a4bcb3f</sys_id><sys_mod_count>3</sys_mod_count><sys_name>u_request_support_for</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_542fcdb81b630150191cd8f99a4bcb3f</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-09-13 15:15:40</sys_updated_on><table/><ui_policy display_value="">582fcdb81b630150191cd8f99a4bcb3b</ui_policy><variable>u_request_support_for</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-475069133</payload_hash>
+        <record_name>u_request_support_for</record_name>
+        <reverted_from/>
+        <source>7e76d5321b212110c2e1433be54bcbf2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 21:00:41</sys_created_on>
+        <sys_id>4f0e9df11bcee5505bdeed71f54bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ec3990a80000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:41:09</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>0f0e9df1a5cee550910f82b2126d78fc</update_guid>
+        <update_guid_history>0f0e9df1a5cee550910f82b2126d78fc:-475069133</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c70e9df11bcee5505bdeed71f54bcbfe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 15:31:13</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>cfe34416ca084d808e972ac3e4b4d4c4</sys_id>
+        <sys_metadata>542fcdb81b630150191cd8f99a4bcb3f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_request_support_for</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_542fcdb81b630150191cd8f99a4bcb3f</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_542fcdb81b630150191cd8f99a4bcb3f">4f0e9df11bcee5505bdeed71f54bcbfc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 15:31:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

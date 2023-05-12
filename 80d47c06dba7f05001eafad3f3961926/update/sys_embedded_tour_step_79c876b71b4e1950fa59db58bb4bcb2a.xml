@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">39c872b71b4e1950fa59db58bb4bcbce</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[<p>The below table displays the list of the latest requests that you have submitted, so that you can find them easily and monitor the progress.</p>]]></content>
+        <guide display_value="Customer Service Combustion Engines Portal">0d8e58421bc99d50a4236313604bcb1c</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=csm_index"}</options>
+        <order>5</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:04:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>79c876b71b4e1950fa59db58bb4bcb2a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_79c876b71b4e1950fa59db58bb4bcb2a</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:02:48</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">39c872b71b4e1950fa59db58bb4bcbce</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=79c876b71b4e1950fa59db58bb4bcb2a"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>79c876b71b4e1950fa59db58bb4bcb2a</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:10:22</sys_created_on>
+        <sys_id>da2abe3b1b4e1950fa59db58bb4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:10:22</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;In der folgenden Tabelle finden Sie eine Liste der letzten von Ihnen eingereichten Anfragen, damit Sie diese leicht finden und den Fortschritt verfolgen k&amp;ouml;nnen.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>79c876b71b4e1950fa59db58bb4bcb2a</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:08:07</sys_created_on>
+        <sys_id>61a9bef71b4e1950fa59db58bb4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:08:07</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Le tableau ci-dessous affiche la liste des derni&amp;egrave;res demandes que vous avez soumises, afin que vous puissiez les retrouver facilement et suivre leur &amp;eacute;volution.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>79c876b71b4e1950fa59db58bb4bcb2a</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:10:22</sys_created_on>
+        <sys_id>162abe3b1b4e1950fa59db58bb4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:10:22</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>79c876b71b4e1950fa59db58bb4bcb2a</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:08:07</sys_created_on>
+        <sys_id>69a976f71b4e1950fa59db58bb4bcb94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 07:08:07</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

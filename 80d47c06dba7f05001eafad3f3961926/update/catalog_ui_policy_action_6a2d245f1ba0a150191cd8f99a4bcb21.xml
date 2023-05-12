@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="CSM Support">5ff792f61be8ed10191cd8f99a4bcb8b</catalog_item>
+        <catalog_variable>IO:10882c971ba0a150191cd8f99a4bcbda</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2023-01-27 14:14:29</sys_created_on>
+        <sys_id>6a2d245f1ba0a150191cd8f99a4bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>help</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_6a2d245f1ba0a150191cd8f99a4bcb21</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2023-01-27 15:01:11</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make Help visible if Request Type is &quot;Difficulty / help required&quot;">44ecac1f1ba0a150191cd8f99a4bcb20</ui_policy>
+        <variable>help</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

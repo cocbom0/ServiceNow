@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function main($scope, $rootScope, spKBCategoryService, $window, $timeout) {
+    var c = this;
+    var previous = "";
+    c.data.kbid = "";
+    c.data.categories = [];
+    $scope.selectedItem = [];
+
+    var g_form = $scope.page.g_form;
+
+    //Subscribe event on change
+    $rootScope.$on('field.change', function(evt, parms) {
+        if (parms.field.name == 'kb_category') {
+            c.data.defaultSelection = $scope.page.field.value;
+            c.server.update().then(function() {
+                if ($scope.data.catName !== null) {
+                    $scope.data.defaultSelectionItem = [{
+                        "children": [],
+                        "name": $scope.data.catName,
+                        "id": $scope.page.field.value,
+						"u_can_read_user_criteria": "", // COT BU-VM : STRY0015965
+						"u_cant_read_user_criteria": "", // COT BU-VM : STRY0015965
+						"value": "" // COT BU-VM : STRY0015973
+                    }];
+                }
+                $scope.selectedItem = $scope.data.defaultSelectionItem;
+            });
+        }
+
+        if (parms.field.name == 'article' && parms.field.stagedValue == "") {
+            $scope.selectedItem = null;
+            $scope.data.defaultSelectionItem = null;
+            $scope.data.catName = null;
+        }
+
+        //Filter on the wanted field
+        if (parms.field.name == 'knowledge_base') {
+            //get kbid
+            var kbid;
+            var kbiptmp = g_form.getValue('start_category');
+
+            kbid = kbiptmp ? kbiptmp : parms.field.stagedValue;
+
+            //prepare to send to server
+            c.data.kbid = kbid;
+
+            //Update server side
+            c.server.update().then(function() {
+
+            });
+        }
+    });
+
+    $scope.updateItem = function(item) {
+        if (item) {
+            $scope.page.field.value = item[0].id;
+            $scope.selectedItem = item;
+			if(!knowledgeBaseIsExcluded()) { /* COT BU-VM : Engine Compliance Project | new */
+				setUserCriteria(item[0].u_can_read_user_criteria, item[0].u_cant_read_user_criteria); // COT BU-VM : STRY0015965
+			} /* COT BU-VM : Engine Compliance Project | new */	
+        }
+		
+        sectionVisibilityManagement();
+		categoryTitleManagement(); // COT BU-VM : STRY0015973 | new
+    };
+
+    var value = g_form.getValue("knowledge_base");
+
+    //Filter on the wanted field
+    if (value != null) {
+        //get kbid
+        var kbid;
+        var kbiptmp = g_form.getValue('start_category');
+
+        kbid = kbiptmp ? kbiptmp : value;
+        //prepare to send to server
+        c.data.kbid = kbid;
+
+        //Update server side
+        c.server.update().then(function() {
+
+        });
+    }
+	
+	// COT BU-VM : STRY0015973 | start.new
+    function sectionVisibilityManagement() {		
+        if ($scope.selectedItem.length > 0) {
+			var varName = $scope.selectedItem[0].value;
+			if (varName !== previous) {
+				g_form.setValue("io_" + previous, "No");
+				previous = varName;
+				g_form.setValue("io_" + varName, "Yes");
+			}
+        } else {
+			g_form.setValue("io_" + previous, "No");
+			previous = "";
+		}
+    }
+	
+	function categoryTitleManagement() {
+		if($scope.selectedItem.length > 0) {
+			g_form.setValue("category_label", $scope.selectedItem[0].name);
+			g_form.setValue("category_value", $scope.selectedItem[0].value);
+		} else {
+			g_form.setValue("category_label", "");
+			g_form.setValue("category_value", "");
+		}
+	}
+	// COT BU-VM : STRY0015973 | end.new
+	
+	// COT BU-VM : STRY0015965 | start
+	function setUserCriteria(u_can_read_user_criteria, u_cant_read_user_criteria) {
+		try {
+			g_form.setValue("u_can_read_user_criteria", u_can_read_user_criteria);
+			g_form.setValue("u_cant_read_user_criteria", u_cant_read_user_criteria);
+		} catch (error) {}
+	}
+	// COT BU-VM : STRY0015965 | end
+	
+	/* COT BU-VM : Engine Compliance Project | new.start */
+	function knowledgeBaseIsExcluded() {
+		var currentKB = g_form.getValue("knowledge_base");
+		var i = 0;
+		var find = false;
+		
+		if(c.data.excludedKB) {
+			while(i < c.data.excludedKB.length && !find) {
+				if(c.data.excludedKB[i] === currentKB) {
+					find = true;
+				}
+				i++;
+			}
+		}		
+		
+		return find;
+	}
+	/* COT BU-VM : Engine Compliance Project | new.end */
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>This widget is used to select the category of a KB article while the customer request a new article.</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>lh-kb_category-tree_selector-widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>LH-KB Category-Tree Selector-Widget</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+    if (input.defaultSelection) {
+
+        // Get category by ID
+        var cat = new GlideRecord("kb_category");
+        var find = cat.get("sys_id", input.defaultSelection);
+        if (find) {
+            data.catName = cat.label.toString();
+        }
+
+    }
+    if (input) {
+        //Initialize variables
+        data.category = {};
+        data.categories = [];
+		data.excludedKB = getKBToExclude(); /* COT BU-VM : Engine Compliance Project | new */
+
+        // Get all top-level categories in selected knowledge bases
+        var cats = new GlideRecord("kb_category");
+        cats.addActiveQuery();
+        cats.addQuery("parent_id", input.kbid);
+        cats.orderBy('sys_created_on'); //label
+        cats.query();
+
+        // Get Subcategories and build tree structure
+        while (cats.next()) {
+            var categoryDetails = getCategory(cats, 0);
+            data.categories.push(categoryDetails);
+        }
+    }
+
+    //Recursive function to retrieve all categories with the hierachy
+    function getCategory(cats, level) {
+
+        var categoryDetails = {};
+        var articleCount = -1;
+        var arts;
+
+        //Add object properties
+        categoryDetails.id = cats.getUniqueValue();
+        categoryDetails.name = cats.getDisplayValue("label");
+		categoryDetails.u_can_read_user_criteria = cats.getValue("u_can_read_user_criteria"); // COT BU-VM : STRY0015965
+		categoryDetails.u_cant_read_user_criteria = cats.getValue("u_cant_read_user_criteria"); // COT BU-VM : STRY0015965
+		categoryDetails.value = cats.getDisplayValue("value"); // COT BU-VM : STRY0015973
+        categoryDetails.children = [];
+
+        var subcategories = new GlideRecord("kb_category");
+        subcategories = $sp.getSubCategories(cats.getUniqueValue());
+
+        while (subcategories.next()) {
+            var category = getCategory(subcategories, level + 1);
+            if (category.count != 0) {
+                categoryDetails.children.push(category);
+            }
+        }
+        return categoryDetails;
+    }
+})();
+
+/* COT BU-VM : Engine Compliance Project | new.start */
+function getKBToExclude() {
+	var knowledgeBase = [];
+	var gr = new GlideRecord("sys_properties");
+	gr.addQuery("name", "sn_km_portal.LH_kb_to_exclude");
+	gr.query();
+	
+	if(gr.next()) {
+		knowledgeBase = (gr.getValue("value")).split("|");
+	}
+
+	return knowledgeBase;
+}
+/* COT BU-VM : Engine Compliance Project | new.end */]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 13:51:45</sys_created_on>
+        <sys_id>72a02c281bc6e1505bdeed71f54bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-KB Category-Tree Selector-Widget</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_72a02c281bc6e1505bdeed71f54bcb86</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 13:51:45</sys_updated_on>
+        <template><![CDATA[<DIV>
+  <hierarchical-selector placeholder="Select something here please..."
+                         data="data.categories"
+                         selection="data.defaultSelectionItem"
+                         on-selection-changed="updateItem(items)"
+                         select-only-leafs="true" multi-select="false"
+                         >
+  </hierarchical-selector>
+	<!--<input ng-model="selectedItem[0].id"/>-->
+</DIV>
+]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_widget_72a02c281bc6e1505bdeed71f54bcb86</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function main($scope, $rootScope, spKBCategoryService, $window, $timeout) {
+    var c = this;
+    var previous = "";
+    c.data.kbid = "";
+    c.data.categories = [];
+    $scope.selectedItem = [];
+
+    var g_form = $scope.page.g_form;
+
+    //Subscribe event on change
+    $rootScope.$on('field.change', function(evt, parms) {
+        if (parms.field.name == 'kb_category') {
+            c.data.defaultSelection = $scope.page.field.value;
+            c.server.update().then(function() {
+                if ($scope.data.catName !== null) {
+                    $scope.data.defaultSelectionItem = [{
+                        "children": [],
+                        "name": $scope.data.catName,
+                        "id": $scope.page.field.value,
+						"u_can_read_user_criteria": "", // COT BU-VM : STRY0015965
+						"u_cant_read_user_criteria": "", // COT BU-VM : STRY0015965
+						"value": "" // COT BU-VM : STRY0015973
+                    }];
+                }
+                $scope.selectedItem = $scope.data.defaultSelectionItem;
+            });
+        }
+
+        if (parms.field.name == 'article' &amp;&amp; parms.field.stagedValue == "") {
+            $scope.selectedItem = null;
+            $scope.data.defaultSelectionItem = null;
+            $scope.data.catName = null;
+        }
+
+        //Filter on the wanted field
+        if (parms.field.name == 'knowledge_base') {
+            //get kbid
+            var kbid;
+            var kbiptmp = g_form.getValue('start_category');
+
+            kbid = kbiptmp ? kbiptmp : parms.field.stagedValue;
+
+            //prepare to send to server
+            c.data.kbid = kbid;
+
+            //Update server side
+            c.server.update().then(function() {
+
+            });
+        }
+    });
+
+    $scope.updateItem = function(item) {
+        if (item) {
+            $scope.page.field.value = item[0].id;
+            $scope.selectedItem = item;
+			if(!knowledgeBaseIsExcluded()) { /* COT BU-VM : Engine Compliance Project | new */
+				setUserCriteria(item[0].u_can_read_user_criteria, item[0].u_cant_read_user_criteria); // COT BU-VM : STRY0015965
+			} /* COT BU-VM : Engine Compliance Project | new */	
+        }
+		
+        sectionVisibilityManagement();
+		categoryTitleManagement(); // COT BU-VM : STRY0015973 | new
+    };
+
+    var value = g_form.getValue("knowledge_base");
+
+    //Filter on the wanted field
+    if (value != null) {
+        //get kbid
+        var kbid;
+        var kbiptmp = g_form.getValue('start_category');
+
+        kbid = kbiptmp ? kbiptmp : value;
+        //prepare to send to server
+        c.data.kbid = kbid;
+
+        //Update server side
+        c.server.update().then(function() {
+
+        });
+    }
+	
+	// COT BU-VM : STRY0015973 | start.new
+    function sectionVisibilityManagement() {		
+        if ($scope.selectedItem.length &gt; 0) {
+			var varName = $scope.selectedItem[0].value;
+			if (varName !== previous) {
+				g_form.setValue("io_" + previous, "No");
+				previous = varName;
+				g_form.setValue("io_" + varName, "Yes");
+			}
+        } else {
+			g_form.setValue("io_" + previous, "No");
+			previous = "";
+		}
+    }
+	
+	function categoryTitleManagement() {
+		if($scope.selectedItem.length &gt; 0) {
+			g_form.setValue("category_label", $scope.selectedItem[0].name);
+			g_form.setValue("category_value", $scope.selectedItem[0].value);
+		} else {
+			g_form.setValue("category_label", "");
+			g_form.setValue("category_value", "");
+		}
+	}
+	// COT BU-VM : STRY0015973 | end.new
+	
+	// COT BU-VM : STRY0015965 | start
+	function setUserCriteria(u_can_read_user_criteria, u_cant_read_user_criteria) {
+		try {
+			g_form.setValue("u_can_read_user_criteria", u_can_read_user_criteria);
+			g_form.setValue("u_cant_read_user_criteria", u_cant_read_user_criteria);
+		} catch (error) {}
+	}
+	// COT BU-VM : STRY0015965 | end
+	
+	/* COT BU-VM : Engine Compliance Project | new.start */
+	function knowledgeBaseIsExcluded() {
+		var currentKB = g_form.getValue("knowledge_base");
+		var i = 0;
+		var find = false;
+		
+		if(c.data.excludedKB) {
+			while(i &lt; c.data.excludedKB.length &amp;&amp; !find) {
+				if(c.data.excludedKB[i] === currentKB) {
+					find = true;
+				}
+				i++;
+			}
+		}		
+		
+		return find;
+	}
+	/* COT BU-VM : Engine Compliance Project | new.end */
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;This widget is used to select the category of a KB article while the customer request a new article.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;lh-kb_category-tree_selector-widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;LH-KB Category-Tree Selector-Widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    if (input.defaultSelection) {
+
+        // Get category by ID
+        var cat = new GlideRecord("kb_category");
+        var find = cat.get("sys_id", input.defaultSelection);
+        if (find) {
+            data.catName = cat.label.toString();
+        }
+
+    }
+    if (input) {
+        //Initialize variables
+        data.category = {};
+        data.categories = [];
+		data.excludedKB = getKBToExclude(); /* COT BU-VM : Engine Compliance Project | new */
+
+        // Get all top-level categories in selected knowledge bases
+        var cats = new GlideRecord("kb_category");
+        cats.addActiveQuery();
+        cats.addQuery("parent_id", input.kbid);
+        cats.orderBy('sys_created_on'); //label
+        cats.query();
+
+        // Get Subcategories and build tree structure
+        while (cats.next()) {
+            var categoryDetails = getCategory(cats, 0);
+            data.categories.push(categoryDetails);
+        }
+    }
+
+    //Recursive function to retrieve all categories with the hierachy
+    function getCategory(cats, level) {
+
+        var categoryDetails = {};
+        var articleCount = -1;
+        var arts;
+
+        //Add object properties
+        categoryDetails.id = cats.getUniqueValue();
+        categoryDetails.name = cats.getDisplayValue("label");
+		categoryDetails.u_can_read_user_criteria = cats.getValue("u_can_read_user_criteria"); // COT BU-VM : STRY0015965
+		categoryDetails.u_cant_read_user_criteria = cats.getValue("u_cant_read_user_criteria"); // COT BU-VM : STRY0015965
+		categoryDetails.value = cats.getDisplayValue("value"); // COT BU-VM : STRY0015973
+        categoryDetails.children = [];
+
+        var subcategories = new GlideRecord("kb_category");
+        subcategories = $sp.getSubCategories(cats.getUniqueValue());
+
+        while (subcategories.next()) {
+            var category = getCategory(subcategories, level + 1);
+            if (category.count != 0) {
+                categoryDetails.children.push(category);
+            }
+        }
+        return categoryDetails;
+    }
+})();
+
+/* COT BU-VM : Engine Compliance Project | new.start */
+function getKBToExclude() {
+	var knowledgeBase = [];
+	var gr = new GlideRecord("sys_properties");
+	gr.addQuery("name", "sn_km_portal.LH_kb_to_exclude");
+	gr.query();
+	
+	if(gr.next()) {
+		knowledgeBase = (gr.getValue("value")).split("|");
+	}
+
+	return knowledgeBase;
+}
+/* COT BU-VM : Engine Compliance Project | new.end */]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-03 13:51:45&lt;/sys_created_on&gt;&lt;sys_id&gt;72a02c281bc6e1505bdeed71f54bcb86&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;LH-KB Category-Tree Selector-Widget&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_72a02c281bc6e1505bdeed71f54bcb86&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-03 13:51:45&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;DIV&gt;
+  &lt;hierarchical-selector placeholder="Select something here please..."
+                         data="data.categories"
+                         selection="data.defaultSelectionItem"
+                         on-selection-changed="updateItem(items)"
+                         select-only-leafs="true" multi-select="false"
+                         &gt;
+  &lt;/hierarchical-selector&gt;
+	&lt;!--&lt;input ng-model="selectedItem[0].id"/&gt;--&gt;
+&lt;/DIV&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-502883090</payload_hash>
+        <record_name>LH-KB Category-Tree Selector-Widget</record_name>
+        <reverted_from/>
+        <source>1e121b581bce6150c2e1433be54bcb3c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 13:51:45</sys_created_on>
+        <sys_id>4be028281bc6e1505bdeed71f54bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187476356cb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 13:51:45</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>4fe0282889c6e150e80b774f0d8f5b16</update_guid>
+        <update_guid_history>4fe0282889c6e150e80b774f0d8f5b16:-502883090</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1041a4681bc6e1505bdeed71f54bcb75</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 13:53:12</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>175faf32ff6f47059747ed65cbed8299</sys_id>
+        <sys_metadata>72a02c281bc6e1505bdeed71f54bcb86</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-KB Category-Tree Selector-Widget</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_widget_72a02c281bc6e1505bdeed71f54bcb86</sys_update_name>
+        <sys_update_version display_value="sp_widget_72a02c281bc6e1505bdeed71f54bcb86">4be028281bc6e1505bdeed71f54bcb17</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 13:53:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

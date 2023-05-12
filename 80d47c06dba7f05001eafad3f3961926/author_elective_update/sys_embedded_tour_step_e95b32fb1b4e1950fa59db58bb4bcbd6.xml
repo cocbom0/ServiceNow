@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">6d5b32fb1b4e1950fa59db58bb4bcbd4</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[If you are unsure about the item to select, you can also try entering a keyword here.]]></content>
+        <guide display_value="Service Offerings">b5d51f0847481910b0ce8b42e36d4357</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=sc_category&amp;sys_id=1b8611d5c3921200b0449f2974d3ae12"}</options>
+        <order>5</order>
+        <placement>left</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:15:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e95b32fb1b4e1950fa59db58bb4bcbd6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_e95b32fb1b4e1950fa59db58bb4bcbd6</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:30</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">6d5b32fb1b4e1950fa59db58bb4bcbd4</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=e95b32fb1b4e1950fa59db58bb4bcbd6"/>
+    <sys_translated_text action="DELETE">
+        <documentkey>e95b32fb1b4e1950fa59db58bb4bcbd6</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:32:30</sys_created_on>
+        <sys_id>18ba9bb31b425950fa59db58bb4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:30</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Wenn Sie sich nicht sicher sind, welches Thema Sie ausw&amp;auml;hlen sollen, k&amp;ouml;nnen Sie hier versuchen ein Stichwort einzugeben.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="DELETE">
+        <documentkey>e95b32fb1b4e1950fa59db58bb4bcbd6</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:30:53</sys_created_on>
+        <sys_id>a85a5f731b425950fa59db58bb4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:30:53</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Si vous n'&amp;ecirc;tes pas s&amp;ucirc;r de l'&amp;eacute;l&amp;eacute;ment &amp;agrave; s&amp;eacute;lectionner, vous pouvez &amp;eacute;galement essayer d'entrer un mot cl&amp;eacute; ici.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="DELETE">
+        <documentkey>e95b32fb1b4e1950fa59db58bb4bcbd6</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:32:30</sys_created_on>
+        <sys_id>d4ba1bb31b425950fa59db58bb4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:30</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="DELETE">
+        <documentkey>e95b32fb1b4e1950fa59db58bb4bcbd6</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:30:53</sys_created_on>
+        <sys_id>685a5f731b425950fa59db58bb4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:30:53</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sys_embedded_tour_step_e95b32fb1b4e1950fa59db58bb4bcbd6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;6d5b32fb1b4e1950fa59db58bb4bcbd4&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[If you are unsure about the item to select, you can also try entering a keyword here.]]&gt;&lt;/content&gt;&lt;guide display_value="Service Offerings"&gt;b5d51f0847481910b0ce8b42e36d4357&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/csm?id=sc_category&amp;amp;sys_id=1b8611d5c3921200b0449f2974d3ae12"}&lt;/options&gt;&lt;order&gt;5&lt;/order&gt;&lt;placement&gt;left&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-27 07:15:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e95b32fb1b4e1950fa59db58bb4bcbd6&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_e95b32fb1b4e1950fa59db58bb4bcbd6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 09:32:30&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;6d5b32fb1b4e1950fa59db58bb4bcbd4&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;csm&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e95b32fb1b4e1950fa59db58bb4bcbd6"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;e95b32fb1b4e1950fa59db58bb4bcbd6&lt;/documentkey&gt;&lt;fieldname&gt;content&lt;/fieldname&gt;&lt;language&gt;de&lt;/language&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-27 09:32:30&lt;/sys_created_on&gt;&lt;sys_id&gt;18ba9bb31b425950fa59db58bb4bcbae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 09:32:30&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_embedded_tour_step&lt;/tablename&gt;&lt;value&gt;&amp;lt;p&amp;gt;Wenn Sie sich nicht sicher sind, welches Thema Sie ausw&amp;amp;auml;hlen sollen, k&amp;amp;ouml;nnen Sie hier versuchen ein Stichwort einzugeben.&amp;lt;/p&amp;gt;&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;e95b32fb1b4e1950fa59db58bb4bcbd6&lt;/documentkey&gt;&lt;fieldname&gt;content&lt;/fieldname&gt;&lt;language&gt;fr&lt;/language&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-27 09:30:53&lt;/sys_created_on&gt;&lt;sys_id&gt;a85a5f731b425950fa59db58bb4bcbca&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 09:30:53&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_embedded_tour_step&lt;/tablename&gt;&lt;value&gt;&amp;lt;p&amp;gt;Si vous n'&amp;amp;ecirc;tes pas s&amp;amp;ucirc;r de l'&amp;amp;eacute;l&amp;amp;eacute;ment &amp;amp;agrave; s&amp;amp;eacute;lectionner, vous pouvez &amp;amp;eacute;galement essayer d'entrer un mot cl&amp;amp;eacute; ici.&amp;lt;/p&amp;gt;&lt;/value&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;e95b32fb1b4e1950fa59db58bb4bcbd6&lt;/documentkey&gt;&lt;fieldname&gt;title&lt;/fieldname&gt;&lt;language&gt;de&lt;/language&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-27 09:32:30&lt;/sys_created_on&gt;&lt;sys_id&gt;d4ba1bb31b425950fa59db58bb4bcbd3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 09:32:30&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_embedded_tour_step&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;e95b32fb1b4e1950fa59db58bb4bcbd6&lt;/documentkey&gt;&lt;fieldname&gt;title&lt;/fieldname&gt;&lt;language&gt;fr&lt;/language&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-27 09:30:53&lt;/sys_created_on&gt;&lt;sys_id&gt;685a5f731b425950fa59db58bb4bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 09:30:53&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_embedded_tour_step&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-448522627</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:32:30</sys_created_on>
+        <sys_id>1cba9bb31b425950fa59db58bb4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1837e4a6cf00000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:30</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>d0ba9bb3a64259505230b6b2812130b0</update_guid>
+        <update_guid_history>d0ba9bb3a64259505230b6b2812130b0:-448522627,58ba9bb3894259503b98a6eaf12502ad:-603664622,fc5a5f73b04259503c2f1addee8da3cb:315484668,e85a5f7349425950fb692a167abcbac9:675674457,215b32fb274e19501712f74855bc8dd8:2127214392</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-10-08 19:11:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>1204a5d01f954d7f85b4b80b9a888f01</sys_id>
+        <sys_metadata>e95b32fb1b4e1950fa59db58bb4bcbd6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_e95b32fb1b4e1950fa59db58bb4bcbd6</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_e95b32fb1b4e1950fa59db58bb4bcbd6">1cba9bb31b425950fa59db58bb4bcbb0</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-10-08 19:11:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

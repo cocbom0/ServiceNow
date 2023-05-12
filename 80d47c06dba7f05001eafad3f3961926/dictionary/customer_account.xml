@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9601e1831b06211078b0ea0ce54bcbeb" extends="core_company" label="Compte" max_length="40" name="customer_account" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Application" max_length="40" name="u_application" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Agriculture" sequence="10" value="agriculture"/>
+                <element inactive_on_update="false" label="Oil &amp; Gas" sequence="20" value="oil_gas"/>
+                <element inactive_on_update="false" label="Defense" sequence="30" value="defense"/>
+                <element inactive_on_update="false" label="Construction &amp; Industrial" sequence="40" value="construction_industrial"/>
+                <element inactive_on_update="false" label="Rail" sequence="50" value="rail"/>
+                <element inactive_on_update="false" label="Marine" sequence="60" value="marine"/>
+                <element inactive_on_update="false" label="Mining" sequence="70" value="mining"/>
+                <element inactive_on_update="false" label="PowerGen Gas" sequence="80" value="powergen_gas"/>
+                <element inactive_on_update="false" label="Railcar" sequence="90" value="railcar"/>
+                <element inactive_on_update="false" label="PowerGen Diesel" sequence="100" value="powergen_diesel"/>
+                <element inactive_on_update="false" label="Internal (Liebherr)" sequence="1000" value="internal_liebherr"/>
+                <element inactive_on_update="false" label="Others" sequence="1000" value="others"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Customer Country" max_length="32" name="u_customer_country" reference="core_country" type="reference"/>
+        <element attributes="encode_utf8=false" label="Customer Knowledge Base" max_length="32" name="u_customer_knowledge_base" reference="kb_knowledge_base" type="reference"/>
+        <element label="DPF Unlocker" max_length="40" name="u_dpf_unlocker" type="boolean"/>
+        <element label="Internal Customer" max_length="40" name="u_internal_customer" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Liebherr Business Units" max_length="1024" name="u_liebherr_business_units" reference="business_unit" type="glide_list"/>
+        <element label="Power Change" max_length="40" name="u_power_change" type="boolean"/>
+        <index name="index">
+            <element name="u_customer_knowledge_base"/>
+        </index>
+        <index name="index2">
+            <element name="u_customer_country"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>text</element>
+        <id/>
+        <label>Remise à niveau</label>
+        <language>fr</language>
+        <name>question_choice</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:21:54</sys_created_on>
+        <sys_id>72ff1393db0441d001eafad3f3961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remise à niveau</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_translated_72ff1393db0441d001eafad3f3961968</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:21:54</sys_updated_on>
+        <value>Refresher Training</value>
+    </sys_translated>
+</record_update>

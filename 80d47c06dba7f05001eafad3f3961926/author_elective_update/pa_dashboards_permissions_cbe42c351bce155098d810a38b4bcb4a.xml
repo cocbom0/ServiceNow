@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="DELETE">
+        <dashboard display_value="CSM Dashboard">a080f6941b86c1105b1b411acd4bcbed</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>f6e8843e1b47d4507528ddb59b4bcb43</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-20 15:10:28</sys_created_on>
+        <sys_id>cbe42c351bce155098d810a38b4bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f6e8843e1b47d4507528ddb59b4bcb43</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_cbe42c351bce155098d810a38b4bcb4a</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-20 15:10:28</sys_updated_on>
+        <type>3</type>
+        <user display_value="Stentz Ann-Claudine (COC)">f6e8843e1b47d4507528ddb59b4bcb43</user>
+        <write>false</write>
+    </pa_dashboards_permissions>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>pa_dashboards_permissions_cbe42c351bce155098d810a38b4bcb4a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions"><pa_dashboards_permissions action="INSERT_OR_UPDATE"><dashboard display_value="CSM Dashboard">a080f6941b86c1105b1b411acd4bcbed</dashboard><delete>false</delete><group/><identity>f6e8843e1b47d4507528ddb59b4bcb43</identity><read>true</read><role/><sys_class_name>pa_dashboards_permissions</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-09-20 15:10:28</sys_created_on><sys_id>cbe42c351bce155098d810a38b4bcb4a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>f6e8843e1b47d4507528ddb59b4bcb43</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>pa_dashboards_permissions_cbe42c351bce155098d810a38b4bcb4a</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-09-20 15:10:28</sys_updated_on><type>3</type><user display_value="Stentz Ann-Claudine (COC)">f6e8843e1b47d4507528ddb59b4bcb43</user><write>false</write></pa_dashboards_permissions></record_update>]]></payload>
+        <payload_hash>-1906386111</payload_hash>
+        <record_name>f6e8843e1b47d4507528ddb59b4bcb43</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-20 15:10:28</sys_created_on>
+        <sys_id>cfe42c351bce155098d810a38b4bcb4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1835b7356640000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-20 15:10:28</sys_updated_on>
+        <type>Dashboard Permissions</type>
+        <update_guid>c7e42c3590ce1550d56fd7edbb2f184b</update_guid>
+        <update_guid_history>c7e42c3590ce1550d56fd7edbb2f184b:-1906386111</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3b05244e1bc2955098d810a38b4bcb0f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-21 09:49:33</sys_created_on>
+        <sys_db_object display_value="" name="pa_dashboards_permissions">pa_dashboards_permissions</sys_db_object>
+        <sys_id>97fbe129d84046118f6c6efb6ddf7e41</sys_id>
+        <sys_metadata>cbe42c351bce155098d810a38b4bcb4a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f6e8843e1b47d4507528ddb59b4bcb43</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>pa_dashboards_permissions_cbe42c351bce155098d810a38b4bcb4a</sys_update_name>
+        <sys_update_version display_value="pa_dashboards_permissions_cbe42c351bce155098d810a38b4bcb4a">cfe42c351bce155098d810a38b4bcb4b</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-21 09:49:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

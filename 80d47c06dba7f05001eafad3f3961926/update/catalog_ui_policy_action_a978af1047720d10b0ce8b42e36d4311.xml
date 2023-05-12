@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Service Documentation">6c22f9031bc88d905b1b411acd4bcb5e</catalog_item>
+        <catalog_variable>IO:8ea7f10b1bc88d905b1b411acd4bcbc2</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-08 00:09:59</sys_created_on>
+        <sys_id>a978af1047720d10b0ce8b42e36d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>time_desired</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a978af1047720d10b0ce8b42e36d4311</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-08 00:09:59</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Check Time Desired Period Date">d5f5631c47320d10b0ce8b42e36d4397</ui_policy>
+        <variable>time_desired</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

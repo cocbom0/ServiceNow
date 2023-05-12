@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">a3a63a731b829510c28d76e09b4bcbc2</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[5]]></content>
+        <guide display_value="Customer Service Combustion Engines Portal">0d8e58421bc99d50a4236313604bcb1c</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=csm_index"}</options>
+        <order>5</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 06:55:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23a63a731b829510c28d76e09b4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_23a63a731b829510c28d76e09b4bcbc4</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 06:55:09</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">a3a63a731b829510c28d76e09b4bcbc2</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=23a63a731b829510c28d76e09b4bcbc4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sys_embedded_tour_step_23a63a731b829510c28d76e09b4bcbc4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;a3a63a731b829510c28d76e09b4bcbc2&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[5]]&gt;&lt;/content&gt;&lt;guide display_value="Customer Service Combustion Engines Portal"&gt;0d8e58421bc99d50a4236313604bcb1c&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/csm?id=csm_index"}&lt;/options&gt;&lt;order&gt;5&lt;/order&gt;&lt;placement&gt;bottom&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-27 06:55:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;23a63a731b829510c28d76e09b4bcbc4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_23a63a731b829510c28d76e09b4bcbc4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;cocbom0&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 06:55:09&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;a3a63a731b829510c28d76e09b4bcbc2&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;csm&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=23a63a731b829510c28d76e09b4bcbc4"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>387462609</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 06:55:09</sys_created_on>
+        <sys_id>6ba636b31b829510c28d76e09b4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1837dba5ff00000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 06:55:09</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>63a636b3fd8295107fa7bbfe052c29a0</update_guid>
+        <update_guid_history>63a636b3fd8295107fa7bbfe052c29a0:387462609</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 06:55:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>0c683b9d41fd450b949ccd5939a9f131</sys_id>
+        <sys_metadata>23a63a731b829510c28d76e09b4bcbc4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_23a63a731b829510c28d76e09b4bcbc4</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_23a63a731b829510c28d76e09b4bcbc4">6ba636b31b829510c28d76e09b4bcba0</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 06:55:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

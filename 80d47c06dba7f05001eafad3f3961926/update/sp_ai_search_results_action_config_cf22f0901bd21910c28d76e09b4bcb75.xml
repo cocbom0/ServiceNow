@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ai_search_results_action_config">
+    <sp_ai_search_results_action_config action="INSERT_OR_UPDATE">
+        <action_name display_value="navigation">d46f400473211010c342d5fdbdf6a7cf</action_name>
+        <active>true</active>
+        <additional_query_parameters/>
+        <ai_search_source display_value="">664f88081b1a5950fa59db58bb4bcb89</ai_search_source>
+        <order>10</order>
+        <payload_field_table>var__m_sys_declarative_action_payload_field_513d08c073211010c342d5fdbdf6a76c</payload_field_table>
+        <payload_query_parameters/>
+        <portal_page display_value="csm_ticket">65285631c3a1120058879f2974d3aeed</portal_page>
+        <portals>89275a53cb13020000f8d856634c9c51</portals>
+        <short_description>COT BU-VM Cases</short_description>
+        <sys_class_name>sp_ai_search_results_action_config</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 10:34:35</sys_created_on>
+        <sys_id>cf22f0901bd21910c28d76e09b4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>COT BU-VM Cases</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_ai_search_results_action_config_cf22f0901bd21910c28d76e09b4bcb75</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 10:34:35</sys_updated_on>
+    </sp_ai_search_results_action_config>
+</record_update>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
+    <item_option_new action="DELETE">
+        <active>true</active>
+        <attributes/>
+        <cat_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</cat_item>
+        <category/>
+        <choice_direction>down</choice_direction>
+        <choice_field/>
+        <choice_table/>
+        <create_roles/>
+        <default_html_value/>
+        <default_value/>
+        <delete_roles/>
+        <delivery_plan/>
+        <description/>
+        <display_title>false</display_title>
+        <do_not_select_first>false</do_not_select_first>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <enable_also_request_for>false</enable_also_request_for>
+        <example_text/>
+        <field/>
+        <global>false</global>
+        <help_tag>More information</help_tag>
+        <help_text/>
+        <hidden>false</hidden>
+        <include_none>true</include_none>
+        <instructions/>
+        <layout>normal</layout>
+        <list_table/>
+        <lookup_label>label</lookup_label>
+        <lookup_price/>
+        <lookup_table>sys_choice</lookup_table>
+        <lookup_unique>false</lookup_unique>
+        <lookup_value>value</lookup_value>
+        <macro/>
+        <macroponent/>
+        <mandatory>false</mandatory>
+        <map_to_field>false</map_to_field>
+        <mask_use_confirmation>false</mask_use_confirmation>
+        <mask_use_encryption>false</mask_use_encryption>
+        <name>request_type_internal</name>
+        <order>55</order>
+        <price_if_checked>0</price_if_checked>
+        <pricing_implications>false</pricing_implications>
+        <published_ref/>
+        <question_text>Request type</question_text>
+        <read_only>false</read_only>
+        <read_roles/>
+        <read_script/>
+        <rec_lookup_price/>
+        <rec_price_if_checked>0</rec_price_if_checked>
+        <record/>
+        <record_producer_table>x_liisa_support_ca_services</record_producer_table>
+        <reference>sys_user</reference>
+        <reference_qual>javascript: new global.Manage_Ref_Qualifier_Record_Producer().getTechnicalService_requestType(current.variables.u_request_support_for, current.variables.account);</reference_qual>
+        <reference_qual_condition/>
+        <rich_text/>
+        <roles_to_use_also_request_for/>
+        <save_script/>
+        <scale_max>5</scale_max>
+        <scale_min>0</scale_min>
+        <show_help>false</show_help>
+        <show_help_on_load>false</show_help_on_load>
+        <sp_widget/>
+        <summary_macro/>
+        <sys_class_name>item_option_new</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-23 14:05:00</sys_created_on>
+        <sys_id>d036d60b1ba78950191cd8f99a4bcbe5</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Request type</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>item_option_new_d036d60b1ba78950191cd8f99a4bcbe5</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2023-03-06 09:33:30</sys_updated_on>
+        <table/>
+        <tooltip/>
+        <type>18</type>
+        <ui_page/>
+        <unique>false</unique>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <validate_regex/>
+        <variable_name/>
+        <variable_set/>
+        <variable_width/>
+        <visibility>1</visibility>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <visible_summary>false</visible_summary>
+        <write_roles/>
+    </item_option_new>
+    <sys_translated_text action="DELETE" query="documentkey=d036d60b1ba78950191cd8f99a4bcbe5"/>
+    <fx_price action="DELETE" query="id=d036d60b1ba78950191cd8f99a4bcbe5"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price_if_checked</field>
+        <id>d036d60b1ba78950191cd8f99a4bcbe5</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-23 14:05:00</sys_created_on>
+        <sys_id>02275e4b1ba78950191cd8f99a4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-23 14:05:00</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_price_if_checked</field>
+        <id>d036d60b1ba78950191cd8f99a4bcbe5</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-23 14:05:00</sys_created_on>
+        <sys_id>4a275e4b1ba78950191cd8f99a4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-23 14:05:00</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>item_option_new_d036d60b1ba78950191cd8f99a4bcbe5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><enable_also_request_for>false</enable_also_request_for><example_text/><field/><global>false</global><help_tag>More information</help_tag><help_text/><hidden>false</hidden><include_none>true</include_none><instructions/><layout>normal</layout><list_table/><lookup_label>label</lookup_label><lookup_price/><lookup_table>sys_choice</lookup_table><lookup_unique>false</lookup_unique><lookup_value>value</lookup_value><macro/><macroponent/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>request_type_internal</name><order>55</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><published_ref/><question_text>Request type</question_text><read_only>false</read_only><read_roles/><read_script/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table>x_liisa_support_ca_services</record_producer_table><reference>sys_user</reference><reference_qual>javascript: new global.Manage_Ref_Qualifier_Record_Producer().getTechnicalService_requestType(current.variables.u_request_support_for, current.variables.account);</reference_qual><reference_qual_condition/><rich_text/><roles_to_use_also_request_for/><save_script/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><show_help_on_load>false</show_help_on_load><sp_widget/><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-05-23 14:05:00</sys_created_on><sys_id>d036d60b1ba78950191cd8f99a4bcbe5</sys_id><sys_mod_count>19</sys_mod_count><sys_name>Request type</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>item_option_new_d036d60b1ba78950191cd8f99a4bcbe5</sys_update_name><sys_updated_by>cockrl0</sys_updated_by><sys_updated_on>2023-03-06 09:33:30</sys_updated_on><table/><tooltip/><type>18</type><ui_page/><unique>false</unique><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>advanced</use_reference_qualifier><validate_regex/><variable_name/><variable_set/><variable_width/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=d036d60b1ba78950191cd8f99a4bcbe5"/><fx_price action="delete_multiple" query="id=d036d60b1ba78950191cd8f99a4bcbe5"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="EUR">EUR</currency><field>price_if_checked</field><id>d036d60b1ba78950191cd8f99a4bcbe5</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="EUR">EUR</reference_currency><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-05-23 14:05:00</sys_created_on><sys_id>02275e4b1ba78950191cd8f99a4bcb44</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-05-23 14:05:00</sys_updated_on><table>item_option_new</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="EUR">EUR</currency><field>rec_price_if_checked</field><id>d036d60b1ba78950191cd8f99a4bcbe5</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="EUR">EUR</reference_currency><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-05-23 14:05:00</sys_created_on><sys_id>4a275e4b1ba78950191cd8f99a4bcb42</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-05-23 14:05:00</sys_updated_on><table>item_option_new</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>1604738611</payload_hash>
+        <record_name>Request type</record_name>
+        <reverted_from/>
+        <source>ee8a03201b162910c2e1433be54bcbdd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-16 12:28:40</sys_created_on>
+        <sys_id>689ac3201b162910c2e1433be54bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1878a09f2860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-16 12:28:40</sys_updated_on>
+        <type>Variable</type>
+        <update_guid>9f49df57b999e1109cc3977260bf119c</update_guid>
+        <update_guid_history>9f49df57b999e1109cc3977260bf119c:1604738611,9f49df57b999e1109cc3977260bf119c:1604738611,fd5a1811e1d56d102c8417b3e7042d1e:849121962,15e01855c4956d104fe79b561c9024fa:-1581131469,e4dac85def556d1006a55abfd52a3003:-1445895865,f79ac45d58556d102742701fa60c0421:-1614565816,22fae78114d16d10124b09c4d7bd067d:798845623,6ac9e70d50516d10cac0f9b5e2823cd8:-1614565816,f979efc949516d10cf2a41e03c3d4cd6:1328015141,bc959fcd32dd2d106d861403c962a7c9:-1878441196,c67b6e007502dd90ec4d3cf28d41aed1:1328015141,f1f85e3f63f19910031f068c7633fff3:1414121853,ea6ee8afa7b51510d331e802fc17cf85:1414121853,506ba1cfbd1559d0eda36c600ff7e4d1:-1745015904,3a55359361ff8110cf6f5a6262c47afc:-1531952911,6409b32159f7c9909bb5a2d74d32e921:-1531952911,d052e00da5b78190a9ca892fbe286597:-1745015904,1c6c97689cb78590068648eb3a76e7a2:-1471110972,514c17683bb785900888cb510ef9851f:-491939649,b85b5fe4d4b7859055ff2c6689e3de2a:1002320882,dae95b6407b78590650d8f0fb6b7a7e8:1499082572,3c881be053b785902f541828cfb6cf85:1002320882,1e275e4baca7895047cd67a91291747c:-387496857,4ddecd7e4bc6a110244b32d735a69c25:128929690,49decd7ecac6a1103aacabbb7a16061c:-1489494746</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5d6d0ba01b162910c2e1433be54bcb78</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-16 12:41:00</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new">item_option_new</sys_db_object>
+        <sys_id>03877b251863421f8167c0003f67a2f1</sys_id>
+        <sys_metadata>d036d60b1ba78950191cd8f99a4bcbe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request type</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>item_option_new_d036d60b1ba78950191cd8f99a4bcbe5</sys_update_name>
+        <sys_update_version display_value="item_option_new_d036d60b1ba78950191cd8f99a4bcbe5">689ac3201b162910c2e1433be54bcb15</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-16 12:41:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

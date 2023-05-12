@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>product_model_serial_number</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>anis.bekdash@doitwise.com</sys_created_by>
+        <sys_created_on>2021-11-30 11:25:31</sys_created_on>
+        <sys_id>88eda5cb1b888d905b1b411acd4bcbb4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Product model - Serial Number</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>item_option_new_set_88eda5cb1b888d905b1b411acd4bcbb4</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2022-05-10 07:09:17</sys_updated_on>
+        <title>Product model - Serial Number</title>
+        <type>one_to_one</type>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

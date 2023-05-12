@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>question_text</element>
+        <id/>
+        <label>Kosten des Ausfalls</label>
+        <language>de</language>
+        <name>question</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>anis.bekdash@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-02 16:05:09</sys_created_on>
+        <sys_id>0531c1771b00c1d05b1b411acd4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Kosten des Ausfalls</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_translated_0531c1771b00c1d05b1b411acd4bcbe2</sys_update_name>
+        <sys_updated_by>anis.bekdash@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-02 16:05:09</sys_updated_on>
+        <value>Failure cost</value>
+    </sys_translated>
+</record_update>

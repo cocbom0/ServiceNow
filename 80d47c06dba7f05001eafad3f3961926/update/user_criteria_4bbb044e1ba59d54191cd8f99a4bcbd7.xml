@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
+    <user_criteria action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <company/>
+        <department/>
+        <group name="CustomerService-COT-BU-VM">0cb62df4dbe43c1001eafad3f396193e</group>
+        <location/>
+        <match_all>false</match_all>
+        <name>COT BU-VM Customer Service</name>
+        <role/>
+        <script/>
+        <sys_class_name>user_criteria</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-08-27 11:28:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bbb044e1ba59d54191cd8f99a4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>COT BU-VM Customer Service</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>user_criteria_4bbb044e1ba59d54191cd8f99a4bcbd7</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-27 11:28:47</sys_updated_on>
+        <user/>
+    </user_criteria>
+</record_update>

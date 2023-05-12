@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:ae45ce9a1b6a4d10a4236313604bcb9d</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-01 08:14:32</sys_created_on>
+        <sys_id>77e3f3fb1b4b8150191cd8f99a4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lifting_bar_hoisting_gear</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_77e3f3fb1b4b8150191cd8f99a4bcb39</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-01 08:14:32</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display OnSite Technical Support  Intervention Detail ">e753b3bb1b4b8150191cd8f99a4bcb10</ui_policy>
+        <variable>lifting_bar_hoisting_gear</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_77e3f3fb1b4b8150191cd8f99a4bcb39</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:ae45ce9a1b6a4d10a4236313604bcb9d</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-05-01 08:14:32</sys_created_on><sys_id>77e3f3fb1b4b8150191cd8f99a4bcb39</sys_id><sys_mod_count>0</sys_mod_count><sys_name>lifting_bar_hoisting_gear</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_77e3f3fb1b4b8150191cd8f99a4bcb39</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-05-01 08:14:32</sys_updated_on><table/><ui_policy display_value="Display OnSite Technical Support  Intervention Detail ">e753b3bb1b4b8150191cd8f99a4bcb10</ui_policy><variable>lifting_bar_hoisting_gear</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>118092782</payload_hash>
+        <record_name>lifting_bar_hoisting_gear</record_name>
+        <reverted_from/>
+        <source>2ae428021b022110c2e1433be54bcb7a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-08 06:00:05</sys_created_on>
+        <sys_id>62dbb4cc1bd2e5105bdeed71f54bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1875f734e880000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:41:09</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>22dbb4cc8ed2e510e8813f866afa5f0f</update_guid>
+        <update_guid_history>22dbb4cc8ed2e510e8813f866afa5f0f:118092782</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">aadbb4cc1bd2e5105bdeed71f54bcb10</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-14 12:48:09</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>551fd479e33a4cdaa7b6675e99f968b1</sys_id>
+        <sys_metadata>77e3f3fb1b4b8150191cd8f99a4bcb39</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lifting_bar_hoisting_gear</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_77e3f3fb1b4b8150191cd8f99a4bcb39</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_77e3f3fb1b4b8150191cd8f99a4bcb39">62dbb4cc1bd2e5105bdeed71f54bcb0f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-14 12:48:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

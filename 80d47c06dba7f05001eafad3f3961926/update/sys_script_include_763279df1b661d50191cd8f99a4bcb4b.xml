@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.UpdateSerialNumber</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>UpdateSerialNumber</name>
+        <script><![CDATA[var UpdateSerialNumber = Class.create();
+UpdateSerialNumber.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    isPublic: function() {
+		return true;
+	},
+	
+	updateSerialNumber: function(){
+		var grSN = new GlideRecord("alm_hardware");
+		grSN.addQuery("serial_number", this.getParameter("serial_number"));
+		grSN.query();
+		
+		while(grSN.next()) {
+			grSN.setValue("u_commissioning_reason", this.getParameter("commissioning_reason"));
+			grSN.setValue("u_commissioning_date",  new GlideDateTime(this.getParameter("commissioning_date")));
+			grSN.setValue("u_commissioning_location", this.getParameter("commissioning_location"));
+			grSN.setValue("u_equipment_serial_number", this.getParameter("equipment_sn"));
+			grSN.setValue("u_equipment_operating_hours", this.getParameter("equipment_operating_hours"));
+			grSN.setValue("u_name_of_person_submitting_commissioning_report", this.getParameter("name_of_the_person_submitting_the_form"));
+			grSN.setValue("u_name_of_person_acknowledging_commissioning_report", this.getParameter("name_of_the_person_acknowledging_the_form"));
+			grSN.update();
+		}
+		
+		return 0;
+	},
+
+    type: 'UpdateSerialNumber'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-10-20 09:11:07</sys_created_on>
+        <sys_id>763279df1b661d50191cd8f99a4bcb4b</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>UpdateSerialNumber</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_763279df1b661d50191cd8f99a4bcb4b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 11:29:25</sys_updated_on>
+    </sys_script_include>
+</record_update>

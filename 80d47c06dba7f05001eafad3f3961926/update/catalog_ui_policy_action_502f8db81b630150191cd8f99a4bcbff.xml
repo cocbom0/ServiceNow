@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Spare Parts">b3c4f1cd1b264510a4236313604bcb25</catalog_item>
+        <catalog_variable>IO:7cfb7e2047fa4d10b0ce8b42e36d43b5</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-05-16 09:03:59</sys_created_on>
+        <sys_id>502f8db81b630150191cd8f99a4bcbff</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>please_add_the_picture_drawing_if_available</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_502f8db81b630150191cd8f99a4bcbff</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-05-16 09:10:09</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'please_add_the_picture_drawing_if_available' visible depending on 'request_type'">542f8db81b630150191cd8f99a4bcbfb</ui_policy>
+        <variable>please_add_the_picture_drawing_if_available</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

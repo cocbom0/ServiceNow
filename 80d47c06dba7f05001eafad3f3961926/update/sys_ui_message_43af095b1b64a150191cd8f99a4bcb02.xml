@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>task_work_notes_added</key>
+        <language>en</language>
+        <message>Task Work Notes Added for :</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-01-27 16:45:20</sys_created_on>
+        <sys_id>43af095b1b64a150191cd8f99a4bcb02</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>task_work_notes_added</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_ui_message_43af095b1b64a150191cd8f99a4bcb02</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-01-27 16:46:30</sys_updated_on>
+    </sys_ui_message>
+</record_update>

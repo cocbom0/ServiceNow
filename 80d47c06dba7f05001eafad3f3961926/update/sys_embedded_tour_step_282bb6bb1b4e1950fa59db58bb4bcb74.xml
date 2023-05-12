@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">a82bb6bb1b4e1950fa59db58bb4bcb72</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[For instance, if you require technical support, either remote or by requesting the intervention of a technician, you will have to enter this section.]]></content>
+        <guide display_value="Service Offerings">b5d51f0847481910b0ce8b42e36d4357</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/csm?id=sc_category&amp;sys_id=1b8611d5c3921200b0449f2974d3ae12"}</options>
+        <order>2</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:14:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>282bb6bb1b4e1950fa59db58bb4bcb74</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_282bb6bb1b4e1950fa59db58bb4bcb74</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:04</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">a82bb6bb1b4e1950fa59db58bb4bcb72</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>csm</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=282bb6bb1b4e1950fa59db58bb4bcb74"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>282bb6bb1b4e1950fa59db58bb4bcb74</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:32:04</sys_created_on>
+        <sys_id>ca9a97b31b425950fa59db58bb4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:04</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Wenn Sie z. B. technische Unterst&amp;uuml;tzung per Fernzugriff oder durch einen Techniker Vorort ben&amp;ouml;tigen, w&amp;auml;hlen Sie diesen Bereich aus.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>282bb6bb1b4e1950fa59db58bb4bcb74</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:30:22</sys_created_on>
+        <sys_id>093adf731b425950fa59db58bb4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:30:22</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Par exemple, si vous avez besoin d'une assistance technique, &amp;agrave; distance ou en demandant l'intervention d'un technicien, vous devrez entrer dans cette section.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>282bb6bb1b4e1950fa59db58bb4bcb74</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:32:04</sys_created_on>
+        <sys_id>069a97b31b425950fa59db58bb4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:32:04</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>282bb6bb1b4e1950fa59db58bb4bcb74</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:30:22</sys_created_on>
+        <sys_id>c53adf731b425950fa59db58bb4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:30:22</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

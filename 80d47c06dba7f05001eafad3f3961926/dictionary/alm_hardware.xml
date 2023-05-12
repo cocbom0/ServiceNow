@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="aecb24c71b822110a3e4ebd4604bcbef" extends="alm_asset" label="Hardware" max_length="40" name="alm_hardware" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Commissioning Date" max_length="40" name="u_commissioning_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Commissioning Location" max_length="40" name="u_commissioning_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Commissioning Reason" max_length="100" name="u_commissioning_reason" type="choice">
+            <choice>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="1ère installation dans nouvelle machine" language="fr" sequence="100" value="1st_fit_of_engine_on_new_machine"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="1st fit of engine on new machine" sequence="100" value="1st_fit_of_engine_on_new_machine"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Motoreinbau bei neuer Maschine" language="de" sequence="100" value="1st_fit_of_engine_on_new_machine"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="1ère installation sur machine repower" language="fr" sequence="200" value="1st_fit_on_repowering"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="1st fit on repowering" sequence="200" value="1st_fit_on_repowering"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Motoreinbau beim Repowering" language="de" sequence="200" value="1st_fit_on_repowering"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Austausch von Motoren am Ende Lebenszeit" language="de" sequence="300" value="engine_end_of_life_replacement"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Engine end of life replacement" sequence="300" value="Engine end of life replacement"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Remplacement suite à fin de vie du moteur" language="fr" sequence="300" value="engine_end_of_life_replacement"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Austausch eines defekten Motors" language="de" sequence="400" value="engine_failure_replacement"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Engine failure replacement" sequence="400" value="engine_failure_replacement"/>
+                <element dependent_value="Customer articles" inactive_on_update="false" label="Remplacement suite à casse moteur" language="fr" sequence="400" value="engine_failure_replacement"/>
+            </choice>
+        </element>
+        <element label="Equipment Operating Hours" max_length="40" name="u_equipment_operating_hours" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Equipment Serial Number" max_length="40" name="u_equipment_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name of Person Acknowledging Commissioning Report" max_length="40" name="u_name_of_person_acknowledging_commissioning_report" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name of Person Submitting Commissioning Report" max_length="40" name="u_name_of_person_submitting_commissioning_report" type="string"/>
+        <element label="Operating Hours" max_length="40" name="u_operating_hours" type="integer"/>
+    </element>
+</database>

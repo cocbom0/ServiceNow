@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_liisa_support_ca.cot_ccr_customer_service" name="x_liisa_support_ca.cot_ccr_customer_service">9b829f441b46a1505bdeed71f54bcb87</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-02 13:31:04</sys_created_on>
+        <sys_id>2e9217c41b46a1505bdeed71f54bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9b829f441b46a1505bdeed71f54bcb87</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_help_role_2e9217c41b46a1505bdeed71f54bcb3a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-02 13:31:04</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

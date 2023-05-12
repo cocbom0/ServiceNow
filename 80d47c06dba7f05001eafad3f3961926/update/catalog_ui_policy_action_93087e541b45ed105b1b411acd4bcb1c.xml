@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Spare Parts">b3c4f1cd1b264510a4236313604bcb25</catalog_item>
+        <catalog_variable>IO:ba77f2541b45ed105b1b411acd4bcb1a</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-12 13:11:00</sys_created_on>
+        <sys_id>93087e541b45ed105b1b411acd4bcb1c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>documentation_version</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_93087e541b45ed105b1b411acd4bcb1c</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-12 13:13:07</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Documentation Version field">bcc7f2541b45ed105b1b411acd4bcb22</ui_policy>
+        <variable>documentation_version</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

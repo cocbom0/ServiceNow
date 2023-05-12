@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>950</order>
+        <sc_cat_item display_value="Service Engineering">0d2deaa0477a4d10b0ce8b42e36d43c3</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-29 13:06:06</sys_created_on>
+        <sys_id>4583a6171b83cd10191cd8f99a4bcb24</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Maintenance Schedule - Information about Engine.Service Engineering</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>io_set_item_4583a6171b83cd10191cd8f99a4bcb24</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-08-22 12:22:44</sys_updated_on>
+        <variable_set display_value="Maintenance Schedule - Information about Engine">c6e226171b83cd10191cd8f99a4bcb56</variable_set>
+    </io_set_item>
+</record_update>

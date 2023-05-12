@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>a {
+	color: black;
+}
+a:hover {
+	color: #ffd700;
+}</css>
+        <glyph>life-ring</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Contact support to make a request, or report a problem.</short_description>
+        <size>md</size>
+        <sp_column display_value="1">4c2c8d2b1bb121505bdeed71f54bcb37</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 08:58:24</sys_created_on>
+        <sys_id>cecd17d01b02a150c2e1433be54bcb5a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Submit a Request</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_instance_link_cecd17d01b02a150c2e1433be54bcb5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 09:11:45</sys_updated_on>
+        <title>Submit a Request</title>
+        <type>url</type>
+        <url>?id=csm_sc_category&amp;sys_id=1b8611d5c3921200b0449f2974d3ae12&amp;catalog_id=-1</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=cecd17d01b02a150c2e1433be54bcb5a"/>
+</record_update>

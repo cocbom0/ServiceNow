@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>service_offering</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get Offering Group</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var offeringGroup = new GlideAjax('x_liisa_support_ca.Support_case');
+    offeringGroup.addParam('sysparm_name', 'getServiceOfferingGroup');
+    offeringGroup.addParam('sysparm_offering', newValue);
+    offeringGroup.getXML(getBack);
+
+    function getBack(response) {
+
+        var suportGroup = response.responseXML.documentElement.getAttribute("answer");
+        if (suportGroup != null) {
+            g_form.setValue('assignment_group', suportGroup);
+    
+        }
+    }
+
+    //Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-11-11 10:46:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>551e6f7cdb73b81001eafad3f39619d0</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Get Offering Group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_client_551e6f7cdb73b81001eafad3f39619d0</sys_update_name>
+        <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-11-11 13:17:54</sys_updated_on>
+        <table>x_liisa_support_ca_services</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

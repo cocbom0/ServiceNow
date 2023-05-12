@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>question_text</element>
+        <id/>
+        <label>Ich habe in der CSM-Dokumentation in der Knowledge Base nachgesehen</label>
+        <language>de</language>
+        <name>question</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2023-02-01 16:39:41</sys_created_on>
+        <sys_id>d06ef6b81b342d50191cd8f99a4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ich habe in der CSM-Dokumentation in der Knowledge Base nachgesehen</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_translated_d06ef6b81b342d50191cd8f99a4bcb69</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:39:41</sys_updated_on>
+        <value>I have checked in the CSM documentation of the knowledge base</value>
+    </sys_translated>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_request_support_for" label="Unterstützung anfordern" language="de" table="x_liisa_support_ca_services">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_request_support_for</element>
+            <help/>
+            <hint/>
+            <label>Unterstützung anfordern</label>
+            <language>de</language>
+            <name>x_liisa_support_ca_services</name>
+            <plural>Request für s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-09-26 09:58:35</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Unterstützung anfordern</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_documentation_x_liisa_support_ca_services_u_request_support_for_de</sys_update_name>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-09-26 13:31:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.Support_case</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Support_case</name>
+        <script><![CDATA[var Support_case = Class.create();
+Support_case.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	isPublic: function() {
+		return true;
+	},
+
+	getServiceOfferingGroup: function() {
+		var offering = this.getParameter('sysparm_offering');
+		var offeringSupport = '';
+		var offeringGr = new GlideRecord('service_offering');
+		offeringGr.get(offering);
+		if (offeringGr.support_group != '') {
+			offeringSupport = offeringGr.support_group;
+			return offeringSupport;
+
+		}
+
+		return null;
+
+	},
+
+	getInternalAccount: function() {
+
+		var account = this.getParameter('sysparm_account');
+        var gr = new GlideRecord('customer_account');
+		gr.get(account);
+		
+		if(gr.u_internal_customer == true){
+			return true;
+		}else if(gr.u_internal_customer == false){
+			return false;
+		}
+	},
+
+	isEngineComponent: function(){
+		//goes from Sold product to its Product (model) 
+		//and checks if its Model category = Engine
+		//or = Components
+		var prModel = this.getParameter('sysparm_model');
+		var soldP = new GlideRecord('sn_install_base_sold_product');
+		soldP.get(prModel);
+
+		var productM = soldP.product;
+		var productModel = new GlideRecord('cmdb_model');
+		productModel.get(productM);
+
+		var modCat = productModel.cmdb_model_category;
+		var engineModCat = gs.getProperty('x_liisa_support_ca.model_category_engine_value');
+		var componentsModCat = gs.getProperty('x_liisa_support_ca.model_category_components_value');
+
+		if(modCat == engineModCat){
+			return 'engine';
+		}
+		if(modCat == componentsModCat){
+			return 'components';
+		}
+		if(modCat != engineModCat || modCat != componentsModCat ){
+			return 'neither';
+		}
+
+
+	},
+
+	getOperatingHours: function() {
+		var installBase = this.getParameter('sysparm_installbase');
+		var engineHours = '';
+		var installBaseGr = new GlideRecord('sn_install_base_item');
+		installBaseGr.get(installBase);
+
+		var installBaseCI = installBaseGr.asset;
+		var engineGr = new GlideRecord('alm_hardware');
+		engineGr.get(installBaseCI);
+
+		if (engineGr.u_operating_hours != '') {
+			engineHours = engineGr.u_operating_hours;
+			return engineHours;
+
+		}
+
+		return null;
+
+	},
+	
+	getProductCategory: function() {
+		var product = this.getParameter('sysparm_product');
+		
+		var ga = new GlideRecord('cmdb_hardware_product_model');
+		ga.addQuery('name',product);
+		ga.query();
+		
+		while(ga.next()) {
+			if (ga.x_liisa_support_ca_product_category != '')  {
+				return ga.x_liisa_support_ca_product_category;
+			}
+		}
+
+		return null;
+
+	},
+
+	getSoldProductRefQual: function(account, consumer, install_base)  {		
+		if (gs.nil(install_base) && gs.nil(account) && gs.nil(consumer))
+            return;
+		
+        var gr;
+		var listOfSoldProducts = [];
+		var ChildAccount = [];
+		var getParentChildAccount;
+		var result = {};
+			result.ParentAccountId = '';
+		
+		//gs.info('value :' + account);
+		
+		if ( !gs.nil(install_base) ) {                                          // install base item is set
+            gr = new GlideRecord("sn_install_base_m2m_installed_product");
+			gr.addQuery('install_base_item', install_base);
+			gr.query();
+			while (gr.next()) {
+				if (gr.canRead())
+					listOfSoldProducts.push(gr.sold_product + '');
+			}			
+        } else {     
+			if ( !gs.nil(account) ) {                                         //account
+				
+				gs.info('Account' + account );
+				
+				var ParentAccount = new GlideRecord('customer_account');
+				
+				if (ParentAccount.get(account)) {
+					result.ParentAccountId = ParentAccount.getValue('account_parent');
+				}
+							
+				if (result.ParentAccountId != '' && result.ParentAccountId != null) {
+					getParentChildAccount = new GlideRecord('customer_account');
+					getParentChildAccount.addEncodedQuery('account_parent=' + result.ParentAccountId);
+				
+					getParentChildAccount.query();
+					while (getParentChildAccount.next()) {
+						ChildAccount.push(getParentChildAccount.getValue('sys_id'));
+					}
+					
+				} else {
+				
+					getParentChildAccount = new GlideRecord('customer_account');
+					getParentChildAccount.addEncodedQuery('account_parent=' + account);
+				
+					getParentChildAccount.query();
+					while (getParentChildAccount._next()) {
+						ChildAccount.push(getParentChildAccount.getValue('sys_id'));
+					}
+
+				}
+				
+				if(ChildAccount != '') {
+				
+					/*
+					for(var i=0;i<ChildAccount.length;i++) {
+					
+						var value = ChildAccount[i];
+												
+						gr = new GlideRecord('sn_install_base_sold_product');
+						gr.addQuery('account', value);
+												
+						gr.query();
+						while (gr.next()) {
+							if (gr.canRead())
+								listOfSoldProducts.push(gr.sys_id + '');
+						}	
+					}
+					
+					*/
+					
+					gr.addQuery('account','IN',childAccount);
+					
+				} else {
+					
+					gr = new GlideRecord('sn_install_base_sold_product');
+					gr.addQuery('account', account);
+					gr.query();
+					while (gr.next()) {
+						if (gr.canRead())
+							listOfSoldProducts.push(gr.sys_id + '');
+					}			 
+				}
+			}	
+			else if (!gs.nil(consumer)) {                                   // consumer
+				var util = new sn_install_base.SoldProductAndInstallBaseFilter();
+				listOfSoldProducts = util.getValidSoldProducts(consumer, null, true);
+			}	
+		}
+		return "sys_idIN" + listOfSoldProducts.join();
+	},
+	
+	getInstallBaseItemRefQual: function(account, consumer, sold_product) {
+		if (gs.nil(sold_product) && gs.nil(account) && gs.nil(consumer))
+            return;
+		
+        var gr;
+        var listOfDeployedItems = [];
+		var ChildAccount = [];
+		var getParentChildAccount;
+		var result = {};
+			result.ParentAccountId = '';
+		
+        if (gs.nil(sold_product)) {
+            gr = new GlideRecord('sn_install_base_item');
+			
+			if (!gs.nil(consumer))
+				gr.addQuery('consumer', consumer);
+			else if (!gs.nil(account))
+				
+				var ParentAccount = new GlideRecord('customer_account');
+				
+				if (ParentAccount.get(account)) {
+					result.ParentAccountId = ParentAccount.getValue('account_parent');
+				}		
+			
+					gs.info('Parent Account value :' + result.ParentAccountId );
+			
+				if (result.ParentAccountId != '' && result.ParentAccountId != null) {
+					getParentChildAccount = new GlideRecord('customer_account');
+					getParentChildAccount.addEncodedQuery('account_parent=' + result.ParentAccountId);
+				
+					getParentChildAccount.query();
+					while (getParentChildAccount.next()) {
+						ChildAccount.push(getParentChildAccount.getValue('sys_id'));
+					}	
+										
+				} else {
+					getParentChildAccount = new GlideRecord('customer_account');
+					getParentChildAccount.addEncodedQuery('account_parent=' + account);
+				
+					getParentChildAccount.query();
+					while (getParentChildAccount._next()) {
+						ChildAccount.push(getParentChildAccount.getValue('sys_id'));
+					}
+					
+				}
+			
+				gs.info('ChildAccount value :' + ChildAccount );
+				
+				if(ChildAccount != '') {
+				
+				/*
+					for(var i=0;i<ChildAccount.length;i++) {
+					
+						var value = ChildAccount[i];
+												
+						gr = new GlideRecord('sn_install_base_item');
+						gr.addQuery('account', value);
+												
+						gr.query();
+						while (gr.next()) {
+							if (gr.canRead())
+								listOfDeployedItems.push(gr.sys_id + '');
+						}	
+					}
+				*/
+					gr.addQuery('account','IN',childAccount);
+
+				} else {
+					gr.addQuery('account', account);
+				}
+			
+        } else {
+            gr = new GlideRecord('sn_install_base_m2m_installed_product');
+			gr.addQuery('sold_product', sold_product);
+        }
+        gr.query();
+        if (gs.nil(sold_product))
+            while (gr.next()) {
+				if (gr.canRead())
+					listOfDeployedItems.push(gr.sys_id + '');
+			}
+        else
+            while (gr.next()) {
+				if (gr.canRead())
+					listOfDeployedItems.push(gr.install_base_item + '');
+			}
+        return "sys_idIN" + listOfDeployedItems.join();
+	},
+	
+		getAccountContacts: function(account)  {		
+		if (gs.nil(account))
+            return;
+		
+        var gr;
+		var listOfContacts = [];
+		var ChildAccount = [];
+		var getParentChildAccount;
+		var result = {};
+			result.ParentAccountId = '';
+		
+		if ( !gs.nil(account) ) {                                         //account
+			
+			var ParentAccount = new GlideRecord('customer_account');
+		
+			if (ParentAccount.get(account)) {
+				result.ParentAccountId = ParentAccount.getValue('account_parent');
+			}
+					
+			if (result.ParentAccountId != '' && result.ParentAccountId != null) {
+				getParentChildAccount = new GlideRecord('customer_account');
+				getParentChildAccount.addEncodedQuery('account_parent=' + result.ParentAccountId);
+		
+				getParentChildAccount.query();
+				while (getParentChildAccount.next()) {
+					ChildAccount.push(getParentChildAccount.getValue('sys_id'));
+				}
+			
+			} else {
+		
+				getParentChildAccount = new GlideRecord('customer_account');
+				getParentChildAccount.addEncodedQuery('account_parent=' + account);
+		
+				getParentChildAccount.query();
+				while (getParentChildAccount._next()) {
+					ChildAccount.push(getParentChildAccount.getValue('sys_id'));
+				}
+			}
+			
+			if(ChildAccount != '') {
+		
+				for(var i=0;i<ChildAccount.length;i++) {
+			
+					var value = ChildAccount[i];
+														
+					gr = new GlideRecord('customer_contact');
+					gr.addQuery('account', value);
+										
+					gr.query();
+					while (gr.next()) {
+						if (gr.canRead())
+							listOfContacts.push(gr.sys_id + '');
+					}
+				}
+					gr = new GlideRecord('customer_contact');
+					gr.addQuery('account', account);
+										
+					gr.query();
+					while (gr.next()) {
+						if (gr.canRead())
+							listOfContacts.push(gr.sys_id + '');
+					}
+				
+			} else {
+				
+				gr = new GlideRecord('customer_contact');
+				gr.addQuery('account', account);
+				gr.query();
+				while (gr.next()) {
+					if (gr.canRead())
+						listOfContacts.push(gr.sys_id + '');
+				}			 
+			}
+		}
+			
+		return "sys_idIN" + listOfContacts.join();
+	},
+	
+	type: 'Support_case'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-11-11 10:40:51</sys_created_on>
+        <sys_id>f65def3cdb73b81001eafad3f3961965</sys_id>
+        <sys_mod_count>56</sys_mod_count>
+        <sys_name>Support_case</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_f65def3cdb73b81001eafad3f3961965</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 19:14:01</sys_updated_on>
+    </sys_script_include>
+</record_update>

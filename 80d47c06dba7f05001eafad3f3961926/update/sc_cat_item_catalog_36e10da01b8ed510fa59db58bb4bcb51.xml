@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Warranty and Claim Management">0946aa338705c5105f2064273cbb352f</sc_cat_item>
+        <sc_catalog display_value="Customer Service">65bcd377c3011200b12d9f2974d3aea0</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-16 20:04:46</sys_created_on>
+        <sys_id>36e10da01b8ed510fa59db58bb4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Service.Warranty and Claim Management</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_36e10da01b8ed510fa59db58bb4bcb51</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-16 20:04:46</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

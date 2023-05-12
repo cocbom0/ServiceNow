@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>snc_internal, snc_external, sn_customerservice.customer &amp; sn_customerservice.customer_admin has read access to core_country table</description>
+        <name>core_country</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-25 08:55:54</sys_created_on>
+        <sys_id>2933afa31baf0d50191cd8f99a4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>core_country</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_security_acl_2933afa31baf0d50191cd8f99a4bcb18</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-25 08:55:54</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

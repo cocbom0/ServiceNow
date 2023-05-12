@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_commissioning_reason" table="x_liisa_support_ca_u_cmdb_ci_engine" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_commissioning_reason</element>
+            <name>x_liisa_support_ca_u_cmdb_ci_engine</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>cockrl0</sys_created_by>
+            <sys_created_on>2023-02-02 08:56:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_commissioning_reason</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_choice_x_liisa_support_ca_u_cmdb_ci_engine_u_commissioning_reason</sys_update_name>
+            <sys_updated_by>cockrl0</sys_updated_by>
+            <sys_updated_on>2023-02-02 08:56:42</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

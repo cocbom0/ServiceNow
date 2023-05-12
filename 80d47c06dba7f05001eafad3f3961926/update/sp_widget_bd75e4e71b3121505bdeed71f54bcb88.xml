@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $location, $http, spUtil, $timeout) {
+    var c = this;
+    var $ = go.GraphObject.make;
+
+    c.department = {
+        displayValue: $scope.data.name,
+        value: $scope.data.start,
+        name: 'name'
+    };
+
+    // base user changed, reload page
+    $scope.$on("field.change", function(evt, parms) {
+        if (parms.field.name != 'name')
+            return;
+
+        var s = $location.search();
+        s.p = parms.newValue;
+        $location.search(s);
+    });
+
+    $timeout(function() {
+        c.diagram = $(go.Diagram, 'org_chart', {
+            mouseWheelBehavior: go.ToolManager.WheelZoom,
+            layout: $(go.TreeLayout, evalGoCode(c.options.tree_layout)) // use a TreeLayout to position all of the nodes
+        });
+
+        makeTemplate(c.diagram);
+
+        // create the Model with data for the tree, and assign to the Diagram
+        c.diagram.model = $(go.TreeModel, {
+            nodeParentKeyProperty: "parent", // this property refers to the parent node data
+            nodeDataArray: $scope.data.nodes
+        });
+
+    });
+
+    c.zoomIn = function() {
+        c.diagram.commandHandler.increaseZoom()
+    }
+
+    c.zoomOut = function() {
+        c.diagram.commandHandler.decreaseZoom()
+    }
+
+    // When a Node is double clicked, open the user record for the person in a new window
+    function nodeClick(event, node) {
+        window.open(spUtil.format($scope.options.url, {
+            sys_id_p: node.data.key,
+					  sys_id_q: "",
+            page: c.options.page
+        }));
+    }
+
+    function makeTemplate(diagram) {
+        diagram.nodeTemplate = $(go.Node, "Auto", angular.extend({
+                click: nodeClick
+            }, evalGoCode(c.options.node_layout)),
+            $(go.Shape, "Rectangle", new go.Binding("fill", "color")), // the outer shape for the node, surrounding the Table
+            $(go.Panel, "Horizontal", $(go.Picture, evalGoCode(c.options.picture_layout), new go.Binding("source", "photo")), panel()));
+        diagram.linkTemplate = $(go.Link, go.Link.Orthogonal, {
+            selectable: false
+        }, $(go.Shape, evalGoCode(c.options.line))); // the default black link shape
+    }
+
+    function evalGoCode(item) {
+
+        for (var x in item) {
+            var re = /{([^}]+)?}/g,
+                match;
+            while (match = new RegExp(re).exec(item[x])) {
+                item[x] = eval(match[1])
+            }
+        }
+
+        return item;
+    }
+
+    function panel() {
+        var opts = [
+            go.Panel, "Table", evalGoCode(c.options.table_layout),
+            $(go.RowColumnDefinition, evalGoCode(c.options.row_layout))
+        ];
+        var item;
+        for (var fieldName in c.options.card_fields) {
+            item = c.options.card_fields[fieldName];
+            evalGoCode(item);
+            opts.push($(go.TextBlock, item, new go.Binding("text", fieldName)))
+        }
+
+        return $.apply(null, opts);
+    }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.org-chart {&#13;
+	height: 550px;&#13;
+  margin: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>lh_csm_cot_buvm_organization_chart</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>LH-CSM-COT-BU-VM-OrganizationChart</name>
+        <option_schema>[{"hint":"Card Fields Config","name":"card_fields","section":"Data","label":"Card Fields","type":"string"},{"hint":"User Background color","name":"user_background_color","section":"Presentation","label":"User Background Color","type":"string"},{"hint":"Node Background Color","name":"node_background_color","section":"Presentation","label":"Node Background Color","type":"string"},{"hint":"URL to open on click","name":"url","section":"Behavior","label":"URL","type":"string"},{"name":"table_layout","section":"Presentation","label":"Table Layout","type":"string"},{"name":"row_layout","section":"Presentation","label":"Row Layout","type":"string"},{"name":"line","section":"Presentation","label":"Line","type":"string"},{"name":"tree_layout","section":"Presentation","label":"Tree Layout","type":"string"},{"name":"picture_layout","section":"Presentation","label":"Picture Layout","type":"string"},{"name":"table_layout","section":"Presentation","label":"Table Layout","type":"string"},{"name":"page","section":"Behavior","label":"Page","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var selectedNodeId = $sp.getParameter('p');
+
+    // Default Values
+    options.table_layout = options.table_layout || {
+        margin: 4,
+        maxSize: '{new go.Size(180, NaN)}'
+    };
+    options.row_layout = options.row_layout || {
+        column: 0,
+        stretch: '{go.GraphObject.Horizontal}',
+        alignment: '{go.Spot.Left}'
+    };
+    options.node_layout = options.node_layout || {
+        cursor: "pointer",
+        isShadowed: true
+    };
+    options.user_background_color = options.user_background_color || 'lightblue';
+    options.node_background_color = options.node_background_color || 'azure';
+    options.url = options.url || '?id={page}&p={sys_id_p}&q={sys_id_q}';
+    options.line = options.line || {
+        stroke: '#222'
+    };
+    options.page = options.page || 'lh_organizational_chart';
+    options.card_fields = options.card_fields || {
+        name: {
+            row: 0,
+            column: 0,
+            columnSpan: 1,
+            font: 'bold 9pt sans-serif',
+            alignment: '{go.Spot.Top}',
+            maxSize: '{new go.Size(160, NaN)}'
+        },
+        title: {
+            row: 1,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        primary_contact: {
+            row: 2,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        email: {
+            row: 3,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        phone: {
+            row: 4,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        },
+        location: {
+            row: 5,
+            column: 0,
+            columnSpan: 2,
+            font: '8pt sans-serif'
+        }
+    };
+    options.tree_layout = options.tree_layout || {
+        treeStyle: '{go.TreeLayout.StyleLastParents}',
+        angle: 90,
+        layerSpacing: 80,
+        alternateAngle: 0,
+        alternateAlignment: '{go.TreeLayout.AlignmentStart}',
+        alternateNodeIndent: 20,
+        alternateNodeIndentPastParent: 1,
+        alternateNodeSpacing: 20,
+        alternateLayerSpacing: 40,
+        alternateLayerSpacingParentOverlap: 1,
+        alternatePortSpot: '{new go.Spot(0, 0.999, 20, 0)}',
+        alternateChildPortSpot: '{go.Spot.Left}'
+    };
+
+    options.picture_layout = options.picture_layout || {
+        name: 'Picture',
+        desiredSize: '{new go.Size(55, 65)}',
+        margin: '{new go.Margin(2, 2, 2, 6)}',
+        imageStretch: '{go.GraphObject.UniformToFill}'
+    };
+
+    initiateTree(selectedNodeId);
+
+    /**
+     * Initiate the department tree structure and launch the tree construction
+     *
+     * @param {number} selectedNodeId The sys_id of the department by the user
+     */
+    function initiateTree(selectedNodeId) {
+        var selectedNode = getDepartmentData(selectedNodeId);
+        data.nodes = [];
+
+        if (selectedNode.parent) {
+            constructTree(selectedNode.parent);
+        } else {
+            constructTree(selectedNode.sys_id);
+        }
+    }
+
+    /**
+     * Construct the department tree with a recursion
+     *
+     * @param {number} sysId The sys_id of the current working department
+     */
+    function constructTree(sysId) {
+        var gr;
+        var node;
+
+        node = getDepartmentData(sysId);
+        data.nodes.push(node);
+
+        gr = new GlideRecord('cmn_department');
+        gr.addQuery('parent', sysId);
+        gr.orderBy('name');
+        gr.query();
+
+        while (gr.next()) {
+            constructTree(gr.sys_id);
+        }
+    }
+
+    /**
+     * Search and return all of the department data needed for the given sys_id
+     *
+     * @param {number} sysId The sys_id of the department
+     * @return {JSON} department The department data in JSON format
+     */
+    function getDepartmentData(sysId) {
+        var department = {};
+        var user;
+
+        var gr = new GlideRecord('cmn_department');
+        gr.get(sysId);
+
+        department.key = gr.getValue('sys_id');
+        department.sys_id = gr.getValue('sys_id');
+        department.parent = gr.getValue('parent');
+        department.id = gr.getValue('id');
+
+        $sp.getRecordDisplayValues(department, gr, Object.keys(options.card_fields));
+        $sp.getRecordValues(department, gr, Object.keys(options.card_fields));
+
+        user = getUserData(department.primary_contact);
+
+        department.primary_contact = user.getValue('u_display_name');
+        department.email = user.getValue('email');
+        department.phone = user.getValue('phone');
+
+        //       switch (user.getValue('u_display_name')) {
+        //           case 'Noome Simon (LMB)':
+
+        switch (department.id) {
+            case 'manager':
+                department.color = '#9ECAE1';
+                break;
+            case 'expert':
+                department.color = '#B6D9B9';
+                break;
+            case 'team_leader':
+                department.color = '#EBDAD4';
+                break;
+            case 'head_customer_service':
+                department.color = '#3182BD';
+                break;
+            default:
+                department.color = '#F0F0F0';
+                //             department.color = options.user_background_color;
+                break;
+        }
+
+        return department;
+    }
+
+    /**
+     * Search and return the user data for the given sys_id
+     *
+     * @param {number} sysId The sys_id of the user
+     * @return {GlideRecord} gr The GlideRecord of the user
+     */
+    function getUserData(sysId) {
+        var gr = new GlideRecord('sys_user');
+
+        gr.get(sysId);
+
+        return gr;
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 11:38:15</sys_created_on>
+        <sys_id>bd75e4e71b3121505bdeed71f54bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH-CSM-COT-BU-VM-OrganizationChart</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_bd75e4e71b3121505bdeed71f54bcb88</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-31 11:38:15</sys_updated_on>
+        <template><![CDATA[<div>
+    <sn-record-picker field="c.department" table="'cmn_department'" display-field="'name'" value-field="'sys_id'" 
+                    display-fields="'parent,business_unit'" search-fields="'name,parent,business_unit'" page-size="100" default-query="'nameLIKEKD'" default-query="'id=manager'" >
+    </sn-record-picker>
+    <div id="org_chart" class="org-chart"></div>
+    <button name="zoomin" ng-click="c.zoomIn()" class="btn btn-primary" aria-label="${Zoom in}" data-toggle="tooltip" title="${Zoom in}"><span><i class="fa fa-search-plus"></i></span></button>
+    <button name="zoomout" ng-click="c.zoomOut()" class="btn btn-primary" aria-label="${Zoom out}" data-toggle="tooltip" title="${Zoom out}"><span><i class="fa fa-search-minus"></i></span></button>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

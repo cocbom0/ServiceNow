@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Service Engineering">0d2deaa0477a4d10b0ce8b42e36d43c3</catalog_item>
+        <catalog_variable>IO:74ad161f1b43cd10191cd8f99a4bcb37</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-05-03 09:15:56</sys_created_on>
+        <sys_id>222556a01b5749905b1b411acd4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>maintenance_engine_coolant</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_222556a01b5749905b1b411acd4bcbbc</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-05-03 09:15:56</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Maintenance Schedule - Maintenance - Engine Coolant VariableSet">0fb49e201b5749905b1b411acd4bcb87</ui_policy>
+        <variable>maintenance_engine_coolant</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

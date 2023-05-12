@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>neues_konto</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>1100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2023-01-26 14:31:53</sys_created_on>
+        <sys_id>d057ebb21b242150191cd8f99a4bcbf4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>New account</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>item_option_new_set_d057ebb21b242150191cd8f99a4bcbf4</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-05 14:45:07</sys_updated_on>
+        <title>New account</title>
+        <type>one_to_many</type>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

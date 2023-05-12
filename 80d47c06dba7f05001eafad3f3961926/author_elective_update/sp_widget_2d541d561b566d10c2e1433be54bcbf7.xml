@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function main($scope) {
+	var c = this;
+	
+	// COT BU-VM : STRY0016065 | new.start
+	$scope.removeWatcher = function(watcher) {
+		$scope.data.todelete = watcher;
+		c.server.update();
+	};
+	// COT BU-VM : STRY0016065 | new.end
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.textbox_space {&#13;
+  margin-top: 10px;&#13;
+  margin-bottom: 10px; /* COT BU-VM : STRY0016065 | new */&#13;
+  display: flex; /* COT BU-VM : STRY0016065 | new */&#13;
+}&#13;
+&#13;
+/* COT BU-VM : STRY0016065 | new.start */&#13;
+.textbox_child {&#13;
+  flex: 1;&#13;
+  text-align:center;&#13;
+}&#13;
+&#13;
+.textbox_child &gt; input {&#13;
+	width: 100%;&#13;
+	height: 100%;&#13;
+}&#13;
+&#13;
+.textbox_child &gt; button {&#13;
+ 	width: 30%;&#13;
+	height: 100%;&#13;
+}&#13;
+&#13;
+#labelError {&#13;
+ 	float: left;&#13;
+	margin: 1px;&#13;
+}&#13;
+&#13;
+&#13;
+/* Style the list (remove margins and bullets, etc) */&#13;
+ul {&#13;
+  list-style-type: none;&#13;
+  padding: 0;&#13;
+  margin: 0;&#13;
+  margin-top: 40px;&#13;
+}&#13;
+&#13;
+/* Style the list items */&#13;
+ul li {&#13;
+  border: 1px solid #ddd;&#13;
+  margin-top: -1px; /* Prevent double borders */&#13;
+  background-color: #f6f6f6;&#13;
+  padding: 12px;&#13;
+  text-decoration: none;&#13;
+  font-size: 14px;&#13;
+  color: black;&#13;
+  display: block;&#13;
+  position: relative;&#13;
+}&#13;
+&#13;
+/* Add a light grey background color on hover */&#13;
+ul li:hover {&#13;
+  background-color: #eee;&#13;
+}&#13;
+&#13;
+/* Style the close button (span) */&#13;
+.close {&#13;
+  cursor: pointer;&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  right: 0%;&#13;
+  padding: 12px 16px;&#13;
+  transform: translate(0%, -50%);&#13;
+}&#13;
+&#13;
+.close:hover {background: #bbb;}&#13;
+/* COT BU-VM : STRY0016065 | new.end */</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>lh_ticket_watchlist_user_no_view</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) { 
+
+ }]]></link>
+        <name>LH Ticket Watchlist User No View</name>
+        <option_schema/>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <script><![CDATA[(function() {
+	data.sys_id = (input && input.sys_id) || options.sys_id || $sp.getParameter("sys_id");
+	data.table = (input && input.table) || options.table || $sp.getParameter("table");
+	data.watchers = [];
+	// INC0094616
+	data.show_action_widget = true;
+	var saw = new GlideRecord("sys_user_has_role");
+	saw.addEncodedQuery("role.name=sn_customerservice.restrict_access_service_offering^user=" + gs.getUserID());
+	saw.query();
+	if(saw.next()){
+		data.show_action_widget = false;
+	} else {
+		data.show_action_widget = true;
+	}
+	//
+	
+	var separator = ",";
+	
+	data.watchers = getEmailList(data.table, data.sys_id, separator);
+	// COT BU-VM : STRY0016065 | new.start
+	data.user_list = getUserList(data.table, data.sys_id);
+	data.valid_email = true;
+	
+	if(input) {
+		if(input.todelete) {
+			deleteWatcherFromRecord(input.todelete, separator);
+		} else {
+			if(input.user) {
+				addUserToWatchList(data.table, data.sys_id, input.user, separator);
+				data.valid_email = emailIsValid(input.user.toUpperCase());
+				data.user = "";
+			}
+		}
+
+	}
+	// COT BU-VM : STRY0016065 | new.end
+})();
+
+function getEmailList(table, sysId, separator) {
+	var list = [];
+	var watchers = [];
+	var i = 0;
+	var gr = new GlideRecord(table);
+	
+	if(gr.get(sysId)) {
+		watchers = gr.getValue("watch_list")?gr.getValue("watch_list").split(separator):[];
+		for(i; i < watchers.length; i++) {
+			list.push(getEmail(watchers[i]));
+		}
+	}
+	
+	return list;
+}
+
+function getEmail(sysId) {
+	var email = sysId;
+	var gr = new GlideRecord("sys_user");
+	
+	if (gr.get(sysId)) {
+		email = gr.getValue("email");
+	}
+	
+	return email;
+}
+
+function emailIsValid(email) {
+	var valid = false;
+	var separator = "|";
+	
+	var pattern = "^[\\w-\\.]+@((" + getValidatedDomains(separator) + getDomain(0) + separator + getDomain(1) + ")+\\.)+[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+	
+    if (regex.exec(email) !== null) {
+        valid = true;
+    }
+		
+	return valid;
+}
+
+function getDomain(side) {
+	var domain = "";
+	var grCase, grUser;
+	var column;
+	
+	switch(side) {
+		case 0:
+			column = "internal_user";
+			break;
+		case 1:
+			column = "contact";
+			break;
+		default:
+			break;
+	}
+		
+	grCase = new GlideRecord($sp.getParameter("table"));
+	if(grCase.get($sp.getParameter("sys_id"))) {
+		grUser = new GlideRecord("sys_user");
+		if(grUser.get(grCase.getValue(column))) {
+			domain = getDomainFromEmail(grUser.getValue("email"));
+		}
+	}
+	
+	return domain.toUpperCase();
+}
+
+function getDomainFromEmail(email) {
+	var domain = "";
+	
+	var pattern = "@([\\w\\.-]+)+\\.[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+	var result = regex.exec(email);
+
+    if (result !== null) {
+		domain = result[1];
+    }
+
+	return domain;
+}
+
+// COT BU-VM : STRY0016065 | new.start
+function getValidatedDomains(separator) {
+	var domains = "";
+	var grProperties = new GlideRecord("sys_properties");
+	grProperties.addQuery("name", "LH_valid_email_domains");
+	grProperties.query();
+	
+	if(grProperties.next()) {
+		domains = grProperties.getValue("value");
+		if (domains) {
+			if (domains.at(-1) !== separator) {
+				domains += separator;
+			}
+		}
+	}
+	
+	return domains.toUpperCase();
+}
+
+function deleteWatcherFromRecord(watcher, separator) {
+	var grTask = new GlideRecord(data.table);
+	grTask.query("sys_id", data.sys_id);
+	grTask.query();
+	
+	if (grTask.next()) {
+		var wList = grTask.getValue("watch_list")?grTask.getValue("watch_list").split(separator):[];
+		var i = 0;
+		var find = false;		
+		while(i < wList.length && !find) {
+			if(getEmail(wList[i]) === watcher) {
+				find = true;
+				delete wList[i];
+				grTask.setValue("watch_list", wList.join(separator));
+				grTask.update();
+			}
+			i++;
+		}
+	}
+}
+
+function getUserList(table, sysid) {
+	var user_list = [];
+	var grTask = new GlideRecord(table);
+	
+	grTask.query("sys_id", sysid);
+	grTask.query();
+	
+	if (grTask.next()) {
+		var grUser = new GlideRecord("customer_contact");
+		grUser.addQuery("company", grTask.getValue("account"));
+		grUser.query();
+
+		while(grUser.next()) {
+			var user = {
+				name: "",
+				email: "",
+				sysid: ""
+			};
+			
+			user.name = grUser.getValue("name");
+			user.email = grUser.getValue("email");
+			user.sysid = grUser.getValue("sys_id");
+
+			user_list.push(user);		
+		}
+	}
+	
+	return user_list;
+}
+
+function addUserToWatchList(table, sys_id, watch_list, separator) {
+	var grTask = new GlideRecord(table);
+	grTask.query("sys_id", sys_id);
+	grTask.query();
+	
+	if (grTask.next()) {
+		var wList;
+		var wEmail;
+		var value_to_push;
+
+		wList = grTask.getValue("watch_list")?grTask.getValue("watch_list").split(separator):[];
+		wEmail = watch_list;
+		
+		if(emailIsValid(wEmail.toUpperCase())) {
+			var grUser = new GlideRecord('sys_user');
+			grUser.addQuery("email", wEmail);
+			grUser.query();
+
+			if (grUser.next()) {
+				// It's a user
+				value_to_push = grUser.getValue("sys_id");
+			} else {
+				//It's not a user either...so just add the address to the list...except instance email address
+				value_to_push = wEmail;
+			}
+
+			if(wList.indexOf(value_to_push) < 0) {
+				wList.push(value_to_push);
+			}
+
+			grTask.setValue("watch_list", wList.join(separator));
+			grTask.update();
+		} 
+		
+	}
+}
+// COT BU-VM : STRY0016065 | new.end]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 14:21:27</sys_created_on>
+        <sys_id>2d541d561b566d10c2e1433be54bcbf7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>LH Ticket Watchlist User No View</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_2d541d561b566d10c2e1433be54bcbf7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 14:22:11</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="panel-title"><fa ng-if="::options.glyph.length" name="" class="m-r-sm" />Add to Watchlist</h4>
+  </div>
+  <div class="panel-body">
+    <form ng-submit="server.update()">
+      ${Enter an email address to follow}
+      <div ng-if="data.show_action_widget" class="textbox_space"> <!-- INC0094616 added ng-if="show_action_widget" -->
+        <!-- COT BU-VM : STRY0016065 | new.start -->
+        <div class="textbox_child">
+          <input ng-model="data.user" list="user.list"/>
+          <datalist id="user.list">
+            <option ng-repeat="user in data.user_list" ng-value="user.email" class="form-control" type="email">{{user.name}}</option>
+          </datalist>
+        </div>
+        <div ng-if="data.show_action_widget" class="textbox_child"> <!-- INC0094616 added ng-if="show_action_widget" -->
+          <button type="submit" class="btn btn-primary post-btn ng-scope">Add</button>
+        </div>
+      </div>
+      <label id="labelError" class="text-danger" ng-if="!data.valid_email">The email domain is not valid</label>
+      <!-- COT BU-VM : STRY0016065 | new.end -->
+      <div>
+        <ul>
+          <li ng-repeat='watcher in c.data.watchers'>
+            {{watcher}}
+            <button ng-click="removeWatcher(watcher)" class="close">x</button>
+          </li>
+        </ul>
+      </div>
+      <div style="margin-right:250px;" ng-if="data.response" class="alert alert-success">{{::data.response}}</div>
+    </form>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_widget_2d541d561b566d10c2e1433be54bcbf7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function main($scope) {
+	var c = this;
+	
+	// COT BU-VM : STRY0016065 | new.start
+	$scope.removeWatcher = function(watcher) {
+		$scope.data.todelete = watcher;
+		c.server.update();
+	};
+	// COT BU-VM : STRY0016065 | new.end
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.textbox_space {&amp;#13;
+  margin-top: 10px;&amp;#13;
+  margin-bottom: 10px; /* COT BU-VM : STRY0016065 | new */&amp;#13;
+  display: flex; /* COT BU-VM : STRY0016065 | new */&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* COT BU-VM : STRY0016065 | new.start */&amp;#13;
+.textbox_child {&amp;#13;
+  flex: 1;&amp;#13;
+  text-align:center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.textbox_child &amp;gt; input {&amp;#13;
+	width: 100%;&amp;#13;
+	height: 100%;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.textbox_child &amp;gt; button {&amp;#13;
+ 	width: 30%;&amp;#13;
+	height: 100%;&amp;#13;
+}&amp;#13;
+&amp;#13;
+#labelError {&amp;#13;
+ 	float: left;&amp;#13;
+	margin: 1px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+/* Style the list (remove margins and bullets, etc) */&amp;#13;
+ul {&amp;#13;
+  list-style-type: none;&amp;#13;
+  padding: 0;&amp;#13;
+  margin: 0;&amp;#13;
+  margin-top: 40px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Style the list items */&amp;#13;
+ul li {&amp;#13;
+  border: 1px solid #ddd;&amp;#13;
+  margin-top: -1px; /* Prevent double borders */&amp;#13;
+  background-color: #f6f6f6;&amp;#13;
+  padding: 12px;&amp;#13;
+  text-decoration: none;&amp;#13;
+  font-size: 14px;&amp;#13;
+  color: black;&amp;#13;
+  display: block;&amp;#13;
+  position: relative;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Add a light grey background color on hover */&amp;#13;
+ul li:hover {&amp;#13;
+  background-color: #eee;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Style the close button (span) */&amp;#13;
+.close {&amp;#13;
+  cursor: pointer;&amp;#13;
+  position: absolute;&amp;#13;
+  top: 50%;&amp;#13;
+  right: 0%;&amp;#13;
+  padding: 12px 16px;&amp;#13;
+  transform: translate(0%, -50%);&amp;#13;
+}&amp;#13;
+&amp;#13;
+.close:hover {background: #bbb;}&amp;#13;
+/* COT BU-VM : STRY0016065 | new.end */&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;lh_ticket_watchlist_user_no_view&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) { 
+
+ }]]&gt;&lt;/link&gt;&lt;name&gt;LH Ticket Watchlist User No View&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.sys_id = (input &amp;&amp; input.sys_id) || options.sys_id || $sp.getParameter("sys_id");
+	data.table = (input &amp;&amp; input.table) || options.table || $sp.getParameter("table");
+	data.watchers = [];
+	// INC0094616
+	data.show_action_widget = true;
+	var saw = new GlideRecord("sys_user_has_role");
+	saw.addEncodedQuery("role.name=sn_customerservice.restrict_access_service_offering^user=" + gs.getUserID());
+	saw.query();
+	if(saw.next()){
+		data.show_action_widget = false;
+	} else {
+		data.show_action_widget = true;
+	}
+	//
+	
+	var separator = ",";
+	
+	data.watchers = getEmailList(data.table, data.sys_id, separator);
+	// COT BU-VM : STRY0016065 | new.start
+	data.user_list = getUserList(data.table, data.sys_id);
+	data.valid_email = true;
+	
+	if(input) {
+		if(input.todelete) {
+			deleteWatcherFromRecord(input.todelete, separator);
+		} else {
+			if(input.user) {
+				addUserToWatchList(data.table, data.sys_id, input.user, separator);
+				data.valid_email = emailIsValid(input.user.toUpperCase());
+				data.user = "";
+			}
+		}
+
+	}
+	// COT BU-VM : STRY0016065 | new.end
+})();
+
+function getEmailList(table, sysId, separator) {
+	var list = [];
+	var watchers = [];
+	var i = 0;
+	var gr = new GlideRecord(table);
+	
+	if(gr.get(sysId)) {
+		watchers = gr.getValue("watch_list")?gr.getValue("watch_list").split(separator):[];
+		for(i; i &lt; watchers.length; i++) {
+			list.push(getEmail(watchers[i]));
+		}
+	}
+	
+	return list;
+}
+
+function getEmail(sysId) {
+	var email = sysId;
+	var gr = new GlideRecord("sys_user");
+	
+	if (gr.get(sysId)) {
+		email = gr.getValue("email");
+	}
+	
+	return email;
+}
+
+function emailIsValid(email) {
+	var valid = false;
+	var separator = "|";
+	
+	var pattern = "^[\\w-\\.]+@((" + getValidatedDomains(separator) + getDomain(0) + separator + getDomain(1) + ")+\\.)+[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+	
+    if (regex.exec(email) !== null) {
+        valid = true;
+    }
+		
+	return valid;
+}
+
+function getDomain(side) {
+	var domain = "";
+	var grCase, grUser;
+	var column;
+	
+	switch(side) {
+		case 0:
+			column = "internal_user";
+			break;
+		case 1:
+			column = "contact";
+			break;
+		default:
+			break;
+	}
+		
+	grCase = new GlideRecord($sp.getParameter("table"));
+	if(grCase.get($sp.getParameter("sys_id"))) {
+		grUser = new GlideRecord("sys_user");
+		if(grUser.get(grCase.getValue(column))) {
+			domain = getDomainFromEmail(grUser.getValue("email"));
+		}
+	}
+	
+	return domain.toUpperCase();
+}
+
+function getDomainFromEmail(email) {
+	var domain = "";
+	
+	var pattern = "@([\\w\\.-]+)+\\.[\\w-]{2,4}$";
+    var regex = new RegExp(pattern);
+	var result = regex.exec(email);
+
+    if (result !== null) {
+		domain = result[1];
+    }
+
+	return domain;
+}
+
+// COT BU-VM : STRY0016065 | new.start
+function getValidatedDomains(separator) {
+	var domains = "";
+	var grProperties = new GlideRecord("sys_properties");
+	grProperties.addQuery("name", "LH_valid_email_domains");
+	grProperties.query();
+	
+	if(grProperties.next()) {
+		domains = grProperties.getValue("value");
+		if (domains) {
+			if (domains.at(-1) !== separator) {
+				domains += separator;
+			}
+		}
+	}
+	
+	return domains.toUpperCase();
+}
+
+function deleteWatcherFromRecord(watcher, separator) {
+	var grTask = new GlideRecord(data.table);
+	grTask.query("sys_id", data.sys_id);
+	grTask.query();
+	
+	if (grTask.next()) {
+		var wList = grTask.getValue("watch_list")?grTask.getValue("watch_list").split(separator):[];
+		var i = 0;
+		var find = false;		
+		while(i &lt; wList.length &amp;&amp; !find) {
+			if(getEmail(wList[i]) === watcher) {
+				find = true;
+				delete wList[i];
+				grTask.setValue("watch_list", wList.join(separator));
+				grTask.update();
+			}
+			i++;
+		}
+	}
+}
+
+function getUserList(table, sysid) {
+	var user_list = [];
+	var grTask = new GlideRecord(table);
+	
+	grTask.query("sys_id", sysid);
+	grTask.query();
+	
+	if (grTask.next()) {
+		var grUser = new GlideRecord("customer_contact");
+		grUser.addQuery("company", grTask.getValue("account"));
+		grUser.query();
+
+		while(grUser.next()) {
+			var user = {
+				name: "",
+				email: "",
+				sysid: ""
+			};
+			
+			user.name = grUser.getValue("name");
+			user.email = grUser.getValue("email");
+			user.sysid = grUser.getValue("sys_id");
+
+			user_list.push(user);		
+		}
+	}
+	
+	return user_list;
+}
+
+function addUserToWatchList(table, sys_id, watch_list, separator) {
+	var grTask = new GlideRecord(table);
+	grTask.query("sys_id", sys_id);
+	grTask.query();
+	
+	if (grTask.next()) {
+		var wList;
+		var wEmail;
+		var value_to_push;
+
+		wList = grTask.getValue("watch_list")?grTask.getValue("watch_list").split(separator):[];
+		wEmail = watch_list;
+		
+		if(emailIsValid(wEmail.toUpperCase())) {
+			var grUser = new GlideRecord('sys_user');
+			grUser.addQuery("email", wEmail);
+			grUser.query();
+
+			if (grUser.next()) {
+				// It's a user
+				value_to_push = grUser.getValue("sys_id");
+			} else {
+				//It's not a user either...so just add the address to the list...except instance email address
+				value_to_push = wEmail;
+			}
+
+			if(wList.indexOf(value_to_push) &lt; 0) {
+				wList.push(value_to_push);
+			}
+
+			grTask.setValue("watch_list", wList.join(separator));
+			grTask.update();
+		} 
+		
+	}
+}
+// COT BU-VM : STRY0016065 | new.end]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-21 14:21:27&lt;/sys_created_on&gt;&lt;sys_id&gt;2d541d561b566d10c2e1433be54bcbf7&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;LH Ticket Watchlist User No View&lt;/sys_name&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2d541d561b566d10c2e1433be54bcbf7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-21 14:22:11&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-primary"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;h4 class="panel-title"&gt;&lt;fa ng-if="::options.glyph.length" name="" class="m-r-sm" /&gt;Add to Watchlist&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;form ng-submit="server.update()"&gt;
+      ${Enter an email address to follow}
+      &lt;div ng-if="data.show_action_widget" class="textbox_space"&gt; &lt;!-- INC0094616 added ng-if="show_action_widget" --&gt;
+        &lt;!-- COT BU-VM : STRY0016065 | new.start --&gt;
+        &lt;div class="textbox_child"&gt;
+          &lt;input ng-model="data.user" list="user.list"/&gt;
+          &lt;datalist id="user.list"&gt;
+            &lt;option ng-repeat="user in data.user_list" ng-value="user.email" class="form-control" type="email"&gt;{{user.name}}&lt;/option&gt;
+          &lt;/datalist&gt;
+        &lt;/div&gt;
+        &lt;div ng-if="data.show_action_widget" class="textbox_child"&gt; &lt;!-- INC0094616 added ng-if="show_action_widget" --&gt;
+          &lt;button type="submit" class="btn btn-primary post-btn ng-scope"&gt;Add&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;label id="labelError" class="text-danger" ng-if="!data.valid_email"&gt;The email domain is not valid&lt;/label&gt;
+      &lt;!-- COT BU-VM : STRY0016065 | new.end --&gt;
+      &lt;div&gt;
+        &lt;ul&gt;
+          &lt;li ng-repeat='watcher in c.data.watchers'&gt;
+            {{watcher}}
+            &lt;button ng-click="removeWatcher(watcher)" class="close"&gt;x&lt;/button&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-right:250px;" ng-if="data.response" class="alert alert-success"&gt;{{::data.response}}&lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1652239236</payload_hash>
+        <record_name>LH Ticket Watchlist User No View</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 14:22:11</sys_created_on>
+        <sys_id>508411961b566d10c2e1433be54bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187a431ad960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 14:22:11</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>d484119622566d10b81db948317ba8f8</update_guid>
+        <update_guid_history>d484119622566d10b81db948317ba8f8:-1652239236,f6749d5653566d10c0c38cc159509687:123047950,5b54dd562c566d10a4c431b9c1e1f315:140421642,e9541d56fd566d108ec7f2148880b8f9:411123282</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6ac4d5961b566d10c2e1433be54bcb01</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 14:23:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>9e287c78e8804c8da05b0495199f7f79</sys_id>
+        <sys_metadata>2d541d561b566d10c2e1433be54bcbf7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LH Ticket Watchlist User No View</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_widget_2d541d561b566d10c2e1433be54bcbf7</sys_update_name>
+        <sys_update_version display_value="sp_widget_2d541d561b566d10c2e1433be54bcbf7">508411961b566d10c2e1433be54bcbf9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 14:23:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

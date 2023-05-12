@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Service Training">b7f1c31f1b4801d05b1b411acd4bcbca</sc_cat_item>
+        <sc_category display_value="Support">9aa10a2ac3112200b12d9f2974d3aefd</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-01 12:12:30</sys_created_on>
+        <sys_id>57524f1f1b4801d05b1b411acd4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support.Service Training</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sc_cat_item_category_57524f1f1b4801d05b1b411acd4bcb03</sys_update_name>
+        <sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 12:12:30</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sc_cat_item_category_57524f1f1b4801d05b1b411acd4bcb03</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Service Training">b7f1c31f1b4801d05b1b411acd4bcbca</sc_cat_item><sc_category display_value="Support">9aa10a2ac3112200b12d9f2974d3aefd</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>kristian.teodorov@doitwise.com</sys_created_by><sys_created_on>2021-12-01 12:12:30</sys_created_on><sys_id>57524f1f1b4801d05b1b411acd4bcb03</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Support.Service Training</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sc_cat_item_category_57524f1f1b4801d05b1b411acd4bcb03</sys_update_name><sys_updated_by>kristian.teodorov@doitwise.com</sys_updated_by><sys_updated_on>2021-12-01 12:12:30</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1172910609</payload_hash>
+        <record_name>Support.Service Training</record_name>
+        <reverted_from/>
+        <source>c21a4dfcdb2f4510497dccd405961985</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cochuj2</sys_created_by>
+        <sys_created_on>2022-05-16 08:42:36</sys_created_on>
+        <sys_id>c73ac930db6f4510497dccd40596197e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>180cc0896cd0000001</sys_recorded_at>
+        <sys_updated_by>cochuj2</sys_updated_by>
+        <sys_updated_on>2022-05-16 08:43:34</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>97524f1f554801d0df182de803ceae06</update_guid>
+        <update_guid_history>97524f1f554801d0df182de803ceae06:-1172910609</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d7106d841bc69d90c28d76e09b4bcbe3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cochuj2</sys_created_by>
+        <sys_created_on>2022-09-15 08:59:44</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>5e5c917c00a64cc1bd39230da1e18e71</sys_id>
+        <sys_metadata>57524f1f1b4801d05b1b411acd4bcb03</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support.Service Training</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_57524f1f1b4801d05b1b411acd4bcb03</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_57524f1f1b4801d05b1b411acd4bcb03">c73ac930db6f4510497dccd40596197e</sys_update_version>
+        <sys_updated_by>cochuj2</sys_updated_by>
+        <sys_updated_on>2022-09-15 08:59:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

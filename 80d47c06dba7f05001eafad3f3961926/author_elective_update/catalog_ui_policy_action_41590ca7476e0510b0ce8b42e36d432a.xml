@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:76efb5551b25c110a4236313604bcb90</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-04 23:59:42</sys_created_on>
+        <sys_id>41590ca7476e0510b0ce8b42e36d432a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>hydraulic_technical_data</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_41590ca7476e0510b0ce8b42e36d432a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:15:20</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - Variables for Service Information">8c4880eb472e0510b0ce8b42e36d4378</ui_policy>
+        <variable>hydraulic_technical_data</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>catalog_ui_policy_action_41590ca7476e0510b0ce8b42e36d432a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:76efb5551b25c110a4236313604bcb90</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-04 23:59:42</sys_created_on>
+        <sys_id>41590ca7476e0510b0ce8b42e36d432a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>hydraulic_technical_data</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_41590ca7476e0510b0ce8b42e36d432a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:15:20</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - Variables for Service Information">8c4880eb472e0510b0ce8b42e36d4378</ui_policy>
+        <variable>hydraulic_technical_data</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>]]></payload>
+        <payload_hash>939005386</payload_hash>
+        <record_name>hydraulic_technical_data</record_name>
+        <reverted_from/>
+        <source>36286f44876ae5107cb6eced3fbb3583</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:37:33</sys_created_on>
+        <sys_id>d358e3c4876ae5107cb6eced3fbb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187c2811c210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:37:33</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>9358e3c4126ae510f794f03ff932bb49</update_guid>
+        <update_guid_history>9358e3c4126ae510f794f03ff932bb49:939005386</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="hydraulic_technical_data">70c554b7db2a2150ca0952f8f4961988</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 11:54:38</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>5be3b725f6af4480b37027f4b03a4000</sys_id>
+        <sys_metadata>41590ca7476e0510b0ce8b42e36d432a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hydraulic_technical_data</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_41590ca7476e0510b0ce8b42e36d432a</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_41590ca7476e0510b0ce8b42e36d432a">d358e3c4876ae5107cb6eced3fbb3549</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 11:54:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

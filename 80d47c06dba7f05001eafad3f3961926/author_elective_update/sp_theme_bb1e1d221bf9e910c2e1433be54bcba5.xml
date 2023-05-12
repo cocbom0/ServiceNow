@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="DELETE">
+        <css_variables>// &#13;
+// SASS Variables used in the Service Portal stylesheets&#13;
+// Lines starting with // are comments&#13;
+// Colors must use HEX color format (#000000)&#13;
+//&#13;
+&#13;
+$sp-logo-margin-x: 		15px !default;&#13;
+&#13;
+//### Colors ###&#13;
+$primary:			#cf1d25 !default;&#13;
+$success:			#5cb85c !default;&#13;
+$warning:			#f0ad4e !default;&#13;
+$danger:			#cf1d25 !default;&#13;
+$info:				#428bca !default;&#13;
+$gray-light:		#edf1f2 !default;&#13;
+$gray-dark:			#3a3f51 !default;&#13;
+&#13;
+$state-info-text:	$info !default;&#13;
+$state-success-text: $success !default;&#13;
+&#13;
+//### Typography ###&#13;
+$text-color:		#717171 !default;&#13;
+$sp-tagline-color:	black !default;&#13;
+$text-muted:		#bdc0c4 !default;&#13;
+$link-color:		$info !default;&#13;
+&#13;
+//### Navbar ###&#13;
+$navbar-default-bg: 	#f8f8f8 !default;&#13;
+&#13;
+//### Inverted Navbar ###&#13;
+$navbar-inverse-bg:	#000000 !default;&#13;
+$navbar-inverse-link-color: #ffffff !default;&#13;
+$navbar-inverse-link-hover-color: #cf1d25 !default;&#13;
+&#13;
+//### Components ###&#13;
+$body-bg:			#fefefe !default;</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header/>
+        <name>Liebherr Customer Service</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 13:11:39</sys_created_on>
+        <sys_id>bb1e1d221bf9e910c2e1433be54bcba5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Liebherr Customer Service</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_theme_bb1e1d221bf9e910c2e1433be54bcba5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-28 13:17:53</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sp_theme_bb1e1d221bf9e910c2e1433be54bcba5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme"><sp_theme action="INSERT_OR_UPDATE"><css_variables>// &#13;
+// SASS Variables used in the Service Portal stylesheets&#13;
+// Lines starting with // are comments&#13;
+// Colors must use HEX color format (#000000)&#13;
+//&#13;
+&#13;
+$sp-logo-margin-x: 		15px !default;&#13;
+&#13;
+//### Colors ###&#13;
+$primary:			#cf1d25 !default;&#13;
+$success:			#5cb85c !default;&#13;
+$warning:			#f0ad4e !default;&#13;
+$danger:			#cf1d25 !default;&#13;
+$info:				#428bca !default;&#13;
+$gray-light:		#edf1f2 !default;&#13;
+$gray-dark:			#3a3f51 !default;&#13;
+&#13;
+$state-info-text:	$info !default;&#13;
+$state-success-text: $success !default;&#13;
+&#13;
+//### Typography ###&#13;
+$text-color:		#717171 !default;&#13;
+$sp-tagline-color:	black !default;&#13;
+$text-muted:		#bdc0c4 !default;&#13;
+$link-color:		$info !default;&#13;
+&#13;
+//### Navbar ###&#13;
+$navbar-default-bg: 	#f8f8f8 !default;&#13;
+&#13;
+//### Inverted Navbar ###&#13;
+$navbar-inverse-bg:	#000000 !default;&#13;
+$navbar-inverse-link-color: #ffffff !default;&#13;
+$navbar-inverse-link-hover-color: #cf1d25 !default;&#13;
+&#13;
+//### Components ###&#13;
+$body-bg:			#fefefe !default;</css_variables><footer/><footer_fixed>false</footer_fixed><header/><name>Liebherr Customer Service</name><navbar_fixed>true</navbar_fixed><sys_class_name>sp_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-28 13:11:39</sys_created_on><sys_id>bb1e1d221bf9e910c2e1433be54bcba5</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Liebherr Customer Service</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sp_theme_bb1e1d221bf9e910c2e1433be54bcba5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-28 13:17:53</sys_updated_on><turn_off_scss_compilation>false</turn_off_scss_compilation></sp_theme></record_update>]]></payload>
+        <payload_hash>-677356363</payload_hash>
+        <record_name>Liebherr Customer Service</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 13:24:09</sys_created_on>
+        <sys_id>5c1165e21bf9e910c2e1433be54bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1872863ea960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-28 13:24:09</sys_updated_on>
+        <type>Theme</type>
+        <update_guid>64af91a246f9e9102de621c99c7356c7</update_guid>
+        <update_guid_history>64af91a246f9e9102de621c99c7356c7:-285440485,64af91a246f9e9102de621c99c7356c7:-285440485,397e9d22aef9e910e71c061575b89334:-677356363,593e5dee53b9e9102183a4cb91ebb34e:-981065867</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3611e5e21bf9e910c2e1433be54bcbf3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 13:24:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_theme">sp_theme</sys_db_object>
+        <sys_id>011354f31d97469483e1f7a4721b8d64</sys_id>
+        <sys_metadata>bb1e1d221bf9e910c2e1433be54bcba5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Liebherr Customer Service</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sp_theme_bb1e1d221bf9e910c2e1433be54bcba5</sys_update_name>
+        <sys_update_version display_value="sp_theme_bb1e1d221bf9e910c2e1433be54bcba5">5c1165e21bf9e910c2e1433be54bcbe8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-28 13:24:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

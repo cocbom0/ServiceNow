@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:78a81b2d472d5554b0ce8b42e36d43b4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:21:28</sys_created_on>
+        <sys_id>ef99a8ffdb6a2150ca0952f8f496195e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>short_description</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_ef99a8ffdb6a2150ca0952f8f496195e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:23:44</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Fields for Target Records - All Records">a6da9f0f1b122150c2e1433be54bcb1d</ui_policy>
+        <variable>short_description</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>catalog_ui_policy_action_ef99a8ffdb6a2150ca0952f8f496195e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:78a81b2d472d5554b0ce8b42e36d43b4</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-08 13:21:28</sys_created_on><sys_id>ef99a8ffdb6a2150ca0952f8f496195e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>short_description</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_ef99a8ffdb6a2150ca0952f8f496195e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-08 13:23:44</sys_updated_on><table/><ui_policy display_value="Hide Fields for Target Records - All Records">a6da9f0f1b122150c2e1433be54bcb1d</ui_policy><variable>short_description</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>371797299</payload_hash>
+        <record_name>short_description</record_name>
+        <reverted_from/>
+        <source>46e538a587a62d107cb6eced3fbb35c6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:23:44</sys_created_on>
+        <sys_id>4a2ae433dbaa2150ca0952f8f49619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187fb8845b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:23:44</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>8e2ae43332aa2150f56c3c912c0440ca</update_guid>
+        <update_guid_history>8e2ae43332aa2150f56c3c912c0440ca:371797299,411a64332daa21507bbe193354e8782e:419561946,24a928ff346a2150e43beeb3c9180371:-850079487</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="short_description">489a6073dbaa2150ca0952f8f496194f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 13:25:31</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>9f5398e52d054ea48a96a5dd95ead551</sys_id>
+        <sys_metadata>ef99a8ffdb6a2150ca0952f8f496195e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>short_description</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_ef99a8ffdb6a2150ca0952f8f496195e</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_ef99a8ffdb6a2150ca0952f8f496195e">4a2ae433dbaa2150ca0952f8f49619cb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:25:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

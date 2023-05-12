@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:af528ed61b6a4d10a4236313604bcb0d</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>michel.boberda@liebherr.com</sys_created_by>
+        <sys_created_on>2022-04-03 21:13:35</sys_created_on>
+        <sys_id>32b9928f1bee4110a4236313604bcb75</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>on_site_technical_support</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_32b9928f1bee4110a4236313604bcb75</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 08:30:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display  On Site Technical Support  Details">84f49a871bee4110a4236313604bcb88</ui_policy>
+        <variable>on_site_technical_support</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_32b9928f1bee4110a4236313604bcb75</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:af528ed61b6a4d10a4236313604bcb0d</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>michel.boberda@liebherr.com</sys_created_by><sys_created_on>2022-04-03 21:13:35</sys_created_on><sys_id>32b9928f1bee4110a4236313604bcb75</sys_id><sys_mod_count>4</sys_mod_count><sys_name>on_site_technical_support</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_32b9928f1bee4110a4236313604bcb75</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-17 08:30:23</sys_updated_on><table/><ui_policy display_value="Display  On Site Technical Support  Details">84f49a871bee4110a4236313604bcb88</ui_policy><variable>on_site_technical_support</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1305033080</payload_hash>
+        <record_name>on_site_technical_support</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-17 08:30:23</sys_created_on>
+        <sys_id>b79ddbf01b56a9105bdeed71f54bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1878e5625760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 08:30:23</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>7f9ddbf07c56a910d67ebf8da3df0edf</update_guid>
+        <update_guid_history>7f9ddbf07c56a910d67ebf8da3df0edf:-1305033080,db5b5f3c415269109ec297661e61f992:-964565569,e22b9b3ce75269109855a683502543ce:-465689299,a22b533c815269104252e14b117d1f9d:874613937</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">db5373f81b96a9105bdeed71f54bcbe9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-17 10:05:22</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>24d26236ae4e40618fd6d63606baf3f1</sys_id>
+        <sys_metadata>32b9928f1bee4110a4236313604bcb75</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>on_site_technical_support</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_32b9928f1bee4110a4236313604bcb75</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_32b9928f1bee4110a4236313604bcb75">b79ddbf01b56a9105bdeed71f54bcbe0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 10:05:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

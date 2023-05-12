@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>richard.kirby@kohler.com</sys_created_by>
+        <sys_created_on>2023-02-23 15:32:43</sys_created_on>
+        <sys_id>bd02c8481b51291098d810a38b4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ConsumerEMailUtil</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_scope_privilege_bd02c8481b51291098d810a38b4bcb84</sys_update_name>
+        <sys_updated_by>richard.kirby@kohler.com</sys_updated_by>
+        <sys_updated_on>2023-02-23 15:32:43</sys_updated_on>
+        <target_name>ConsumerEMailUtil</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>support_case_resolved</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+	
+	template.print('<p style="font-size:14.5px"><font face="arial">Dear User,</font></p>');
+	template.print('<p style="font-size:14.5px"><font face="Arial,Helvetica"><strong>The following support case has been resolved</font</strong></p>');
+	template.print('<p><strong><font size="4" face="Arial,Helvetica">${number} - ${short_description}</font></strong></p>');
+ 	template.print('<p style="font-size:14.5px"><font face="Arial,Helvetica"><strong>');
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-16 12:51:36</sys_created_on>
+        <sys_id>640b541c1bacc9505b1b411acd4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>support_case_resolved</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_email_640b541c1bacc9505b1b411acd4bcb22</sys_update_name>
+        <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-12-16 12:51:36</sys_updated_on>
+    </sys_script_email>
+</record_update>

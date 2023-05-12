@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary_term">
+    <ais_dictionary_term action="DELETE">
+        <active>true</active>
+        <dictionary display_value="x_liisa_support_ca_2019730319_new">0cc808901b5ed510c28d76e09b4bcb4e</dictionary>
+        <marked_for_deletion>true</marked_for_deletion>
+        <payload>["2019730319"]</payload>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_dictionary_term</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:32:41</sys_created_on>
+        <sys_id>69c884901b5ed510c28d76e09b4bcbef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>2019 73 0319</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>ais_dictionary_term_69c884901b5ed510c28d76e09b4bcbef</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:46:40</sys_updated_on>
+        <term>2019 73 0319</term>
+    </ais_dictionary_term>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>ais_dictionary_term_69c884901b5ed510c28d76e09b4bcbef</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary_term"><ais_dictionary_term action="INSERT_OR_UPDATE"><active>true</active><dictionary display_value="x_liisa_support_ca_2019730319_new">0cc808901b5ed510c28d76e09b4bcb4e</dictionary><marked_for_deletion>true</marked_for_deletion><payload>["2019730319"]</payload><state>PUBLISHED</state><sys_class_name>ais_dictionary_term</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-09-28 07:32:41</sys_created_on><sys_id>69c884901b5ed510c28d76e09b4bcbef</sys_id><sys_mod_count>2</sys_mod_count><sys_name>2019 73 0319</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>ais_dictionary_term_69c884901b5ed510c28d76e09b4bcbef</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-09-28 07:46:40</sys_updated_on><term>2019 73 0319</term></ais_dictionary_term></record_update>]]></payload>
+        <payload_hash>-392727983</payload_hash>
+        <record_name>2019 73 0319</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:46:40</sys_created_on>
+        <sys_id>f70cc4181b5ed510c28d76e09b4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183830fe5a60000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:46:40</sys_updated_on>
+        <type>AI Search Dictionary Term</type>
+        <update_guid>bf0cc418c25ed5106a4da798e623f054</update_guid>
+        <update_guid_history>bf0cc418c25ed5106a4da798e623f054:-392727983,4fd808906a5ed51055f590466603891a:1493122660</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">727cc0581b5ed510c28d76e09b4bcbb3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-28 07:48:30</sys_created_on>
+        <sys_db_object display_value="" name="ais_dictionary_term">ais_dictionary_term</sys_db_object>
+        <sys_id>5dd5922142184a8687e3be5c48f6aee1</sys_id>
+        <sys_metadata>69c884901b5ed510c28d76e09b4bcbef</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2019 73 0319</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>ais_dictionary_term_69c884901b5ed510c28d76e09b4bcbef</sys_update_name>
+        <sys_update_version display_value="ais_dictionary_term_69c884901b5ed510c28d76e09b4bcbef">f70cc4181b5ed510c28d76e09b4bcb55</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-28 07:48:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

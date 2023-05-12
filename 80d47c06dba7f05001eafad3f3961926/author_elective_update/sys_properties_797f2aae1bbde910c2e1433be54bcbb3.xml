@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Allows unauthenticated users to choose and view content in their preferred language.&#13;
+This property contains a list of service portal record sys ids separated by commas. For any portal record specified in this property, the language picker will be visible in the portal header after the 'language selector' widget is added to its header.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_liisa_support_ca.glide.sp.portals.language_selector_enabled</name>
+        <read_roles/>
+        <suffix>glide.sp.portals.language_selector_enabled</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 19:07:09</sys_created_on>
+        <sys_id>797f2aae1bbde910c2e1433be54bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca.glide.sp.portals.language_selector_enabled</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_properties_797f2aae1bbde910c2e1433be54bcbb3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-28 19:07:09</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=797f2aae1bbde910c2e1433be54bcbb3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sys_properties_797f2aae1bbde910c2e1433be54bcbb3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Allows unauthenticated users to choose and view content in their preferred language.&#13;
+This property contains a list of service portal record sys ids separated by commas. For any portal record specified in this property, the language picker will be visible in the portal header after the 'language selector' widget is added to its header.</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_liisa_support_ca.glide.sp.portals.language_selector_enabled</name><read_roles/><suffix>glide.sp.portals.language_selector_enabled</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-28 19:07:09</sys_created_on><sys_id>797f2aae1bbde910c2e1433be54bcbb3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_liisa_support_ca.glide.sp.portals.language_selector_enabled</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sys_properties_797f2aae1bbde910c2e1433be54bcbb3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-28 19:07:09</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=797f2aae1bbde910c2e1433be54bcbb3"/></record_update>]]></payload>
+        <payload_hash>2036782892</payload_hash>
+        <record_name>x_liisa_support_ca.glide.sp.portals.language_selector_enabled</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 19:07:10</sys_created_on>
+        <sys_id>f89f626e1bbde910c2e1433be54bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187299df3930000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-28 19:07:10</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>309f626ea3bde9105087b7f0d0c8a56f</update_guid>
+        <update_guid_history>309f626ea3bde9105087b7f0d0c8a56f:2036782892</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-28 20:05:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>310d0578c6df43c6a7c5b0b6aaac4324</sys_id>
+        <sys_metadata>797f2aae1bbde910c2e1433be54bcbb3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca.glide.sp.portals.language_selector_enabled</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_properties_797f2aae1bbde910c2e1433be54bcbb3</sys_update_name>
+        <sys_update_version display_value="sys_properties_797f2aae1bbde910c2e1433be54bcbb3">f89f626e1bbde910c2e1433be54bcb6f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-28 20:05:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

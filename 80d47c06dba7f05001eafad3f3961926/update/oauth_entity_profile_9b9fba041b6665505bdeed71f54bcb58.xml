@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <grant_type>authorization_code</grant_type>
+        <jwt_provider/>
+        <name>Liebherr GIT default_profile</name>
+        <oauth_entity display_value="Liebherr GIT">4a6ff6041b6665505bdeed71f54bcb61</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 08:39:31</sys_created_on>
+        <sys_id>9b9fba041b6665505bdeed71f54bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Liebherr GIT default_profile</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>oauth_entity_profile_9b9fba041b6665505bdeed71f54bcb58</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 08:39:31</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>

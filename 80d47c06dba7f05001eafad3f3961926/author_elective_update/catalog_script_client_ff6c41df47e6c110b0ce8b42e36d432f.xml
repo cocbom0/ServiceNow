@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</cat_item>
+        <cat_variable>IO:5c97aa521bae4d10a4236313604bcb8b</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Request Type - OnChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	
+//	g_form.addInfoMessage('acc ' + newValue);
+	
+	g_form.setMandatory('customer_failure_rate', false);
+	g_form.setMandatory('customer_failure_costs', false);
+	g_form.setMandatory('operating_hours', false);
+	g_form.setMandatory('product_model_serial_number',false);
+	g_form.setMandatory('product_safety_incident_report',false);
+	g_form.setMandatory('person_injured',false);
+	g_form.setMandatory('end_customer_information',false); 
+	g_form.setMandatory('machine_information',false); 
+	g_form.setMandatory('hydraulic_additional_technical_data',false);
+	g_form.setMandatory('requested_for', false);
+	g_form.setMandatory('contact', false);
+	g_form.setMandatory('account', false);
+	g_form.setMandatory('failure_description', false);
+	g_form.setMandatory('serial_number', false);
+	g_form.setMandatory('failure_code', false);
+	g_form.setMandatory('failure_description', false);
+	g_form.setMandatory('comments', false);
+	g_form.setMandatory('engine_state', false);
+	g_form.setMandatory('location', false);
+	g_form.setMandatory('tools_on_site', false);
+	g_form.setMandatory('software', false);
+	g_form.setMandatory('software_version', false);
+	g_form.setMandatory('prerequisite_version', false);
+	g_form.setMandatory('filter_reset_date', false);
+	g_form.setMandatory('filter_activity', false);
+	g_form.setMandatory('engine_model', false);
+	g_form.setMandatory('engine_serial_number', false);
+	g_form.setMandatory('safety_related_issue', false);
+	g_form.setMandatory('failure_rate', false);
+	g_form.setMandatory('failure_cost', false);
+	g_form.setMandatory('escalation_level', false);
+	g_form.setMandatory('d_identification', false);
+	g_form.setMandatory('d_link_url', false);
+	g_form.setMandatory('service_information_link', false);
+	g_form.setMandatory('responsibility_reason_code', false);
+	g_form.setMandatory('attachments_selfdiagnose_lidia', false);
+	g_form.setMandatory('attachments_logfile_lidia', false);
+	g_form.setMandatory('attachments_license_sculi', false);
+	g_form.setMandatory('attachments_logfile_sculi', false);
+	g_form.setMandatory('attachments_dpf', false);
+	g_form.setMandatory('attachments_snapshot', false);
+	g_form.setMandatory('attachment_commissioning_protocol', false);
+	g_form.setMandatory('attachment_analysis_report', false);
+	g_form.setMandatory('failure_date', false);
+	g_form.setMandatory('commissioned_date', false);
+	g_form.setMandatory('oil_specification', false);
+	g_form.setMandatory('hydraulic_system_circuit_type', false);
+	g_form.setMandatory('warranty_number', false);
+	g_form.setMandatory('coolant_specification', false);
+	g_form.setMandatory('engine_operating_hours', false);
+	g_form.setMandatory('engine_ecu_version', false);
+	g_form.setMandatory('engine_dataset_id', false);	
+	g_form.setMandatory('on_site_intervention_requested_date', false);
+	g_form.setMandatory('order_reference_number', false);
+	g_form.setMandatory('lifting_bar_hoisting_gear', false);
+	g_form.setMandatory('engine_dismantled', false);
+	g_form.setMandatory('engine_itself_dismantled', false);
+	g_form.setMandatory('gas_type', false);
+	g_form.setMandatory('fuel_type', false);
+	g_form.setMandatory('cost_coverage', false);
+	g_form.setMandatory('fuel_specification', false);
+	g_form.setMandatory('def_specification', false);
+	g_form.setMandatory('end_customer_information',false);
+	g_form.setMandatory('machine_information',false);
+	g_form.setMandatory('hydraulic_additional_technical_data',false);
+	g_form.setMandatory('malfunction_case',false);
+	g_form.setMandatory('software_selection', false);	
+	g_form.setMandatory('severity', false);
+	g_form.setMandatory('number_injured_persons', false);
+	g_form.setMandatory('kind_of_injuries_text', false);
+	g_form.setMandatory('date_of_event', false);
+	g_form.setMandatory('reported_by', false);
+	g_form.setMandatory('incident_text', false);
+	g_form.setMandatory('kind_of_injuries_text', false);
+	g_form.setMandatory('incident_event_text', false);
+	g_form.setMandatory('failure_date',false);
+	g_form.setMandatory('commisssioned_date',false);
+	g_form.setMandatory('software_version',false);
+	g_form.setMandatory('prerequisitie_version',false);
+	g_form.setMandatory('filter_reset_date',false);
+	g_form.setMandatory('engine_model',false);
+	g_form.setMandatory('engine_serial_number',false);
+	g_form.setMandatory('engine_operating_hours',false);
+	g_form.setMandatory('attachments_selfdiagnose_lidia',false);
+	g_form.setMandatory('attachments_logfile_lidia',false);
+	g_form.setMandatory('attachments_license_sculi',false);
+	g_form.setMandatory('attachments_logfile_sculi',false);
+	g_form.setMandatory('attachments_dpf',false);
+	g_form.setMandatory('attachments_snapshot',false);
+	g_form.setMandatory('attachment_analysis_report',false);
+	
+	g_form.setValue('failure_date',"");
+	g_form.setValue('commisssioned_date',"");
+	g_form.setValue('severity',"");
+	g_form.setValue('event_date',"");
+	g_form.setValue('hydraulic_system_circuit_type',"");
+	g_form.setValue('on_site_intervention_requested_date',"");
+	g_form.setValue('engine_state',"");
+	g_form.setValue('fuel_type',"");
+	g_form.setValue('gas_type',"");
+	g_form.setValue('tools_onsite',"");
+	g_form.setValue('filter_reset_date',"");
+	g_form.setValue('lifting_bar_hoisting_gear', false);
+	g_form.setValue('malfunction_case',"");
+	g_form.setValue('software_selection', ""); 
+	g_form.clearValue('software_selection');
+	g_form.clearValue('malfunction_case');
+	g_form.clearValue('lifting_bar_hoisting_gear');
+	
+	if (g_form.getValue('request_type') == 'si_general_questions') {
+		g_form.setLabelOf('html_description',"Description") ;
+	}
+	
+	if (g_form.getValue('request_type') != 'si_general_questions') {
+		g_form.setLabelOf('html_description',"Failure Description") ;
+	}
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-04 10:22:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ff6c41df47e6c110b0ce8b42e36d432f</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Request Type - OnChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_script_client_ff6c41df47e6c110b0ce8b42e36d432f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 08:18:09</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_script_client_ff6c41df47e6c110b0ce8b42e36d432f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Technical Services"&gt;6044a2da1b6e4d10a4236313604bcb74&lt;/cat_item&gt;&lt;cat_variable&gt;IO:5c97aa521bae4d10a4236313604bcb8b&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Request Type - OnChange&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	
+//	g_form.addInfoMessage('acc ' + newValue);
+	
+	g_form.setMandatory('customer_failure_rate', false);
+	g_form.setMandatory('customer_failure_costs', false);
+	g_form.setMandatory('operating_hours', false);
+	g_form.setMandatory('product_model_serial_number',false);
+	g_form.setMandatory('product_safety_incident_report',false);
+	g_form.setMandatory('person_injured',false);
+	g_form.setMandatory('end_customer_information',false); 
+	g_form.setMandatory('machine_information',false); 
+	g_form.setMandatory('hydraulic_additional_technical_data',false);
+	g_form.setMandatory('requested_for', false);
+	g_form.setMandatory('contact', false);
+	g_form.setMandatory('account', false);
+	g_form.setMandatory('failure_description', false);
+	g_form.setMandatory('serial_number', false);
+	g_form.setMandatory('failure_code', false);
+	g_form.setMandatory('failure_description', false);
+	g_form.setMandatory('comments', false);
+	g_form.setMandatory('engine_state', false);
+	g_form.setMandatory('location', false);
+	g_form.setMandatory('tools_on_site', false);
+	g_form.setMandatory('software', false);
+	g_form.setMandatory('software_version', false);
+	g_form.setMandatory('prerequisite_version', false);
+	g_form.setMandatory('filter_reset_date', false);
+	g_form.setMandatory('filter_activity', false);
+	g_form.setMandatory('engine_model', false);
+	g_form.setMandatory('engine_serial_number', false);
+	g_form.setMandatory('safety_related_issue', false);
+	g_form.setMandatory('failure_rate', false);
+	g_form.setMandatory('failure_cost', false);
+	g_form.setMandatory('escalation_level', false);
+	g_form.setMandatory('d_identification', false);
+	g_form.setMandatory('d_link_url', false);
+	g_form.setMandatory('service_information_link', false);
+	g_form.setMandatory('responsibility_reason_code', false);
+	g_form.setMandatory('attachments_selfdiagnose_lidia', false);
+	g_form.setMandatory('attachments_logfile_lidia', false);
+	g_form.setMandatory('attachments_license_sculi', false);
+	g_form.setMandatory('attachments_logfile_sculi', false);
+	g_form.setMandatory('attachments_dpf', false);
+	g_form.setMandatory('attachments_snapshot', false);
+	g_form.setMandatory('attachment_commissioning_protocol', false);
+	g_form.setMandatory('attachment_analysis_report', false);
+	g_form.setMandatory('failure_date', false);
+	g_form.setMandatory('commissioned_date', false);
+	g_form.setMandatory('oil_specification', false);
+	g_form.setMandatory('hydraulic_system_circuit_type', false);
+	g_form.setMandatory('warranty_number', false);
+	g_form.setMandatory('coolant_specification', false);
+	g_form.setMandatory('engine_operating_hours', false);
+	g_form.setMandatory('engine_ecu_version', false);
+	g_form.setMandatory('engine_dataset_id', false);	
+	g_form.setMandatory('on_site_intervention_requested_date', false);
+	g_form.setMandatory('order_reference_number', false);
+	g_form.setMandatory('lifting_bar_hoisting_gear', false);
+	g_form.setMandatory('engine_dismantled', false);
+	g_form.setMandatory('engine_itself_dismantled', false);
+	g_form.setMandatory('gas_type', false);
+	g_form.setMandatory('fuel_type', false);
+	g_form.setMandatory('cost_coverage', false);
+	g_form.setMandatory('fuel_specification', false);
+	g_form.setMandatory('def_specification', false);
+	g_form.setMandatory('end_customer_information',false);
+	g_form.setMandatory('machine_information',false);
+	g_form.setMandatory('hydraulic_additional_technical_data',false);
+	g_form.setMandatory('malfunction_case',false);
+	g_form.setMandatory('software_selection', false);	
+	g_form.setMandatory('severity', false);
+	g_form.setMandatory('number_injured_persons', false);
+	g_form.setMandatory('kind_of_injuries_text', false);
+	g_form.setMandatory('date_of_event', false);
+	g_form.setMandatory('reported_by', false);
+	g_form.setMandatory('incident_text', false);
+	g_form.setMandatory('kind_of_injuries_text', false);
+	g_form.setMandatory('incident_event_text', false);
+	g_form.setMandatory('failure_date',false);
+	g_form.setMandatory('commisssioned_date',false);
+	g_form.setMandatory('software_version',false);
+	g_form.setMandatory('prerequisitie_version',false);
+	g_form.setMandatory('filter_reset_date',false);
+	g_form.setMandatory('engine_model',false);
+	g_form.setMandatory('engine_serial_number',false);
+	g_form.setMandatory('engine_operating_hours',false);
+	g_form.setMandatory('attachments_selfdiagnose_lidia',false);
+	g_form.setMandatory('attachments_logfile_lidia',false);
+	g_form.setMandatory('attachments_license_sculi',false);
+	g_form.setMandatory('attachments_logfile_sculi',false);
+	g_form.setMandatory('attachments_dpf',false);
+	g_form.setMandatory('attachments_snapshot',false);
+	g_form.setMandatory('attachment_analysis_report',false);
+	
+	g_form.setValue('failure_date',"");
+	g_form.setValue('commisssioned_date',"");
+	g_form.setValue('severity',"");
+	g_form.setValue('event_date',"");
+	g_form.setValue('hydraulic_system_circuit_type',"");
+	g_form.setValue('on_site_intervention_requested_date',"");
+	g_form.setValue('engine_state',"");
+	g_form.setValue('fuel_type',"");
+	g_form.setValue('gas_type',"");
+	g_form.setValue('tools_onsite',"");
+	g_form.setValue('filter_reset_date',"");
+	g_form.setValue('lifting_bar_hoisting_gear', false);
+	g_form.setValue('malfunction_case',"");
+	g_form.setValue('software_selection', ""); 
+	g_form.clearValue('software_selection');
+	g_form.clearValue('malfunction_case');
+	g_form.clearValue('lifting_bar_hoisting_gear');
+	
+	if (g_form.getValue('request_type') == 'si_general_questions') {
+		g_form.setLabelOf('html_description',"Description") ;
+	}
+	
+	if (g_form.getValue('request_type') != 'si_general_questions') {
+		g_form.setLabelOf('html_description',"Failure Description") ;
+	}
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cocbom0&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-04 10:22:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ff6c41df47e6c110b0ce8b42e36d432f&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;Request Type - OnChange&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Support case" source="x_liisa_support_ca"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Support case"&gt;80d47c06dba7f05001eafad3f3961926&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_ff6c41df47e6c110b0ce8b42e36d432f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-17 08:18:09&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>518857023</payload_hash>
+        <record_name>Request Type - OnChange</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-17 08:18:09</sys_created_on>
+        <sys_id>b4da5b701b56a9105bdeed71f54bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1878e4af5750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 08:18:09</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>bcda5b70c456a91027061f41d3c0881c</update_guid>
+        <update_guid_history>bcda5b70c456a91027061f41d3c0881c:518857023,33ca1b702956a9105e61c35a291e2dc9:-99387268,34ddc8bcded62910a3862ca5d6f15387:518857023,fcddc8bca1d629105f3a78eafda99984:-99387268</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">895e65a61bdeed105bdeed71f54bcbed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-22 10:53:29</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>582d7ff3893e4d08bb9ba4a74a5f36c1</sys_id>
+        <sys_metadata>ff6c41df47e6c110b0ce8b42e36d432f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Type - OnChange</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_script_client_ff6c41df47e6c110b0ce8b42e36d432f</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_ff6c41df47e6c110b0ce8b42e36d432f">b4da5b701b56a9105bdeed71f54bcb1d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-22 10:53:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

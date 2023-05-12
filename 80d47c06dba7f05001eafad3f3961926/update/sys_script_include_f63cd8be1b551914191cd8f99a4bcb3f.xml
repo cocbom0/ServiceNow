@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.CreateNewArticleVersion</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CreateNewArticleVersion</name>
+        <script><![CDATA[var CreateNewArticleVersion = Class.create();
+CreateNewArticleVersion.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	isPublic: function() {
+		return true;
+	},
+	
+	createArticleVersion: function() {
+		var result = {};
+		var article = this.getParameter("article");
+		this._updateWorkflowOfOldArticle(article);
+		var user = this.getParameter("user");
+		var version_old = this._getVersion(this.getParameter("version"));
+		var version_number = this._incrementVersionNumber(version_old.getValue("version"));
+		var version_new = this._createVersion(user, version_number);
+		
+		result = {
+			"version": version_new.getValue("sys_id")
+		};
+		
+		return JSON.stringify(result);
+	},
+	
+	_updateWorkflowOfOldArticle: function(sysId) {
+		var article = new GlideRecord("kb_knowledge");
+		var find = article.get("sys_id", sysId);
+		if (find) {
+			article.workflow_state = "outdated";
+			article.update();
+		}
+	},
+	
+	_getVersion: function(sysId) {
+		var result = "";
+        var version = new GlideRecord("kb_version");
+        var find = version.get("sys_id", sysId);
+        if (find) {
+            result = version;
+        }
+        return result;
+	},
+	
+	_incrementVersionNumber: function(version) {
+		var version_new = parseFloat(version);
+		version_new++;
+		
+		return version_new;
+	},
+	
+	_createVersion: function(user, version_number) {
+		var currentDate = new GlideDate();
+		var version = new GlideRecord('kb_version');
+		version.initialize();
+		version.modified_by = user;
+		version.modified_on = currentDate;
+		version.version = version_number;
+		version.insert();
+		return version;
+	},
+
+    type: 'CreateNewArticleVersion'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-08-17 10:25:08</sys_created_on>
+        <sys_id>f63cd8be1b551914191cd8f99a4bcb3f</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>CreateNewArticleVersion</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_f63cd8be1b551914191cd8f99a4bcb3f</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2022-10-07 07:52:42</sys_updated_on>
+    </sys_script_include>
+</record_update>

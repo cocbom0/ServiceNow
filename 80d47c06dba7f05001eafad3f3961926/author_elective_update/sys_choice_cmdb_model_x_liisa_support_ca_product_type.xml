@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_liisa_support_ca_product_type" table="cmdb_model" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_liisa_support_ca_product_type</element>
+            <name>cmdb_model</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-09 18:43:16</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_liisa_support_ca_product_type</sys_name>
+            <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+            <sys_update_name>sys_choice_cmdb_model_x_liisa_support_ca_product_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:43:16</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D934</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:11:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D934</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D944</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:11:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D944</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D964</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:11:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D964</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D936</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:11:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:51</sys_updated_on>
+            <value>D936</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D946</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>25</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:11:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D946</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D956</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:12:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D956</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D966</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>35</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:12:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D966</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D976</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:12:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D976</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D95</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9508</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>45</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:12:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D9508</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D95</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9512</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:12:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D9512</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D96</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9612</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>55</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:12:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D9612</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D96</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9616</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:13:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D9616</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D96</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9620</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>65</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:13:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D9620</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D98</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9812</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:13:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D9812</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D98</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9816</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>75</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:13:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D9816</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D98</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9820</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D9820</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D99</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9912</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>85</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:14:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>D9912</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D99</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9916</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>90</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:14:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D9916</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>D99</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D9920</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>95</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:14:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>D9920</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G92</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G924</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:15:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>G924</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G92</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G926</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>105</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:15:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>G926</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G93</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G934</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>110</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:15:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>G934</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G94</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G944</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>115</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:15:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>G944</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G94</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G946</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>120</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:16:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>G946</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G95</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G9508</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>125</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:16:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:52</sys_updated_on>
+            <value>G9508</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G95</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G9512</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>130</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:16:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>G9512</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>G96</dependent_value>
+            <element>x_liisa_support_ca_product_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>G9620</label>
+            <language>en</language>
+            <name>cmdb_model</name>
+            <sequence>135</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-06 08:16:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-09 18:45:53</sys_updated_on>
+            <value>G9620</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

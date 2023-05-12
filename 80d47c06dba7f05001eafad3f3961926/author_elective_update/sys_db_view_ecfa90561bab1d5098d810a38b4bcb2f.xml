@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="DELETE">
+        <description/>
+        <label/>
+        <name>x_liisa_support_ca_lh_csm_missing_records</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-05 17:18:19</sys_created_on>
+        <sys_id>ecfa90561bab1d5098d810a38b4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca_lh_csm_missing_records</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_db_view_ecfa90561bab1d5098d810a38b4bcb2f</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-05 17:18:19</sys_updated_on>
+    </sys_db_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>sys_db_view_ecfa90561bab1d5098d810a38b4bcb2f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description/><label/><name>x_liisa_support_ca_lh_csm_missing_records</name><plural/><sys_class_name>sys_db_view</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-12-05 17:18:19</sys_created_on><sys_id>ecfa90561bab1d5098d810a38b4bcb2f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_liisa_support_ca_lh_csm_missing_records</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sys_db_view_ecfa90561bab1d5098d810a38b4bcb2f</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-12-05 17:18:19</sys_updated_on></sys_db_view></record_update>]]></payload>
+        <payload_hash>1760886622</payload_hash>
+        <record_name>x_liisa_support_ca_lh_csm_missing_records</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-05 17:18:19</sys_created_on>
+        <sys_id>6c0bd0561bab1d5098d810a38b4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184e34bb2be0000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-05 17:18:19</sys_updated_on>
+        <type>Database View</type>
+        <update_guid>640bd05698ab1d500743a42fa5140c50</update_guid>
+        <update_guid_history>640bd05698ab1d500743a42fa5140c50:1760886622</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-05 18:04:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view">sys_db_view</sys_db_object>
+        <sys_id>06911cc265aa40508661f7187c0f4900</sys_id>
+        <sys_metadata>ecfa90561bab1d5098d810a38b4bcb2f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca_lh_csm_missing_records</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_db_view_ecfa90561bab1d5098d810a38b4bcb2f</sys_update_name>
+        <sys_update_version display_value="sys_db_view_ecfa90561bab1d5098d810a38b4bcb2f">6c0bd0561bab1d5098d810a38b4bcb50</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-05 18:04:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

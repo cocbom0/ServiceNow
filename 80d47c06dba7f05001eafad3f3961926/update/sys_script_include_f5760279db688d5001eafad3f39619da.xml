@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_liisa_support_ca.SupportCaseNestedGroupsAssignment</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SupportCaseNestedGroupsAssignment</name>
+        <script><![CDATA[var SupportCaseNestedGroupsAssignment = Class.create();
+SupportCaseNestedGroupsAssignment.prototype = {
+	initialize: function() {
+	},
+	returnParentGroupUsers: function() {
+		var arrUsers = [];
+		var arrGroups = [];
+		arrGroups.push(current.assignment_group.toString());
+
+		var grName = new GlideRecord('sys_user_group');
+		grName.addEncodedQuery('parent=' + current.assignment_group);
+		grName.query();
+
+		while(grName.next()) {
+			arrGroups.push(grName.sys_id.toString());
+			arrGroups= this.childGroups(grName.sys_id, arrGroups);
+
+		}
+		var grUser = new GlideRecord('sys_user_grmember');
+		grUser.addEncodedQuery('groupIN'+ arrGroups);
+		grUser.query();
+
+		while (grUser.next()) {
+
+			arrUsers.push(grUser.getValue('user'));
+		}
+
+		return 'sys_idIN' + arrUsers;
+	},
+	childGroups: function(parentID, arrGroups){
+		var grChild = new GlideRecord('sys_user_group');
+		grChild.addQuery('parent', parentID);
+		grChild.addQuery('active', 'true');
+		grChild.query();
+		while(grChild.next()){
+			arrGroups.push(grChild.sys_id.toString());
+			this.childGroups(grChild.sys_id, arrGroups);
+		}
+		return arrGroups;
+	},
+	type: 'SupportCaseNestedGroupsAssignment'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kristian.teodorov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-12-21 12:33:43</sys_created_on>
+        <sys_id>f5760279db688d5001eafad3f39619da</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>SupportCaseNestedGroupsAssignment</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_script_include_f5760279db688d5001eafad3f39619da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 13:26:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

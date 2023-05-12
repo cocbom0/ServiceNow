@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:8bca620b1b628110a4236313604bcb5d</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 12:23:25</sys_created_on>
+        <sys_id>285c90ffdb2a2150ca0952f8f496197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>severity</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_285c90ffdb2a2150ca0952f8f496197e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 12:23:25</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Fields for Target Records - Variables for Safety Related issue">19dbd4bfdb2a2150ca0952f8f4961962</ui_policy>
+        <variable>severity</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>36d32cc3db0ee5d88aea21c4059619b9</instance_id>
+        <instance_name>liebherrcsmtest</instance_name>
+        <name>catalog_ui_policy_action_285c90ffdb2a2150ca0952f8f496197e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:8bca620b1b628110a4236313604bcb5d</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-08 12:23:25</sys_created_on><sys_id>285c90ffdb2a2150ca0952f8f496197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>severity</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_285c90ffdb2a2150ca0952f8f496197e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-08 12:23:25</sys_updated_on><table/><ui_policy display_value="Display Fields for Target Records - Variables for Safety Related issue">19dbd4bfdb2a2150ca0952f8f4961962</ui_policy><variable>severity</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1912854914</payload_hash>
+        <record_name>severity</record_name>
+        <reverted_from/>
+        <source>46e538a587a62d107cb6eced3fbb35c6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 12:23:25</sys_created_on>
+        <sys_id>1e5c90ffdb2a2150ca0952f8f49619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187fb510ac80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 12:23:25</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>125c90ffac2a215001f49b8aa1d5fbd9</update_guid>
+        <update_guid_history>125c90ffac2a215001f49b8aa1d5fbd9:1912854914</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="severity">93fc5033db6a2150ca0952f8f49619b4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 12:26:13</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>1017d67f9d43494890bdc89f500d5040</sys_id>
+        <sys_metadata>285c90ffdb2a2150ca0952f8f496197e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>severity</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_285c90ffdb2a2150ca0952f8f496197e</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_285c90ffdb2a2150ca0952f8f496197e">1e5c90ffdb2a2150ca0952f8f49619d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 12:26:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

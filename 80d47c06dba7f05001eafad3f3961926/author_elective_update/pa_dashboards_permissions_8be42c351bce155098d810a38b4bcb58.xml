@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="DELETE">
+        <dashboard display_value="CSM Dashboard">a080f6941b86c1105b1b411acd4bcbed</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>76a6712adb1a48141dfd608505961969</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-20 15:10:29</sys_created_on>
+        <sys_id>8be42c351bce155098d810a38b4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>76a6712adb1a48141dfd608505961969</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_8be42c351bce155098d810a38b4bcb58</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-20 15:10:29</sys_updated_on>
+        <type>3</type>
+        <user display_value="Buntschu Rene (LMB)">76a6712adb1a48141dfd608505961969</user>
+        <write>false</write>
+    </pa_dashboards_permissions>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>07aad9c6dbf027c052e3f70fbf96190b</instance_id>
+        <instance_name>liebherr</instance_name>
+        <name>pa_dashboards_permissions_8be42c351bce155098d810a38b4bcb58</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions"><pa_dashboards_permissions action="INSERT_OR_UPDATE"><dashboard display_value="CSM Dashboard">a080f6941b86c1105b1b411acd4bcbed</dashboard><delete>false</delete><group/><identity>76a6712adb1a48141dfd608505961969</identity><read>true</read><role/><sys_class_name>pa_dashboards_permissions</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-09-20 15:10:29</sys_created_on><sys_id>8be42c351bce155098d810a38b4bcb58</sys_id><sys_mod_count>0</sys_mod_count><sys_name>76a6712adb1a48141dfd608505961969</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>pa_dashboards_permissions_8be42c351bce155098d810a38b4bcb58</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-09-20 15:10:29</sys_updated_on><type>3</type><user display_value="Buntschu Rene (LMB)">76a6712adb1a48141dfd608505961969</user><write>false</write></pa_dashboards_permissions></record_update>]]></payload>
+        <payload_hash>374305153</payload_hash>
+        <record_name>76a6712adb1a48141dfd608505961969</record_name>
+        <reverted_from/>
+        <source>d6f2ac1b1bed5550fa59db58bb4bcbb5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-20 15:10:29</sys_created_on>
+        <sys_id>43e42c351bce155098d810a38b4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1835b7357090000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-20 15:10:29</sys_updated_on>
+        <type>Dashboard Permissions</type>
+        <update_guid>4be42c35b4ce1550b92ef736d8268459</update_guid>
+        <update_guid_history>4be42c35b4ce1550b92ef736d8268459:374305153</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">88c4280e1bc2955098d810a38b4bcb16</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-21 09:48:12</sys_created_on>
+        <sys_db_object display_value="" name="pa_dashboards_permissions">pa_dashboards_permissions</sys_db_object>
+        <sys_id>e6ef810bbc6c42b8a6c9a3fe73c61881</sys_id>
+        <sys_metadata>8be42c351bce155098d810a38b4bcb58</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>76a6712adb1a48141dfd608505961969</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>pa_dashboards_permissions_8be42c351bce155098d810a38b4bcb58</sys_update_name>
+        <sys_update_version display_value="pa_dashboards_permissions_8be42c351bce155098d810a38b4bcb58">43e42c351bce155098d810a38b4bcb5a</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-21 09:48:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Engine state">ae85ce5e1b6a4d10a4236313604bcb84</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 14:24:30</sys_created_on>
+        <sys_id>51eb7bdd1b4345505b1b411acd4bcbc0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Engine installed in machine</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>question_choice_51eb7bdd1b4345505b1b411acd4bcbc0</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-06-20 17:46:08</sys_updated_on>
+        <text>Engine installed in machine</text>
+        <value>engine_installed_machine</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=51eb7bdd1b4345505b1b411acd4bcbc0"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>misc</field>
+        <id>51eb7bdd1b4345505b1b411acd4bcbc0</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 14:24:30</sys_created_on>
+        <sys_id>87ebf3111b8345505b1b411acd4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-23 14:24:30</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_misc</field>
+        <id>51eb7bdd1b4345505b1b411acd4bcbc0</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-04-23 14:24:30</sys_created_on>
+        <sys_id>4febf3111b8345505b1b411acd4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-04-23 14:24:30</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

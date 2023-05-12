@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>ivan.mihov@doitwise.com</sys_created_by>
+        <sys_created_on>2021-11-02 08:19:10</sys_created_on>
+        <sys_id>96d6f4c6dba7f05001eafad3f3961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_liisa_support_ca_services.sn_customerservice_agent</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_security_acl display_value="x_liisa_support_ca_services">1ed6b4c6dba7f05001eafad3f39619f3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_96d6f4c6dba7f05001eafad3f3961939</sys_update_name>
+        <sys_updated_by>ivan.mihov@doitwise.com</sys_updated_by>
+        <sys_updated_on>2021-11-02 08:19:10</sys_updated_on>
+        <sys_user_role display_value="sn_customerservice_agent" name="sn_customerservice_agent">3120f52cc312310015519f2974d3ae83</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.iconlink a label,h2 {&#13;
+  display: block;&#13;
+  font-size: 2.5rem;&#13;
+  font-weight: 300;&#13;
+  line-height: 1.1;&#13;
+  padding: 0;&#13;
+  margin: 0 0 10px 0;&#13;
+  &#13;
+}&#13;
+&#13;
+a{&#13;
+    color: black !important;&#13;
+  	background-color:white !important;&#13;
+}&#13;
+a:hover{&#13;
+    color:  $brand-primary !important;&#13;
+  	background-color:white !important;&#13;
+}&#13;
+&#13;
+/* TOP ICON ---------- */&#13;
+&#13;
+a.top_icon {&#13;
+  display: block;&#13;
+  padding: 20px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+a.top_icon .fa {&#13;
+  display: block;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+/* CIRCLE ICON ---------- */&#13;
+&#13;
+a.circle_icon {&#13;
+  display: block;&#13;
+  padding: 20px 0px 20px 70px;&#13;
+  position: relative;&#13;
+&#13;
+}&#13;
+&#13;
+a.circle_icon .fa {&#13;
+  position:absolute;&#13;
+  left: 0px;&#13;
+  top: 10px;&#13;
+   &#13;
+}&#13;
+&#13;
+/* COLOR BOX ---------- */&#13;
+&#13;
+a.color_box {&#13;
+  display: block;&#13;
+  position: relative;&#13;
+  padding: 20px 20px 20px 82px;&#13;
+  border-radius: 4px;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+a.color_box .fa {&#13;
+  position:absolute;&#13;
+  left: 20px;&#13;
+  top: 20px;&#13;
+  width:42px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.icon-link-background-primary {&#13;
+  background-color: $brand-primary;&#13;
+}&#13;
+&#13;
+.icon-link-background-info {&#13;
+  background-color: $brand-info;&#13;
+}&#13;
+&#13;
+.icon-link-background-success {&#13;
+  background-color: $brand-success;&#13;
+}&#13;
+&#13;
+.icon-link-background-warning {&#13;
+  background-color: $brand-warning;&#13;
+}&#13;
+&#13;
+.icon-link-background-danger {&#13;
+  background-color: $brand-danger;&#13;
+}&#13;
+&#13;
+.icon-link-background-default {&#13;
+  background-color: $brand-primary;&#13;
+}&#13;
+&#13;
+.text-primary {&#13;
+  color: $brand-primary;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-primary, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-info {&#13;
+  color: $brand-info;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-info, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-success {&#13;
+  color: $brand-success;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-success, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-warning {&#13;
+  color: $brand-warning;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-warning, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-danger {&#13;
+  color: $brand-danger;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-danger, 20%);&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-default {&#13;
+  color: $brand-primary;&#13;
+  &#13;
+  &amp;:hover {&#13;
+    color: darken($brand-primary, 20%);&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>type,url,sc_category,sc_cat_item,kb_topic,kb_article,kb_category,sp_page,title,short_description,color,class_name,glyph</field_list>
+        <has_preview>true</has_preview>
+        <id>lh_csm_icon_link</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>LH-CSM-Icon Link</name>
+        <option_schema>[{"name":"link_template","section":"Presentation","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"},{"label":"Image Icon","value":"Image Icon"}]},{"displayValue":"Images","name":"image","section":"other","label":"Image","type":"reference","value":"db_image","ed":{"reference":"db_image"}},{"name":"target","section":"other","label":"target","type":"choice","choices":[{"label":"_new","value":"_new"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function(){
+	var gr = $sp.getInstanceRecord();
+	data.href = $sp.getMenuHREF(gr);
+	data.displaylink = 1;
+	
+	//LH Specific: If link is organizational information" then dynamically build the URL.
+	if(data.href == "/csm?id=kb_search&kb_knowledge_base=##kb##&spa=1&language=en&kb_category=##kbcat##")
+		{
+			 // Get the current user record
+			var currentuser = gs.getUser();
+			console.log("currentuser:"+currentuser.getDisplayName());
+
+			// Get the current company record
+			var company = new GlideRecord('core_company');
+			company.addQuery("sys_id", currentuser.getCompanyID());
+			company.query();
+			company.next(); //get the first record
+			console.log("companyName:"+company.getDisplayValue('name'));
+	
+			// Get the current account record (CSM) equal to the user company
+			var account = new GlideRecord('customer_account');
+			account.addQuery("name",company.getDisplayValue('name'));
+			account.query();
+			account.next();
+			console.log("accountName:"+account.getDisplayValue('name'));
+			console.log("kb:"+account.getDisplayValue('u_knowledgebase'));
+			console.log("kbid:"+account.getValue('u_knowledgebase'));
+
+			// Get the KB Category ID for organizational_information record
+			var kb_category = new GlideRecord('kb_category');
+			kb_category.addQuery("value","organizational_information");
+			kb_category.query();
+			kb_category.next();
+			console.log("kb_category:"+kb_category.getDisplayValue('value'));
+			console.log("kb_categoryid:"+kb_category.getValue('sys_id'));
+
+			//Construct the URL  if params not null
+			if(account.getDisplayValue('u_knowledgebase') != "" && kb_category.getDisplayValue('value') !=""){
+				data.href = data.href
+					.replace("##kb##",account.getValue('u_knowledgebase'))
+					.replace("##kbcat##",kb_category.getValue('sys_id'));
+			}
+			else
+				data.displaylink = 0; // hide icon if param null
+	}
+	
+	data.target = options.target || "";
+	var img = new GlideRecord('db_image');
+	img.addQuery('sys_id', options.image);
+	img.query()
+	if (img.next()){
+		data.image = img.getValue('name')
+	}
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 11:41:45</sys_created_on>
+        <sys_id>5dd5ace71b3121505bdeed71f54bcb61</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>LH-CSM-Icon Link</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sp_widget_5dd5ace71b3121505bdeed71f54bcb61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-03 12:32:15</sys_updated_on>
+        <template><![CDATA[<div class="iconlink" ng-if="::data.displaylink==1">
+  <!--// Top Icon -->
+  <a ng-if="::(options.link_template == 'Top Icon' || !options.link_template)" ng-href="{{::data.href}}" class="top_icon {{::options.class_name}}" target="{{::data.target}}">
+    <div class="m-b fa fa-{{::options.glyph}} fa-4x {{::options.class_name}} text-{{::options.color}}"></div>
+    <h2>{{::options.title}}</h2>
+    <span class="text-muted">{{::options.short_description}}</span>
+  </a>
+
+  <!--// Circle Icon -->
+  <a ng-if="::(options.link_template == 'Circle Icon')" ng-href="{{::data.href}}" class="circle_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}">
+    <span class="fa fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-{{::options.glyph}} fa-stack-1x fa-inverse"></i>
+    </span>
+    <h2>{{::options.title}}</h2>
+    <span class="text-muted">{{::options.short_description}}</span>
+  </a>
+
+  <!--// Color Box -->
+  <a ng-if="::(options.link_template == 'Color Box')" ng-href="{{::data.href}}" class="color_box {{::options.class_name}} icon-link-background-{{::options.color}} text-white" target="{{::data.target}}">
+    <div class="fa fa-{{::options.glyph}} fa-3x {{::options.class_name}}"></div>
+    
+    <h2>{{::options.title}}</h2>
+    <span>{{::options.short_description}}</span>
+  </a>
+
+  <!--// Image Icon -->
+  <a ng-if="::(options.link_template == 'Image Icon')" ng-href="{{::data.href}}" class="image_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}">
+    <table style="width:100%" cellpadding="10">
+      <tr> <br> </tr>
+      <tr>
+        <td ><div><img   src="{{data.image}}" alt="" align="left" style="margin-right: 10px; margin-left: 5px; margin-top:5px; display: block;" /></div>
+        </td>
+        <td>
+          <h2>{{::options.title}}</h2>
+          <span class="text-muted">  {{::options.short_description}}</span>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </a>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>

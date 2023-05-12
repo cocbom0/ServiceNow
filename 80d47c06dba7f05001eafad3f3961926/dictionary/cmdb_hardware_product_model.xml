@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2909244f1b022110a3e4ebd4604bcb25" extends="cmdb_model" label="Modèle de matériel" max_length="40" name="cmdb_hardware_product_model" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Conten2 Label" max_length="40" name="u_conten2_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content10 Label" max_length="40" name="u_content10_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content10 Value" max_length="40" name="u_content10_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content1 Label" max_length="40" name="u_content1_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content1 Value" max_length="40" name="u_content1_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content2 Value" max_length="40" name="u_content2_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content3 Label" max_length="40" name="u_content3_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content3 Value" max_length="40" name="u_content3_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content4 label" max_length="40" name="u_content4_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content4 Value" max_length="40" name="u_content4_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content5 Label" max_length="40" name="u_content5_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content5 Value" max_length="40" name="u_content5_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content6 Label" max_length="40" name="u_content6_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content6 Value" max_length="40" name="u_content6_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content7 Label" max_length="40" name="u_content7_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content7 Value" max_length="40" name="u_content7_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content8 Label" max_length="40" name="u_content8_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content8 Value" max_length="40" name="u_content8_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content9 Label" max_length="40" name="u_content9_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Content9 Value" max_length="40" name="u_content9_value" type="string"/>
+    </element>
+</database>

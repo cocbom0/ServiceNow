@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Engine</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Engine</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Base Configuration Item" name="Base Configuration Item">3c38232e1b2121105bdeed71f54bcb06</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 12:49:28</sys_created_on>
+        <sys_id>ce6c04881b7de110c2e1433be54bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Engine</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_wizard_answer_ce6c04881b7de110c2e1433be54bcb5e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-20 12:49:28</sys_updated_on>
+        <table/>
+        <target_url>x_liisa_support_ca_u_cmdb_ci_engine.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>sys_wizard_answer_ce6c04881b7de110c2e1433be54bcb5e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Engine</answer><button_label/><dependent_value/><element/><name>Engine</name><next_question/><order>100</order><payload_name/><question display_value="Base Configuration Item" name="Base Configuration Item">3c38232e1b2121105bdeed71f54bcb06</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-20 12:49:28</sys_created_on><sys_id>ce6c04881b7de110c2e1433be54bcb5e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Engine</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>sys_wizard_answer_ce6c04881b7de110c2e1433be54bcb5e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-20 12:49:28</sys_updated_on><table/><target_url>x_liisa_support_ca_u_cmdb_ci_engine.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>445155076</payload_hash>
+        <record_name>Engine</record_name>
+        <reverted_from/>
+        <source>80d47c06dba7f05001eafad3f3961926</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-20 12:49:28</sys_created_on>
+        <sys_id>edf7434c1b06a1505bdeed71f54bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186ff1147c00000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:43:17</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>adf7434c5506a150f29e9bcb7b4307b2</update_guid>
+        <update_guid_history>adf7434c5506a150f29e9bcb7b4307b2:445155076</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-02 12:44:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>289c8dd18d9d469f8dcc2833ea0d7ee1</sys_id>
+        <sys_metadata>ce6c04881b7de110c2e1433be54bcb5e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Engine</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent display_value="">3c38232e1b2121105bdeed71f54bcb06</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_ce6c04881b7de110c2e1433be54bcb5e</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_ce6c04881b7de110c2e1433be54bcb5e">edf7434c1b06a1505bdeed71f54bcbb2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-02 12:44:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

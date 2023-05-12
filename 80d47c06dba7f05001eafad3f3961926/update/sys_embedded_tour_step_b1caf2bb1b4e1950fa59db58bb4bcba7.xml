@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>true</action>
+        <action_event>click</action_event>
+        <action_target/>
+        <action_target_ref/>
+        <active>true</active>
+        <content><![CDATA[You have entered this page because you would like to submit a request. This tour will provide you the information you need regarding this section and the available choices.]]></content>
+        <guide display_value="Service Offerings">b5d51f0847481910b0ce8b42e36d4357</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name>Introduction</name>
+        <options/>
+        <order>0</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>intro</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 07:13:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b1caf2bb1b4e1950fa59db58bb4bcba7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Introduction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_b1caf2bb1b4e1950fa59db58bb4bcba7</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:33:01</sys_updated_on>
+        <target/>
+        <target_ref/>
+        <title><![CDATA[Catalog of Service Offerings]]></title>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window/>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=b1caf2bb1b4e1950fa59db58bb4bcba7"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b1caf2bb1b4e1950fa59db58bb4bcba7</documentkey>
+        <fieldname>content</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:31:45</sys_created_on>
+        <sys_id>198a57b31b425950fa59db58bb4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:31:45</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;You have entered this pagSie haben diese Seite aufgerufen, um eine Anfrage an unserem Customer Service zu stellen. Auf diesem Rundgang finden Sie die Informationen, die Sie &amp;uuml;ber diesen Bereich und die verf&amp;uuml;gbaren Optionen ben&amp;ouml;tigen. e because you would like to submit a request. This tour will provide you the information you need regarding this section and the available choices.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b1caf2bb1b4e1950fa59db58bb4bcba7</documentkey>
+        <fieldname>content</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:30:06</sys_created_on>
+        <sys_id>512a5f731b425950fa59db58bb4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:30:06</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>&lt;p&gt;Vous &amp;ecirc;tes entr&amp;eacute; sur cette page parce que vous souhaitez soumettre une demande. Cette visite vous fournira les informations dont vous avez besoin concernant cette section et les choix disponibles.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b1caf2bb1b4e1950fa59db58bb4bcba7</documentkey>
+        <fieldname>title</fieldname>
+        <language>de</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:31:45</sys_created_on>
+        <sys_id>518a57b31b425950fa59db58bb4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:31:45</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>Katalog der Dienstleistungsangebote</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>b1caf2bb1b4e1950fa59db58bb4bcba7</documentkey>
+        <fieldname>title</fieldname>
+        <language>fr</language>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-09-27 09:30:06</sys_created_on>
+        <sys_id>152a5f731b425950fa59db58bb4bcbd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-09-27 09:33:01</sys_updated_on>
+        <tablename>sys_embedded_tour_step</tablename>
+        <value>Catalogue des offres de service</value>
+    </sys_translated_text>
+</record_update>

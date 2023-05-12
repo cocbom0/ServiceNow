@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>600</order>
+        <sc_cat_item display_value="Customer articles">894d4fb81b1f89905b1b411acd4bcb93</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>cockrl0</sys_created_by>
+        <sys_created_on>2022-09-16 09:45:38</sys_created_on>
+        <sys_id>2d343a501b461d18191cd8f99a4bcbbc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Product model - Serial Number.Customer articles</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>io_set_item_2d343a501b461d18191cd8f99a4bcbbc</sys_update_name>
+        <sys_updated_by>cockrl0</sys_updated_by>
+        <sys_updated_on>2022-09-16 09:46:05</sys_updated_on>
+        <variable_set display_value="Product model - Serial Number">88eda5cb1b888d905b1b411acd4bcbb4</variable_set>
+    </io_set_item>
+</record_update>

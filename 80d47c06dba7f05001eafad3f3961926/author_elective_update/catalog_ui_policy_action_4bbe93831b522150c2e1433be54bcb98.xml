@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item>
+        <catalog_variable>IO:630975361b660110a4236313604bcbe3</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 08:21:46</sys_created_on>
+        <sys_id>4bbe93831b522150c2e1433be54bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>responsability_reason_code</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_4bbe93831b522150c2e1433be54bcb98</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:21:46</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display 8D identification and 8D Link for Technical Topics">8ed65bc71b122150c2e1433be54bcb0f</ui_policy>
+        <variable>responsability_reason_code</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Support case">80d47c06dba7f05001eafad3f3961926</application>
+        <file_path/>
+        <instance_id>ee3367e2db2529d43050ac44d49619db</instance_id>
+        <instance_name>liebherrcsmtmp</instance_name>
+        <name>catalog_ui_policy_action_4bbe93831b522150c2e1433be54bcb98</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Technical Services">6044a2da1b6e4d10a4236313604bcb74</catalog_item><catalog_variable>IO:630975361b660110a4236313604bcbe3</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-24 08:21:46</sys_created_on><sys_id>4bbe93831b522150c2e1433be54bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_name>responsability_reason_code</sys_name><sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package><sys_policy/><sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope><sys_update_name>catalog_ui_policy_action_4bbe93831b522150c2e1433be54bcb98</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-24 08:21:46</sys_updated_on><table/><ui_policy display_value="Display 8D identification and 8D Link for Technical Topics">8ed65bc71b122150c2e1433be54bcb0f</ui_policy><variable>responsability_reason_code</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1250903406</payload_hash>
+        <record_name>responsability_reason_code</record_name>
+        <reverted_from/>
+        <source>04e2d0c81bbde110c2e1433be54bcb07</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 08:21:46</sys_created_on>
+        <sys_id>c6ced3831b522150c2e1433be54bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187b25ac7a70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:21:46</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>86ce13831c522150f14897f3f291dee2</update_guid>
+        <update_guid_history>86ce13831c522150f14897f3f291dee2:-1250903406</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">282fdb831b522150c2e1433be54bcb15</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 08:23:18</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>a55913c009804280acdf3fd829744000</sys_id>
+        <sys_metadata>4bbe93831b522150c2e1433be54bcb98</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>responsability_reason_code</sys_name>
+        <sys_package display_value="Support case" source="x_liisa_support_ca">80d47c06dba7f05001eafad3f3961926</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Support case">80d47c06dba7f05001eafad3f3961926</sys_scope>
+        <sys_scope_delete display_value="">60e14331f19d4bcba92dd8cbc47a66d9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_4bbe93831b522150c2e1433be54bcb98</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_4bbe93831b522150c2e1433be54bcb98">c6ced3831b522150c2e1433be54bcb5d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 08:23:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
