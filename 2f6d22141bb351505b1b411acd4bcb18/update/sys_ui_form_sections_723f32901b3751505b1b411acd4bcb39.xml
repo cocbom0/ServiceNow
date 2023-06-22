@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="723f32901b3751505b1b411acd4bcb39" sys_domain="global" table="x_liisa_open_point_open_point_list" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-12-12 10:23:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f63f32901b3751505b1b411acd4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_open_point_open_point_list" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">723f32901b3751505b1b411acd4bcb39</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">323f32901b3751505b1b411acd4bcb4d</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-12-12 10:23:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-12-12 10:23:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b63f32901b3751505b1b411acd4bcb47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_open_point_open_point_list" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">723f32901b3751505b1b411acd4bcb39</sys_ui_form>
+            <sys_ui_section caption="Links" display_value="Links" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">7a3f32901b3751505b1b411acd4bcb40</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-12-12 10:23:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-12-12 10:23:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba3f32901b3751505b1b411acd4bcb4c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_open_point_open_point_list" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">723f32901b3751505b1b411acd4bcb39</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">3e3f32901b3751505b1b411acd4bcb47</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-12-12 10:23:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-12-12 10:23:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f23f32901b3751505b1b411acd4bcb40</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_open_point_open_point_list" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">723f32901b3751505b1b411acd4bcb39</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">f23f32901b3751505b1b411acd4bcb3b</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-12-12 10:23:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-12-12 10:23:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>433f32901b3751505b1b411acd4bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_liisa_open_point_open_point_list" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">723f32901b3751505b1b411acd4bcb39</sys_ui_form>
+            <sys_ui_section caption="Major Case Information" display_value="Major Case Information" name="x_liisa_open_point_open_point_list" sys_domain="global" view="b07524e1db21001003816085059619ae">7e3f32901b3751505b1b411acd4bcb56</sys_ui_section>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-12-12 10:23:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_liisa_open_point_open_point_list</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2022-12-12 10:23:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>723f32901b3751505b1b411acd4bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_liisa_open_point_open_point_list</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+            <sys_update_name>sys_ui_form_sections_723f32901b3751505b1b411acd4bcb39</sys_update_name>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2022-12-12 10:23:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="Case" name="case">b07524e1db21001003816085059619ae</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

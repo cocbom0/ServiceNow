@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>number,short_description,priority,state,assigned_to,due_date,sys_updated_on,contact,account,resolved_at,closed_at</field_list>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>10</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">e166475c1b3751505b1b411acd4bcb45</sp_column>
+        <sp_page display_value="csm_ticket">65285631c3a1120058879f2974d3aeed</sp_page>
+        <sp_widget display_value="LH Data Table from Instance Definition">0d99d7d31b745150a4236313604bcb3f</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-12 10:54:58</sys_created_on>
+        <sys_id>e566475c1b3751505b1b411acd4bcb47</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>All Open Point List in your Organization</sys_name>
+        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>sp_instance_table_e566475c1b3751505b1b411acd4bcb47</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-12 15:35:33</sys_updated_on>
+        <table>x_liisa_open_point_open_point_list</table>
+        <title>All Open Point List in your Organization</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"all_button_label": {
+		"value": "All Open Point List",
+		"displayValue": "All Open Point List"
+	},
+	"serviceportal_page_for_all_records": {
+		"value": "?id=csm_open_point_list",
+		"displayValue": "?id=csm_open_point_list"
+	}
+}]]></widget_parameters>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=e566475c1b3751505b1b411acd4bcb47"/>
+</record_update>

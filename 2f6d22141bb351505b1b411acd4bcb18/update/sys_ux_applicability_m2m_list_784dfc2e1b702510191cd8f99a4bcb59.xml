@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="CSM - COT : Open Point List ">c2ddf86e1b702510191cd8f99a4bcbbe</applicability>
+        <list display_value="">698e84e01bfb51505b1b411acd4bcb89</list>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-06 17:45:04</sys_created_on>
+        <sys_id>784dfc2e1b702510191cd8f99a4bcb59</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_784dfc2e1b702510191cd8f99a4bcb59</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-06 17:48:52</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

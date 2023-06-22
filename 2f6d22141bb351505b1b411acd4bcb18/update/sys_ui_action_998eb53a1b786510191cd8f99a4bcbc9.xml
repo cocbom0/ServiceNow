@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) { 	
+    g_modal.showFrame({ 
+        url: 'csm?id=csm_ticket&table=x_liisa_open_point_open_point_list&sys_id=' + g_form.getUniqueValue(),	  
+        title: 'View Open Topic (Portal)', 	  
+        size: 'lg', 
+	    height: '100rem'}); 
+	 g_navigation.openPopup(url);
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>View Open Point (Portal)</name>
+        <onclick>openRecordInServicePortal()</onclick>
+        <order>100</order>
+        <script><![CDATA[function openRecordInServicePortal() {
+    var url = 'csm?id=csm_ticket&table=x_liisa_open_point_open_point_list&sys_id=' + g_form.getUniqueValue();
+    g_navigation.openPopup(url);
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-07 17:10:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>998eb53a1b786510191cd8f99a4bcbc9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>View Open Point (Portal)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>sys_ui_action_998eb53a1b786510191cd8f99a4bcbc9</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-07 17:30:09</sys_updated_on>
+        <table>x_liisa_open_point_open_point_list</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_highlighted_value_config">
+    <sys_ux_m2m_highlighted_value_config action="INSERT_OR_UPDATE">
+        <highlighted_value display_value="action_status">af34f8e41bbf51505b1b411acd4bcb3c</highlighted_value>
+        <highlighted_value_config display_value="CSM/FSM Configurable Workspace Highlighted Values Config">9ac7dd2f535f10102c30ddeeff7b128c</highlighted_value_config>
+        <order>0</order>
+        <sys_class_name>sys_ux_m2m_highlighted_value_config</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-12 18:55:23</sys_created_on>
+        <sys_id>365478e41bbf51505b1b411acd4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>sys_ux_m2m_highlighted_value_config_365478e41bbf51505b1b411acd4bcb6c</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-12 18:55:23</sys_updated_on>
+    </sys_ux_m2m_highlighted_value_config>
+</record_update>

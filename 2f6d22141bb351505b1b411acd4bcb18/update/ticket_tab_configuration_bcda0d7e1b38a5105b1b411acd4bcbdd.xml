@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ticket_tab_configuration">
+    <ticket_tab_configuration action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <order>20</order>
+        <parent display_value="x_liisa_open_point_open_point_list">37ba013e1b38a5105b1b411acd4bcb75</parent>
+        <script><![CDATA[/** * The script should evaluate true/false or `answer` populated with true/false which validates if a tab is visible  * The `current` object refers to the current Task(extension) record  **/ ]]></script>
+        <sys_class_name>ticket_tab_configuration</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-07 13:22:40</sys_created_on>
+        <sys_id>bcda0d7e1b38a5105b1b411acd4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>ticket_tab_configuration_bcda0d7e1b38a5105b1b411acd4bcbdd</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-07 13:22:40</sys_updated_on>
+        <tab_name>Attachments</tab_name>
+        <table>x_liisa_open_point_open_point_list</table>
+        <type>attachments</type>
+        <visible/>
+        <widget/>
+        <widget_param/>
+    </ticket_tab_configuration>
+</record_update>

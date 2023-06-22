@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="opened_at" label="Eröffnungsdatum" language="de" table="x_liisa_open_point_open_point_list">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>opened_at</element>
+            <help/>
+            <hint/>
+            <label>Eröffnungsdatum</label>
+            <language>de</language>
+            <name>x_liisa_open_point_open_point_list</name>
+            <plural>Eröffnungsdatum</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>cocbom0</sys_created_by>
+            <sys_created_on>2023-04-03 07:30:55</sys_created_on>
+            <sys_id>d4c94fd81b8ea110191cd8f99a4bcb0b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Eröffnungsdatum</sys_name>
+            <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+            <sys_update_name>sys_documentation_x_liisa_open_point_open_point_list_opened_at_de</sys_update_name>
+            <sys_updated_by>cocbom0</sys_updated_by>
+            <sys_updated_on>2023-04-03 07:30:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

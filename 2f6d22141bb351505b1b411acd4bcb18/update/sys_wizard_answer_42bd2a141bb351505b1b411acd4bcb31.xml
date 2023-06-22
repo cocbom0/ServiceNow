@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <answer>New open_point_list</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>open_point_list</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Case" name="Case">98d57c94c3102200e7c7d44d81d3aea9</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-12 09:07:09</sys_created_on>
+        <sys_id>42bd2a141bb351505b1b411acd4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>open_point_list</sys_name>
+        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>sys_wizard_answer_42bd2a141bb351505b1b411acd4bcb31</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-12 09:07:09</sys_updated_on>
+        <table/>
+        <target_url>x_liisa_open_point_open_point_list.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>
