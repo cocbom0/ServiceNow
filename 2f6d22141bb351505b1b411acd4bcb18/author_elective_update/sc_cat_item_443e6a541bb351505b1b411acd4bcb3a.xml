@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>never</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Open point list</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="Boberda Michel (COC)">266e7818db126f008a079532ca9619fd</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=443e6a541bb351505b1b411acd4bcb3a&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description>Open point list</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-12 09:09:41</sys_created_on>
+        <sys_id>443e6a541bb351505b1b411acd4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open point list</sys_name>
+        <sys_package display_value="Open point list" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Open point list">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_update_name>sc_cat_item_443e6a541bb351505b1b411acd4bcb3a</sys_update_name>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-12 09:09:41</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <u_require_manager_approval>false</u_require_manager_approval>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=443e6a541bb351505b1b411acd4bcb3a"/>
+    <fx_price action="DELETE" query="id=443e6a541bb351505b1b411acd4bcb3a"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price</field>
+        <id>443e6a541bb351505b1b411acd4bcb3a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-12 09:09:42</sys_created_on>
+        <sys_id>5f4eea541bb351505b1b411acd4bcb25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-12 09:09:42</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>recurring_price</field>
+        <id>443e6a541bb351505b1b411acd4bcb3a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2022-12-12 09:09:42</sys_created_on>
+        <sys_id>174eea541bb351505b1b411acd4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2022-12-12 09:09:42</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="4Open Point List">2f6d22141bb351505b1b411acd4bcb18</application>
+        <file_path/>
+        <instance_id>d5ba99c6dbfce3c0536ad5b0cf96199c</instance_id>
+        <instance_name>liebherrdev</instance_name>
+        <name>sc_cat_item_443e6a541bb351505b1b411acd4bcb3a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><access_type>restricted</access_type><active>true</active><availability>on_desktop</availability><billable>false</billable><category/><checked_out/><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>never</display_price_property><entitlement_script/><flow_designer_flow/><fulfillment_automation_level>unspecified</fulfillment_automation_level><group/><hide_sp>false</hide_sp><icon/><ignore_price>false</ignore_price><image/><location/><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Open point list</name><no_attachment_v2>false</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>false</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>false</no_quantity_v2><no_search>false</no_search><no_wishlist_v2>false</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><owner display_value="Boberda Michel (COC)">266e7818db126f008a079532ca9619fd</owner><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=443e6a541bb351505b1b411acd4bcb3a&amp;sysparm_preview=true", "summary");</preview><price>0</price><published_ref/><recurring_frequency/><recurring_price>0</recurring_price><request_method/><roles/><sc_catalogs/><sc_ic_item_staging/><sc_ic_version/><sc_template/><short_description>Open point list</short_description><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><state/><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-12-12 09:09:41</sys_created_on><sys_id>443e6a541bb351505b1b411acd4bcb3a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Open point list</sys_name><sys_package display_value="Open point list" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package><sys_policy/><sys_scope display_value="Open point list">2f6d22141bb351505b1b411acd4bcb18</sys_scope><sys_update_name>sc_cat_item_443e6a541bb351505b1b411acd4bcb3a</sys_update_name><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-12-12 09:09:41</sys_updated_on><taxonomy_topic/><template/><template_manager_roles/><type>item</type><u_require_manager_approval>false</u_require_manager_approval><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=443e6a541bb351505b1b411acd4bcb3a"/><fx_price action="delete_multiple" query="id=443e6a541bb351505b1b411acd4bcb3a"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="EUR">EUR</currency><field>price</field><id>443e6a541bb351505b1b411acd4bcb3a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="EUR">EUR</reference_currency><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-12-12 09:09:42</sys_created_on><sys_id>5f4eea541bb351505b1b411acd4bcb25</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-12-12 09:09:42</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="EUR">EUR</currency><field>recurring_price</field><id>443e6a541bb351505b1b411acd4bcb3a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="EUR">EUR</reference_currency><sys_created_by>cocbom0</sys_created_by><sys_created_on>2022-12-12 09:09:42</sys_created_on><sys_id>174eea541bb351505b1b411acd4bcb27</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>cocbom0</sys_updated_by><sys_updated_on>2022-12-12 09:09:42</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-481341770</payload_hash>
+        <record_name>Open point list</record_name>
+        <reverted_from display_value="">d74eea541bb351505b1b411acd4bcb2a</reverted_from>
+        <source>450e6e141bb351505b1b411acd4bcb71</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-01-19 19:37:33</sys_created_on>
+        <sys_id>076a24b01b602510191cd8f99a4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185cb8954d50000001</sys_recorded_at>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-01-19 19:37:33</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>fa6a24b07e6025100c7e45659bd66703</update_guid>
+        <update_guid_history>fa6a24b07e6025100c7e45659bd66703:-481341770,5157cc28bdbb51503d6e5536cc6e200d:-296072288,df4eea54a0b351502c845f3bee643229:-481341770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">be313cdd1b74ad50191cd8f99a4bcbb9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cocbom0</sys_created_by>
+        <sys_created_on>2023-02-02 19:39:57</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>052dce43f0c746e08210c67bd0500400</sys_id>
+        <sys_metadata>443e6a541bb351505b1b411acd4bcb3a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open point list</sys_name>
+        <sys_package display_value="4Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="4Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_scope_delete display_value="">0b41bac2d43e402c836ffaaa93dd1990</sys_scope_delete>
+        <sys_update_name>sc_cat_item_443e6a541bb351505b1b411acd4bcb3a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_443e6a541bb351505b1b411acd4bcb3a">076a24b01b602510191cd8f99a4bcbca</sys_update_version>
+        <sys_updated_by>cocbom0</sys_updated_by>
+        <sys_updated_on>2023-02-02 19:39:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

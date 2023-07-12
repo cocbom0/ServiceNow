@@ -76,9 +76,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>LH COT BU-VM : Copy Worknotes to Case</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
+        <sys_package display_value="4Open Point List" source="x_liisa_open_point">2f6d22141bb351505b1b411acd4bcb18</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
+        <sys_scope display_value="4Open Point List">2f6d22141bb351505b1b411acd4bcb18</sys_scope>
         <sys_update_name>sys_script_6fc6c2721bb86510191cd8f99a4bcb28</sys_update_name>
         <sys_updated_by>cocbom0</sys_updated_by>
         <sys_updated_on>2023-02-07 17:45:38</sys_updated_on>
